@@ -1,0 +1,295 @@
+
+----- System log -----
+
+2019-08-30T12:48:19.432+00:00 axis-00408ce8dd13 [ WARNING ] kernel: systemd[1]: Failed to populate /etc with preset unit settings, ignoring: File exists
+2019-08-30T12:48:26.395+00:00 axis-00408ce8dd13 [ WARNING ] migrate_cert[791]: Bad Not after date
+2019-08-30T12:48:26.575+00:00 axis-00408ce8dd13 [ WARNING ] migrate_cert[791]: Failed to delete group 'R1RFQ3liZXJUcnVzdEdsb2JhbFJvb3Q%', 4 Key file does not have group 'R1RFQ3liZXJUcnVzdEdsb2JhbFJvb3Q%'
+2019-08-30T12:48:26.956+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: upnp.service: State 'stop-sigterm' timed out. Killing.
+2019-08-30T12:48:27.040+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: upnp.service: Failed with result 'signal'.
+2019-08-30T12:48:28.538+00:00 axis-00408ce8dd13 [ WARNING ] disks[825]: disk.c : Disk disruption detection status changed for SD_DISK. Status = 'disruption'
+2019-08-30T12:48:28.592+00:00 axis-00408ce8dd13 [ WARNING ] disks[825]: disk.c : Disk disruption detection status changed for NetworkShare. Status = 'disruption'
+2019-08-30T12:48:36.233+00:00 axis-00408ce8dd13 [ WARNING ] migrate_cert[791]: Bad Not after date
+2019-08-30T12:48:36.267+00:00 axis-00408ce8dd13 [ WARNING ] migrate_cert[791]: Failed to delete group 'RXF1aWZheC1TZWN1cmUtQ2VydGlmaWNhdGUtQXV0aG9yaXR5', 4 Key file does not have group 'RXF1aWZheC1TZWN1cmUtQ2VydGlmaWNhdGUtQXV0aG9yaXR5'
+2019-08-30T12:48:38.534+00:00 axis-00408ce8dd13 [ WARNING ] migrate_cert[791]: Bad Not after date
+2019-08-30T12:48:38.595+00:00 axis-00408ce8dd13 [ WARNING ] migrate_cert[791]: Failed to delete group 'R2VvVHJ1c3QtR2xvYmFsLUNBLTI%', 4 Key file does not have group 'R2VvVHJ1c3QtR2xvYmFsLUNBLTI%'
+2019-08-30T12:48:39.475+00:00 axis-00408ce8dd13 [ WARNING ] migrate_cert[791]: Bad Not after date
+2019-08-30T12:48:39.510+00:00 axis-00408ce8dd13 [ WARNING ] migrate_cert[791]: Failed to delete group 'ZW50cnVzdF9zc2xfY2E%', 4 Key file does not have group 'ZW50cnVzdF9zc2xfY2E%'
+2019-08-30T12:48:39.596+00:00 axis-00408ce8dd13 [ WARNING ] migrate_cert[791]: Bad Not after date
+2019-08-30T12:48:39.632+00:00 axis-00408ce8dd13 [ WARNING ] migrate_cert[791]: Failed to delete group 'ZW50cnVzdF8yMDQ4X2NoYWluX3Jvb3Q%', 4 Key file does not have group 'ZW50cnVzdF8yMDQ4X2NoYWluX3Jvb3Q%'
+2019-09-06T00:48:38.976+00:00 axis-00408ce8dd13 [ INFO    ] udhcpc[621]: Lease of 192.168.20.247 obtained, lease time 86400
+2019-09-06T00:48:39.437+00:00 axis-00408ce8dd13 [ INFO    ] udhcpc[621]: default IPv4 gateway: '192.168.20.1'.
+2019-09-06T12:48:39.729+00:00 axis-00408ce8dd13 [ INFO    ] udhcpc[621]: Sending renew...
+2019-09-06T12:48:41.788+00:00 axis-00408ce8dd13 [ INFO    ] udhcpc[621]: Lease of 192.168.20.247 obtained, lease time 86400
+2019-09-06T12:48:42.243+00:00 axis-00408ce8dd13 [ INFO    ] udhcpc[621]: default IPv4 gateway: '192.168.20.1'.
+2019-09-07T00:48:42.529+00:00 axis-00408ce8dd13 [ INFO    ] udhcpc[621]: Sending renew...
+2019-09-07T00:48:44.571+00:00 axis-00408ce8dd13 [ INFO    ] udhcpc[621]: Lease of 192.168.20.247 obtained, lease time 86400
+2019-09-07T00:48:45.036+00:00 axis-00408ce8dd13 [ INFO    ] udhcpc[621]: default IPv4 gateway: '192.168.20.1'.
+2019-09-07T12:48:45.340+00:00 axis-00408ce8dd13 [ INFO    ] udhcpc[621]: Sending renew...
+2019-09-07T12:48:47.379+00:00 axis-00408ce8dd13 [ INFO    ] udhcpc[621]: Lease of 192.168.20.247 obtained, lease time 86400
+2019-09-07T12:48:47.835+00:00 axis-00408ce8dd13 [ INFO    ] udhcpc[621]: default IPv4 gateway: '192.168.20.1'.
+2019-09-08T00:48:48.129+00:00 axis-00408ce8dd13 [ INFO    ] udhcpc[621]: Sending renew...
+2019-09-08T00:48:50.178+00:00 axis-00408ce8dd13 [ INFO    ] udhcpc[621]: Lease of 192.168.20.247 obtained, lease time 86400
+2019-09-08T00:48:50.655+00:00 axis-00408ce8dd13 [ INFO    ] udhcpc[621]: default IPv4 gateway: '192.168.20.1'.
+2019-09-08T12:48:50.959+00:00 axis-00408ce8dd13 [ INFO    ] udhcpc[621]: Sending renew...
+2019-09-08T12:48:53.009+00:00 axis-00408ce8dd13 [ INFO    ] udhcpc[621]: Lease of 192.168.20.247 obtained, lease time 86400
+2019-09-08T12:48:53.470+00:00 axis-00408ce8dd13 [ INFO    ] udhcpc[621]: default IPv4 gateway: '192.168.20.1'.
+2019-09-09T00:48:53.758+00:00 axis-00408ce8dd13 [ INFO    ] udhcpc[621]: Sending renew...
+2019-09-09T00:48:55.801+00:00 axis-00408ce8dd13 [ INFO    ] udhcpc[621]: Lease of 192.168.20.247 obtained, lease time 86400
+2019-09-09T00:48:56.275+00:00 axis-00408ce8dd13 [ INFO    ] udhcpc[621]: default IPv4 gateway: '192.168.20.1'.
+2019-09-09T09:35:31.337+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Removing "Overlay Text" action
+2019-09-09T09:35:31.338+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Removing "Rule 2" action rule
+2019-09-09T09:35:31.549+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Validating "Overlay Text" action
+2019-09-09T09:35:31.675+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Creating "Rule 2" action rule
+2019-09-09T09:42:00.908+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Removing "Send Images" action
+2019-09-09T09:42:00.963+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Removing "Rule 3" action rule
+2019-09-09T09:42:01.168+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Validating "Send Images" action
+2019-09-09T09:42:01.343+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Creating "Rule 3" action rule
+2019-09-09T09:45:53.107+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Removing "Send Video Clip" action
+2019-09-09T09:45:53.177+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Removing "Rule 4" action rule
+2019-09-09T09:45:53.354+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Validating "Send Video Clip" action
+2019-09-09T09:45:53.519+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Creating "Rule 4" action rule
+2019-09-09T09:50:05.134+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Action rule "Rule 1" is starting action "Status LED"
+2019-09-09T09:50:05.195+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Action rule "Rule 3" is starting action "Send Images"
+2019-09-09T09:50:05.281+00:00 axis-00408ce8dd13 [ INFO    ] monolith[415]: Started saving stream for event "Rule 3".
+2019-09-09T09:50:05.435+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: An error occurred in "Send Images" action: failed to transfer data: Couldn't connect to server
+2019-09-09T09:50:05.443+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Aborting "Send Images" action
+2019-09-09T09:50:05.452+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: Action failed, retry will be done in 10 seconds
+2019-09-09T09:50:15.544+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Action rule "Rule 3" is starting action "Send Images"
+2019-09-09T09:50:15.594+00:00 axis-00408ce8dd13 [ INFO    ] monolith[415]: Started saving stream for event "Rule 3".
+2019-09-09T09:50:15.792+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: An error occurred in "Send Images" action: failed to transfer data: Couldn't connect to server
+2019-09-09T09:50:15.796+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Aborting "Send Images" action
+2019-09-09T09:50:15.799+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: Action failed, retry will be done in 10 seconds
+2019-09-09T09:50:26.554+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Action rule "Rule 3" is starting action "Send Images"
+2019-09-09T09:50:26.596+00:00 axis-00408ce8dd13 [ INFO    ] monolith[415]: Started saving stream for event "Rule 3".
+2019-09-09T09:50:26.762+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: An error occurred in "Send Images" action: failed to transfer data: Couldn't connect to server
+2019-09-09T09:50:26.772+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Aborting "Send Images" action
+2019-09-09T09:50:26.773+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: Action failed, retry will be done in 10 seconds
+2019-09-09T09:52:07.558+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Removing "Send Images" action
+2019-09-09T09:52:07.622+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Removing "Rule 3" action rule
+2019-09-09T09:52:07.855+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Validating "Send Images" action
+2019-09-09T09:52:08.021+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Creating "Rule 3" action rule
+2019-09-09T09:52:30.851+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Action rule "Rule 1" is starting action "Status LED"
+2019-09-09T09:52:30.896+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Action rule "Rule 3" is starting action "Send Images"
+2019-09-09T09:52:30.958+00:00 axis-00408ce8dd13 [ INFO    ] monolith[415]: Started saving stream for event "Rule 3".
+2019-09-09T09:52:31.136+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: An error occurred in "Send Images" action: failed to transfer data: Couldn't connect to server
+2019-09-09T09:52:31.150+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Aborting "Send Images" action
+2019-09-09T09:52:31.150+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: Action failed, retry will be done in 10 seconds
+2019-09-09T09:52:41.545+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Action rule "Rule 3" is starting action "Send Images"
+2019-09-09T09:52:41.587+00:00 axis-00408ce8dd13 [ INFO    ] monolith[415]: Started saving stream for event "Rule 3".
+2019-09-09T09:52:41.740+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: An error occurred in "Send Images" action: failed to transfer data: Couldn't connect to server
+2019-09-09T09:52:41.747+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Aborting "Send Images" action
+2019-09-09T09:52:41.753+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: Action failed, retry will be done in 10 seconds
+2019-09-09T09:52:51.545+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Action rule "Rule 3" is starting action "Send Images"
+2019-09-09T09:52:51.598+00:00 axis-00408ce8dd13 [ INFO    ] monolith[415]: Started saving stream for event "Rule 3".
+2019-09-09T09:52:51.766+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: An error occurred in "Send Images" action: failed to transfer data: Couldn't connect to server
+2019-09-09T09:52:51.781+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Aborting "Send Images" action
+2019-09-09T09:52:51.782+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: Action failed, retry will be done in 10 seconds
+2019-09-09T09:53:01.546+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Action rule "Rule 3" is starting action "Send Images"
+2019-09-09T09:53:01.581+00:00 axis-00408ce8dd13 [ INFO    ] monolith[415]: Started saving stream for event "Rule 3".
+2019-09-09T09:53:01.762+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: An error occurred in "Send Images" action: failed to transfer data: Couldn't connect to server
+2019-09-09T09:53:01.763+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Aborting "Send Images" action
+2019-09-09T09:53:01.763+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: Action failed, retry will be done in 10 seconds
+2019-09-09T09:54:42.676+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Removing "Send Images" action
+2019-09-09T09:54:42.739+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Removing "Rule 3" action rule
+2019-09-09T09:54:42.946+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Validating "Send Images" action
+2019-09-09T09:54:43.117+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Creating "Rule 3" action rule
+2019-09-09T09:54:49.813+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Action rule "Rule 1" is starting action "Status LED"
+2019-09-09T09:54:49.858+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Action rule "Rule 3" is starting action "Send Images"
+2019-09-09T09:54:49.917+00:00 axis-00408ce8dd13 [ INFO    ] monolith[415]: Started saving stream for event "Rule 3".
+2019-09-09T09:54:50.096+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: An error occurred in "Send Images" action: failed to transfer data: Couldn't connect to server
+2019-09-09T09:54:50.097+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Aborting "Send Images" action
+2019-09-09T09:54:50.106+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: Action failed, retry will be done in 10 seconds
+2019-09-09T09:58:50.005+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Action rule "Rule 1" is starting action "Status LED"
+2019-09-09T09:58:50.035+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Action rule "Rule 3" is starting action "Send Images"
+2019-09-09T09:58:50.105+00:00 axis-00408ce8dd13 [ INFO    ] monolith[415]: Started saving stream for event "Rule 3".
+2019-09-09T09:58:59.348+00:00 axis-00408ce8dd13 [ INFO    ] monolith[415]: Stopped saving stream for event "Rule 3".
+2019-09-09T09:59:05.600+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Action rule "Rule 3" is stopping action "Send Images"
+2019-09-09T10:00:30.975+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Removing "Send Video Clip" action
+2019-09-09T10:00:31.035+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Removing "Rule 4" action rule
+2019-09-09T10:00:31.241+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Validating "Send Video Clip" action
+2019-09-09T10:00:31.402+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Creating "Rule 4" action rule
+2019-09-09T10:01:17.141+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Removing "Send Video Clip" action
+2019-09-09T10:01:17.205+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Removing "Rule 4" action rule
+2019-09-09T10:01:17.531+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Validating "Send Video Clip" action
+2019-09-09T10:01:17.698+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Creating "Rule 4" action rule
+2019-09-09T10:04:19.506+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Removing "Send Video Clip" action
+2019-09-09T10:04:19.571+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Removing "Rule 4" action rule
+2019-09-09T10:04:19.772+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Validating "Send Video Clip" action
+2019-09-09T10:04:19.913+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Creating "Rule 4" action rule
+2019-09-09T10:06:59.612+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Removing "Send Video Clip" action
+2019-09-09T10:06:59.613+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Removing "Rule 4" action rule
+2019-09-09T10:06:59.781+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Validating "Send Video Clip" action
+2019-09-09T10:06:59.923+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Creating "Rule 4" action rule
+2019-09-09T10:08:23.852+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Removing "Send Video Clip" action
+2019-09-09T10:08:23.858+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Removing "Rule 4" action rule
+2019-09-09T10:08:24.028+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Validating "Send Video Clip" action
+2019-09-09T10:08:24.165+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Creating "Rule 4" action rule
+2019-09-09T10:21:52.200+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Removing "Send Video Clip" action
+2019-09-09T10:21:52.201+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Removing "Rule 4" action rule
+2019-09-09T10:21:52.370+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Validating "Send Video Clip" action
+2019-09-09T10:21:52.511+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Creating "Rule 4" action rule
+2019-09-09T12:23:00.547+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Action rule "Rule 4" is starting action "Send Video Clip"
+2019-09-09T12:23:01.864+00:00 axis-00408ce8dd13 [ INFO    ] monolith[415]: Started saving stream for event "Rule 4".
+2019-09-09T12:24:00.553+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Action rule "Rule 4" is stopping action "Send Video Clip"
+2019-09-09T12:24:00.603+00:00 axis-00408ce8dd13 [ INFO    ] monolith[415]: Stopped saving stream for event "Rule 4".
+2019-09-09T12:48:56.559+00:00 axis-00408ce8dd13 [ INFO    ] udhcpc[621]: Sending renew...
+2019-09-09T12:48:58.608+00:00 axis-00408ce8dd13 [ INFO    ] udhcpc[621]: Lease of 192.168.20.247 obtained, lease time 86400
+2019-09-09T12:48:58.989+00:00 axis-00408ce8dd13 [ INFO    ] udhcpc[621]: default IPv4 gateway: '192.168.20.1'.
+2019-09-10T00:48:59.238+00:00 axis-00408ce8dd13 [ INFO    ] udhcpc[621]: Sending renew...
+2019-09-10T00:49:01.298+00:00 axis-00408ce8dd13 [ INFO    ] udhcpc[621]: Lease of 192.168.20.247 obtained, lease time 86400
+2019-09-10T00:49:01.667+00:00 axis-00408ce8dd13 [ INFO    ] udhcpc[621]: default IPv4 gateway: '192.168.20.1'.
+2019-09-10T12:23:00.548+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Action rule "Rule 4" is starting action "Send Video Clip"
+2019-09-10T12:23:01.865+00:00 axis-00408ce8dd13 [ INFO    ] monolith[415]: Started saving stream for event "Rule 4".
+2019-09-10T12:23:20.015+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: An error occurred in "Send Video Clip" action: failed to transfer data: Couldn't connect to server
+2019-09-10T12:23:20.020+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Aborting "Send Video Clip" action
+2019-09-10T12:23:20.021+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: Action failed, retry will be done in 10 seconds
+2019-09-10T12:23:30.547+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Action rule "Rule 4" is starting action "Send Video Clip"
+2019-09-10T12:23:31.886+00:00 axis-00408ce8dd13 [ INFO    ] monolith[415]: Started saving stream for event "Rule 4".
+2019-09-10T12:23:34.985+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Aborting "Send Video Clip" action
+2019-09-10T12:23:34.985+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: An error occurred in "Send Video Clip" action: failed to transfer data: Couldn't connect to server
+2019-09-10T12:23:34.986+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: Action failed, retry will be done in 10 seconds
+2019-09-10T12:23:45.542+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Action rule "Rule 4" is starting action "Send Video Clip"
+2019-09-10T12:23:46.830+00:00 axis-00408ce8dd13 [ INFO    ] monolith[415]: Started saving stream for event "Rule 4".
+2019-09-10T12:23:49.914+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: An error occurred in "Send Video Clip" action: failed to transfer data: Couldn't connect to server
+2019-09-10T12:23:49.915+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Aborting "Send Video Clip" action
+2019-09-10T12:23:49.915+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: Action failed, retry will be done in 10 seconds
+2019-09-10T12:24:00.543+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Action rule "Rule 4" is starting action "Send Video Clip"
+2019-09-10T12:24:01.818+00:00 axis-00408ce8dd13 [ INFO    ] monolith[415]: Started saving stream for event "Rule 4".
+2019-09-10T12:24:04.918+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: An error occurred in "Send Video Clip" action: failed to transfer data: Couldn't connect to server
+2019-09-10T12:24:04.922+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Aborting "Send Video Clip" action
+2019-09-10T12:49:01.920+00:00 axis-00408ce8dd13 [ INFO    ] udhcpc[621]: Sending renew...
+2019-09-10T12:49:03.958+00:00 axis-00408ce8dd13 [ INFO    ] udhcpc[621]: Lease of 192.168.20.247 obtained, lease time 86400
+2019-09-10T12:49:04.317+00:00 axis-00408ce8dd13 [ INFO    ] udhcpc[621]: default IPv4 gateway: '192.168.20.1'.
+2019-09-11T00:49:04.558+00:00 axis-00408ce8dd13 [ INFO    ] udhcpc[621]: Sending renew...
+2019-09-11T00:49:06.608+00:00 axis-00408ce8dd13 [ INFO    ] udhcpc[621]: Lease of 192.168.20.247 obtained, lease time 86400
+2019-09-11T00:49:06.981+00:00 axis-00408ce8dd13 [ INFO    ] udhcpc[621]: default IPv4 gateway: '192.168.20.1'.
+2019-09-11T11:58:07.041+00:00 axis-00408ce8dd13 [ INFO    ] parhand[594]: Updated configuration file /etc/sysconfig/image_source.conf.
+2019-09-11T11:58:08.606+00:00 axis-00408ce8dd13 [ INFO    ] parhand[594]: Updated configuration file /etc/sysconfig/image_source.conf.
+2019-09-11T11:58:10.121+00:00 axis-00408ce8dd13 [ WARNING ] parhand[594]: /usr/sbin/resolution_update[13064]: waited 0s on /var/lock/init.d/resolution_update.lock (resolution_upda[13046])
+2019-09-11T11:58:11.165+00:00 axis-00408ce8dd13 [ WARNING ] parhand[594]: /usr/sbin/resolution_update[13064]: waited 1s on /var/lock/init.d/resolution_update.lock (resolution_upda[13046])
+2019-09-11T11:58:12.347+00:00 axis-00408ce8dd13 [ INFO    ] image2d[550]: MaxSlowShutter <= 22724 microseconds
+2019-09-11T11:58:12.348+00:00 axis-00408ce8dd13 [ INFO    ] image2d[550]: MaxExposureTime <= 22724 microseconds
+2019-09-11T11:58:12.349+00:00 axis-00408ce8dd13 [ INFO    ] image2d[550]: ManualShutter <= 22724 microseconds
+2019-09-11T11:58:12.352+00:00 axis-00408ce8dd13 [ INFO    ] image2d[550]: MinExposureTime >= 4329 microseconds
+2019-09-11T11:58:12.354+00:00 axis-00408ce8dd13 [ INFO    ] image2d[550]: MaxFastShutter >= 4329 microseconds
+2019-09-11T11:58:16.259+00:00 axis-00408ce8dd13 [ INFO    ] image2d[550]: MaxExposureTime <= 1475000
+2019-09-11T11:58:16.259+00:00 axis-00408ce8dd13 [ INFO    ] image2d[550]: MinExposureTime >= 33 microseconds
+2019-09-11T12:23:00.549+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Action rule "Rule 4" is starting action "Send Video Clip"
+2019-09-11T12:23:01.862+00:00 axis-00408ce8dd13 [ INFO    ] monolith[415]: Started saving stream for event "Rule 4".
+2019-09-11T12:23:01.978+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: An error occurred in "Send Video Clip" action: failed to transfer data: Couldn't connect to server
+2019-09-11T12:23:01.984+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Aborting "Send Video Clip" action
+2019-09-11T12:23:01.985+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: Action failed, retry will be done in 10 seconds
+2019-09-11T12:23:12.550+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Action rule "Rule 4" is starting action "Send Video Clip"
+2019-09-11T12:23:13.818+00:00 axis-00408ce8dd13 [ INFO    ] monolith[415]: Started saving stream for event "Rule 4".
+2019-09-11T12:23:13.921+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: An error occurred in "Send Video Clip" action: failed to transfer data: Couldn't connect to server
+2019-09-11T12:23:13.925+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Aborting "Send Video Clip" action
+2019-09-11T12:23:13.926+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: Action failed, retry will be done in 10 seconds
+2019-09-11T12:23:24.548+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Action rule "Rule 4" is starting action "Send Video Clip"
+2019-09-11T12:23:25.836+00:00 axis-00408ce8dd13 [ INFO    ] monolith[415]: Started saving stream for event "Rule 4".
+2019-09-11T12:23:25.951+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: An error occurred in "Send Video Clip" action: failed to transfer data: Couldn't connect to server
+2019-09-11T12:23:25.952+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Aborting "Send Video Clip" action
+2019-09-11T12:23:25.952+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: Action failed, retry will be done in 10 seconds
+2019-09-11T12:23:36.550+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Action rule "Rule 4" is starting action "Send Video Clip"
+2019-09-11T12:23:37.879+00:00 axis-00408ce8dd13 [ INFO    ] monolith[415]: Started saving stream for event "Rule 4".
+2019-09-11T12:23:37.983+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: An error occurred in "Send Video Clip" action: failed to transfer data: Couldn't connect to server
+2019-09-11T12:23:37.984+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Aborting "Send Video Clip" action
+2019-09-11T12:23:37.984+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: Action failed, retry will be done in 10 seconds
+2019-09-11T12:23:48.548+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Action rule "Rule 4" is starting action "Send Video Clip"
+2019-09-11T12:23:49.821+00:00 axis-00408ce8dd13 [ INFO    ] monolith[415]: Started saving stream for event "Rule 4".
+2019-09-11T12:23:49.950+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Aborting "Send Video Clip" action
+2019-09-11T12:23:49.950+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: An error occurred in "Send Video Clip" action: failed to transfer data: Couldn't connect to server
+2019-09-11T12:23:49.951+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: Action failed, retry will be done in 10 seconds
+2019-09-11T12:24:00.551+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Action rule "Rule 4" is starting action "Send Video Clip"
+2019-09-11T12:24:01.815+00:00 axis-00408ce8dd13 [ INFO    ] monolith[415]: Started saving stream for event "Rule 4".
+2019-09-11T12:24:01.944+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: An error occurred in "Send Video Clip" action: failed to transfer data: Couldn't connect to server
+2019-09-11T12:24:01.945+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Aborting "Send Video Clip" action
+2019-09-11T12:49:07.229+00:00 axis-00408ce8dd13 [ INFO    ] udhcpc[621]: Sending renew...
+2019-09-11T12:49:09.268+00:00 axis-00408ce8dd13 [ INFO    ] udhcpc[621]: Lease of 192.168.20.247 obtained, lease time 86400
+2019-09-11T12:49:09.633+00:00 axis-00408ce8dd13 [ INFO    ] udhcpc[621]: default IPv4 gateway: '192.168.20.1'.
+2019-09-11T13:58:16.836+00:00 axis-00408ce8dd13 [ INFO    ] upload.cgi: Uploaded '/tmp/server_1_0_mipsisa32r2el.eap' size:28016
+2019-09-11T13:58:18.585+00:00 axis-00408ce8dd13 [ NOTICE  ] dbus[567]: [system] Reloaded configuration
+2019-09-11T13:58:18.717+00:00 axis-00408ce8dd13 [ INFO    ] upload.cgi: Package /tmp/server_1_0_mipsisa32r2el.eap installation OK
+2019-09-11T13:59:28.963+00:00 axis-00408ce8dd13 [ INFO    ] control.cgi: calling: /etc/init.d/sdkserver start
+2019-09-11T13:59:29.259+00:00 axis-00408ce8dd13 [ INFO    ] server[0]: starting server
+2019-09-11T13:59:29.416+00:00 axis-00408ce8dd13 [ INFO    ] pre_assignment[13837]: Group One: Benjamin, Mikey and Louay
+2019-09-11T13:59:29.416+00:00 axis-00408ce8dd13 [ INFO    ] pre_assignment[13837]: server is listening...
+2019-09-11T13:59:35.644+00:00 axis-00408ce8dd13 [ INFO    ] control.cgi: Application 'server' is running already
+2019-09-11T14:00:19.421+00:00 axis-00408ce8dd13 [ INFO    ] pre_assignment[13837]: server finally accepted the CLIENT...
+2019-09-11T14:00:53.486+00:00 axis-00408ce8dd13 [ INFO    ] control.cgi: calling: /etc/init.d/sdkserver stop
+2019-09-11T14:00:53.533+00:00 axis-00408ce8dd13 [ INFO    ] server[0]: stopping server
+2019-09-11T14:01:00.676+00:00 axis-00408ce8dd13 [ INFO    ] control.cgi: Application 'server' is not running
+2019-09-11T14:01:27.917+00:00 axis-00408ce8dd13 [ INFO    ] control.cgi: calling: /etc/init.d/sdkserver start
+2019-09-11T14:01:28.217+00:00 axis-00408ce8dd13 [ INFO    ] server[0]: starting server
+2019-09-11T14:01:28.438+00:00 axis-00408ce8dd13 [ INFO    ] pre_assignment[14522]: Group One: Benjamin, Mikey and Louay
+2019-09-11T14:01:28.445+00:00 axis-00408ce8dd13 [ INFO    ] pre_assignment[14522]: Binding newly created socket t...
+2019-09-11T14:02:15.810+00:00 axis-00408ce8dd13 [ INFO    ] control.cgi: calling: /etc/init.d/sdkserver start
+2019-09-11T14:02:16.109+00:00 axis-00408ce8dd13 [ INFO    ] server[0]: starting server
+2019-09-11T14:02:16.316+00:00 axis-00408ce8dd13 [ INFO    ] pre_assignment[14746]: Group One: Benjamin, Mikey and Louay
+2019-09-11T14:02:16.317+00:00 axis-00408ce8dd13 [ INFO    ] pre_assignment[14746]: server is listening...
+2019-09-11T14:02:20.864+00:00 axis-00408ce8dd13 [ INFO    ] pre_assignment[14746]: server finally accepted the CLIENT...
+2019-09-11T14:02:27.719+00:00 axis-00408ce8dd13 [ INFO    ] kernel: potentially unexpected fatal signal 11.
+2019-09-11T14:07:40.624+00:00 axis-00408ce8dd13 [ INFO    ] upload.cgi: Uploaded '/tmp/server_1_0_mipsisa32r2el.eap' size:27812
+2019-09-11T14:07:41.808+00:00 axis-00408ce8dd13 [ NOTICE  ] dbus[567]: [system] Reloaded configuration
+2019-09-11T14:07:43.669+00:00 axis-00408ce8dd13 [ INFO    ] upload.cgi: Package /tmp/server_1_0_mipsisa32r2el.eap installation OK
+2019-09-11T14:07:43.670+00:00 axis-00408ce8dd13 [ NOTICE  ] dbus[567]: message repeated 2 times: [ [system] Reloaded configuration]
+2019-09-11T14:07:50.907+00:00 axis-00408ce8dd13 [ INFO    ] control.cgi: Application 'server' is not running
+2019-09-11T14:07:58.921+00:00 axis-00408ce8dd13 [ INFO    ] upload.cgi: Uploaded '/tmp/server_1_0_mipsisa32r2el.eap' size:27812
+2019-09-11T14:08:00.110+00:00 axis-00408ce8dd13 [ NOTICE  ] dbus[567]: [system] Reloaded configuration
+2019-09-11T14:08:01.960+00:00 axis-00408ce8dd13 [ INFO    ] upload.cgi: Package /tmp/server_1_0_mipsisa32r2el.eap installation OK
+2019-09-11T14:08:01.961+00:00 axis-00408ce8dd13 [ NOTICE  ] dbus[567]: message repeated 2 times: [ [system] Reloaded configuration]
+2019-09-11T14:08:31.667+00:00 axis-00408ce8dd13 [ INFO    ] control.cgi: calling: /etc/init.d/sdkserver start
+2019-09-11T14:08:31.966+00:00 axis-00408ce8dd13 [ INFO    ] server[0]: starting server
+2019-09-11T14:08:32.117+00:00 axis-00408ce8dd13 [ INFO    ] server[15479]: Group One: Benjamin, Mikey and Louay
+2019-09-11T14:08:32.121+00:00 axis-00408ce8dd13 [ INFO    ] server[15479]: server is listening...
+2019-09-11T14:09:03.879+00:00 axis-00408ce8dd13 [ INFO    ] server[15479]: server finally accepted the CLIENT...
+2019-09-11T14:09:03.880+00:00 axis-00408ce8dd13 [ INFO    ] server[15479]: inside function method
+2019-09-11T14:09:06.558+00:00 axis-00408ce8dd13 [ INFO    ] kernel: potentially unexpected fatal signal 11.
+2019-09-11T14:12:18.891+00:00 axis-00408ce8dd13 [ INFO    ] control.cgi: calling: /etc/init.d/sdkserver start
+2019-09-11T14:12:19.212+00:00 axis-00408ce8dd13 [ INFO    ] server[0]: starting server
+2019-09-11T14:12:19.500+00:00 axis-00408ce8dd13 [ INFO    ] server[15744]: Group One: Benjamin, Mikey and Louay
+2019-09-11T14:12:19.505+00:00 axis-00408ce8dd13 [ INFO    ] server[15744]: server is listening...
+2019-09-11T14:12:42.589+00:00 axis-00408ce8dd13 [ INFO    ] server[15744]: inside function method
+2019-09-11T14:12:42.589+00:00 axis-00408ce8dd13 [ INFO    ] server[15744]: server finally accepted the CLIENT...
+2019-09-11T14:12:54.217+00:00 axis-00408ce8dd13 [ INFO    ] kernel: potentially unexpected fatal signal 11.
+2019-09-11T14:16:00.535+00:00 axis-00408ce8dd13 [ INFO    ] upload.cgi: Uploaded '/tmp/server_1_0_mipsisa32r2el.eap' size:27527
+2019-09-11T14:16:01.745+00:00 axis-00408ce8dd13 [ NOTICE  ] dbus[567]: [system] Reloaded configuration
+2019-09-11T14:16:03.581+00:00 axis-00408ce8dd13 [ INFO    ] upload.cgi: Package /tmp/server_1_0_mipsisa32r2el.eap installation OK
+2019-09-11T14:16:03.583+00:00 axis-00408ce8dd13 [ NOTICE  ] dbus[567]: message repeated 2 times: [ [system] Reloaded configuration]
+2019-09-11T14:16:13.847+00:00 axis-00408ce8dd13 [ INFO    ] control.cgi: calling: /etc/init.d/sdkserver start
+2019-09-11T14:16:14.156+00:00 axis-00408ce8dd13 [ INFO    ] server[0]: starting server
+2019-09-11T14:16:14.377+00:00 axis-00408ce8dd13 [ INFO    ] server[16311]: Group One: Benjamin, Mikey and Louay
+2019-09-11T14:16:28.644+00:00 axis-00408ce8dd13 [ INFO    ] control.cgi: calling: /etc/init.d/sdkserver start
+2019-09-11T14:16:28.957+00:00 axis-00408ce8dd13 [ INFO    ] server[0]: starting server
+2019-09-11T14:16:29.169+00:00 axis-00408ce8dd13 [ INFO    ] server[16557]: Group One: Benjamin, Mikey and Louay
+2019-09-11T14:16:44.848+00:00 axis-00408ce8dd13 [ INFO    ] control.cgi: calling: /etc/init.d/sdkserver start
+2019-09-11T14:16:45.145+00:00 axis-00408ce8dd13 [ INFO    ] server[0]: starting server
+2019-09-11T14:16:45.334+00:00 axis-00408ce8dd13 [ INFO    ] server[16803]: Group One: Benjamin, Mikey and Louay
+2019-09-11T14:16:51.735+00:00 axis-00408ce8dd13 [ INFO    ] control.cgi: calling: /etc/init.d/sdkserver start
+2019-09-11T14:16:52.039+00:00 axis-00408ce8dd13 [ INFO    ] server[0]: starting server
+2019-09-11T14:16:52.311+00:00 axis-00408ce8dd13 [ INFO    ] server[16975]: Group One: Benjamin, Mikey and Louay
+2019-09-11T14:18:20.632+00:00 axis-00408ce8dd13 [ INFO    ] control.cgi: Application 'server' is not running
+2019-09-11T14:18:37.815+00:00 axis-00408ce8dd13 [ INFO    ] upload.cgi: Uploaded '/tmp/server_1_0_mipsisa32r2el.eap' size:27440
+2019-09-11T14:18:39.006+00:00 axis-00408ce8dd13 [ NOTICE  ] dbus[567]: [system] Reloaded configuration
+2019-09-11T14:18:40.856+00:00 axis-00408ce8dd13 [ INFO    ] upload.cgi: Package /tmp/server_1_0_mipsisa32r2el.eap installation OK
+2019-09-11T14:18:40.857+00:00 axis-00408ce8dd13 [ NOTICE  ] dbus[567]: message repeated 2 times: [ [system] Reloaded configuration]
+2019-09-11T14:18:59.296+00:00 axis-00408ce8dd13 [ INFO    ] control.cgi: calling: /etc/init.d/sdkserver start
+2019-09-11T14:18:59.605+00:00 axis-00408ce8dd13 [ INFO    ] server[0]: starting server
+2019-09-11T14:18:59.796+00:00 axis-00408ce8dd13 [ INFO    ] server[17514]: Group One: Benjamin, Mikey and Louay
+2019-09-11T14:18:59.800+00:00 axis-00408ce8dd13 [ INFO    ] server[17514]: Socket successfully created..
+2019-09-11T14:26:25.417+00:00 axis-00408ce8dd13 [ INFO    ] upload.cgi: Uploaded '/tmp/server_1_0_mipsisa32r2el.eap' size:27939
+2019-09-11T14:26:26.619+00:00 axis-00408ce8dd13 [ NOTICE  ] dbus[567]: [system] Reloaded configuration
+2019-09-11T14:26:28.453+00:00 axis-00408ce8dd13 [ INFO    ] upload.cgi: Package /tmp/server_1_0_mipsisa32r2el.eap installation OK
+2019-09-11T14:26:28.455+00:00 axis-00408ce8dd13 [ NOTICE  ] dbus[567]: message repeated 2 times: [ [system] Reloaded configuration]
+2019-09-11T14:26:52.106+00:00 axis-00408ce8dd13 [ INFO    ] control.cgi: calling: /etc/init.d/sdkserver start
+2019-09-11T14:26:52.410+00:00 axis-00408ce8dd13 [ INFO    ] server[0]: starting server
+2019-09-11T14:26:52.658+00:00 axis-00408ce8dd13 [ INFO    ] server[18050]: Group One: Benjamin, Mikey and Louay
+2019-09-11T14:26:52.659+00:00 axis-00408ce8dd13 [ INFO    ] server[18050]: Socket successfully binded..
+2019-09-11T14:26:52.659+00:00 axis-00408ce8dd13 [ INFO    ] server[18050]: Socket successfully created..
+2019-09-11T14:26:52.660+00:00 axis-00408ce8dd13 [ INFO    ] server[18050]: server is listening...
+2019-09-11T14:27:13.975+00:00 axis-00408ce8dd13 [ INFO    ] server[18050]: server finally accepted the CLIENT...
+2019-09-11T14:27:13.976+00:00 axis-00408ce8dd13 [ INFO    ] server[18050]: inside function method
+2019-09-11T14:27:23.684+00:00 axis-00408ce8dd13 [ INFO    ] server[18050]: after meassage arrived...
+2019-09-11T14:27:23.684+00:00 axis-00408ce8dd13 [ INFO    ] server[18050]: h
+2019-09-11T14:27:23.684+00:00 axis-00408ce8dd13 [ INFO    ] server[18050]: message arrived from McGyver
+2019-09-11T14:27:23.718+00:00 axis-00408ce8dd13 [ INFO    ] kernel: potentially unexpected fatal signal 11.
+2019-09-11T14:34:41.701+00:00 axis-00408ce8dd13 [ INFO    ] control.cgi: Application 'server' is not running
