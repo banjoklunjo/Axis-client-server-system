@@ -10,5 +10,4 @@ public class Main {
 		new Controller(Executors.newCachedThreadPool());
 // comment
 	}
-
 }

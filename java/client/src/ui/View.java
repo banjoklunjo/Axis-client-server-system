@@ -22,7 +22,7 @@ public class View implements ActionListener, IView {
 	private JTextField ipTextField;
 	private JTextField portTextField;
 	private JButton btnConnect;
-	private JTextField sendTextField;
+	private JTextField sendHResField, sendVResField, sendRefreshrateField;
 	private JButton btnSend;
 	private JTextArea txtAreaLog;
 	private IController controller;
@@ -39,7 +39,9 @@ public class View implements ActionListener, IView {
 			String ip = ipTextField.getText();
 			controller.connect(ip, port);
 		} else if (event.getSource() == btnSend) {
-			controller.sendMessage(sendTextField.getText());
+			controller.sendMessage(sendVResField.getText() + "," +
+					sendHResField.getText() + "," +
+					sendRefreshrateField.getText());
 		}
 	}
 
@@ -49,7 +51,9 @@ public class View implements ActionListener, IView {
 		portTextField.setEnabled(false);
 		btnConnect.setEnabled(false);
 		btnSend.setEnabled(true);
-		sendTextField.setEnabled(true);
+		sendHResField.setEnabled(true);
+		sendVResField.setEnabled(true);
+		sendRefreshrateField.setEnabled(true);
 		btnConnect.setText("Connected");
 		setLogText("Connected to the server" + "\n" + "..." + "\n" + "..." + "\n" + "...");
 	}
@@ -93,9 +97,33 @@ public class View implements ActionListener, IView {
 		initIpField();
 		initPortField();
 		initConnectBtn();
-		initSend();
 		initLogArea();
 		initWindowExitListener();
+		initResolutionRefreshrate();
+	}
+	
+	private void initResolutionRefreshrate() {
+		sendVResField = new JTextField();
+		sendHResField = new JTextField();
+		sendRefreshrateField = new JTextField();
+		
+		sendVResField.setBounds(13, 110, 50, 25);
+		sendHResField.setBounds(73, 110, 50, 25);
+		sendRefreshrateField.setBounds(133, 110, 50, 25);
+		
+		sendVResField.setEnabled(false);
+		sendHResField.setEnabled(false);
+		sendRefreshrateField.setEnabled(false);
+		
+		frame.add(sendHResField);
+		frame.add(sendVResField);
+		frame.add(sendRefreshrateField);
+		
+		btnSend = new JButton("Send Command");
+		btnSend.setBounds(13, 140, 150, 23);
+		btnSend.setEnabled(false);
+		btnSend.addActionListener(this);
+		frame.add(btnSend);
 	}
 
 	private void initIpField() {
@@ -131,17 +159,17 @@ public class View implements ActionListener, IView {
 		btnConnect.addActionListener(this);
 	}
 
-	private void initSend() {
-		sendTextField = new JTextField();
-		sendTextField.setBounds(13, 110, 250, 25);
-		sendTextField.setEnabled(false);
-		frame.add(sendTextField);
-		btnSend = new JButton("Send Message");
-		btnSend.setBounds(13, 140, 150, 23);
-		btnSend.setEnabled(false);
-		btnSend.addActionListener(this);
-		frame.add(btnSend);
-	}
+//	private void initSend() {
+//		sendTextField = new JTextField();
+//		sendTextField.setBounds(13, 110, 250, 25);
+//		sendTextField.setEnabled(false);
+//		frame.add(sendTextField);
+//		btnSend = new JButton("Send Message");
+//		btnSend.setBounds(13, 140, 150, 23);
+//		btnSend.setEnabled(false);
+//		btnSend.addActionListener(this);
+//		frame.add(btnSend);
+//	}
 
 	private void initLogArea() {
 		txtAreaLog = new JTextArea();
@@ -161,6 +189,4 @@ public class View implements ActionListener, IView {
 			}
 		});
 	}
-
-
 }
