@@ -1,111 +1,183 @@
-#include <netdb.h> 
+
 #include <syslog.h>
 #include <string.h>
-#include <netinet/in.h> 
-#include <stdlib.h> 
-#include <string.h> 
-#include <sys/socket.h> 
-#include <sys/types.h> 
-#define MAX 80 
-#define PORT 55752 
-#define SA struct sockaddr 
-  
-// Function designed for chat between client and server. 
-void func(int sockfd) 
-{ 
+#include<stdio.h>
 
-    	syslog(LOG_INFO, "inside function method");
-    	char buff[MAX]; 
-    	int n; 
-    	// infinite loop for chat 
-    	for (;;) { 
-        	bzero(buff, MAX); 
-  
-        	// read the message from client and copy it in buffer 
-        	read(sockfd, buff, sizeof(buff)); 
-        	// print buffer which contains the client contents 
-		syslog(LOG_INFO, "message arrived from McGyver");
-		syslog(LOG_INFO , buff); 
-		syslog(LOG_INFO, "after meassage arrived...");	
+#include<stdlib.h>
 
-		/**
-        	bzero(buff, MAX); 
-        	n = 0; 
-        	// copy server message in the buffer 
-        	while ((buff[n++] = getchar()) != '\n') 
-            	; 
-  
-        	// and send that buffer to client 
-        	write(sockfd, buff, sizeof(buff)); 
-  
-        	// if msg contains "Exit" then server exit and chat ended. 
-        	if (strncmp("exit", buff, 4) == 0) { 
-            		syslog("", "server exit"); 
-            		break; 
-        	} 
-		*/
-    	} 
+#include<sys/socket.h>
+
+#include<netinet/in.h>
+
+#include<string.h>
+
+#include <arpa/inet.h>
+
+#include <fcntl.h> // for open
+
+#include <unistd.h> // for close
+
+#include<pthread.h>
 
 
-} 
-  
-// Driver function 
-int main(void) 
-{ 
-    openlog ("server", LOG_CONS | LOG_PID | LOG_NDELAY, LOG_LOCAL1);
-    syslog(LOG_INFO, "Group One: Benjamin, Mikey and Louay");
+char client_message[2000];
 
-    int sockfd, connfd, len; 
-    struct sockaddr_in servaddr, cli; 
-  
-    // socket create and verification 
-    sockfd = socket(AF_INET, SOCK_STREAM, 0); 
-    if (sockfd == -1) { 
-        syslog(LOG_INFO, "socket creation failed...\n");
-        exit(0); 
-    } 
-    else
-	syslog(LOG_INFO, "Socket successfully created..\n");
+char buffer[1024];
+
+pthread_mutex_t lock = PTHREAD_MUTEX_INITIALIZER;
 
 
-    bzero(&servaddr, sizeof(servaddr)); 
-  
-    // assign IP, PORT 
-    servaddr.sin_family = AF_INET; 
-    servaddr.sin_addr.s_addr = htonl(INADDR_ANY); 
-    servaddr.sin_port = htons(PORT); 
-  
-    // Binding newly created socket to given IP and verification 
-    if ((bind(sockfd, (SA*)&servaddr, sizeof(servaddr))) != 0) { 
-  	syslog(LOG_INFO, "Binding newly created socket t...");
-	exit(0);
-    } 
-    else
-	syslog(LOG_INFO, "Socket successfully binded..\n");
-  
-    // Now server is ready to listen and verification 
-    if ((listen(sockfd, 5)) != 0) { 
-        syslog(LOG_INFO, "listen failed...");
-        exit(0); 
-    } 
-    else
-        syslog(LOG_INFO, "server is listening...");
-    len = sizeof(cli); 
-  
-    // Accept the data packet from client and verification 
-    connfd = accept(sockfd, (SA*)&cli, &len); 
-    if (connfd < 0) { 
-        syslog(LOG_INFO, "server accepted failed...\n");
-        exit(0); 
-    } 
-    else
-        syslog(LOG_INFO, "server finally accepted the CLIENT...");
-  
-    // Function for chatting between client and server 
-    func(connfd); 
-  
-    // After chatting close the socket
-    close(sockfd); 
+
+void * socketThread(void *arg)
+
+{
+	syslog(LOG_INFO, "Thread CREATED ...  \n");
+
+  int newSocket = *((int *)arg);
+
+  recv(newSocket , client_message , 2000 , 0);
+
+
+  // Send message to the client socket 
+
+  pthread_mutex_lock(&lock);
+
+  char *message = malloc(sizeof(client_message)+20);
+
+  strcpy(message,"Hello Client : ");
+
+  strcat(message,client_message);
+
+  strcat(message,"\n");
+
+  strcpy(buffer,message);
+
+  free(message);
+
+  pthread_mutex_unlock(&lock);
+
+  sleep(1);
+
+  send(newSocket,buffer,50,0);
+
+
+  syslog(LOG_INFO, buffer);
+
+  syslog(LOG_INFO, "Exit socketThread\n");
+
+  close(newSocket);
+
+  pthread_exit(NULL);
 
 }
 
+int main(){
+
+  openlog ("server", LOG_CONS | LOG_PID | LOG_NDELAY, LOG_LOCAL1);
+
+
+
+  syslog(LOG_INFO, "Server running...");
+
+  int serverSocket, newSocket;
+
+  struct sockaddr_in serverAddr;
+
+  struct sockaddr_storage serverStorage;
+
+  socklen_t addr_size;
+
+
+  //Create the socket. 
+
+  serverSocket = socket(PF_INET, SOCK_STREAM, 0);
+
+
+
+  // Configure settings of the server address struct
+
+  // Address family = Internet 
+
+  serverAddr.sin_family = AF_INET;
+
+
+
+  //Set port number, using htons function to use proper byte order 
+
+  serverAddr.sin_port = htons(55752);
+
+
+
+  //Set IP address to localhost 
+
+  serverAddr.sin_addr.s_addr = htonl(INADDR_ANY);
+
+
+
+  //Set all bits of the padding field to 0 
+
+  memset(serverAddr.sin_zero, '\0', sizeof serverAddr.sin_zero);
+
+
+
+  //Bind the address struct to the socket 
+
+  bind(serverSocket, (struct sockaddr *) &serverAddr, sizeof(serverAddr));
+
+
+
+  //Listen on the socket, with 40 max connection requests queued 
+
+  if(listen(serverSocket,50)==0)
+    syslog(LOG_INFO, "Listening\n");
+
+  else
+    syslog(LOG_INFO, "not Listening\n");
+
+
+
+    pthread_t tid[60];
+
+    int i = 0;
+
+    while(1)
+
+    {
+
+        //Accept call creates a new socket for the incoming connection
+
+        addr_size = sizeof serverStorage;
+
+        newSocket = accept(serverSocket, (struct sockaddr *) &serverStorage, &addr_size);
+
+        //for each client request creates a thread and assign the client request to it to process
+
+       //so the main thread can entertain next request
+
+        if( pthread_create(&tid[i], NULL, socketThread, &newSocket) != 0 )
+
+           syslog(LOG_INFO, "Failed to create thread \n");
+
+        if( i >= 50)
+
+        {
+
+          i = 0;
+
+          while(i < 50)
+
+          { 
+
+            pthread_join(tid[i++],NULL);
+
+          }
+
+          i = 0;
+
+        }
+
+    }
+
+  return 0;
+
+}
