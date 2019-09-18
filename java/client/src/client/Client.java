@@ -54,6 +54,7 @@ public class Client implements Runnable {
 			System.out.println("readServerImage() --> Recieved image from server -> width = " + 
 			String.valueOf(bufferedImage.getWidth()) + 
 			" height = " + String.valueOf(bufferedImage.getHeight()));
+			controller.updateImage(bufferedImage);
 		} catch (IOException e) {
 			System.out.println("readServerImage() --> Error = " + e.getMessage());
 			e.printStackTrace();

@@ -7,10 +7,14 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+import java.awt.image.BufferedImage;
 
 import javax.swing.BorderFactory;
+import javax.swing.Icon;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
@@ -26,6 +30,7 @@ public class View implements ActionListener, IView {
 	private JButton btnSend;
 	private JTextArea txtAreaLog;
 	private IController controller;
+	private JLabel imgJlabel;
 
 	
 	public View(IController controller) {
@@ -84,7 +89,7 @@ public class View implements ActionListener, IView {
 
 	public void display() {
 		frame = new JFrame();
-		frame.setBounds(100, 100, 300, 420);
+		frame.setBounds(100, 100, 600, 420);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setLayout(null);
 		frame.setTitle("Client");
@@ -100,8 +105,15 @@ public class View implements ActionListener, IView {
 		initLogArea();
 		initWindowExitListener();
 		initResolutionRefreshrate();
+		initImageLabel();
 	}
 	
+	private void initImageLabel() {
+		imgJlabel = new JLabel("THIS IS A JLABEL TEST");
+		imgJlabel.setBounds(400, 110, 400, 400);
+		frame.add(imgJlabel);
+	}
+
 	private void initResolutionRefreshrate() {
 		sendVResField = new JTextField();
 		sendHResField = new JTextField();
@@ -188,5 +200,11 @@ public class View implements ActionListener, IView {
 				e.getWindow().dispose();
 			}
 		});
+	}
+
+	@Override
+	public void updateImage(BufferedImage image) {
+		imgJlabel.setIcon(new ImageIcon(image));
+		//frame.invalidate();
 	}
 }
