@@ -6,6 +6,7 @@ import java.net.Socket;
 import java.util.concurrent.ExecutorService;
 
 import ui.IView;
+import ui.ImageTest;
 import ui.View;
 
 public class Controller implements IController {
@@ -13,6 +14,7 @@ public class Controller implements IController {
 	private Client client;
 	private ExecutorService executor;
 	private Socket socket;
+	private ImageTest imageTest;
 
 	public Controller(ExecutorService executor) {
 		this.executor = executor;
@@ -72,8 +74,6 @@ public class Controller implements IController {
 	}
 	
 	
-	
-	
 
 	@Override
 	public void receivedMessage(String message) {
@@ -82,7 +82,9 @@ public class Controller implements IController {
 
 	@Override
 	public void updateImage(BufferedImage image) {
-		view.updateImage(image);
+		imageTest = new ImageTest(image);
+		
+		//view.updateImage(image);
 		
 	}
 
