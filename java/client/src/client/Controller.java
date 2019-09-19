@@ -1,10 +1,12 @@
 package client;
 
+import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.net.Socket;
 import java.util.concurrent.ExecutorService;
 
 import ui.IView;
+import ui.ImageTest;
 import ui.View;
 
 public class Controller implements IController {
@@ -12,6 +14,7 @@ public class Controller implements IController {
 	private Client client;
 	private ExecutorService executor;
 	private Socket socket;
+	private ImageTest imageTest;
 
 	public Controller(ExecutorService executor) {
 		this.executor = executor;
@@ -69,10 +72,20 @@ public class Controller implements IController {
 
 		executor.shutdown();
 	}
+	
+	
 
 	@Override
 	public void receivedMessage(String message) {
 		view.onMessageReceived(message);
+	}
+
+	@Override
+	public void updateImage(BufferedImage image) {
+		imageTest = new ImageTest(image);
+		
+		//view.updateImage(image);
+		
 	}
 
 }
