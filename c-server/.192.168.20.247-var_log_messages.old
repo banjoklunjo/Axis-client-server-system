@@ -64,268 +64,295 @@
 2019-09-17T12:24:04.900+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: An error occurred in "Send Video Clip" action: failed to transfer data: Couldn't connect to server
 2019-09-18T12:23:01.996+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: An error occurred in "Send Video Clip" action: failed to transfer data: Couldn't connect to server
 2019-09-18T12:23:02.003+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: Action failed, retry will be done in 10 seconds
-2019-09-18T12:23:13.819+00:00 axis-00408ce8dd13 [ INFO    ] monolith[415]: Started saving stream for event "Rule 4".
 2019-09-18T12:23:13.932+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: An error occurred in "Send Video Clip" action: failed to transfer data: Couldn't connect to server
-2019-09-18T12:23:13.935+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Aborting "Send Video Clip" action
 2019-09-18T12:23:13.938+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: Action failed, retry will be done in 10 seconds
-2019-09-18T12:23:24.551+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Action rule "Rule 4" is starting action "Send Video Clip"
-2019-09-18T12:23:25.816+00:00 axis-00408ce8dd13 [ INFO    ] monolith[415]: Started saving stream for event "Rule 4".
 2019-09-18T12:23:25.929+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: An error occurred in "Send Video Clip" action: failed to transfer data: Couldn't connect to server
-2019-09-18T12:23:25.933+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Aborting "Send Video Clip" action
 2019-09-18T12:23:25.935+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: Action failed, retry will be done in 10 seconds
-2019-09-18T12:23:36.549+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Action rule "Rule 4" is starting action "Send Video Clip"
-2019-09-18T12:23:37.814+00:00 axis-00408ce8dd13 [ INFO    ] monolith[415]: Started saving stream for event "Rule 4".
 2019-09-18T12:23:37.933+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: An error occurred in "Send Video Clip" action: failed to transfer data: Couldn't connect to server
-2019-09-18T12:23:37.937+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Aborting "Send Video Clip" action
 2019-09-18T12:23:37.940+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: Action failed, retry will be done in 10 seconds
-2019-09-18T12:23:48.550+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Action rule "Rule 4" is starting action "Send Video Clip"
-2019-09-18T12:23:49.800+00:00 axis-00408ce8dd13 [ INFO    ] monolith[415]: Started saving stream for event "Rule 4".
 2019-09-18T12:23:49.931+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: An error occurred in "Send Video Clip" action: failed to transfer data: Couldn't connect to server
-2019-09-18T12:23:49.932+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Aborting "Send Video Clip" action
 2019-09-18T12:23:49.932+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: Action failed, retry will be done in 10 seconds
-2019-09-18T12:24:00.549+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Action rule "Rule 4" is starting action "Send Video Clip"
-2019-09-18T12:24:01.859+00:00 axis-00408ce8dd13 [ INFO    ] monolith[415]: Started saving stream for event "Rule 4".
 2019-09-18T12:24:01.962+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: An error occurred in "Send Video Clip" action: failed to transfer data: Couldn't connect to server
-2019-09-18T12:24:01.968+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Aborting "Send Video Clip" action
-2019-09-18T12:49:48.447+00:00 axis-00408ce8dd13 [ INFO    ] udhcpc[621]: Sending renew...
-2019-09-18T14:24:29.415+00:00 axis-00408ce8dd13 [ NOTICE  ] dbus[567]: [system] Reloaded configuration
-2019-09-18T14:24:29.721+00:00 axis-00408ce8dd13 [ NOTICE  ] dbus[567]: [system] Reloaded configuration
-2019-09-18T14:25:08.125+00:00 axis-00408ce8dd13 [ INFO    ] upload.cgi: Uploaded '/tmp/server_1_0_mipsisa32r2el.eap' size:40230
-2019-09-18T14:25:09.868+00:00 axis-00408ce8dd13 [ NOTICE  ] dbus[567]: [system] Reloaded configuration
-2019-09-18T14:25:10.023+00:00 axis-00408ce8dd13 [ INFO    ] upload.cgi: Package /tmp/server_1_0_mipsisa32r2el.eap installation OK
-2019-09-18T14:25:33.076+00:00 axis-00408ce8dd13 [ INFO    ] control.cgi: calling: /etc/init.d/sdkserver start
-2019-09-18T14:25:33.417+00:00 axis-00408ce8dd13 [ INFO    ] server[0]: starting server
-2019-09-18T14:25:33.727+00:00 axis-00408ce8dd13 [ INFO    ] server[18579]: Server running...
-2019-09-18T14:25:33.757+00:00 axis-00408ce8dd13 [ INFO    ] server[18579]: Listening
 2019-09-18T14:27:35.654+00:00 axis-00408ce8dd13 [ EMERG   ] server[18579]: 1280x960,1280x720,1024x768,1024x640,800x600,800x500,800x450,640x480,640x400,640x360,480x360,480x300,480x270,320x240,320x200,320x180,240x180,176x144,160x120,160x100,160x90
-2019-09-18T14:27:35.655+00:00 axis-00408ce8dd13 [ INFO    ] server[18579]: Thread CREATED ...
-2019-09-18T14:28:36.314+00:00 axis-00408ce8dd13 [ INFO    ] server[18579]: Hello Client : 1280,960,20
-2019-09-18T14:28:36.315+00:00 axis-00408ce8dd13 [ INFO    ] server[18579]: Exit socketThread
-2019-09-18T18:39:37.084+00:00 axis-00408ce8dd13 [ INFO    ] control.cgi: calling: /etc/init.d/sdkserver stop
-2019-09-18T18:39:37.145+00:00 axis-00408ce8dd13 [ INFO    ] server[0]: stopping server
-2019-09-18T18:49:48.198+00:00 axis-00408ce8dd13 [ INFO    ] udhcpc[621]: Sending renew...
-2019-09-18T18:49:50.228+00:00 axis-00408ce8dd13 [ INFO    ] udhcpc[621]: Lease of 192.168.20.247 obtained, lease time 86400
-2019-09-18T18:49:50.591+00:00 axis-00408ce8dd13 [ INFO    ] udhcpc[621]: default IPv4 gateway: '192.168.20.1'.
-2019-09-19T06:49:50.837+00:00 axis-00408ce8dd13 [ INFO    ] udhcpc[621]: Sending renew...
-2019-09-19T12:23:00.550+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Action rule "Rule 4" is starting action "Send Video Clip"
-2019-09-19T12:23:01.854+00:00 axis-00408ce8dd13 [ INFO    ] monolith[415]: Started saving stream for event "Rule 4".
-2019-09-19T12:23:01.989+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Aborting "Send Video Clip" action
 2019-09-19T12:23:01.989+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: An error occurred in "Send Video Clip" action: failed to transfer data: Couldn't connect to server
 2019-09-19T12:23:01.990+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: Action failed, retry will be done in 10 seconds
-2019-09-19T12:23:12.547+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Action rule "Rule 4" is starting action "Send Video Clip"
-2019-09-19T12:23:13.796+00:00 axis-00408ce8dd13 [ INFO    ] monolith[415]: Started saving stream for event "Rule 4".
 2019-09-19T12:23:13.922+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: An error occurred in "Send Video Clip" action: failed to transfer data: Couldn't connect to server
-2019-09-19T12:23:13.927+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Aborting "Send Video Clip" action
 2019-09-19T12:23:13.929+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: Action failed, retry will be done in 10 seconds
-2019-09-19T12:23:24.547+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Action rule "Rule 4" is starting action "Send Video Clip"
-2019-09-19T12:23:25.799+00:00 axis-00408ce8dd13 [ INFO    ] monolith[415]: Started saving stream for event "Rule 4".
 2019-09-19T12:23:25.896+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: An error occurred in "Send Video Clip" action: failed to transfer data: Couldn't connect to server
-2019-09-19T12:23:25.897+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Aborting "Send Video Clip" action
 2019-09-19T12:23:25.905+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: Action failed, retry will be done in 10 seconds
-2019-09-19T12:23:36.549+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Action rule "Rule 4" is starting action "Send Video Clip"
-2019-09-19T12:23:37.799+00:00 axis-00408ce8dd13 [ INFO    ] monolith[415]: Started saving stream for event "Rule 4".
 2019-09-19T12:23:37.922+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: An error occurred in "Send Video Clip" action: failed to transfer data: Couldn't connect to server
-2019-09-19T12:23:37.926+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Aborting "Send Video Clip" action
 2019-09-19T12:23:37.930+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: Action failed, retry will be done in 10 seconds
-2019-09-19T12:23:48.547+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Action rule "Rule 4" is starting action "Send Video Clip"
-2019-09-19T12:23:49.805+00:00 axis-00408ce8dd13 [ INFO    ] monolith[415]: Started saving stream for event "Rule 4".
 2019-09-19T12:23:49.921+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: An error occurred in "Send Video Clip" action: failed to transfer data: Couldn't connect to server
-2019-09-19T12:23:49.926+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Aborting "Send Video Clip" action
 2019-09-19T12:23:49.928+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: Action failed, retry will be done in 10 seconds
-2019-09-19T12:24:00.550+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Action rule "Rule 4" is starting action "Send Video Clip"
-2019-09-19T12:24:01.798+00:00 axis-00408ce8dd13 [ INFO    ] monolith[415]: Started saving stream for event "Rule 4".
-2019-09-19T12:24:01.923+00:00 axis-00408ce8dd13 [ NOTICE  ] actionengined[1053]: Aborting "Send Video Clip" action
 2019-09-19T12:24:01.923+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: An error occurred in "Send Video Clip" action: failed to transfer data: Couldn't connect to server
-2019-09-19T12:30:55.418+00:00 axis-00408ce8dd13 [ INFO    ] upload.cgi: Uploaded '/tmp/hello_glib_1_0_mipsisa32r2el.eap' size:78562
-2019-09-19T12:30:56.594+00:00 axis-00408ce8dd13 [ NOTICE  ] dbus[567]: [system] Reloaded configuration
-2019-09-19T12:30:56.692+00:00 axis-00408ce8dd13 [ INFO    ] upload.cgi: Web server restart will be required.
-2019-09-19T12:30:57.035+00:00 axis-00408ce8dd13 [ NOTICE  ] dbus[567]: [system] Reloaded configuration
-2019-09-19T12:30:58.907+00:00 axis-00408ce8dd13 [ NOTICE  ] dbus[567]: [system] Reloaded configuration
-2019-09-19T12:30:59.145+00:00 axis-00408ce8dd13 [ INFO    ] upload.cgi: Web server restart will be required.
-2019-09-19T12:30:59.166+00:00 axis-00408ce8dd13 [ INFO    ] upload.cgi: Package /tmp/hello_glib_1_0_mipsisa32r2el.eap installation OK
-2019-09-19T12:30:59.210+00:00 axis-00408ce8dd13 [ INFO    ] upload.cgi: Restarting the web server.
-2019-09-19T12:30:59.283+00:00 axis-00408ce8dd13 [ INFO    ] systemd[1]: Stopping httpd (Apache)...
-2019-09-19T12:31:04.410+00:00 axis-00408ce8dd13 [ INFO    ] systemd[1]: Starting httpd (Apache)...
-2019-09-19T12:31:05.816+00:00 axis-00408ce8dd13 [ INFO    ] systemd[1]: Started httpd (Apache).
-2019-09-19T12:34:33.007+00:00 axis-00408ce8dd13 [ INFO    ] upload.cgi: Uploaded '/tmp/hello_glib_1_0_mipsisa32r2el.eap' size:78592
-2019-09-19T12:34:34.201+00:00 axis-00408ce8dd13 [ NOTICE  ] dbus[567]: [system] Reloaded configuration
-2019-09-19T12:34:34.311+00:00 axis-00408ce8dd13 [ INFO    ] upload.cgi: Web server restart will be required.
-2019-09-19T12:34:34.654+00:00 axis-00408ce8dd13 [ NOTICE  ] dbus[567]: [system] Reloaded configuration
-2019-09-19T12:34:36.710+00:00 axis-00408ce8dd13 [ NOTICE  ] dbus[567]: [system] Reloaded configuration
-2019-09-19T12:34:36.844+00:00 axis-00408ce8dd13 [ INFO    ] upload.cgi: Web server restart will be required.
-2019-09-19T12:34:36.865+00:00 axis-00408ce8dd13 [ INFO    ] upload.cgi: Package /tmp/hello_glib_1_0_mipsisa32r2el.eap installation OK
-2019-09-19T12:34:36.893+00:00 axis-00408ce8dd13 [ INFO    ] upload.cgi: Restarting the web server.
-2019-09-19T12:34:36.988+00:00 axis-00408ce8dd13 [ INFO    ] systemd[1]: Stopping httpd (Apache)...
-2019-09-19T12:34:42.148+00:00 axis-00408ce8dd13 [ INFO    ] systemd[1]: Starting httpd (Apache)...
-2019-09-19T12:34:43.535+00:00 axis-00408ce8dd13 [ INFO    ] systemd[1]: Started httpd (Apache).
-2019-09-19T12:38:45.181+00:00 axis-00408ce8dd13 [ INFO    ] upload.cgi: Uploaded '/tmp/hello_glib_1_0_mipsisa32r2el.eap' size:78562
-2019-09-19T12:38:46.404+00:00 axis-00408ce8dd13 [ NOTICE  ] dbus[567]: [system] Reloaded configuration
-2019-09-19T12:38:46.489+00:00 axis-00408ce8dd13 [ INFO    ] upload.cgi: Web server restart will be required.
-2019-09-19T12:38:46.881+00:00 axis-00408ce8dd13 [ NOTICE  ] dbus[567]: [system] Reloaded configuration
-2019-09-19T12:38:48.929+00:00 axis-00408ce8dd13 [ NOTICE  ] dbus[567]: [system] Reloaded configuration
-2019-09-19T12:38:49.128+00:00 axis-00408ce8dd13 [ INFO    ] upload.cgi: Web server restart will be required.
-2019-09-19T12:38:49.150+00:00 axis-00408ce8dd13 [ INFO    ] upload.cgi: Package /tmp/hello_glib_1_0_mipsisa32r2el.eap installation OK
-2019-09-19T12:38:49.233+00:00 axis-00408ce8dd13 [ INFO    ] upload.cgi: Restarting the web server.
-2019-09-19T12:38:49.376+00:00 axis-00408ce8dd13 [ INFO    ] systemd[1]: Stopping httpd (Apache)...
-2019-09-19T12:38:54.529+00:00 axis-00408ce8dd13 [ INFO    ] systemd[1]: Starting httpd (Apache)...
-2019-09-19T12:38:55.905+00:00 axis-00408ce8dd13 [ INFO    ] systemd[1]: Started httpd (Apache).
-2019-09-19T12:49:50.878+00:00 axis-00408ce8dd13 [ INFO    ] udhcpc[621]: Sending renew...
-2019-09-19T12:49:58.929+00:00 axis-00408ce8dd13 [ INFO    ] control.cgi: calling: /etc/init.d/sdkhello_glib start
-2019-09-19T12:49:59.241+00:00 axis-00408ce8dd13 [ INFO    ] hello_glib[0]: starting hello_glib
-2019-09-19T12:52:38.275+00:00 axis-00408ce8dd13 [ INFO    ] upload.cgi: Uploaded '/tmp/server_1_0_mipsisa32r2el.eap' size:40321
-2019-09-19T12:52:39.501+00:00 axis-00408ce8dd13 [ NOTICE  ] dbus[567]: [system] Reloaded configuration
-2019-09-19T12:52:41.426+00:00 axis-00408ce8dd13 [ INFO    ] upload.cgi: Package /tmp/server_1_0_mipsisa32r2el.eap installation OK
-2019-09-19T12:52:41.427+00:00 axis-00408ce8dd13 [ NOTICE  ] dbus[567]: message repeated 2 times: [ [system] Reloaded configuration]
-2019-09-19T12:52:51.803+00:00 axis-00408ce8dd13 [ INFO    ] control.cgi: calling: /etc/init.d/sdkserver start
-2019-09-19T12:52:52.133+00:00 axis-00408ce8dd13 [ INFO    ] server[0]: starting server
-2019-09-19T12:52:52.338+00:00 axis-00408ce8dd13 [ INFO    ] server[21978]: Server running...
-2019-09-19T12:52:52.343+00:00 axis-00408ce8dd13 [ INFO    ] server[21978]: Listening
-2019-09-19T12:53:21.252+00:00 axis-00408ce8dd13 [ INFO    ] server[21978]: Thread CREATED ...
-2019-09-19T12:53:57.161+00:00 axis-00408ce8dd13 [ INFO    ] server[21978]: Hello Client : resolution=320x240&fps=10
-2019-09-19T12:53:57.162+00:00 axis-00408ce8dd13 [ INFO    ] server[21978]: Exit socketThread
-2019-09-19T12:55:04.887+00:00 axis-00408ce8dd13 [ INFO    ] control.cgi: calling: /etc/init.d/sdkserver stop
-2019-09-19T12:55:04.935+00:00 axis-00408ce8dd13 [ INFO    ] server[0]: stopping server
-2019-09-19T12:56:54.421+00:00 axis-00408ce8dd13 [ INFO    ] upload.cgi: Uploaded '/tmp/server_1_0_mipsisa32r2el.eap' size:40320
-2019-09-19T12:56:55.634+00:00 axis-00408ce8dd13 [ NOTICE  ] dbus[567]: [system] Reloaded configuration
-2019-09-19T12:56:57.533+00:00 axis-00408ce8dd13 [ INFO    ] upload.cgi: Package /tmp/server_1_0_mipsisa32r2el.eap installation OK
-2019-09-19T12:56:57.535+00:00 axis-00408ce8dd13 [ NOTICE  ] dbus[567]: message repeated 2 times: [ [system] Reloaded configuration]
-2019-09-19T12:57:03.340+00:00 axis-00408ce8dd13 [ INFO    ] control.cgi: calling: /etc/init.d/sdkserver start
-2019-09-19T12:57:03.675+00:00 axis-00408ce8dd13 [ INFO    ] server[0]: starting server
-2019-09-19T12:57:03.883+00:00 axis-00408ce8dd13 [ INFO    ] server[22639]: Listening
-2019-09-19T12:57:03.883+00:00 axis-00408ce8dd13 [ INFO    ] server[22639]: Server running...
-2019-09-19T12:57:34.399+00:00 axis-00408ce8dd13 [ INFO    ] server[22639]: Thread CREATED ...
 2019-09-19T12:57:38.958+00:00 axis-00408ce8dd13 [ INFO    ] kernel: potentially unexpected fatal signal 11.
-2019-09-19T12:58:44.910+00:00 axis-00408ce8dd13 [ INFO    ] control.cgi: Application 'server' is not running
-2019-09-19T12:58:52.964+00:00 axis-00408ce8dd13 [ INFO    ] control.cgi: calling: /etc/init.d/sdkserver start
-2019-09-19T12:58:53.302+00:00 axis-00408ce8dd13 [ INFO    ] server[0]: starting server
-2019-09-19T12:58:53.610+00:00 axis-00408ce8dd13 [ INFO    ] server[23123]: Server running...
-2019-09-19T12:58:53.611+00:00 axis-00408ce8dd13 [ INFO    ] server[23123]: Listening
-2019-09-19T12:59:01.303+00:00 axis-00408ce8dd13 [ INFO    ] server[23123]: Thread CREATED ...
 2019-09-19T12:59:09.856+00:00 axis-00408ce8dd13 [ INFO    ] kernel: potentially unexpected fatal signal 11.
-2019-09-19T13:00:15.246+00:00 axis-00408ce8dd13 [ INFO    ] control.cgi: Application 'server' is not running
-2019-09-19T13:00:26.879+00:00 axis-00408ce8dd13 [ INFO    ] upload.cgi: Uploaded '/tmp/server_1_0_mipsisa32r2el.eap' size:40323
-2019-09-19T13:00:28.109+00:00 axis-00408ce8dd13 [ NOTICE  ] dbus[567]: [system] Reloaded configuration
-2019-09-19T13:00:30.040+00:00 axis-00408ce8dd13 [ INFO    ] upload.cgi: Package /tmp/server_1_0_mipsisa32r2el.eap installation OK
-2019-09-19T13:00:30.042+00:00 axis-00408ce8dd13 [ NOTICE  ] dbus[567]: message repeated 2 times: [ [system] Reloaded configuration]
-2019-09-19T13:01:48.151+00:00 axis-00408ce8dd13 [ INFO    ] control.cgi: calling: /etc/init.d/sdkserver start
-2019-09-19T13:01:48.480+00:00 axis-00408ce8dd13 [ INFO    ] server[0]: starting server
-2019-09-19T13:01:48.661+00:00 axis-00408ce8dd13 [ INFO    ] server[23803]: Server running...
-2019-09-19T13:01:48.665+00:00 axis-00408ce8dd13 [ INFO    ] server[23803]: Listening
-2019-09-19T13:02:35.033+00:00 axis-00408ce8dd13 [ INFO    ] server[23803]: Thread CREATED ...
-2019-09-19T13:02:43.981+00:00 axis-00408ce8dd13 [ INFO    ] server[23803]: Hello Client : resolution=1024x768&fps=1
-2019-09-19T13:02:43.982+00:00 axis-00408ce8dd13 [ INFO    ] server[23803]: Exit socketThread
-2019-09-19T13:03:30.663+00:00 axis-00408ce8dd13 [ INFO    ] control.cgi: calling: /etc/init.d/sdkserver stop
-2019-09-19T13:03:30.715+00:00 axis-00408ce8dd13 [ INFO    ] server[0]: stopping server
-2019-09-19T13:03:48.878+00:00 axis-00408ce8dd13 [ INFO    ] upload.cgi: Uploaded '/tmp/server_1_0_mipsisa32r2el.eap' size:40334
-2019-09-19T13:03:50.100+00:00 axis-00408ce8dd13 [ NOTICE  ] dbus[567]: [system] Reloaded configuration
-2019-09-19T13:03:51.996+00:00 axis-00408ce8dd13 [ INFO    ] upload.cgi: Package /tmp/server_1_0_mipsisa32r2el.eap installation OK
-2019-09-19T13:03:51.998+00:00 axis-00408ce8dd13 [ NOTICE  ] dbus[567]: message repeated 2 times: [ [system] Reloaded configuration]
-2019-09-19T13:03:57.317+00:00 axis-00408ce8dd13 [ INFO    ] control.cgi: calling: /etc/init.d/sdkserver start
-2019-09-19T13:03:57.652+00:00 axis-00408ce8dd13 [ INFO    ] server[0]: starting server
-2019-09-19T13:03:57.829+00:00 axis-00408ce8dd13 [ INFO    ] server[24222]: Server running...
-2019-09-19T13:03:57.830+00:00 axis-00408ce8dd13 [ INFO    ] server[24222]: Listening
-2019-09-19T13:04:56.984+00:00 axis-00408ce8dd13 [ INFO    ] control.cgi: calling: /etc/init.d/sdkserver stop
-2019-09-19T13:04:57.033+00:00 axis-00408ce8dd13 [ INFO    ] server[0]: stopping server
-2019-09-19T13:05:06.840+00:00 axis-00408ce8dd13 [ INFO    ] control.cgi: calling: /etc/init.d/sdkserver start
-2019-09-19T13:05:07.187+00:00 axis-00408ce8dd13 [ INFO    ] server[0]: starting server
-2019-09-19T13:05:07.388+00:00 axis-00408ce8dd13 [ INFO    ] server[24572]: Server running...
-2019-09-19T13:05:07.392+00:00 axis-00408ce8dd13 [ INFO    ] server[24572]: Listening
-2019-09-19T13:05:20.046+00:00 axis-00408ce8dd13 [ INFO    ] server[24572]: Thread CREATED ...
-2019-09-19T13:05:26.870+00:00 axis-00408ce8dd13 [ INFO    ] server[24572]: Hello Client : resolution=1024x768&fps=15
-2019-09-19T13:05:26.871+00:00 axis-00408ce8dd13 [ INFO    ] server[24572]: Exit socketThread
-2019-09-19T13:06:24.180+00:00 axis-00408ce8dd13 [ INFO    ] control.cgi: calling: /etc/init.d/sdkhello_glib stop
-2019-09-19T13:06:24.234+00:00 axis-00408ce8dd13 [ INFO    ] hello_glib[0]: stopping hello_glib
-2019-09-19T13:06:42.525+00:00 axis-00408ce8dd13 [ INFO    ] server[24572]: Thread CREATED ...
-2019-09-19T13:06:46.596+00:00 axis-00408ce8dd13 [ INFO    ] server[24572]: Hello Client : resolution=1024x768&fps=15
-2019-09-19T13:06:46.597+00:00 axis-00408ce8dd13 [ INFO    ] server[24572]: Exit socketThread
-2019-09-19T13:07:17.482+00:00 axis-00408ce8dd13 [ INFO    ] server[24572]: Thread CREATED ...
-2019-09-19T13:07:22.662+00:00 axis-00408ce8dd13 [ INFO    ] server[24572]: Hello Client : resolution=1024x768&fps=15
-2019-09-19T13:07:22.664+00:00 axis-00408ce8dd13 [ INFO    ] server[24572]: Exit socketThread
-2019-09-19T13:07:38.347+00:00 axis-00408ce8dd13 [ INFO    ] control.cgi: calling: /etc/init.d/sdkserver stop
-2019-09-19T13:07:38.400+00:00 axis-00408ce8dd13 [ INFO    ] server[0]: stopping server
-2019-09-19T13:07:39.557+00:00 axis-00408ce8dd13 [ NOTICE  ] dbus[567]: [system] Reloaded configuration
-2019-09-19T13:07:39.989+00:00 axis-00408ce8dd13 [ NOTICE  ] dbus[567]: [system] Reloaded configuration
-2019-09-19T13:08:21.595+00:00 axis-00408ce8dd13 [ INFO    ] upload.cgi: Uploaded '/tmp/server_1_0_mipsisa32r2el.eap' size:40322
-2019-09-19T13:08:23.223+00:00 axis-00408ce8dd13 [ NOTICE  ] dbus[567]: [system] Reloaded configuration
-2019-09-19T13:08:23.468+00:00 axis-00408ce8dd13 [ INFO    ] upload.cgi: Package /tmp/server_1_0_mipsisa32r2el.eap installation OK
-2019-09-19T13:08:46.215+00:00 axis-00408ce8dd13 [ INFO    ] control.cgi: calling: /etc/init.d/sdkserver start
-2019-09-19T13:08:46.539+00:00 axis-00408ce8dd13 [ INFO    ] server[0]: starting server
-2019-09-19T13:08:46.813+00:00 axis-00408ce8dd13 [ INFO    ] server[25520]: Listening
-2019-09-19T13:08:46.813+00:00 axis-00408ce8dd13 [ INFO    ] server[25520]: Server running...
-2019-09-19T13:09:11.238+00:00 axis-00408ce8dd13 [ INFO    ] server[25520]: Thread CREATED ...
-2019-09-19T13:09:16.787+00:00 axis-00408ce8dd13 [ INFO    ] server[25520]: Hello Client : resolution=320x240&fps=10
-2019-09-19T13:09:16.788+00:00 axis-00408ce8dd13 [ INFO    ] server[25520]: Exit socketThread
-2019-09-19T13:09:32.200+00:00 axis-00408ce8dd13 [ INFO    ] control.cgi: calling: /etc/init.d/sdkserver stop
-2019-09-19T13:09:32.250+00:00 axis-00408ce8dd13 [ INFO    ] server[0]: stopping server
-2019-09-19T13:09:41.598+00:00 axis-00408ce8dd13 [ NOTICE  ] dbus[567]: [system] Reloaded configuration
-2019-09-19T13:09:41.936+00:00 axis-00408ce8dd13 [ NOTICE  ] dbus[567]: [system] Reloaded configuration
-2019-09-19T13:10:19.220+00:00 axis-00408ce8dd13 [ INFO    ] upload.cgi: Uploaded '/tmp/server_1_0_mipsisa32r2el.eap' size:40323
-2019-09-19T13:10:20.958+00:00 axis-00408ce8dd13 [ NOTICE  ] dbus[567]: [system] Reloaded configuration
-2019-09-19T13:10:21.058+00:00 axis-00408ce8dd13 [ INFO    ] upload.cgi: Package /tmp/server_1_0_mipsisa32r2el.eap installation OK
-2019-09-19T13:14:16.404+00:00 axis-00408ce8dd13 [ INFO    ] control.cgi: calling: /etc/init.d/sdkserver start
-2019-09-19T13:14:16.745+00:00 axis-00408ce8dd13 [ INFO    ] server[0]: starting server
-2019-09-19T13:14:16.965+00:00 axis-00408ce8dd13 [ INFO    ] server[26238]: Server running...
-2019-09-19T13:14:16.969+00:00 axis-00408ce8dd13 [ INFO    ] server[26238]: Listening
-2019-09-19T13:16:25.758+00:00 axis-00408ce8dd13 [ INFO    ] control.cgi: calling: /etc/init.d/sdkserver stop
-2019-09-19T13:16:25.808+00:00 axis-00408ce8dd13 [ INFO    ] server[0]: stopping server
-2019-09-19T13:16:34.266+00:00 axis-00408ce8dd13 [ NOTICE  ] dbus[567]: [system] Reloaded configuration
-2019-09-19T13:16:34.602+00:00 axis-00408ce8dd13 [ NOTICE  ] dbus[567]: [system] Reloaded configuration
-2019-09-19T13:16:41.590+00:00 axis-00408ce8dd13 [ INFO    ] upload.cgi: Uploaded '/tmp/server_1_0_mipsisa32r2el.eap' size:40323
-2019-09-19T13:16:43.256+00:00 axis-00408ce8dd13 [ NOTICE  ] dbus[567]: [system] Reloaded configuration
-2019-09-19T13:16:43.447+00:00 axis-00408ce8dd13 [ INFO    ] upload.cgi: Package /tmp/server_1_0_mipsisa32r2el.eap installation OK
-2019-09-19T13:16:50.895+00:00 axis-00408ce8dd13 [ INFO    ] control.cgi: calling: /etc/init.d/sdkserver start
-2019-09-19T13:16:51.218+00:00 axis-00408ce8dd13 [ INFO    ] server[0]: starting server
-2019-09-19T13:16:51.577+00:00 axis-00408ce8dd13 [ INFO    ] server[26998]: Server running...
-2019-09-19T13:16:51.582+00:00 axis-00408ce8dd13 [ INFO    ] server[26998]: Listening
-2019-09-19T13:17:21.390+00:00 axis-00408ce8dd13 [ INFO    ] server[26998]: Thread CREATED ...
-2019-09-19T13:17:27.791+00:00 axis-00408ce8dd13 [ INFO    ] server[26998]: Exit socketThread
-2019-09-19T13:17:27.791+00:00 axis-00408ce8dd13 [ INFO    ] server[26998]: Hello Client : resolution=480x300&fps=10
-2019-09-19T13:17:44.470+00:00 axis-00408ce8dd13 [ INFO    ] control.cgi: calling: /etc/init.d/sdkserver stop
-2019-09-19T13:17:44.523+00:00 axis-00408ce8dd13 [ INFO    ] server[0]: stopping server
-2019-09-19T13:17:55.488+00:00 axis-00408ce8dd13 [ NOTICE  ] dbus[567]: [system] Reloaded configuration
-2019-09-19T13:17:55.868+00:00 axis-00408ce8dd13 [ NOTICE  ] dbus[567]: [system] Reloaded configuration
-2019-09-19T13:18:22.506+00:00 axis-00408ce8dd13 [ INFO    ] upload.cgi: Uploaded '/tmp/server_1_0_mipsisa32r2el.eap' size:40325
-2019-09-19T13:18:24.166+00:00 axis-00408ce8dd13 [ NOTICE  ] dbus[567]: [system] Reloaded configuration
-2019-09-19T13:18:24.410+00:00 axis-00408ce8dd13 [ INFO    ] upload.cgi: Package /tmp/server_1_0_mipsisa32r2el.eap installation OK
-2019-09-19T13:18:56.126+00:00 axis-00408ce8dd13 [ INFO    ] control.cgi: calling: /etc/init.d/sdkserver start
-2019-09-19T13:18:56.446+00:00 axis-00408ce8dd13 [ INFO    ] server[0]: starting server
-2019-09-19T13:18:56.652+00:00 axis-00408ce8dd13 [ INFO    ] server[27707]: Server running...
-2019-09-19T13:18:56.657+00:00 axis-00408ce8dd13 [ INFO    ] server[27707]: Listening
-2019-09-19T13:19:00.147+00:00 axis-00408ce8dd13 [ INFO    ] server[27707]: Thread CREATED ...
-2019-09-19T13:19:03.755+00:00 axis-00408ce8dd13 [ INFO    ] server[27707]: Hello Client : resolution=800x500&fps=10
-2019-09-19T13:19:03.756+00:00 axis-00408ce8dd13 [ INFO    ] server[27707]: Exit socketThread
-2019-09-19T13:19:31.580+00:00 axis-00408ce8dd13 [ INFO    ] server[27707]: Thread CREATED ...
-2019-09-19T13:19:35.852+00:00 axis-00408ce8dd13 [ INFO    ] server[27707]: Exit socketThread
-2019-09-19T13:19:35.852+00:00 axis-00408ce8dd13 [ INFO    ] server[27707]: Hello Client : resolution=800x500&fps=10
-2019-09-19T13:25:24.294+00:00 axis-00408ce8dd13 [ INFO    ] control.cgi: calling: /etc/init.d/sdkserver stop
-2019-09-19T13:25:24.342+00:00 axis-00408ce8dd13 [ INFO    ] server[0]: stopping server
-2019-09-19T13:25:32.609+00:00 axis-00408ce8dd13 [ NOTICE  ] dbus[567]: [system] Reloaded configuration
-2019-09-19T13:25:33.037+00:00 axis-00408ce8dd13 [ NOTICE  ] dbus[567]: [system] Reloaded configuration
-2019-09-19T13:27:28.699+00:00 axis-00408ce8dd13 [ INFO    ] upload.cgi: Uploaded '/tmp/server_1_0_mipsisa32r2el.eap' size:40320
-2019-09-19T13:27:30.370+00:00 axis-00408ce8dd13 [ NOTICE  ] dbus[567]: [system] Reloaded configuration
-2019-09-19T13:27:30.527+00:00 axis-00408ce8dd13 [ INFO    ] upload.cgi: Package /tmp/server_1_0_mipsisa32r2el.eap installation OK
-2019-09-19T13:28:13.339+00:00 axis-00408ce8dd13 [ INFO    ] control.cgi: calling: /etc/init.d/sdkserver start
-2019-09-19T13:28:13.663+00:00 axis-00408ce8dd13 [ INFO    ] server[0]: starting server
-2019-09-19T13:28:13.890+00:00 axis-00408ce8dd13 [ INFO    ] server[28472]: Server running...
-2019-09-19T13:28:13.891+00:00 axis-00408ce8dd13 [ INFO    ] server[28472]: Listening
-2019-09-19T13:33:20.238+00:00 axis-00408ce8dd13 [ INFO    ] control.cgi: Application 'server' is running already
-2019-09-19T13:38:31.326+00:00 axis-00408ce8dd13 [ INFO    ] server[28472]: Thread CREATED ...
-2019-09-19T13:38:34.730+00:00 axis-00408ce8dd13 [ INFO    ] server[28472]: Exit socketThread
-2019-09-19T13:38:34.730+00:00 axis-00408ce8dd13 [ INFO    ] server[28472]: Hello Client : resolution=800x500&fps=10
-2019-09-19T13:41:11.161+00:00 axis-00408ce8dd13 [ INFO    ] control.cgi: calling: /etc/init.d/sdkserver stop
-2019-09-19T13:41:11.210+00:00 axis-00408ce8dd13 [ INFO    ] server[0]: stopping server
-2019-09-19T13:41:19.634+00:00 axis-00408ce8dd13 [ NOTICE  ] dbus[567]: [system] Reloaded configuration
-2019-09-19T13:41:19.955+00:00 axis-00408ce8dd13 [ NOTICE  ] dbus[567]: [system] Reloaded configuration
-2019-09-19T13:41:33.829+00:00 axis-00408ce8dd13 [ INFO    ] upload.cgi: Uploaded '/tmp/server_1_0_mipsisa32r2el.eap' size:40248
-2019-09-19T13:41:35.488+00:00 axis-00408ce8dd13 [ NOTICE  ] dbus[567]: [system] Reloaded configuration
-2019-09-19T13:41:35.713+00:00 axis-00408ce8dd13 [ INFO    ] upload.cgi: Package /tmp/server_1_0_mipsisa32r2el.eap installation OK
-2019-09-19T13:41:44.141+00:00 axis-00408ce8dd13 [ INFO    ] control.cgi: calling: /etc/init.d/sdkserver start
-2019-09-19T13:41:44.467+00:00 axis-00408ce8dd13 [ INFO    ] server[0]: starting server
-2019-09-19T13:41:44.765+00:00 axis-00408ce8dd13 [ INFO    ] server[29440]: Server running...
-2019-09-19T13:41:44.781+00:00 axis-00408ce8dd13 [ INFO    ] server[29440]: Listening
-2019-09-19T13:42:15.652+00:00 axis-00408ce8dd13 [ INFO    ] server[29440]: Thread CREATED ...
-2019-09-19T13:42:16.854+00:00 axis-00408ce8dd13 [ INFO    ] server[29440]: Exit socketThread
-2019-09-19T13:42:16.854+00:00 axis-00408ce8dd13 [ INFO    ] server[29440]: Hello Client : resolution=800x500&fps=10
-2019-09-19T13:42:47.852+00:00 axis-00408ce8dd13 [ INFO    ] control.cgi: calling: /etc/init.d/sdkserver stop
-2019-09-19T13:42:47.913+00:00 axis-00408ce8dd13 [ INFO    ] server[0]: stopping server
-2019-09-19T13:42:55.991+00:00 axis-00408ce8dd13 [ NOTICE  ] dbus[567]: [system] Reloaded configuration
+2019-09-19T15:25:38.360+00:00 axis-00408ce8dd13 [ INFO    ] kernel: potentially unexpected fatal signal 11.
+2019-09-19T15:27:55.937+00:00 axis-00408ce8dd13 [ INFO    ] kernel: potentially unexpected fatal signal 11.
+2019-09-19T15:30:33.078+00:00 axis-00408ce8dd13 [ INFO    ] kernel: potentially unexpected fatal signal 11.
+2019-09-19T15:36:59.799+00:00 axis-00408ce8dd13 [ INFO    ] kernel: potentially unexpected fatal signal 11.
+2019-09-19T15:39:18.208+00:00 axis-00408ce8dd13 [ INFO    ] kernel: potentially unexpected fatal signal 11.
+2019-09-19T15:41:00.159+00:00 axis-00408ce8dd13 [ INFO    ] kernel: potentially unexpected fatal signal 11.
+2019-09-19T15:42:54.252+00:00 axis-00408ce8dd13 [ INFO    ] kernel: potentially unexpected fatal signal 11.
+2019-09-19T15:44:31.513+00:00 axis-00408ce8dd13 [ INFO    ] kernel: potentially unexpected fatal signal 11.
+2019-09-19T15:46:00.292+00:00 axis-00408ce8dd13 [ INFO    ] kernel: potentially unexpected fatal signal 11.
+2019-09-19T15:49:50.707+00:00 axis-00408ce8dd13 [ INFO    ] kernel: potentially unexpected fatal signal 11.
+2019-09-19T15:52:16.697+00:00 axis-00408ce8dd13 [ INFO    ] kernel: potentially unexpected fatal signal 11.
+2019-09-19T15:54:08.027+00:00 axis-00408ce8dd13 [ INFO    ] kernel: potentially unexpected fatal signal 11.
+2019-09-19T16:05:46.766+00:00 axis-00408ce8dd13 [ INFO    ] kernel: potentially unexpected fatal signal 11.
+2019-09-19T16:10:56.441+00:00 axis-00408ce8dd13 [ INFO    ] kernel: potentially unexpected fatal signal 11.
+2019-09-19T16:17:17.236+00:00 axis-00408ce8dd13 [ INFO    ] kernel: potentially unexpected fatal signal 11.
+2019-09-19T16:29:45.776+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
+2019-09-19T16:29:45.784+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
+2019-09-19T16:29:46.398+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
+2019-09-19T16:29:46.399+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
+2019-09-19T16:29:46.406+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
+2019-09-19T16:29:46.406+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
+2019-09-19T16:29:46.416+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
+2019-09-19T16:29:46.416+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
+2019-09-19T16:29:47.771+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
+2019-09-19T16:29:47.784+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
+2019-09-19T16:29:47.784+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
+2019-09-19T16:29:47.787+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
+2019-09-19T16:29:47.787+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
+2019-09-19T16:29:48.415+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
+2019-09-19T16:29:48.415+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
+2019-09-19T16:29:48.415+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
+2019-09-19T16:29:48.422+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
+2019-09-19T16:29:48.429+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
+2019-09-19T16:29:48.430+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
+2019-09-19T16:29:49.793+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
+2019-09-19T16:29:49.793+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
+2019-09-19T16:29:49.794+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
+2019-09-19T16:29:49.807+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
+2019-09-19T16:29:49.811+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
+2019-09-19T16:29:50.433+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
+2019-09-19T16:29:50.435+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
+2019-09-19T16:29:50.441+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
+2019-09-19T16:29:50.451+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
+2019-09-19T16:29:50.451+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
+2019-09-19T16:29:50.453+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
+2019-09-19T16:29:51.818+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
+2019-09-19T16:29:51.819+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
+2019-09-19T16:29:51.819+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
+2019-09-19T16:29:51.828+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
+2019-09-19T16:29:51.829+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
+2019-09-19T16:29:52.458+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
+2019-09-19T16:29:52.459+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
+2019-09-19T16:29:52.459+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
+2019-09-19T16:29:52.466+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
+2019-09-19T16:29:52.467+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
+2019-09-19T16:29:52.467+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
+2019-09-19T16:29:53.834+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
+2019-09-19T16:29:53.834+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
+2019-09-19T16:29:53.835+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
+2019-09-19T16:29:53.847+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
+2019-09-19T16:29:53.848+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
+2019-09-19T16:29:53.848+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
+2019-09-19T16:29:54.469+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
+2019-09-19T16:29:54.471+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
+2019-09-19T16:29:54.472+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
+2019-09-19T16:29:54.485+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
+2019-09-19T16:29:54.486+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
+2019-09-19T16:29:54.486+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
+2019-09-19T16:29:55.853+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
+2019-09-19T16:29:55.853+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
+2019-09-19T16:29:55.854+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
+2019-09-19T16:29:55.858+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
+2019-09-19T16:29:55.859+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
+2019-09-19T16:29:55.861+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
+2019-09-19T16:29:56.486+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
+2019-09-19T16:29:56.490+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
+2019-09-19T16:29:56.490+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
+2019-09-19T16:29:56.495+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
+2019-09-19T16:29:56.496+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
+2019-09-19T16:29:56.498+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
+2019-09-19T16:29:57.866+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
+2019-09-19T16:29:57.867+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
+2019-09-19T16:29:57.867+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
+2019-09-19T16:29:57.874+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
+2019-09-19T16:29:57.880+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
+2019-09-19T16:29:57.882+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
+2019-09-19T16:29:58.500+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
+2019-09-19T16:29:58.501+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
+2019-09-19T16:29:58.501+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
+2019-09-19T16:29:58.508+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
+2019-09-19T16:29:58.513+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
+2019-09-19T16:29:58.514+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
+2019-09-19T16:29:59.886+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
+2019-09-19T16:29:59.886+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
+2019-09-19T16:29:59.887+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
+2019-09-19T16:29:59.892+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
+2019-09-19T16:29:59.894+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
+2019-09-19T16:29:59.895+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
+2019-09-19T16:30:00.513+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
+2019-09-19T16:30:00.517+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
+2019-09-19T16:30:00.517+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
+2019-09-19T16:30:00.524+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
+2019-09-19T16:30:00.526+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
+2019-09-19T16:30:00.528+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
+2019-09-19T16:30:01.896+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
+2019-09-19T16:30:01.904+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
+2019-09-19T16:30:01.904+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
+2019-09-19T16:30:01.905+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
+2019-09-19T16:30:01.905+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
+2019-09-19T16:30:01.907+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
+2019-09-19T16:30:02.532+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
+2019-09-19T16:30:02.533+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
+2019-09-19T16:30:02.533+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
+2019-09-19T16:30:02.546+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
+2019-09-19T16:30:02.547+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
+2019-09-19T16:30:02.547+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
+2019-09-19T16:30:03.909+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
+2019-09-19T16:30:03.917+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
+2019-09-19T16:30:03.917+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
+2019-09-19T16:30:03.918+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
+2019-09-19T16:30:03.924+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
+2019-09-19T16:30:03.924+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
+2019-09-19T16:30:04.553+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
+2019-09-19T16:30:04.553+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
+2019-09-19T16:30:04.553+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
+2019-09-19T16:30:04.556+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
+2019-09-19T16:30:04.562+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
+2019-09-19T16:30:04.562+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
+2019-09-19T16:30:05.928+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
+2019-09-19T16:30:05.928+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
+2019-09-19T16:30:05.929+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
+2019-09-19T16:30:05.936+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
+2019-09-19T16:30:05.936+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
+2019-09-19T16:30:05.937+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
+2019-09-19T16:30:06.570+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
+2019-09-19T16:30:06.570+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
+2019-09-19T16:30:06.571+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
+2019-09-19T16:30:06.582+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
+2019-09-19T16:30:06.583+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
+2019-09-19T16:30:06.583+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
+2019-09-19T16:30:07.941+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
+2019-09-19T16:30:07.941+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
+2019-09-19T16:30:07.942+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
+2019-09-19T16:30:07.944+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
+2019-09-19T16:30:07.948+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
+2019-09-19T16:30:07.951+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
+2019-09-19T16:30:08.586+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
+2019-09-19T16:30:08.587+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
+2019-09-19T16:30:08.588+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
+2019-09-19T16:30:08.598+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
+2019-09-19T16:30:08.599+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
+2019-09-19T16:30:08.599+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
+2019-09-19T16:30:09.961+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
+2019-09-19T16:30:09.962+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
+2019-09-19T16:30:09.962+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
+2019-09-19T16:30:09.964+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
+2019-09-19T16:30:09.969+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
+2019-09-19T16:30:09.974+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
+2019-09-19T16:30:10.605+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
+2019-09-19T16:30:10.618+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
+2019-09-19T16:30:10.619+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
+2019-09-19T16:30:10.619+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
+2019-09-19T16:30:10.620+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
+2019-09-19T16:30:10.623+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
+2019-09-19T16:30:11.984+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
+2019-09-19T16:30:11.984+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
+2019-09-19T16:30:11.985+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
+2019-09-19T16:30:11.991+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
+2019-09-19T16:30:11.992+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
+2019-09-19T16:30:11.992+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
+2019-09-19T16:30:12.629+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
+2019-09-19T16:30:12.633+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
+2019-09-19T16:30:12.637+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
+2019-09-19T16:30:12.646+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
+2019-09-19T16:30:12.647+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
+2019-09-19T16:30:12.648+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
+2019-09-19T16:30:13.996+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
+2019-09-19T16:30:13.997+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
+2019-09-19T16:30:13.997+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
+2019-09-19T16:30:14.006+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
+2019-09-19T16:30:14.013+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
+2019-09-19T16:30:14.013+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
+2019-09-19T16:30:14.650+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
+2019-09-19T16:30:14.654+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
+2019-09-19T16:30:14.654+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
+2019-09-19T16:30:14.659+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
+2019-09-19T16:30:14.660+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
+2019-09-19T16:30:14.661+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
+2019-09-19T16:30:16.007+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
+2019-09-19T16:30:16.008+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
+2019-09-19T16:30:16.009+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
+2019-09-19T16:30:16.018+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
+2019-09-19T16:30:16.019+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
+2019-09-19T16:30:16.020+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
+2019-09-19T16:30:16.667+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
+2019-09-19T16:30:16.667+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
+2019-09-19T16:30:16.667+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
+2019-09-19T16:30:16.677+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
+2019-09-19T16:30:16.678+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
+2019-09-19T16:30:16.678+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
+2019-09-19T16:30:18.026+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
+2019-09-19T16:30:18.039+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
+2019-09-19T16:30:18.039+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
+2019-09-19T16:30:18.039+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
+2019-09-19T16:30:18.040+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
+2019-09-19T16:30:18.040+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
+2019-09-19T16:30:18.682+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
+2019-09-19T16:30:18.682+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
+2019-09-19T16:30:18.683+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
+2019-09-19T16:30:18.687+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
+2019-09-19T16:30:18.691+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
+2019-09-19T16:30:18.694+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
+2019-09-19T16:30:20.038+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
+2019-09-19T16:30:20.039+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
+2019-09-19T16:30:20.039+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
+2019-09-19T16:30:20.047+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
+2019-09-19T16:30:20.048+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
+2019-09-19T16:30:20.061+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
+2019-09-19T16:30:20.703+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
+2019-09-19T16:30:20.704+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
+2019-09-19T16:30:20.705+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
+2019-09-19T16:30:20.713+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
+2019-09-19T16:30:20.714+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
+2019-09-19T16:30:20.714+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
+2019-09-19T16:30:22.064+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
+2019-09-19T16:30:22.065+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
+2019-09-19T16:30:22.065+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
+2019-09-19T16:30:22.077+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
+2019-09-19T16:30:22.078+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
+2019-09-19T16:30:22.078+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
+2019-09-19T16:30:22.717+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
+2019-09-19T16:30:22.717+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
+2019-09-19T16:30:22.717+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
+2019-09-19T16:30:22.724+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
+2019-09-19T16:30:22.724+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
+2019-09-19T16:30:22.725+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
+2019-09-19T16:30:24.082+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
+2019-09-19T16:30:24.082+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
+2019-09-19T16:30:24.082+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
+2019-09-19T16:30:24.087+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
+2019-09-19T16:30:24.087+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
+2019-09-19T16:30:24.088+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
+2019-09-19T16:30:24.734+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
+2019-09-19T16:30:24.735+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
+2019-09-19T16:30:24.735+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
+2019-09-19T16:30:24.736+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
+2019-09-19T16:30:24.737+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
+2019-09-19T16:30:24.737+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
+2019-09-19T16:30:26.093+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
+2019-09-19T16:30:26.095+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
+2019-09-19T16:30:26.096+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
+2019-09-19T16:30:26.102+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
+2019-09-19T16:30:26.104+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
+2019-09-19T16:30:26.112+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
+2019-09-19T16:30:26.741+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
+2019-09-19T16:30:26.747+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
+2019-09-19T16:30:26.748+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
+2019-09-19T16:30:26.753+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
+2019-09-19T16:30:26.754+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
+2019-09-19T16:30:26.755+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
+2019-09-19T16:30:28.119+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
+2019-09-19T16:30:28.124+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
+2019-09-19T16:30:28.134+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
+2019-09-19T16:30:28.152+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
+2019-09-19T16:30:28.166+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
+2019-09-19T16:30:28.176+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
+2019-09-19T16:30:28.567+00:00 axis-00408ce8dd13 [ INFO    ] control.cgi: calling: /etc/init.d/sdkserver stop
+2019-09-19T16:30:28.622+00:00 axis-00408ce8dd13 [ INFO    ] server[0]: stopping server
+2019-09-19T16:30:29.760+00:00 axis-00408ce8dd13 [ NOTICE  ] dbus[567]: [system] Reloaded configuration

@@ -36,10 +36,10 @@ void * socketThread(void *arg)
     msg = capture_get_resolutions_list(0);  
 
     //Send the resolutions to the client
-    /*write(newSocket, msg, strlen(msg));   
+    write(newSocket, msg, strlen(msg));   
 
     //Send a breakline to client, else the client wont read the message
-    write(newSocket, "\n", strlen("\n"));   */
+    write(newSocket, "\n", strlen("\n"));   
 
     //Clear/empty the msg variable
     memset(msg, 0, strlen(msg));  
@@ -50,9 +50,9 @@ void * socketThread(void *arg)
 
  
 
-    /*recv(newSocket , client_message , 2000 , 0);*/
-
-    //syslog(LOG_INFO, client_message);
+    recv(newSocket , client_message , 2000 , 0);
+    syslog(LOG_INFO, "message below from client: ");
+    syslog(LOG_INFO, client_message);
     //syslog(LOG_INFO, "REAL DEAL: resolution=160x120&sdk_format=Y800&fps=15\"");
     //Variables used for handling the img
     
@@ -68,34 +68,41 @@ void * socketThread(void *arg)
 
 	*/
 
-    strcpy(client_message, "resolution=1280x960&fps=10");
-    
+    //strcpy(client_message, "resolution=1024x640&fps=10");
+    syslog(LOG_INFO, client_message);
+
     media_frame  *frame;
     void     *data;
     size_t   img_size;
     int row = 0;
-        
+    syslog(LOG_INFO, "after int row.....");    
+
     //Opens a stream to the camera to get the img
     stream = capture_open_stream(IMAGE_JPEG, client_message); 
-
+int val = 0;
+while(1) { 
     //Get the frame
     frame = capture_get_frame(stream);    
 
     //Get image data
-    data = capture_frame_data(frame);  
+    	data = capture_frame_data(frame);  
+	syslog(LOG_INFO, "after frame data"); 
   
     //Get the image size
     img_size  = capture_frame_size(frame);    
             
-
+syslog(LOG_INFO, "after img_size......"); 
 
     //Convert the image size to a char * to send to the client
     sprintf(msg,"%zu\n",img_size); 
+
+syslog(LOG_INFO, "after sprintf"); 
     
     //Send the size to the client   
     // write(newSocket, msg, strlen(msg));    
          
-    //Now we loop the whole data array and write to another array (Not necessary, could send the data directly I think)                   
+    //Now we loop the whole data array and write to another array (Not necessary, could send the data directly I think)     
+            
     unsigned char row_data[img_size];        
     for(row = 0; row<img_size;row++){
        row_data[row] = ((unsigned char*)data)[row];
@@ -110,9 +117,17 @@ void * socketThread(void *arg)
         syslog(LOG_INFO, "Client is disconnected");
 
 
+syslog(LOG_INFO, "after  all errors"); 
+val++;
 
 
+            
+	 //Emptying the variables to be sure nothing is stored 
+         memset(data, 0, sizeof(data));
+         memset(row_data, 0, sizeof(row_data));
+capture_frame_free(frame);
 
+}
   // Send message to the client socket
 
   pthread_mutex_lock(&lock);
