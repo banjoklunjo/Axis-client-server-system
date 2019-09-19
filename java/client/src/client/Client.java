@@ -38,10 +38,10 @@ public class Client implements Runnable {
 	public void run() {
 		init();
 		while (online) {
-			System.out.println("online loop");
+			//System.out.println("online loop");
 			//String msgFromServer = readServerMessage();
 			readServerImage();
-			System.out.println("after readServerImage");
+			//System.out.println("after readServerImage");
 			/*if (msgFromServer != null) {
 				controller.receivedMessage(msgFromServer);
 			}*/
