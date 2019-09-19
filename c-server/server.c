@@ -31,49 +31,78 @@ void * socketThread(void *arg)
     int newSocket = *((int *)arg);
 
     char *msg;
-    msg = capture_get_resolutions_list(0);    //Get all available resolutions on the camera
-    syslog("resolutions: ", msg);
-    write(newSocket, msg, strlen(msg));        //Send the resolutions to the client
-    write(newSocket, "\n", strlen("\n"));  //Send a breakline to client, else the client wont read the message
-    memset(msg, 0, strlen(msg));        //Clear/empty the msg variable
+
+    //Get all available resolutions on the camera
+    msg = capture_get_resolutions_list(0);  
+
+    //Send the resolutions to the client
+    /*write(newSocket, msg, strlen(msg));   
+
+    //Send a breakline to client, else the client wont read the message
+    write(newSocket, "\n", strlen("\n"));   */
+
+    //Clear/empty the msg variable
+    memset(msg, 0, strlen(msg));  
+      
     media_stream *stream;
 
     syslog(LOG_INFO, "Thread CREATED ...  \n");
 
  
 
-    recv(newSocket , client_message , 2000 , 0);
+    /*recv(newSocket , client_message , 2000 , 0);*/
 
     //syslog(LOG_INFO, client_message);
     //syslog(LOG_INFO, "REAL DEAL: resolution=160x120&sdk_format=Y800&fps=15\"");
     //Variables used for handling the img
-    strcpy(client_message, "resolution=320x240&fps=15");
+    
 
+	/**
+    if (strstr(client_message, "resolution") == NULL) {
+   	strcpy(client_message, "resolution=320x240&fps=10");
+    }
 
+ 1280x960,1280x720,1024x768,1024x640,800x600,800x500,800x450,640x480,
+640x400,640x360,480x360,480x300,480x270,320x240,320x200,320x180,240x180,
+176x144,160x120,160x100,160x90
+
+	*/
+
+    strcpy(client_message, "resolution=1280x960&fps=10");
+    
     media_frame  *frame;
     void     *data;
     size_t   img_size;
     int row = 0;
         
+    //Opens a stream to the camera to get the img
+    stream = capture_open_stream(IMAGE_JPEG, client_message); 
 
-    stream = capture_open_stream(IMAGE_JPEG, client_message); //Opens a stream to the camera to get the img
+    //Get the frame
+    frame = capture_get_frame(stream);    
 
-
-    frame = capture_get_frame(stream);    //Get the frame
-    data = capture_frame_data(frame);    //Get image data
-    img_size  = capture_frame_size(frame);    //Get the image size
+    //Get image data
+    data = capture_frame_data(frame);  
+  
+    //Get the image size
+    img_size  = capture_frame_size(frame);    
             
-     sprintf(msg,"%zu\n",img_size);        //Convert the image size to a char * to send to the client
-     write(newSocket, msg, strlen(msg));    //Send the size to the client
-         
-     //Now we loop the whole data array and write to another array (Not necessary, could send the data directly I think)                   
-     unsigned char row_data[img_size];        
-     for(row = 0; row<img_size;row++){
-       row_data[row] = ((unsigned char*)data)[row];
-     }
 
-     //Send the image data to the client
-     int error = write(newSocket, row_data, sizeof(row_data));
+
+    //Convert the image size to a char * to send to the client
+    sprintf(msg,"%zu\n",img_size); 
+    
+    //Send the size to the client   
+    // write(newSocket, msg, strlen(msg));    
+         
+    //Now we loop the whole data array and write to another array (Not necessary, could send the data directly I think)                   
+    unsigned char row_data[img_size];        
+    for(row = 0; row<img_size;row++){
+       row_data[row] = ((unsigned char*)data)[row];
+    }
+
+    //Send the image data to the client
+    int error = write(newSocket, row_data, sizeof(row_data));
 
      //Checking if the write failed
      //Might then be that the client is disconnected, so we break out of the loop
