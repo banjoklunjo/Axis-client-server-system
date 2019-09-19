@@ -6,18 +6,19 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
-import java.util.Random;
+import java.util.Arrays;
+import java.util.List;
 
 import javax.imageio.ImageIO;
 
 public class Client implements Runnable {
-	private IController controller;
+	private Controller controller;
 	private Socket socket;
 	private BufferedReader buffReader;;
 	private InputStreamReader input;
 	private boolean online;
 
-	public Client(IController controller, Socket socket) {
+	public Client(Controller controller, Socket socket) {
 		this.controller = controller;
 		this.socket = socket;
 	}
@@ -38,31 +39,32 @@ public class Client implements Runnable {
 	public void run() {
 		init();
 		while (online) {
-			//System.out.println("online loop");
-			//String msgFromServer = readServerMessage();
+			String msgFromServer = readServerMessage();
+
+			if (msgFromServer != null) {
+				List<String> resolutions = Arrays.asList(msgFromServer
+						.split(","));
+				if (!msgFromServer.equals("\n")) {
+					controller.receivedMessage(msgFromServer);
+					controller.setResolutions(resolutions);
+				}
+			}
 			readServerImage();
-			//System.out.println("after readServerImage");
-			/*if (msgFromServer != null) {
-				controller.receivedMessage(msgFromServer);
-			}*/
 		}
 	}
 
-	
 	private void readServerImage() {
-		//byte[] sizeAr = new byte[1024];
 		try {
-			
-			
 			BufferedImage bufferedImage = ImageIO.read(socket.getInputStream());
-			if(bufferedImage != null) controller.updateImage(bufferedImage);
+			if (bufferedImage != null)
+				controller.updateImage(bufferedImage);
 		} catch (IOException e) {
-			System.out.println("readServerImage() --> Error = " + e.getMessage());
+			System.out.println("readServerImage() --> Error = "
+					+ e.getMessage());
 			e.printStackTrace();
 		}
 	}
 
-	
 	private void init() {
 		online = true;
 		try {

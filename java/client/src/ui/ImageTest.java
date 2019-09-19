@@ -31,8 +31,9 @@ class ImageFrame extends JFrame {
 
 		ImageComponent component = new ImageComponent(image);
 		add(component);
-
+		
 	}
+	
 
 	public static final int DEFAULT_WIDTH = 100;
 	public static final int DEFAULT_HEIGHT = 100;

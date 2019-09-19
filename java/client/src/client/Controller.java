@@ -3,18 +3,19 @@ package client;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.net.Socket;
+import java.util.List;
 import java.util.concurrent.ExecutorService;
 
-import ui.IView;
 import ui.ImageTest;
 import ui.View;
 
-public class Controller implements IController {
-	private IView view;
+public class Controller {
+	private View view;
 	private Client client;
 	private ExecutorService executor;
 	private Socket socket;
 	private ImageTest imageTest;
+	private static int resetVar = 0;
 
 	public Controller(ExecutorService executor) {
 		this.executor = executor;
@@ -27,17 +28,16 @@ public class Controller implements IController {
 		try {
 			tempSocket = new Socket(ip, Integer.valueOf(port));
 		} catch (IOException e) {
-			System.out.println("Unable to connect to " + ip + " at port " + String.valueOf(port) + "\n");
+			System.out.println("Unable to connect to " + ip + " at port "
+					+ String.valueOf(port) + "\n");
 		}
 		return tempSocket;
 	}
 
-	@Override
 	public void onDisconnect() {
 		view.onDisconnect();
 	}
 
-	@Override
 	public void connect(String ip, String port) {
 		if (ip.isEmpty() || port.isEmpty()) {
 			view.onEmptyFields();
@@ -51,7 +51,6 @@ public class Controller implements IController {
 		}
 	}
 
-	@Override
 	public void sendMessage(String message) {
 		if (message != null && !message.isEmpty()) {
 			view.onMessageSent(message);
@@ -62,30 +61,28 @@ public class Controller implements IController {
 
 	}
 
-	@Override
 	public void onWindowExit() {
 		try {
 			client.disconnect();
 		} catch (NullPointerException ex) {
-			System.out.println("Client was null. No disconnet was needed! (controller -> closing()");
+			System.out
+					.println("Client was null. No disconnet was needed! (controller -> closing()");
 		}
 
 		executor.shutdown();
 	}
-	
-	
 
-	@Override
 	public void receivedMessage(String message) {
-		view.onMessageReceived(message);
+		//view.onMessageReceived(message);
 	}
 
-	@Override
 	public void updateImage(BufferedImage image) {
-		imageTest = new ImageTest(image);
-		
-		//view.updateImage(image);
-		
+		new ImageTest(image);
+		System.out.println("updateImage() --> received image");
+	}
+
+	public void setResolutions(List<String> resolutions) {
+		view.setResolutions(resolutions);
 	}
 
 }
