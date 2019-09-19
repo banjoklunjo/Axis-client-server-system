@@ -3,40 +3,61 @@ package ui;
 import java.awt.EventQueue;
 import java.awt.Graphics;
 import java.awt.Image;
+import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.net.Socket;
 
 import javax.imageio.ImageIO;
 import javax.swing.JComponent;
 import javax.swing.JFrame;
+import javax.swing.JPanel;
 
-public class ImageTest {
+public class ImageTest  {
+	private ImageFrame frame;
+	ImageComponent component2;
+	Boolean value = false;
+
+	public ImageTest() {}
 	
-	public ImageTest(final Image image) {
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				ImageFrame frame = new ImageFrame(image);
-				frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-				frame.setVisible(true);
-			}
-		});
-	}
-}
+	public void updateImage(final BufferedImage image) {
+		ImageComponent component1 = new ImageComponent(image);
+		if(frame == null){
+			component2 = new ImageComponent(image);
+			frame = new ImageFrame();
+		}
+		
+		frame.updateImage(image);
+		if (value)
+			frame.remove(component2);
+		
+		frame.add(component1);
+		//frame.getContentPane().add(p);
+		component2 = component1;
+		value = true;
 
-class ImageFrame extends JFrame {
-
-	public ImageFrame(Image image) {
-		setTitle("ImageTest");
-		setSize(image.getWidth(this), image.getHeight(this) + 30);
-
-		ImageComponent component = new ImageComponent(image);
-		add(component);
 		
 	}
 	
+}
 
-	public static final int DEFAULT_WIDTH = 100;
-	public static final int DEFAULT_HEIGHT = 100;
+class ImageFrame extends JFrame {
+	int i = 0;
+
+	public ImageFrame() {}
+	
+	public void updateImage(Image image) {
+		
+		setTitle("ImageTest: " + i);
+		setSize(image.getWidth(this), image.getHeight(this) + 30);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setVisible(true);
+		revalidate();
+		repaint();
+
+		i++;
+	}
+	
 }
 
 class ImageComponent extends JComponent {

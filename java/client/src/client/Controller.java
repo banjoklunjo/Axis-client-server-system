@@ -39,7 +39,14 @@ public class Controller {
 	}
 
 	public void connect(String ip, String port) {
-		if (ip.isEmpty() || port.isEmpty()) {
+		socket = createSocket("192.168.20.247", "55752");
+		if (socket != null) {
+			client = new Client(this, socket);
+			executor.submit(client);
+			view.onConnect();
+		}
+		
+		/*if (ip.isEmpty() || port.isEmpty()) {
 			view.onEmptyFields();
 		} else {
 			socket = createSocket(ip, port);
@@ -49,6 +56,7 @@ public class Controller {
 				view.onConnect();
 			}
 		}
+		*/
 	}
 
 	public void sendMessage(String message) {
@@ -77,7 +85,11 @@ public class Controller {
 	}
 
 	public void updateImage(BufferedImage image) {
-		new ImageTest(image);
+		if(imageTest == null) {
+			imageTest = new ImageTest();
+		}
+		imageTest.updateImage(image);
+		
 		System.out.println("updateImage() --> received image");
 	}
 
