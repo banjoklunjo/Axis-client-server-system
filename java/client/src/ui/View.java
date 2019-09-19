@@ -7,13 +7,18 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+import java.awt.image.BufferedImage;
 
 import javax.swing.BorderFactory;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
+import javax.swing.SwingConstants;
+import javax.swing.border.Border;
 
 import client.IController;
 
@@ -26,12 +31,12 @@ public class View implements ActionListener, IView {
 	private JButton btnSend;
 	private JTextArea txtAreaLog;
 	private IController controller;
+	private JLabel imgJlabel;
 
-	
 	public View(IController controller) {
 		this.controller = controller;
 	}
-	
+
 	@Override
 	public void actionPerformed(ActionEvent event) {
 		if (event.getSource() == btnConnect) {
@@ -39,9 +44,9 @@ public class View implements ActionListener, IView {
 			String ip = ipTextField.getText();
 			controller.connect(ip, port);
 		} else if (event.getSource() == btnSend) {
-			controller.sendMessage(sendVResField.getText() + "," +
-					sendHResField.getText() + "," +
-					sendRefreshrateField.getText());
+			controller.sendMessage(sendVResField.getText() + ","
+					+ sendHResField.getText() + ","
+					+ sendRefreshrateField.getText());
 		}
 	}
 
@@ -55,7 +60,8 @@ public class View implements ActionListener, IView {
 		sendVResField.setEnabled(true);
 		sendRefreshrateField.setEnabled(true);
 		btnConnect.setText("Connected");
-		setLogText("Connected to the server" + "\n" + "..." + "\n" + "..." + "\n" + "...");
+		setLogText("Connected to the server" + "\n" + "..." + "\n" + "..."
+				+ "\n" + "...");
 	}
 
 	@Override
@@ -77,14 +83,14 @@ public class View implements ActionListener, IView {
 	public void onMessageReceived(String message) {
 		setLogText(message);
 	}
-	
+
 	public void setLogText(String message) {
 		txtAreaLog.setText(txtAreaLog.getText() + "\n" + message);
 	}
 
 	public void display() {
 		frame = new JFrame();
-		frame.setBounds(100, 100, 300, 420);
+		frame.setBounds(100, 100, 710, 450);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setLayout(null);
 		frame.setTitle("Client");
@@ -100,25 +106,35 @@ public class View implements ActionListener, IView {
 		initLogArea();
 		initWindowExitListener();
 		initResolutionRefreshrate();
+		initImageLabel();
 	}
-	
+
+	private void initImageLabel() {
+		imgJlabel = new JLabel();
+		Border border = BorderFactory.createLineBorder(Color.BLACK, 1);
+		imgJlabel.setHorizontalAlignment(SwingConstants.CENTER);
+		imgJlabel.setBorder(border);
+		imgJlabel.setBounds(300, 13, 400, 400);
+		frame.add(imgJlabel);
+	}
+
 	private void initResolutionRefreshrate() {
 		sendVResField = new JTextField();
 		sendHResField = new JTextField();
 		sendRefreshrateField = new JTextField();
-		
+
 		sendVResField.setBounds(13, 110, 50, 25);
 		sendHResField.setBounds(73, 110, 50, 25);
 		sendRefreshrateField.setBounds(133, 110, 50, 25);
-		
+
 		sendVResField.setEnabled(false);
 		sendHResField.setEnabled(false);
 		sendRefreshrateField.setEnabled(false);
-		
+
 		frame.add(sendHResField);
 		frame.add(sendVResField);
 		frame.add(sendRefreshrateField);
-		
+
 		btnSend = new JButton("Send Command");
 		btnSend.setBounds(13, 140, 150, 23);
 		btnSend.setEnabled(false);
@@ -159,18 +175,6 @@ public class View implements ActionListener, IView {
 		btnConnect.addActionListener(this);
 	}
 
-//	private void initSend() {
-//		sendTextField = new JTextField();
-//		sendTextField.setBounds(13, 110, 250, 25);
-//		sendTextField.setEnabled(false);
-//		frame.add(sendTextField);
-//		btnSend = new JButton("Send Message");
-//		btnSend.setBounds(13, 140, 150, 23);
-//		btnSend.setEnabled(false);
-//		btnSend.addActionListener(this);
-//		frame.add(btnSend);
-//	}
-
 	private void initLogArea() {
 		txtAreaLog = new JTextArea();
 		txtAreaLog.setEditable(false);
@@ -188,5 +192,10 @@ public class View implements ActionListener, IView {
 				e.getWindow().dispose();
 			}
 		});
+	}
+
+	@Override
+	public void updateImage(BufferedImage image) {
+		imgJlabel.setIcon(new ImageIcon(image));
 	}
 }

@@ -1,10 +1,14 @@
 package client;
 
+import java.awt.image.BufferedImage;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
+import java.util.Random;
+
+import javax.imageio.ImageIO;
 
 public class Client implements Runnable {
 	private IController controller;
@@ -34,13 +38,31 @@ public class Client implements Runnable {
 	public void run() {
 		init();
 		while (online) {
-			String msgFromServer = readServerMessage();
-			if (msgFromServer != null) {
+			//System.out.println("online loop");
+			//String msgFromServer = readServerMessage();
+			readServerImage();
+			//System.out.println("after readServerImage");
+			/*if (msgFromServer != null) {
 				controller.receivedMessage(msgFromServer);
-			}
+			}*/
 		}
 	}
 
+	
+	private void readServerImage() {
+		//byte[] sizeAr = new byte[1024];
+		try {
+			
+			
+			BufferedImage bufferedImage = ImageIO.read(socket.getInputStream());
+			if(bufferedImage != null) controller.updateImage(bufferedImage);
+		} catch (IOException e) {
+			System.out.println("readServerImage() --> Error = " + e.getMessage());
+			e.printStackTrace();
+		}
+	}
+
+	
 	private void init() {
 		online = true;
 		try {
