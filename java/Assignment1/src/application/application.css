@@ -1,0 +1,61 @@
+* {
+    -fx-primary : #2A2E37;
+    -fx-secondary : #FFFF8D;
+    -fx-primarytext : #B2B2B2;
+    -fx-blue: #1976D2;
+    -fx-red: #FF0000;
+    -fx-color-1:#1976D2;
+}
+
+.root{
+    -fx-background-color: -fx-primary;
+}
+
+
+.button{
+    -fx-text-fill: -fx-primarytext;
+    -fx-background-color: -fx-primary;
+    -fx-border-color: #4CAF50;
+    -fx-border-radius: 10.0px;
+    -fx-background-radius: 10.0px;
+    -fx-font-size: 12.0pt;
+}
+
+.button:hover{
+    -fx-border-color: #4CAF50;
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: -fx-primary;
+}
+
+
+.list-cell:filled:selected:focused, .list-cell:filled:selected {
+    -fx-background-color: linear-gradient(#328BDB 0.0%, #207BCF 25.0%, #1973C9 75.0%, #0A65BF 100.0%);
+    -fx-text-fill: white;
+}
+
+.list-cell{
+    -fx-font-size:15.0;
+}
+
+.list-cell:even { /* <=== changed to even */
+    -fx-background-color: white;
+}
+
+.list-cell:filled:hover {
+    -fx-background-color: #0093ff;
+    -fx-text-fill: white;
+}
+
+
+.text-field
+{
+    -fx-text-fill: #2A2E37;
+    -fx-font-size : 12.0pt;
+}
+
+.common-label{
+    -fx-background-color: transparent;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 12.0pt;
+}
+
