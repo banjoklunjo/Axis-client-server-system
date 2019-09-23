@@ -7,33 +7,30 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
-import java.awt.image.BufferedImage;
+import java.util.List;
 
 import javax.swing.BorderFactory;
-import javax.swing.ImageIcon;
 import javax.swing.JButton;
+import javax.swing.JComboBox;
 import javax.swing.JFrame;
-import javax.swing.JLabel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
-import javax.swing.SwingConstants;
-import javax.swing.border.Border;
 
-import client.IController;
+import client.Controller;
 
-public class View implements ActionListener, IView {
+public class View implements ActionListener {
 	private JFrame frame;
 	private JTextField ipTextField;
 	private JTextField portTextField;
 	private JButton btnConnect;
-	private JTextField sendHResField, sendVResField, sendRefreshrateField;
+	private JTextField sendRefreshrateField;
 	private JButton btnSend;
 	private JTextArea txtAreaLog;
-	private IController controller;
-	private JLabel imgJlabel;
+	private Controller controller;
+	private JComboBox<String> resolutions;
 
-	public View(IController controller) {
+	public View(Controller controller) {
 		this.controller = controller;
 	}
 
@@ -44,42 +41,43 @@ public class View implements ActionListener, IView {
 			String ip = ipTextField.getText();
 			controller.connect(ip, port);
 		} else if (event.getSource() == btnSend) {
-			controller.sendMessage(sendVResField.getText() + ","
-					+ sendHResField.getText() + ","
-					+ sendRefreshrateField.getText());
+			if( sendRefreshrateField.getText().length() != 0){
+				controller.sendMessage("resolution=" + resolutions.getSelectedItem() + "&fps=" + sendRefreshrateField.getText());
+			}else{
+				System.out.println("Please choose resolution.");
+			}
 		}
 	}
 
-	@Override
 	public void onConnect() {
 		ipTextField.setEnabled(false);
 		portTextField.setEnabled(false);
 		btnConnect.setEnabled(false);
 		btnSend.setEnabled(true);
-		sendHResField.setEnabled(true);
-		sendVResField.setEnabled(true);
+	
+
 		sendRefreshrateField.setEnabled(true);
 		btnConnect.setText("Connected");
 		setLogText("Connected to the server" + "\n" + "..." + "\n" + "..."
 				+ "\n" + "...");
 	}
 
-	@Override
+
 	public void onDisconnect() {
 		setLogText("Server is down");
 	}
 
-	@Override
+
 	public void onEmptyFields() {
 		setLogText("No value for IP or PORT set");
 	}
 
-	@Override
+
 	public void onMessageSent(String message) {
 		setLogText("Message sent to server -> " + message + "\n");
 	}
 
-	@Override
+
 	public void onMessageReceived(String message) {
 		setLogText(message);
 	}
@@ -90,7 +88,7 @@ public class View implements ActionListener, IView {
 
 	public void display() {
 		frame = new JFrame();
-		frame.setBounds(100, 100, 710, 450);
+		frame.setBounds(100, 100, 300, 420);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setLayout(null);
 		frame.setTitle("Client");
@@ -106,35 +104,20 @@ public class View implements ActionListener, IView {
 		initLogArea();
 		initWindowExitListener();
 		initResolutionRefreshrate();
-		initImageLabel();
+		initJComboBox();
 	}
 
-	private void initImageLabel() {
-		imgJlabel = new JLabel();
-		Border border = BorderFactory.createLineBorder(Color.BLACK, 1);
-		imgJlabel.setHorizontalAlignment(SwingConstants.CENTER);
-		imgJlabel.setBorder(border);
-		imgJlabel.setBounds(300, 13, 400, 400);
-		frame.add(imgJlabel);
+	private void initJComboBox() {
+		resolutions = new JComboBox();
+		resolutions.setBounds(13, 110, 100, 25);
+		frame.add(resolutions);	
 	}
 
 	private void initResolutionRefreshrate() {
-		sendVResField = new JTextField();
-		sendHResField = new JTextField();
 		sendRefreshrateField = new JTextField();
-
-		sendVResField.setBounds(13, 110, 50, 25);
-		sendHResField.setBounds(73, 110, 50, 25);
 		sendRefreshrateField.setBounds(133, 110, 50, 25);
-
-		sendVResField.setEnabled(false);
-		sendHResField.setEnabled(false);
 		sendRefreshrateField.setEnabled(false);
-
-		frame.add(sendHResField);
-		frame.add(sendVResField);
 		frame.add(sendRefreshrateField);
-
 		btnSend = new JButton("Send Command");
 		btnSend.setBounds(13, 140, 150, 23);
 		btnSend.setEnabled(false);
@@ -193,9 +176,10 @@ public class View implements ActionListener, IView {
 			}
 		});
 	}
-
-	@Override
-	public void updateImage(BufferedImage image) {
-		imgJlabel.setIcon(new ImageIcon(image));
+	
+	public void setResolutions(List<String> resolutionList) {
+		for(int i = 0; i < resolutionList.size(); i++) {
+			resolutions.addItem(resolutionList.get(i));
+		}
 	}
 }
