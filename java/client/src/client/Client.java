@@ -1,8 +1,11 @@
 package client;
 
+import java.awt.FlowLayout;
 import java.awt.image.BufferedImage;
 import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
+import java.io.DataInputStream;
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -13,13 +16,20 @@ import java.util.Arrays;
 import java.util.List;
 
 import javax.imageio.ImageIO;
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.SwingUtilities;
 
 public class Client implements Runnable {
 	private Controller controller;
 	private Socket socket;
 	private BufferedReader buffReader;;
 	private InputStreamReader input;
+	JFrame frame;
 	private boolean online;
+	
+	private int counter = 0;
 	
 	private InputStream inputStream ;
 
@@ -50,40 +60,80 @@ public class Client implements Runnable {
 	@Override
 	public void run() {
 		init();
-		while (online) {
-			String msgFromServer = readServerMessage();
+		String msgFromServer = readServerMessage();
 
-			if (msgFromServer != null) {
-				List<String> resolutions = Arrays.asList(msgFromServer
-						.split(","));
-				if (!msgFromServer.equals("\n")) {
-					controller.receivedMessage(msgFromServer);
-					controller.setResolutions(resolutions);
-				}
+		if (msgFromServer != null) {
+			List<String> resolutions = Arrays.asList(msgFromServer
+					.split(","));
+			if (!msgFromServer.equals("\n")) {
+				controller.receivedMessage(msgFromServer);
+				controller.setResolutions(resolutions);
 			}
+		}
+		while (online) {
+			
 			readServerImage();
 		}
 	}
 
 	private void readServerImage() {
+		if(frame == null) {
+			frame = new JFrame();
+		}
+		else
+			frame.getContentPane().removeAll();
 		try {
-			/*byte[] sizeAr = new byte[40000];
-            inputStream.read(sizeAr);
-	        int size = ByteBuffer.wrap(sizeAr).asIntBuffer().get();
+	
+			InputStream inputStream = socket.getInputStream();
+			int length = inputStream.available();
+			//byte[] message = readExactly(inputStream, length);
+			byte[] message = new byte[length];
+			
+			message = readExactly(inputStream, length);
+			//int index = inputStream.read(message);
+			//System.out.println("Index:   " + index);
+			if(message.length > 2) {
+				ByteArrayInputStream bais = new ByteArrayInputStream(message);
+				final BufferedImage bufferedImage = ImageIO.read(bais);
+				if (bufferedImage != null) {
+					SwingUtilities.invokeLater(
+						    new Runnable(){
+						        public void run(){
 
-	        byte[] imageAr = new byte[size];
-	        inputStream.read(imageAr);
-
-	        BufferedImage bufferedImage = ImageIO.read(new ByteArrayInputStream(imageAr));*/
-	        
-			BufferedImage bufferedImage = ImageIO.read(socket.getInputStream());
-			if (bufferedImage != null)
-				controller.updateImage(bufferedImage);
+									frame.getContentPane().setLayout(new FlowLayout());
+									frame.getContentPane().add(new JLabel(new ImageIcon(bufferedImage)));
+									frame.pack();
+									frame.setVisible(true);
+						        }
+						    });
+				
+				}
+			}
+			
+				
+			
 		} catch (IOException e) {
 			System.out.println("readServerImage() --> Error = "
 					+ e.getMessage());
 			e.printStackTrace();
 		}
+	}
+	
+	
+	public byte[] readExactly(InputStream input, int size) throws IOException
+	{
+	    byte[] data = new byte[size];
+	    int index = 0;
+	    while (index < size)
+	    {
+	        int bytesRead = input.read(data, index, size - index);
+	        if (bytesRead < 0)
+	        {
+	            throw new IOException("Insufficient data in stream");
+	        }
+	        index += size;
+	    }
+	    return data;
 	}
 
 	private void init() {

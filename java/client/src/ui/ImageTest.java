@@ -1,6 +1,7 @@
 package ui;
 
 import java.awt.EventQueue;
+import java.awt.FlowLayout;
 import java.awt.Graphics;
 import java.awt.Image;
 import java.awt.image.BufferedImage;
@@ -9,24 +10,60 @@ import java.io.IOException;
 import java.net.Socket;
 
 import javax.imageio.ImageIO;
+import javax.swing.ImageIcon;
 import javax.swing.JComponent;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-public class ImageTest  {
+public class ImageTest extends JFrame {
 	private ImageFrame frame;
 	ImageComponent component2;
 	Boolean value = false;
+	int i = 0;
 
 	public ImageTest() {}
 	
 	public void updateImage(final BufferedImage image) {
+		/*System.out.println("update the ----");
 		ImageComponent component1 = new ImageComponent(image);
-		if(frame == null){
-			component2 = new ImageComponent(image);
+		System.out.println("updateImage before new ImageFrame()");
+		//if(frame == null){
 			frame = new ImageFrame();
-		}
-		
+		//}
+			
+			
+			
+			System.out.println("updateImage before setTitle");
+			frame.setTitle("ImageTest: " + i);
+			System.out.println("updateImage before setSize");
+			frame.setSize(image.getWidth(this), image.getHeight(this) + 30);
+			
+			frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+			System.out.println("updateImage before add");
+			frame.add(component1);
+			System.out.println("updateImage before visible");
+			frame.setVisible(true);
+			System.out.println("updateImage before revalidate");
+			frame.revalidate();
+			System.out.println("updateImage before repaint");
+			frame.repaint();
+			
+			System.out.println("updateImage end");
+			*/
+		i++;
+		System.out.println("hello world " + i);
+/*
+		System.out.println("image width: " + image.toString());
+		JFrame frame = new JFrame();
+		frame.getContentPane().setLayout(new FlowLayout());
+		frame.getContentPane().add(new JLabel(new ImageIcon(image)));
+		frame.pack();
+		frame.setVisible(true);
+		System.out.println("image height: " + image.getHeight());
+	*/
+			
+		/*
 		frame.updateImage(image);
 		if (value)
 			frame.remove(component2);
@@ -35,7 +72,7 @@ public class ImageTest  {
 		//frame.getContentPane().add(p);
 		component2 = component1;
 		value = true;
-
+*/
 		
 	}
 	

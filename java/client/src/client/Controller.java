@@ -39,7 +39,7 @@ public class Controller {
 	}
 
 	public void connect(String ip, String port) {
-		socket = createSocket("192.168.20.247", "55752");
+		socket = createSocket("192.168.20.252", "55752");
 		if (socket != null) {
 			client = new Client(this, socket);
 			executor.submit(client);
