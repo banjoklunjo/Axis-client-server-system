@@ -2,10 +2,13 @@ package client;
 
 import java.awt.image.BufferedImage;
 import java.io.BufferedReader;
+import java.io.ByteArrayInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
+import java.nio.ByteBuffer;
 import java.util.Arrays;
 import java.util.List;
 
@@ -17,10 +20,19 @@ public class Client implements Runnable {
 	private BufferedReader buffReader;;
 	private InputStreamReader input;
 	private boolean online;
+	
+	private InputStream inputStream ;
 
 	public Client(Controller controller, Socket socket) {
 		this.controller = controller;
 		this.socket = socket;
+		
+		try {
+			inputStream = socket.getInputStream();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
 	}
 
 	public void sendToServer(String message) {
@@ -55,6 +67,15 @@ public class Client implements Runnable {
 
 	private void readServerImage() {
 		try {
+			/*byte[] sizeAr = new byte[40000];
+            inputStream.read(sizeAr);
+	        int size = ByteBuffer.wrap(sizeAr).asIntBuffer().get();
+
+	        byte[] imageAr = new byte[size];
+	        inputStream.read(imageAr);
+
+	        BufferedImage bufferedImage = ImageIO.read(new ByteArrayInputStream(imageAr));*/
+	        
 			BufferedImage bufferedImage = ImageIO.read(socket.getInputStream());
 			if (bufferedImage != null)
 				controller.updateImage(bufferedImage);
