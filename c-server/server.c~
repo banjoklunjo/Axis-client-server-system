@@ -79,55 +79,49 @@ void * socketThread(void *arg)
 
     //Opens a stream to the camera to get the img
     stream = capture_open_stream(IMAGE_JPEG, client_message); 
-int val = 0;
+	int val = 0;
 while(1) { 
-    //Get the frame
-    frame = capture_get_frame(stream);    
+    	//Get the frame
+    	frame = capture_get_frame(stream);    
 
-    //Get image data
+    	//Get image data
     	data = capture_frame_data(frame);  
-	syslog(LOG_INFO, "after frame data"); 
+
   
-    //Get the image size
-    img_size  = capture_frame_size(frame);    
+    	//Get the image size
+    	img_size  = capture_frame_size(frame);    
             
-syslog(LOG_INFO, "after img_size......"); 
 
-    //Convert the image size to a char * to send to the client
-    sprintf(msg,"%zu\n",img_size); 
+    	//Convert the image size to a char * to send to the client
+    	sprintf(msg,"%zu\n",img_size); 
 
-syslog(LOG_INFO, "after sprintf"); 
     
-    //Send the size to the client   
-    // write(newSocket, msg, strlen(msg));    
+    	//Send the size to the client   
+    	// write(newSocket, msg, strlen(msg));    
          
-    //Now we loop the whole data array and write to another array (Not necessary, could send the data directly I think)     
+    	//Now we loop the whole data array and write to another array (Not 		//necessary, could send the data directly I think)     
             
-    unsigned char row_data[img_size];        
-    for(row = 0; row<img_size;row++){
-       row_data[row] = ((unsigned char*)data)[row];
-    }
+    	unsigned char row_data[img_size];        
+    	for(row = 0; row<img_size;row++){
+       		row_data[row] = ((unsigned char*)data)[row];
+    	}
 
-    //Send the image data to the client
-    int error = write(newSocket, row_data, sizeof(row_data));
+    	//Send the image data to the client
+    	int error = write(newSocket, row_data, sizeof(row_data));
 
-     //Checking if the write failed
-     //Might then be that the client is disconnected, so we break out of the loop
-     if (error < 0)
-        syslog(LOG_INFO, "Client is disconnected");
+     	//Checking if the write failed
+     	//Might then be that the client is disconnected, so we break out of the loop
+     	if (error < 0)
+        	syslog(LOG_INFO, "Client is disconnected");
 
-
-syslog(LOG_INFO, "after  all errors"); 
-val++;
-
+	val++;
 
             
-	 //Emptying the variables to be sure nothing is stored 
-         memset(data, 0, sizeof(data));
-         memset(row_data, 0, sizeof(row_data));
-capture_frame_free(frame);
-syslog(LOG_INFO, "sleep"); 
-sleep(2);
+	//Emptying the variables to be sure nothing is stored 
+        memset(data, 0, sizeof(data));
+        memset(row_data, 0, sizeof(row_data));
+	capture_frame_free(frame);
+
 }
   // Send message to the client socket
 
