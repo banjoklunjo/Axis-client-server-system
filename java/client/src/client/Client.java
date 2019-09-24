@@ -28,21 +28,24 @@ public class Client implements Runnable {
 	private InputStreamReader input;
 	JFrame frame;
 	private boolean online;
-	
+
 	private int counter = 0;
-	
-	private InputStream inputStream ;
+	private int realSize = 0;
+	private int section = 0;
+	byte[][] bilden;
+
+	private InputStream inputStream;
 
 	public Client(Controller controller, Socket socket) {
 		this.controller = controller;
 		this.socket = socket;
-		
+
 		try {
 			inputStream = socket.getInputStream();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		
+
 	}
 
 	public void sendToServer(String message) {
@@ -63,77 +66,96 @@ public class Client implements Runnable {
 		String msgFromServer = readServerMessage();
 
 		if (msgFromServer != null) {
-			List<String> resolutions = Arrays.asList(msgFromServer
-					.split(","));
+			List<String> resolutions = Arrays.asList(msgFromServer.split(","));
 			if (!msgFromServer.equals("\n")) {
 				controller.receivedMessage(msgFromServer);
 				controller.setResolutions(resolutions);
 			}
 		}
 		while (online) {
-			
+
 			readServerImage();
 		}
 	}
 
 	private void readServerImage() {
-		if(frame == null) {
+		if (frame == null) {
 			frame = new JFrame();
-		}
-		else
+		} else
 			frame.getContentPane().removeAll();
+
 		try {
-	
+
 			InputStream inputStream = socket.getInputStream();
 			int length = inputStream.available();
-			//byte[] message = readExactly(inputStream, length);
+			// byte[] message = readExactly(inputStream, length);
 			byte[] message = new byte[length];
-			
-			message = readExactly(inputStream, length);
-			//int index = inputStream.read(message);
-			//System.out.println("Index:   " + index);
-			if(message.length > 2) {
+
+			String s = "";
+			if (length > 2 && length < 20) {
+				message = readExactly(inputStream, length);
+				System.out.println("ska skriva ut storleken: ");
+				s = new String(message);
+				System.out.println(s);
+
+				try {
+					realSize = Integer.valueOf(s.trim());
+					System.out.println("skriv ut realSize nuuu: ");
+					System.out.println(realSize);
+				} catch (NumberFormatException e) {
+					System.out.println(e.toString());
+				}
+
+			}
+
+			//
+			else if (length > 20) {
+
+				message = new byte[realSize];
+
+				int index = inputStream.read(message);
+				// int index = inputStream.read(message);
+				// System.out.println("Index:   " + index);
+
+				// new
+
+				// System.out.println("Index:   " + length);
 				ByteArrayInputStream bais = new ByteArrayInputStream(message);
 				final BufferedImage bufferedImage = ImageIO.read(bais);
-				if (bufferedImage != null) {
-					SwingUtilities.invokeLater(
-						    new Runnable(){
-						        public void run(){
 
-									frame.getContentPane().setLayout(new FlowLayout());
-									frame.getContentPane().add(new JLabel(new ImageIcon(bufferedImage)));
-									frame.pack();
-									frame.setVisible(true);
-						        }
-						    });
-				
+				if (bufferedImage != null) {
+					SwingUtilities.invokeLater(new Runnable() {
+						public void run() {
+							frame.getContentPane().setLayout(new FlowLayout());
+							frame.getContentPane().add(
+									new JLabel(new ImageIcon(bufferedImage)));
+							frame.pack();
+							frame.setVisible(true);
+						}
+					});
+
 				}
+
 			}
-			
-				
-			
+
 		} catch (IOException e) {
 			System.out.println("readServerImage() --> Error = "
 					+ e.getMessage());
 			e.printStackTrace();
 		}
 	}
-	
-	
-	public byte[] readExactly(InputStream input, int size) throws IOException
-	{
-	    byte[] data = new byte[size];
-	    int index = 0;
-	    while (index < size)
-	    {
-	        int bytesRead = input.read(data, index, size - index);
-	        if (bytesRead < 0)
-	        {
-	            throw new IOException("Insufficient data in stream");
-	        }
-	        index += size;
-	    }
-	    return data;
+
+	public byte[] readExactly(InputStream input, int size) throws IOException {
+		byte[] data = new byte[size];
+		int index = 0;
+		while (index < size) {
+			int bytesRead = input.read(data, index, size - index);
+			if (bytesRead < 0) {
+				throw new IOException("Insufficient data in stream");
+			}
+			index += size;
+		}
+		return data;
 	}
 
 	private void init() {
