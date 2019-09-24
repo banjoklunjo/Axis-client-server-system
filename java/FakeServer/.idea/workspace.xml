@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="596ae914-d27c-4d36-9140-c281697f9fb7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Client/src/client/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Client/src/client/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Client/src/main/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Client/src/main/application.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Client/src/model/Camera.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Client/src/model/Network.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Client/src/ui/ConnectView.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Client/src/ui/ConnectView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Client/src/ui/PictureView.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Client/src/ui/PictureView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment1/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment1/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment1/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment1/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment1/build.fxbuild" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment1/src/application/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment1/src/application/application.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment1/src/client/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment1/src/client/Controller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment1/src/model/Camera.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment1/src/model/Network.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment1/src/ui/ConnectView.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment1/src/ui/ConnectView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment1/src/ui/PictureView.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment1/src/ui/PictureView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cameraPicture.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flower1.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flower2.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flower3.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flower4.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flower5.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flower6.bmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.metadata/.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.metadata/.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.metadata/.plugins/org.eclipse.core.resources/.history/21/70ef5bb609da0019182cb81f88eba350" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.metadata/.plugins/org.eclipse.core.resources/.history/33/30f81dce20da0019182cb81f88eba350" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.metadata/.plugins/org.eclipse.core.resources/.history/4d/9033505120da0019182cb81f88eba350" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.metadata/.plugins/org.eclipse.core.resources/.history/7/8044825520da0019182cb81f88eba350" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.metadata/.plugins/org.eclipse.core.resources/.history/8e/702b1a5f20da0019182cb81f88eba350" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.metadata/.plugins/org.eclipse.core.resources/.history/94/c09502dbf7d90019182cb81f88eba350" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.metadata/.plugins/org.eclipse.core.resources/.history/a7/e0ad62211eda0019182cb81f88eba350" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.metadata/.plugins/org.eclipse.core.resources/.history/c/80aba27320da0019182cb81f88eba350" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.metadata/.plugins/org.eclipse.core.resources/.history/d3/a0648e061eda0019182cb81f88eba350" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.metadata/.plugins/org.eclipse.core.resources/.history/e3/80b9ddc6f7d90019182cb81f88eba350" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.metadata/.plugins/org.eclipse.core.resources/.history/e9/e0232d700cda0019182cb81f88eba350" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.metadata/.plugins/org.eclipse.core.resources/.history/f3/902f88270cda0019182cb81f88eba350" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.metadata/.plugins/org.eclipse.core.resources/.projects/server/.indexes/af/history.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.metadata/.plugins/org.eclipse.core.resources/.projects/server/.markers.snap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.metadata/.plugins/org.eclipse.core.resources/.projects/server/.syncinfo.snap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.metadata/.plugins/org.eclipse.core.resources/.root/.markers.snap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.metadata/.plugins/org.eclipse.core.resources/.snap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.debug.ui.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.launching.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.ui.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.pde.api.tools.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.metadata/.plugins/org.eclipse.debug.core/.launches/Server.launch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.metadata/.plugins/org.eclipse.debug.ui/launchConfigurationHistory.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.metadata/.plugins/org.eclipse.jdt.core/1259291233.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.metadata/.plugins/org.eclipse.jdt.core/1328996958.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.metadata/.plugins/org.eclipse.jdt.core/1513993030.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.metadata/.plugins/org.eclipse.jdt.core/2259717368.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.metadata/.plugins/org.eclipse.jdt.core/2307328643.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.metadata/.plugins/org.eclipse.jdt.core/2426646370.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.metadata/.plugins/org.eclipse.jdt.core/2598035366.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.metadata/.plugins/org.eclipse.jdt.core/3542660237.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.metadata/.plugins/org.eclipse.jdt.core/3900037835.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.metadata/.plugins/org.eclipse.jdt.core/392775124.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.metadata/.plugins/org.eclipse.jdt.core/3938652823.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.metadata/.plugins/org.eclipse.jdt.core/460152253.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.metadata/.plugins/org.eclipse.jdt.core/664741535.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.metadata/.plugins/org.eclipse.jdt.core/989528713.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.metadata/.plugins/org.eclipse.jdt.core/externalLibsTimeStamps" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.metadata/.plugins/org.eclipse.jdt.core/javaLikeNames.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.metadata/.plugins/org.eclipse.jdt.launching/.install.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.metadata/.plugins/org.eclipse.jdt.launching/libraryInfos.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.metadata/.plugins/org.eclipse.ui.workbench/workingsets.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.metadata/version.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server/bin/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server/bin/Server.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server/src/Server.java" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Server.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="205">
+              <caret line="77" column="37" selection-start-line="77" selection-start-column="31" selection-end-line="77" selection-end-column="37" />
+              <folding>
+                <element signature="method#readMessageFromClient#0;class#Server#0" />
+                <element signature="method#createInputStream#0;class#Server#0" />
+                <element signature="method#readMessage#0;class#Server#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Constants.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Singleton" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/Constants.java" />
+        <option value="$PROJECT_DIR$/src/Server.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="225" />
+    <option name="y" value="33" />
+    <option name="width" value="1386" />
+    <option name="height" value="788" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="FakeServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FakeServer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FakeServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FakeServer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Client" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Benji\Desktop\Axis-client-server-system\java\FakeServer\src" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="FakeServer" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="FakeServer" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="596ae914-d27c-4d36-9140-c281697f9fb7" name="Default Changelist" comment="" />
+      <created>1569267476703</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1569267476703</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25416037" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3376206" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="77" column="37" selection-start-line="77" selection-start-column="31" selection-end-line="77" selection-end-column="37" />
+          <folding>
+            <element signature="method#readMessageFromClient#0;class#Server#0" />
+            <element signature="method#createInputStream#0;class#Server#0" />
+            <element signature="method#readMessage#0;class#Server#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>13</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
