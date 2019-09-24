@@ -11,49 +11,6 @@
 2019-09-19T13:57:20.629+01:00 axis-00408cf5b0f1 [ ERR     ] httpd[15811]: [trax:error] [pid 15811:tid 1826616432] [client 192.168.20.245:60482] do_transfer: fdipc_client_socket failed, path:/var/run/http/hello_glib/http, errno:146
 2019-09-19T13:57:22.168+01:00 axis-00408cf5b0f1 [ ERR     ] httpd[15811]: [trax:error] [pid 15811:tid 1851782256] [client 192.168.20.245:60488] do_transfer: fdipc_client_socket failed, path:/var/run/http/hello_glib/http, errno:146
 2019-09-19T13:57:22.920+01:00 axis-00408cf5b0f1 [ ERR     ] httpd[15811]: [trax:error] [pid 15811:tid 1918891120] [client 192.168.20.245:60491] do_transfer: fdipc_client_socket failed, path:/var/run/http/hello_glib/http, errno:146
-2019-09-19T15:23:36.759+01:00 axis-00408cf5b0f1 [ WARNING ] actionengined: Action failed, retry will be done in 10 seconds
-2019-09-19T15:23:44.754+01:00 axis-00408cf5b0f1 [ WARNING ] actionengined: Action failed, retry will be done in 10 seconds
-2019-09-19T15:23:44.754+01:00 axis-00408cf5b0f1 [ WARNING ] actionengined: An error occurred in "Send Images" action: HTTP response error: (received: 302)
-2019-09-19T15:23:46.757+01:00 axis-00408cf5b0f1 [ WARNING ] actionengined: An error occurred in "Send Images" action: failed to transfer data: Couldn't connect to server
-2019-09-19T15:23:46.777+01:00 axis-00408cf5b0f1 [ WARNING ] actionengined: Action failed, retry will be done in 10 seconds
-2019-09-19T15:23:54.742+01:00 axis-00408cf5b0f1 [ WARNING ] actionengined: An error occurred in "Send Images" action: HTTP response error: (received: 302)
-2019-09-19T15:23:54.759+01:00 axis-00408cf5b0f1 [ WARNING ] actionengined: Action failed, retry will be done in 10 seconds
-2019-09-19T15:23:56.762+01:00 axis-00408cf5b0f1 [ WARNING ] actionengined: An error occurred in "Send Images" action: failed to transfer data: Couldn't connect to server
-2019-09-19T15:23:56.774+01:00 axis-00408cf5b0f1 [ WARNING ] actionengined: Action failed, retry will be done in 10 seconds
-2019-09-19T15:24:25.903+01:00 axis-00408cf5b0f1 [ WARNING ] actionengined: Failed to invoke Halt - poll timed out after 0:01:00.000000000
-2019-09-19T15:24:27.402+01:00 axis-00408cf5b0f1 [ WARNING ] actionengined: Failed to invoke Halt - poll timed out after 0:01:00.000000000
-2019-09-19T15:24:27.594+01:00 axis-00408cf5b0f1 [ WARNING ] actionengined: An error occurred in "Send Images" action: failed to transfer data: Couldn't connect to server
-2019-09-19T15:24:27.605+01:00 axis-00408cf5b0f1 [ WARNING ] actionengined: Action failed, retry will be done in 10 seconds
-2019-09-19T15:57:56.606+01:00 axis-00408cf5b0f1 [ WARNING ] disks[1263]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-09-19T16:57:56.606+01:00 axis-00408cf5b0f1 [ WARNING ] disks[1263]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-09-19T17:57:56.605+01:00 axis-00408cf5b0f1 [ WARNING ] disks[1263]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-09-19T18:57:56.606+01:00 axis-00408cf5b0f1 [ WARNING ] disks[1263]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-09-19T19:57:56.606+01:00 axis-00408cf5b0f1 [ WARNING ] disks[1263]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-09-19T20:57:56.603+01:00 axis-00408cf5b0f1 [ WARNING ] disks[1263]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-09-19T21:57:56.605+01:00 axis-00408cf5b0f1 [ WARNING ] disks[1263]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-09-19T22:57:56.606+01:00 axis-00408cf5b0f1 [ WARNING ] disks[1263]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-09-19T23:57:56.606+01:00 axis-00408cf5b0f1 [ WARNING ] disks[1263]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-09-20T00:57:56.606+01:00 axis-00408cf5b0f1 [ WARNING ] disks[1263]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-09-20T01:57:56.606+01:00 axis-00408cf5b0f1 [ WARNING ] disks[1263]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-09-20T02:57:56.606+01:00 axis-00408cf5b0f1 [ WARNING ] disks[1263]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-09-20T03:57:56.604+01:00 axis-00408cf5b0f1 [ WARNING ] disks[1263]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-09-20T04:57:56.606+01:00 axis-00408cf5b0f1 [ WARNING ] disks[1263]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-09-20T05:57:56.605+01:00 axis-00408cf5b0f1 [ WARNING ] disks[1263]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-09-20T06:57:56.604+01:00 axis-00408cf5b0f1 [ WARNING ] disks[1263]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-09-20T07:57:56.606+01:00 axis-00408cf5b0f1 [ WARNING ] disks[1263]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-09-20T08:57:56.614+01:00 axis-00408cf5b0f1 [ WARNING ] disks[1263]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-09-20T09:57:56.609+01:00 axis-00408cf5b0f1 [ WARNING ] disks[1263]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-09-20T10:57:56.604+01:00 axis-00408cf5b0f1 [ WARNING ] disks[1263]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-09-20T11:57:56.614+01:00 axis-00408cf5b0f1 [ WARNING ] disks[1263]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-09-20T12:57:56.606+01:00 axis-00408cf5b0f1 [ WARNING ] disks[1263]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-09-20T13:57:56.606+01:00 axis-00408cf5b0f1 [ WARNING ] disks[1263]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-09-20T14:57:56.602+01:00 axis-00408cf5b0f1 [ WARNING ] disks[1263]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-09-20T15:57:56.610+01:00 axis-00408cf5b0f1 [ WARNING ] disks[1263]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-09-20T16:57:56.606+01:00 axis-00408cf5b0f1 [ WARNING ] disks[1263]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-09-20T17:57:56.609+01:00 axis-00408cf5b0f1 [ WARNING ] disks[1263]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-09-20T18:57:56.606+01:00 axis-00408cf5b0f1 [ WARNING ] disks[1263]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-09-20T19:57:56.613+01:00 axis-00408cf5b0f1 [ WARNING ] disks[1263]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-09-20T20:57:56.605+01:00 axis-00408cf5b0f1 [ WARNING ] disks[1263]: Failed to get /sys/ path for /dev/mmcblk0p1
 2019-09-20T21:57:56.606+01:00 axis-00408cf5b0f1 [ WARNING ] disks[1263]: Failed to get /sys/ path for /dev/mmcblk0p1
 2019-09-20T22:57:56.611+01:00 axis-00408cf5b0f1 [ WARNING ] disks[1263]: Failed to get /sys/ path for /dev/mmcblk0p1
 2019-09-20T23:57:56.606+01:00 axis-00408cf5b0f1 [ WARNING ] disks[1263]: Failed to get /sys/ path for /dev/mmcblk0p1
@@ -128,207 +85,236 @@
 2019-09-23T18:45:15.566+01:00 axis-00408cf5b0f1 [ WARNING ] server[23793]: Could not get VideoType from com.axis.VideoControl: Method "Get" with signature "ss" on interface "org.freedesktop.DBus.Properties" doesn't exist
 2019-09-23T18:46:15.159+01:00 axis-00408cf5b0f1 [ WARNING ] server[23793]: Could not get VideoType from com.axis.VideoControl: Method "Get" with signature "ss" on interface "org.freedesktop.DBus.Properties" doesn't exist
 2019-09-23T18:47:40.751+01:00 axis-00408cf5b0f1 [ WARNING ] server[23793]: Could not get VideoType from com.axis.VideoControl: Method "Get" with signature "ss" on interface "org.freedesktop.DBus.Properties" doesn't exist
-2019-09-23T18:49:34.434+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after frame data
-2019-09-23T18:49:34.435+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after img_size......
-2019-09-23T18:49:34.436+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: Client is disconnected
-2019-09-23T18:49:34.436+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after sprintf
-2019-09-23T18:49:34.437+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after  all errors
-2019-09-23T18:49:35.086+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after frame data
-2019-09-23T18:49:35.087+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after img_size......
-2019-09-23T18:49:35.087+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after sprintf
-2019-09-23T18:49:35.089+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: Client is disconnected
-2019-09-23T18:49:35.090+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after  all errors
-2019-09-23T18:49:35.419+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after frame data
-2019-09-23T18:49:35.419+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after img_size......
-2019-09-23T18:49:35.420+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: Client is disconnected
-2019-09-23T18:49:35.420+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after  all errors
-2019-09-23T18:49:35.420+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after frame data
-2019-09-23T18:49:35.420+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after img_size......
-2019-09-23T18:49:35.420+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after sprintf
-2019-09-23T18:49:35.420+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after sprintf
-2019-09-23T18:49:35.421+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: Client is disconnected
-2019-09-23T18:49:35.421+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after  all errors
-2019-09-23T18:49:35.421+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after frame data
-2019-09-23T18:49:35.430+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after img_size......
-2019-09-23T18:49:35.431+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after sprintf
-2019-09-23T18:49:35.432+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after frame data
-2019-09-23T18:49:35.435+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: Client is disconnected
-2019-09-23T18:49:35.435+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after img_size......
-2019-09-23T18:49:35.435+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after sprintf
-2019-09-23T18:49:35.436+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: Client is disconnected
-2019-09-23T18:49:35.436+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after  all errors
-2019-09-23T18:49:35.436+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after  all errors
-2019-09-23T18:49:36.085+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after frame data
-2019-09-23T18:49:36.086+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after img_size......
-2019-09-23T18:49:36.087+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after sprintf
-2019-09-23T18:49:36.088+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: Client is disconnected
-2019-09-23T18:49:36.088+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after  all errors
-2019-09-23T18:49:36.414+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after frame data
-2019-09-23T18:49:36.416+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after img_size......
-2019-09-23T18:49:36.417+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after sprintf
-2019-09-23T18:49:36.419+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: Client is disconnected
-2019-09-23T18:49:36.434+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after  all errors
-2019-09-23T18:49:36.437+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after frame data
-2019-09-23T18:49:36.439+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: Client is disconnected
-2019-09-23T18:49:36.439+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after img_size......
-2019-09-23T18:49:36.439+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after sprintf
-2019-09-23T18:49:36.440+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: Client is disconnected
-2019-09-23T18:49:36.440+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after  all errors
-2019-09-23T18:49:36.440+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after frame data
-2019-09-23T18:49:36.440+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after frame data
-2019-09-23T18:49:36.440+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after img_size......
-2019-09-23T18:49:36.440+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after img_size......
-2019-09-23T18:49:36.440+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after sprintf
-2019-09-23T18:49:36.440+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after sprintf
-2019-09-23T18:49:36.441+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: Client is disconnected
-2019-09-23T18:49:36.441+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after  all errors
-2019-09-23T18:49:36.441+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after  all errors
-2019-09-23T18:49:37.086+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after frame data
-2019-09-23T18:49:37.089+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after img_size......
-2019-09-23T18:49:37.090+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: Client is disconnected
-2019-09-23T18:49:37.090+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after  all errors
-2019-09-23T18:49:37.090+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after sprintf
-2019-09-23T18:49:37.412+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after frame data
-2019-09-23T18:49:37.416+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after img_size......
-2019-09-23T18:49:37.418+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after sprintf
-2019-09-23T18:49:37.420+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after frame data
-2019-09-23T18:49:37.422+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after img_size......
-2019-09-23T18:49:37.424+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after sprintf
-2019-09-23T18:49:37.426+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: Client is disconnected
-2019-09-23T18:49:37.428+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after  all errors
-2019-09-23T18:49:37.430+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: Client is disconnected
-2019-09-23T18:49:37.431+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after  all errors
-2019-09-23T18:49:37.432+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after frame data
-2019-09-23T18:49:37.433+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after frame data
-2019-09-23T18:49:37.434+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after img_size......
-2019-09-23T18:49:37.435+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after sprintf
-2019-09-23T18:49:37.436+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after img_size......
-2019-09-23T18:49:37.437+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: Client is disconnected
-2019-09-23T18:49:37.438+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after  all errors
-2019-09-23T18:49:37.438+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after sprintf
-2019-09-23T18:49:37.442+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: Client is disconnected
-2019-09-23T18:49:37.450+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after  all errors
-2019-09-23T18:49:38.085+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after frame data
-2019-09-23T18:49:38.088+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after img_size......
-2019-09-23T18:49:38.092+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after sprintf
-2019-09-23T18:49:38.093+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: Client is disconnected
-2019-09-23T18:49:38.094+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after  all errors
-2019-09-23T18:49:38.419+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after frame data
-2019-09-23T18:49:38.422+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after img_size......
-2019-09-23T18:49:38.424+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after sprintf
-2019-09-23T18:49:38.426+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: Client is disconnected
-2019-09-23T18:49:38.427+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after  all errors
-2019-09-23T18:49:38.428+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after frame data
-2019-09-23T18:49:38.442+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after img_size......
-2019-09-23T18:49:38.443+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after sprintf
-2019-09-23T18:49:38.445+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after frame data
-2019-09-23T18:49:38.446+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after img_size......
-2019-09-23T18:49:38.448+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after sprintf
-2019-09-23T18:49:38.449+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: Client is disconnected
-2019-09-23T18:49:38.450+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: Client is disconnected
-2019-09-23T18:49:38.450+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after  all errors
-2019-09-23T18:49:38.450+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after  all errors
-2019-09-23T18:49:38.450+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after frame data
-2019-09-23T18:49:38.451+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: Client is disconnected
-2019-09-23T18:49:38.451+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after  all errors
-2019-09-23T18:49:38.451+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after img_size......
-2019-09-23T18:49:38.451+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after sprintf
-2019-09-23T18:49:39.086+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after frame data
-2019-09-23T18:49:39.089+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after img_size......
-2019-09-23T18:49:39.090+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: Client is disconnected
-2019-09-23T18:49:39.090+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after  all errors
-2019-09-23T18:49:39.090+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after sprintf
-2019-09-23T18:49:39.409+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after frame data
-2019-09-23T18:49:39.410+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: Client is disconnected
-2019-09-23T18:49:39.410+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after img_size......
-2019-09-23T18:49:39.410+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after sprintf
-2019-09-23T18:49:39.411+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after  all errors
-2019-09-23T18:49:39.411+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after frame data
-2019-09-23T18:49:39.421+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after frame data
-2019-09-23T18:49:39.422+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after img_size......
-2019-09-23T18:49:39.423+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after sprintf
-2019-09-23T18:49:39.429+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after frame data
-2019-09-23T18:49:39.430+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after img_size......
-2019-09-23T18:49:39.431+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after sprintf
-2019-09-23T18:49:39.432+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: Client is disconnected
-2019-09-23T18:49:39.433+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: Client is disconnected
-2019-09-23T18:49:39.433+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after  all errors
-2019-09-23T18:49:39.434+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after img_size......
-2019-09-23T18:49:39.435+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after  all errors
-2019-09-23T18:49:39.436+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after sprintf
-2019-09-23T18:49:39.440+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: Client is disconnected
-2019-09-23T18:49:39.442+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after  all errors
-2019-09-23T18:49:40.085+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after frame data
-2019-09-23T18:49:40.088+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after img_size......
-2019-09-23T18:49:40.092+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after sprintf
-2019-09-23T18:49:40.093+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: Client is disconnected
-2019-09-23T18:49:40.095+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after  all errors
-2019-09-23T18:49:40.414+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after frame data
-2019-09-23T18:49:40.415+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after img_size......
-2019-09-23T18:49:40.415+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after sprintf
-2019-09-23T18:49:40.416+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: Client is disconnected
-2019-09-23T18:49:40.416+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after  all errors
-2019-09-23T18:49:40.419+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after frame data
-2019-09-23T18:49:40.420+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after frame data
-2019-09-23T18:49:40.420+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after img_size......
-2019-09-23T18:49:40.420+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after sprintf
-2019-09-23T18:49:40.432+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: Client is disconnected
-2019-09-23T18:49:40.432+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after  all errors
-2019-09-23T18:49:40.433+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after frame data
-2019-09-23T18:49:40.434+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after img_size......
-2019-09-23T18:49:40.435+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after sprintf
-2019-09-23T18:49:40.437+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: Client is disconnected
-2019-09-23T18:49:40.438+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after  all errors
-2019-09-23T18:49:40.444+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after img_size......
-2019-09-23T18:49:40.445+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after sprintf
-2019-09-23T18:49:40.447+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: Client is disconnected
-2019-09-23T18:49:40.448+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after  all errors
-2019-09-23T18:49:41.086+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after frame data
-2019-09-23T18:49:41.088+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after img_size......
-2019-09-23T18:49:41.092+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after sprintf
-2019-09-23T18:49:41.094+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: Client is disconnected
-2019-09-23T18:49:41.095+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after  all errors
-2019-09-23T18:49:41.409+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after frame data
-2019-09-23T18:49:41.413+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after frame data
-2019-09-23T18:49:41.416+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after img_size......
-2019-09-23T18:49:41.421+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after sprintf
-2019-09-23T18:49:41.424+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: Client is disconnected
-2019-09-23T18:49:41.426+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after  all errors
-2019-09-23T18:49:41.427+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after img_size......
-2019-09-23T18:49:41.439+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after frame data
-2019-09-23T18:49:41.439+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after img_size......
-2019-09-23T18:49:41.439+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after sprintf
-2019-09-23T18:49:41.439+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after sprintf
-2019-09-23T18:49:41.440+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: Client is disconnected
-2019-09-23T18:49:41.440+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: Client is disconnected
-2019-09-23T18:49:41.440+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: Client is disconnected
-2019-09-23T18:49:41.440+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after  all errors
-2019-09-23T18:49:41.440+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after frame data
-2019-09-23T18:49:41.440+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after img_size......
-2019-09-23T18:49:41.440+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after sprintf
-2019-09-23T18:49:41.441+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after  all errors
-2019-09-23T18:49:41.441+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after  all errors
-2019-09-23T18:49:42.085+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after frame data
-2019-09-23T18:49:42.085+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after img_size......
-2019-09-23T18:49:42.085+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after sprintf
-2019-09-23T18:49:42.092+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: Client is disconnected
-2019-09-23T18:49:42.092+01:00 axis-00408cf5b0f1 [ INFO    ] server[23793]: after  all errors
-2019-09-23T18:49:42.304+01:00 axis-00408cf5b0f1 [ INFO    ] server[0]: stopping server
-2019-09-23T18:49:53.992+01:00 axis-00408cf5b0f1 [ INFO    ] upload.cgi: Uploaded '/tmp/server_1_0_mipsisa32r2el.eap' size:39753
-2019-09-23T18:49:55.033+01:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[844]: [system] Reloaded configuration
-2019-09-23T18:49:56.650+01:00 axis-00408cf5b0f1 [ INFO    ] upload.cgi: Package /tmp/server_1_0_mipsisa32r2el.eap installation OK
-2019-09-23T18:49:56.651+01:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[844]: message repeated 2 times: [ [system] Reloaded configuration]
-2019-09-23T18:50:02.586+01:00 axis-00408cf5b0f1 [ INFO    ] server[0]: starting server
-2019-09-23T18:50:02.799+01:00 axis-00408cf5b0f1 [ INFO    ] server[24912]: Listening
-2019-09-23T18:50:02.799+01:00 axis-00408cf5b0f1 [ INFO    ] server[24912]: Server running...
 2019-09-23T18:50:15.689+01:00 axis-00408cf5b0f1 [ WARNING ] server[24912]: Could not get VideoType from com.axis.VideoControl: Method "Get" with signature "ss" on interface "org.freedesktop.DBus.Properties" doesn't exist
-2019-09-23T18:50:15.695+01:00 axis-00408cf5b0f1 [ INFO    ] server[24912]: Thread CREATED ...
-2019-09-23T18:50:22.264+01:00 axis-00408cf5b0f1 [ INFO    ] server[24912]: message below from client:
-2019-09-23T18:50:22.266+01:00 axis-00408cf5b0f1 [ INFO    ] server[24912]: resolution=320x180&fps=1
-2019-09-23T18:50:22.267+01:00 axis-00408cf5b0f1 [ INFO    ] server[24912]: after int row.....
-2019-09-23T18:50:22.267+01:00 axis-00408cf5b0f1 [ INFO    ] server[24912]: resolution=320x180&fps=1
-2019-09-23T18:51:18.357+01:00 axis-00408cf5b0f1 [ INFO    ] server[24912]: Client is disconnected
-2019-09-23T18:52:19.356+01:00 axis-00408cf5b0f1 [ INFO    ] server[24912]: message repeated 61 times: [ Client is disconnected]
-2019-09-23T18:53:07.633+01:00 axis-00408cf5b0f1 [ INFO    ] server[0]: stopping server
-2019-09-23T18:53:07.634+01:00 axis-00408cf5b0f1 [ INFO    ] server[24912]: message repeated 48 times: [ Client is disconnected]
-2019-09-23T18:53:16.876+01:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[844]: [system] Reloaded configuration
+2019-09-23T18:56:00.973+01:00 axis-00408cf5b0f1 [ WARNING ] server[25639]: Could not get VideoType from com.axis.VideoControl: Method "Get" with signature "ss" on interface "org.freedesktop.DBus.Properties" doesn't exist
+2019-09-23T18:57:03.359+01:00 axis-00408cf5b0f1 [ WARNING ] server[25639]: message repeated 2 times: [ Could not get VideoType from com.axis.VideoControl: Method "Get" with signature "ss" on interface "org.freedesktop.DBus.Properties" doesn't exist]
+2019-09-23T18:57:47.061+01:00 axis-00408cf5b0f1 [ WARNING ] server[25639]: Could not get VideoType from com.axis.VideoControl: Method "Get" with signature "ss" on interface "org.freedesktop.DBus.Properties" doesn't exist
+2019-09-23T18:57:56.616+01:00 axis-00408cf5b0f1 [ WARNING ] disks[1263]: Failed to get /sys/ path for /dev/mmcblk0p1
+2019-09-23T19:54:43.387+01:00 axis-00408cf5b0f1 [ WARNING ] server[25639]: Could not get VideoType from com.axis.VideoControl: Method "Get" with signature "ss" on interface "org.freedesktop.DBus.Properties" doesn't exist
+2019-09-23T19:57:56.608+01:00 axis-00408cf5b0f1 [ WARNING ] disks[1263]: Failed to get /sys/ path for /dev/mmcblk0p1
+2019-09-23T20:57:56.606+01:00 axis-00408cf5b0f1 [ WARNING ] disks[1263]: Failed to get /sys/ path for /dev/mmcblk0p1
+2019-09-23T21:57:56.603+01:00 axis-00408cf5b0f1 [ WARNING ] disks[1263]: Failed to get /sys/ path for /dev/mmcblk0p1
+2019-09-23T22:57:56.612+01:00 axis-00408cf5b0f1 [ WARNING ] disks[1263]: Failed to get /sys/ path for /dev/mmcblk0p1
+2019-09-23T23:57:56.615+01:00 axis-00408cf5b0f1 [ WARNING ] disks[1263]: Failed to get /sys/ path for /dev/mmcblk0p1
+2019-09-24T00:57:56.606+01:00 axis-00408cf5b0f1 [ WARNING ] disks[1263]: Failed to get /sys/ path for /dev/mmcblk0p1
+2019-09-24T01:57:56.610+01:00 axis-00408cf5b0f1 [ WARNING ] disks[1263]: Failed to get /sys/ path for /dev/mmcblk0p1
+2019-09-24T02:57:56.605+01:00 axis-00408cf5b0f1 [ WARNING ] disks[1263]: Failed to get /sys/ path for /dev/mmcblk0p1
+2019-09-24T03:57:56.619+01:00 axis-00408cf5b0f1 [ WARNING ] disks[1263]: Failed to get /sys/ path for /dev/mmcblk0p1
+2019-09-24T04:57:56.608+01:00 axis-00408cf5b0f1 [ WARNING ] disks[1263]: Failed to get /sys/ path for /dev/mmcblk0p1
+2019-09-24T05:57:56.609+01:00 axis-00408cf5b0f1 [ WARNING ] disks[1263]: Failed to get /sys/ path for /dev/mmcblk0p1
+2019-09-24T06:57:56.605+01:00 axis-00408cf5b0f1 [ WARNING ] disks[1263]: Failed to get /sys/ path for /dev/mmcblk0p1
+2019-09-24T07:57:56.610+01:00 axis-00408cf5b0f1 [ WARNING ] disks[1263]: Failed to get /sys/ path for /dev/mmcblk0p1
+2019-09-24T08:57:56.607+01:00 axis-00408cf5b0f1 [ WARNING ] disks[1263]: Failed to get /sys/ path for /dev/mmcblk0p1
+2019-09-24T09:57:56.616+01:00 axis-00408cf5b0f1 [ WARNING ] disks[1263]: Failed to get /sys/ path for /dev/mmcblk0p1
+2019-09-24T10:32:13.949+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3313 times: [ Client is disconnected]
+2019-09-24T10:33:14.008+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3303 times: [ Client is disconnected]
+2019-09-24T10:34:14.069+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3303 times: [ Client is disconnected]
+2019-09-24T10:35:14.129+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3304 times: [ Client is disconnected]
+2019-09-24T10:36:14.189+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3304 times: [ Client is disconnected]
+2019-09-24T10:37:14.249+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3304 times: [ Client is disconnected]
+2019-09-24T10:38:14.309+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3302 times: [ Client is disconnected]
+2019-09-24T10:39:14.369+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3303 times: [ Client is disconnected]
+2019-09-24T10:40:14.429+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3303 times: [ Client is disconnected]
+2019-09-24T10:41:14.489+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3305 times: [ Client is disconnected]
+2019-09-24T10:42:14.549+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3302 times: [ Client is disconnected]
+2019-09-24T10:43:14.609+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3284 times: [ Client is disconnected]
+2019-09-24T10:44:14.669+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3305 times: [ Client is disconnected]
+2019-09-24T10:45:14.729+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3303 times: [ Client is disconnected]
+2019-09-24T10:46:14.789+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3304 times: [ Client is disconnected]
+2019-09-24T10:47:14.849+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3302 times: [ Client is disconnected]
+2019-09-24T10:48:14.909+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3304 times: [ Client is disconnected]
+2019-09-24T10:49:14.969+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3304 times: [ Client is disconnected]
+2019-09-24T10:50:15.005+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3301 times: [ Client is disconnected]
+2019-09-24T10:51:15.089+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3304 times: [ Client is disconnected]
+2019-09-24T10:52:15.149+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3305 times: [ Client is disconnected]
+2019-09-24T10:53:15.209+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3304 times: [ Client is disconnected]
+2019-09-24T10:54:15.269+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3302 times: [ Client is disconnected]
+2019-09-24T10:55:15.329+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3304 times: [ Client is disconnected]
+2019-09-24T10:56:15.389+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3302 times: [ Client is disconnected]
+2019-09-24T10:57:15.449+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3305 times: [ Client is disconnected]
+2019-09-24T10:57:56.610+01:00 axis-00408cf5b0f1 [ WARNING ] disks[1263]: Failed to get /sys/ path for /dev/mmcblk0p1
+2019-09-24T10:58:15.509+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3302 times: [ Client is disconnected]
+2019-09-24T10:59:15.569+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3304 times: [ Client is disconnected]
+2019-09-24T11:00:15.629+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3302 times: [ Client is disconnected]
+2019-09-24T11:01:15.689+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3305 times: [ Client is disconnected]
+2019-09-24T11:02:15.749+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3302 times: [ Client is disconnected]
+2019-09-24T11:03:15.809+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3305 times: [ Client is disconnected]
+2019-09-24T11:04:15.869+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3302 times: [ Client is disconnected]
+2019-09-24T11:05:15.929+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3304 times: [ Client is disconnected]
+2019-09-24T11:06:15.989+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3302 times: [ Client is disconnected]
+2019-09-24T11:07:16.000+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3302 times: [ Client is disconnected]
+2019-09-24T11:08:16.109+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3305 times: [ Client is disconnected]
+2019-09-24T11:09:16.169+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3305 times: [ Client is disconnected]
+2019-09-24T11:10:16.229+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3302 times: [ Client is disconnected]
+2019-09-24T11:11:16.289+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3304 times: [ Client is disconnected]
+2019-09-24T11:12:16.349+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3302 times: [ Client is disconnected]
+2019-09-24T11:13:16.409+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3303 times: [ Client is disconnected]
+2019-09-24T11:14:16.469+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3304 times: [ Client is disconnected]
+2019-09-24T11:15:16.529+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3304 times: [ Client is disconnected]
+2019-09-24T11:16:16.589+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3302 times: [ Client is disconnected]
+2019-09-24T11:17:16.657+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3292 times: [ Client is disconnected]
+2019-09-24T11:18:16.709+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3303 times: [ Client is disconnected]
+2019-09-24T11:19:16.769+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3303 times: [ Client is disconnected]
+2019-09-24T11:20:16.829+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3304 times: [ Client is disconnected]
+2019-09-24T11:21:16.889+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3304 times: [ Client is disconnected]
+2019-09-24T11:22:16.950+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3302 times: [ Client is disconnected]
+2019-09-24T11:23:17.009+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3304 times: [ Client is disconnected]
+2019-09-24T11:24:17.069+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3302 times: [ Client is disconnected]
+2019-09-24T11:25:17.129+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3306 times: [ Client is disconnected]
+2019-09-24T11:26:17.189+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3302 times: [ Client is disconnected]
+2019-09-24T11:27:17.249+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3304 times: [ Client is disconnected]
+2019-09-24T11:28:17.310+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3302 times: [ Client is disconnected]
+2019-09-24T11:29:17.370+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3304 times: [ Client is disconnected]
+2019-09-24T11:30:17.429+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3304 times: [ Client is disconnected]
+2019-09-24T11:31:17.489+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3303 times: [ Client is disconnected]
+2019-09-24T11:32:17.549+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3302 times: [ Client is disconnected]
+2019-09-24T11:33:17.609+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3304 times: [ Client is disconnected]
+2019-09-24T11:34:17.669+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3303 times: [ Client is disconnected]
+2019-09-24T11:35:17.729+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3304 times: [ Client is disconnected]
+2019-09-24T11:36:17.789+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3303 times: [ Client is disconnected]
+2019-09-24T11:37:17.849+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3304 times: [ Client is disconnected]
+2019-09-24T11:38:17.910+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3302 times: [ Client is disconnected]
+2019-09-24T11:39:17.969+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3304 times: [ Client is disconnected]
+2019-09-24T11:40:18.027+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3303 times: [ Client is disconnected]
+2019-09-24T11:41:18.089+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3304 times: [ Client is disconnected]
+2019-09-24T11:42:18.309+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3312 times: [ Client is disconnected]
+2019-09-24T11:43:18.369+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3303 times: [ Client is disconnected]
+2019-09-24T11:44:18.429+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3304 times: [ Client is disconnected]
+2019-09-24T11:45:18.489+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3303 times: [ Client is disconnected]
+2019-09-24T11:46:18.549+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3303 times: [ Client is disconnected]
+2019-09-24T11:47:18.610+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3303 times: [ Client is disconnected]
+2019-09-24T11:48:18.669+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3295 times: [ Client is disconnected]
+2019-09-24T11:49:18.730+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3304 times: [ Client is disconnected]
+2019-09-24T11:50:18.789+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3305 times: [ Client is disconnected]
+2019-09-24T11:51:18.849+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3302 times: [ Client is disconnected]
+2019-09-24T11:52:13.525+01:00 axis-00408cf5b0f1 [ INFO    ] monolith[1027]: monolith[1027]: HTTP image/jpeg session created from 192.168.20.239
+2019-09-24T11:52:13.526+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 3005 times: [ Client is disconnected]
+2019-09-24T11:52:13.595+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: Client is disconnected
+2019-09-24T11:52:51.635+01:00 axis-00408cf5b0f1 [ INFO    ] upload.cgi: Uploaded '/tmp/Server_1_0_mipsisa32r2el.eap' size:78428
+2019-09-24T11:52:51.643+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 2095 times: [ Client is disconnected]
+2019-09-24T11:52:51.664+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: Client is disconnected
+2019-09-24T11:52:52.709+01:00 axis-00408cf5b0f1 [ INFO    ] server[0]: stopping server
+2019-09-24T11:52:52.711+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 57 times: [ Client is disconnected]
+2019-09-24T11:52:52.729+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: Client is disconnected
+2019-09-24T11:52:54.413+01:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[844]: [system] Reloaded configuration
+2019-09-24T11:52:54.414+01:00 axis-00408cf5b0f1 [ INFO    ] server[25639]: message repeated 18 times: [ Client is disconnected]
+2019-09-24T11:52:56.666+01:00 axis-00408cf5b0f1 [ INFO    ] upload.cgi: Package /tmp/Server_1_0_mipsisa32r2el.eap installation OK
+2019-09-24T11:52:56.667+01:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[844]: message repeated 2 times: [ [system] Reloaded configuration]
+2019-09-24T11:53:04.425+01:00 axis-00408cf5b0f1 [ INFO    ] server[0]: starting server
+2019-09-24T11:53:07.433+01:00 axis-00408cf5b0f1 [ INFO    ] monolith[1027]: monolith[1027]: HTTP image/jpeg session terminated from 192.168.20.239
+2019-09-24T11:54:01.470+01:00 axis-00408cf5b0f1 [ INFO    ] server[0]: stopping server
+2019-09-24T11:54:42.385+01:00 axis-00408cf5b0f1 [ INFO    ] server[0]: starting server
+2019-09-24T11:57:56.607+01:00 axis-00408cf5b0f1 [ WARNING ] disks[1263]: Failed to get /sys/ path for /dev/mmcblk0p1
+2019-09-24T11:58:40.586+01:00 axis-00408cf5b0f1 [ INFO    ] server[0]: stopping server
+2019-09-24T11:58:43.408+01:00 axis-00408cf5b0f1 [ INFO    ] server[0]: starting server
+2019-09-24T11:59:49.698+01:00 axis-00408cf5b0f1 [ INFO    ] monolith[1027]: monolith[1027]: HTTP image/jpeg session created from 192.168.20.239
+2019-09-24T11:59:54.464+01:00 axis-00408cf5b0f1 [ INFO    ] monolith[1027]: monolith[1027]: HTTP image/jpeg session terminated from 192.168.20.239
+2019-09-24T11:59:58.695+01:00 axis-00408cf5b0f1 [ INFO    ] debugar.cgi[1303]: /proc/sys/net/ipv4/route/flush: Bad file descriptor
+2019-09-24T11:59:58.712+01:00 axis-00408cf5b0f1 [ INFO    ] debugar.cgi[1303]: /proc/sys/net/ipv6/route/flush: Bad file descriptor
+2019-09-24T12:00:02.352+01:00 axis-00408cf5b0f1 [ WARNING ] tourrecd[1910]: Tour sample syncing fault, restoring
+2019-09-24T12:00:02.387+01:00 axis-00408cf5b0f1 [ WARNING ] tourplayerd[1916]: Tour sample syncing fault, restoring
+2019-09-24T12:01:17.483+01:00 axis-00408cf5b0f1 [ INFO    ] server[0]: stopping server
+2019-09-24T12:01:21.673+01:00 axis-00408cf5b0f1 [ INFO    ] server[0]: starting server
+2019-09-24T12:04:16.109+01:00 axis-00408cf5b0f1 [ INFO    ] server[0]: stopping server
+2019-09-24T12:06:14.485+01:00 axis-00408cf5b0f1 [ INFO    ] upload.cgi: Uploaded '/tmp/Server_1_0_mipsisa32r2el.eap' size:78428
+2019-09-24T12:06:15.501+01:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[844]: [system] Reloaded configuration
+2019-09-24T12:06:17.198+01:00 axis-00408cf5b0f1 [ INFO    ] upload.cgi: Package /tmp/Server_1_0_mipsisa32r2el.eap installation OK
+2019-09-24T12:06:17.233+01:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[844]: message repeated 2 times: [ [system] Reloaded configuration]
+2019-09-24T12:06:20.988+01:00 axis-00408cf5b0f1 [ INFO    ] server[0]: starting server
+2019-09-24T12:07:09.627+01:00 axis-00408cf5b0f1 [ INFO    ] server[0]: stopping server
+2019-09-24T12:07:16.374+01:00 axis-00408cf5b0f1 [ INFO    ] upload.cgi: Uploaded '/tmp/Server_1_0_mipsisa32r2el.eap' size:78428
+2019-09-24T12:07:17.394+01:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[844]: [system] Reloaded configuration
+2019-09-24T12:07:19.119+01:00 axis-00408cf5b0f1 [ INFO    ] upload.cgi: Package /tmp/Server_1_0_mipsisa32r2el.eap installation OK
+2019-09-24T12:07:19.120+01:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[844]: message repeated 2 times: [ [system] Reloaded configuration]
+2019-09-24T12:07:23.577+01:00 axis-00408cf5b0f1 [ INFO    ] server[0]: starting server
+2019-09-24T12:10:54.071+01:00 axis-00408cf5b0f1 [ INFO    ] upload.cgi: Uploaded '/tmp/serverTest_1_0_mipsisa32r2el.eap' size:38616
+2019-09-24T12:10:54.389+01:00 axis-00408cf5b0f1 [ INFO    ] server[0]: stopping server
+2019-09-24T12:10:55.336+01:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[844]: [system] Reloaded configuration
+2019-09-24T12:10:55.783+01:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[844]: [system] Reloaded configuration
+2019-09-24T12:10:56.883+01:00 axis-00408cf5b0f1 [ INFO    ] upload.cgi: Package /tmp/serverTest_1_0_mipsisa32r2el.eap installation OK
+2019-09-24T12:10:56.895+01:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[844]: [system] Reloaded configuration
+2019-09-24T12:11:04.080+01:00 axis-00408cf5b0f1 [ INFO    ] server[0]: starting server
+2019-09-24T12:11:04.205+01:00 axis-00408cf5b0f1 [ INFO    ] server: hello
+2019-09-24T12:21:13.803+01:00 axis-00408cf5b0f1 [ INFO    ] upload.cgi: Uploaded '/tmp/serverTest_1_0_mipsisa32r2el.eap' size:38616
+2019-09-24T12:21:14.806+01:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[844]: [system] Reloaded configuration
+2019-09-24T12:21:16.438+01:00 axis-00408cf5b0f1 [ INFO    ] upload.cgi: Package /tmp/serverTest_1_0_mipsisa32r2el.eap installation OK
+2019-09-24T12:21:16.440+01:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[844]: message repeated 2 times: [ [system] Reloaded configuration]
+2019-09-24T12:21:21.361+01:00 axis-00408cf5b0f1 [ INFO    ] server[0]: starting server
+2019-09-24T12:21:21.486+01:00 axis-00408cf5b0f1 [ INFO    ] server: hello
+2019-09-24T12:23:50.367+01:00 axis-00408cf5b0f1 [ INFO    ] upload.cgi: Uploaded '/tmp/server_1_0_mipsisa32r2el.eap' size:41427
+2019-09-24T12:23:51.367+01:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[844]: [system] Reloaded configuration
+2019-09-24T12:23:52.940+01:00 axis-00408cf5b0f1 [ INFO    ] upload.cgi: Package /tmp/server_1_0_mipsisa32r2el.eap installation OK
+2019-09-24T12:23:52.943+01:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[844]: message repeated 2 times: [ [system] Reloaded configuration]
+2019-09-24T12:23:56.338+01:00 axis-00408cf5b0f1 [ INFO    ] server[0]: starting server
+2019-09-24T12:23:56.465+01:00 axis-00408cf5b0f1 [ INFO    ] server: Hello message 1
+2019-09-24T12:24:20.232+01:00 axis-00408cf5b0f1 [ INFO    ] upload.cgi: Uploaded '/tmp/server_1_0_mipsisa32r2el.eap' size:41427
+2019-09-24T12:24:20.541+01:00 axis-00408cf5b0f1 [ INFO    ] server[0]: stopping server
+2019-09-24T12:24:21.491+01:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[844]: [system] Reloaded configuration
+2019-09-24T12:24:23.118+01:00 axis-00408cf5b0f1 [ INFO    ] upload.cgi: Package /tmp/server_1_0_mipsisa32r2el.eap installation OK
+2019-09-24T12:24:23.125+01:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[844]: message repeated 2 times: [ [system] Reloaded configuration]
+2019-09-24T12:24:26.917+01:00 axis-00408cf5b0f1 [ INFO    ] server[0]: starting server
+2019-09-24T12:24:27.043+01:00 axis-00408cf5b0f1 [ INFO    ] server: Hello message 1
+2019-09-24T12:27:10.156+01:00 axis-00408cf5b0f1 [ INFO    ] upload.cgi: Uploaded '/tmp/server_1_0_mipsisa32r2el.eap' size:41398
+2019-09-24T12:27:10.469+01:00 axis-00408cf5b0f1 [ INFO    ] server[0]: stopping server
+2019-09-24T12:27:11.402+01:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[844]: [system] Reloaded configuration
+2019-09-24T12:27:13.021+01:00 axis-00408cf5b0f1 [ INFO    ] upload.cgi: Package /tmp/server_1_0_mipsisa32r2el.eap installation OK
+2019-09-24T12:27:13.023+01:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[844]: message repeated 2 times: [ [system] Reloaded configuration]
+2019-09-24T12:27:16.679+01:00 axis-00408cf5b0f1 [ INFO    ] server[0]: starting server
+2019-09-24T12:27:16.893+01:00 axis-00408cf5b0f1 [ INFO    ] server: Hello message 2
+2019-09-24T12:31:28.781+01:00 axis-00408cf5b0f1 [ INFO    ] server: Client:
+2019-09-24T12:31:28.783+01:00 axis-00408cf5b0f1 [ INFO    ] server: Hello message sent.
+2019-09-24T12:34:38.002+01:00 axis-00408cf5b0f1 [ INFO    ] control.cgi: Application 'server' is not running
+2019-09-24T12:40:46.765+01:00 axis-00408cf5b0f1 [ INFO    ] monolith[1027]: monolith[1027]: HTTP image/jpeg session created from 192.168.20.168
+2019-09-24T12:41:16.176+01:00 axis-00408cf5b0f1 [ INFO    ] monolith[1027]: monolith[1027]: HTTP image/jpeg session terminated from 192.168.20.168
+2019-09-24T12:57:57.606+01:00 axis-00408cf5b0f1 [ WARNING ] disks[1263]: Failed to get /sys/ path for /dev/mmcblk0p1
+2019-09-24T13:57:57.605+01:00 axis-00408cf5b0f1 [ WARNING ] disks[1263]: Failed to get /sys/ path for /dev/mmcblk0p1
+2019-09-24T14:05:13.496+01:00 axis-00408cf5b0f1 [ INFO    ] monolith[1027]: monolith[1027]: HTTP image/jpeg session created from 192.168.20.97
+2019-09-24T14:05:18.192+01:00 axis-00408cf5b0f1 [ INFO    ] monolith[1027]: monolith[1027]: HTTP image/jpeg session terminated from 192.168.20.97
+2019-09-24T14:05:26.197+01:00 axis-00408cf5b0f1 [ INFO    ] server[0]: starting server
+2019-09-24T14:05:26.316+01:00 axis-00408cf5b0f1 [ INFO    ] server: Hello message 2
+2019-09-24T14:57:57.603+01:00 axis-00408cf5b0f1 [ WARNING ] disks[1263]: Failed to get /sys/ path for /dev/mmcblk0p1
+2019-09-24T15:00:08.801+01:00 axis-00408cf5b0f1 [ INFO    ] monolith[1027]: monolith[1027]: HTTP image/jpeg session created from 192.168.20.97
+2019-09-24T15:03:06.440+01:00 axis-00408cf5b0f1 [ INFO    ] monolith[1027]: monolith[1027]: HTTP image/jpeg session terminated from 192.168.20.97
+2019-09-24T15:19:43.016+01:00 axis-00408cf5b0f1 [ INFO    ] monolith[1027]: monolith[1027]: HTTP image/jpeg session created from 192.168.20.245
+2019-09-24T15:19:47.494+01:00 axis-00408cf5b0f1 [ INFO    ] monolith[1027]: monolith[1027]: HTTP image/jpeg session terminated from 192.168.20.245
+2019-09-24T15:22:08.292+01:00 axis-00408cf5b0f1 [ INFO    ] monolith[1027]: monolith[1027]: HTTP image/jpeg session created from 192.168.20.177
+2019-09-24T15:22:55.098+01:00 axis-00408cf5b0f1 [ INFO    ] monolith[1027]: monolith[1027]: HTTP image/jpeg session terminated from 192.168.20.177
+2019-09-24T15:22:55.938+01:00 axis-00408cf5b0f1 [ INFO    ] monolith[1027]: monolith[1027]: HTTP image/jpeg session created from 192.168.20.100
+2019-09-24T15:22:59.388+01:00 axis-00408cf5b0f1 [ INFO    ] monolith[1027]: monolith[1027]: HTTP image/jpeg session created from 192.168.20.177
+2019-09-24T15:23:43.850+01:00 axis-00408cf5b0f1 [ INFO    ] parhand[941]: Updated configuration file /etc/motion_tracking.conf.
+2019-09-24T15:23:45.957+01:00 axis-00408cf5b0f1 [ INFO    ] parhand[941]: Updated configuration file /etc/motion_tracking.conf.
+2019-09-24T15:24:17.093+01:00 axis-00408cf5b0f1 [ INFO    ] monolith[1027]: monolith[1027]: HTTP image/jpeg session terminated from 192.168.20.177
+2019-09-24T15:24:26.924+01:00 axis-00408cf5b0f1 [ INFO    ] server[0]: stopping server
+2019-09-24T15:24:28.067+01:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[844]: [system] Reloaded configuration
+2019-09-24T15:24:28.536+01:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[844]: [system] Reloaded configuration
+2019-09-24T15:27:58.724+01:00 axis-00408cf5b0f1 [ INFO    ] monolith[1027]: monolith[1027]: HTTP image/jpeg session created from 192.168.20.100
+2019-09-24T15:29:13.945+01:00 axis-00408cf5b0f1 [ INFO    ] upload.cgi: Uploaded '/tmp/server_1_0_mipsisa32r2el.eap' size:39831
+2019-09-24T15:29:16.986+01:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[844]: [system] Reloaded configuration
+2019-09-24T15:29:17.224+01:00 axis-00408cf5b0f1 [ INFO    ] upload.cgi: Package /tmp/server_1_0_mipsisa32r2el.eap installation OK
+2019-09-24T15:29:23.446+01:00 axis-00408cf5b0f1 [ INFO    ] monolith[1027]: monolith[1027]: HTTP image/jpeg session terminated from 192.168.20.100
+2019-09-24T15:29:34.084+01:00 axis-00408cf5b0f1 [ INFO    ] server[0]: starting server
+2019-09-24T15:29:34.455+01:00 axis-00408cf5b0f1 [ INFO    ] server[859]: Server running...
+2019-09-24T15:29:34.480+01:00 axis-00408cf5b0f1 [ INFO    ] server[859]: Listening
+2019-09-24T15:29:49.899+01:00 axis-00408cf5b0f1 [ WARNING ] server[859]: Could not get VideoType from com.axis.VideoControl: Method "Get" with signature "ss" on interface "org.freedesktop.DBus.Properties" doesn't exist
+2019-09-24T15:29:49.903+01:00 axis-00408cf5b0f1 [ INFO    ] server[859]: Thread CREATED ...
+2019-09-24T15:30:06.622+01:00 axis-00408cf5b0f1 [ INFO    ] server[859]: message below from client:
+2019-09-24T15:30:06.623+01:00 axis-00408cf5b0f1 [ INFO    ] server[859]: resolution=320x180&fps=1
+2019-09-24T15:30:06.627+01:00 axis-00408cf5b0f1 [ INFO    ] server[859]: resolution=320x180&fps=1
+2019-09-24T15:30:06.628+01:00 axis-00408cf5b0f1 [ INFO    ] server[859]: after int row.....
+2019-09-24T15:30:14.056+01:00 axis-00408cf5b0f1 [ INFO    ] server[859]: Thread CREATED ...
+2019-09-24T15:30:21.488+01:00 axis-00408cf5b0f1 [ INFO    ] server[859]: message below from client:
+2019-09-24T15:30:21.488+01:00 axis-00408cf5b0f1 [ INFO    ] server[859]: resolution=320x180&fps=1
+2019-09-24T15:30:21.489+01:00 axis-00408cf5b0f1 [ INFO    ] server[859]: resolution=320x180&fps=1
+2019-09-24T15:30:21.490+01:00 axis-00408cf5b0f1 [ INFO    ] server[859]: after int row.....
+2019-09-24T15:30:37.769+01:00 axis-00408cf5b0f1 [ INFO    ] server[859]: Thread CREATED ...
+2019-09-24T15:30:42.898+01:00 axis-00408cf5b0f1 [ INFO    ] server[859]: message below from client:
+2019-09-24T15:30:42.899+01:00 axis-00408cf5b0f1 [ INFO    ] server[859]: resolution=1280x720&fps=10
+2019-09-24T15:30:42.915+01:00 axis-00408cf5b0f1 [ INFO    ] server[859]: resolution=1280x720&fps=10
+2019-09-24T15:30:42.917+01:00 axis-00408cf5b0f1 [ INFO    ] server[859]: after int row.....
+2019-09-24T15:30:45.841+01:00 axis-00408cf5b0f1 [ INFO    ] server[859]: Client is disconnected
+2019-09-24T15:30:57.889+01:00 axis-00408cf5b0f1 [ WARNING ] server[859]: message repeated 2 times: [ Could not get VideoType from com.axis.VideoControl: Method "Get" with signature "ss" on interface "org.freedesktop.DBus.Properties" doesn't exist]
+2019-09-24T15:31:46.000+01:00 axis-00408cf5b0f1 [ INFO    ] server[859]: message repeated 602 times: [ Client is disconnected]
+2019-09-24T15:32:24.939+01:00 axis-00408cf5b0f1 [ INFO    ] server[0]: stopping server
+2019-09-24T15:32:24.940+01:00 axis-00408cf5b0f1 [ INFO    ] server[859]: message repeated 392 times: [ Client is disconnected]
+2019-09-24T15:32:24.998+01:00 axis-00408cf5b0f1 [ INFO    ] server[859]: Client is disconnected
+2019-09-24T15:32:30.243+01:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[844]: [system] Reloaded configuration

@@ -79,34 +79,41 @@ void * socketThread(void *arg)
 
     //Opens a stream to the camera to get the img
     stream = capture_open_stream(IMAGE_JPEG, client_message); 
-	int val = 0;
+    int val = 0;
 while(1) { 
     	//Get the frame
     	frame = capture_get_frame(stream);    
 
     	//Get image data
     	data = capture_frame_data(frame);  
-
   
     	//Get the image size
     	img_size  = capture_frame_size(frame);    
-            
-
+           
     	//Convert the image size to a char * to send to the client
     	sprintf(msg,"%zu\n",img_size); 
 
     
     	//Send the size to the client   
-    	// write(newSocket, msg, strlen(msg));    
+    	write(newSocket, msg, strlen(msg));    
+
+	sprintf(msg,"%zu\n", strlen(msg)); 
+	syslog(LOG_INFO, "Storlek på storlek-tringen"); 
+	syslog(LOG_INFO, msg); 
+        sprintf(msg,"%zu\n",img_size); 
          
     	//Now we loop the whole data array and write to another array (Not 		//necessary, could send the data directly I think)     
-            
-    	unsigned char row_data[img_size];        
-    	for(row = 0; row<img_size;row++){
-       		row_data[row] = ((unsigned char*)data)[row];
+        
+	
+	syslog(LOG_INFO, msg);    
+    	unsigned char row_data[img_size]; 
+  
+    	for(row = 0; row < img_size; row++){
+       	   row_data[row] = ((unsigned char*)data)[row];
     	}
 
     	//Send the image data to the client
+	//old
     	int error = write(newSocket, row_data, sizeof(row_data));
 
      	//Checking if the write failed
@@ -121,6 +128,7 @@ while(1) {
         memset(data, 0, sizeof(data));
         memset(row_data, 0, sizeof(row_data));
 	capture_frame_free(frame);
+//sleep(1);
 
 }
   // Send message to the client socket
