@@ -2,6 +2,7 @@ package client;
 
 import java.awt.FlowLayout;
 import java.awt.image.BufferedImage;
+import java.io.BufferedInputStream;
 import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
 import java.io.DataInputStream;
@@ -112,12 +113,16 @@ public class Client implements Runnable {
 			else if (length > 20) {
 
 				message = new byte[realSize];
-
-				int index = inputStream.read(message);
+				
+				//int index = inputStream.read(message);
+				BufferedInputStream stream = new BufferedInputStream(inputStream);
 				// int index = inputStream.read(message);
 				// System.out.println("Index:   " + index);
 
 				// new
+				for (int read = 0; read < realSize;) { // read until the byte array is filled
+					read += stream.read(message, read, message.length - read);
+				}
 
 				// System.out.println("Index:   " + length);
 				ByteArrayInputStream bais = new ByteArrayInputStream(message);
@@ -127,8 +132,7 @@ public class Client implements Runnable {
 					SwingUtilities.invokeLater(new Runnable() {
 						public void run() {
 							frame.getContentPane().setLayout(new FlowLayout());
-							frame.getContentPane().add(
-									new JLabel(new ImageIcon(bufferedImage)));
+							frame.getContentPane().add(new JLabel(new ImageIcon(bufferedImage)));
 							frame.pack();
 							frame.setVisible(true);
 						}

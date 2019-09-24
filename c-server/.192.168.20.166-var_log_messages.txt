@@ -7,342 +7,315 @@
 2019-09-24T14:23:08.180+00:00 Test91 [ INFO    ] kernel: potentially unexpected fatal signal 11.
 2019-09-24T14:38:24.549+00:00 Test91 [ INFO    ] kernel: potentially unexpected fatal signal 11.
 2019-09-24T14:42:25.828+00:00 Test91 [ INFO    ] kernel: potentially unexpected fatal signal 11.
-2019-09-24T17:11:02.439+00:00 Test91 [ INFO    ] server[19800]: 28
-2019-09-24T17:11:02.459+00:00 Test91 [ INFO    ] server[19800]: 29
-2019-09-24T17:11:02.514+00:00 Test91 [ INFO    ] server[19800]: 29
-2019-09-24T17:11:02.514+00:00 Test91 [ INFO    ] server[19800]: Storlek på storlek-tringen
-2019-09-24T17:11:02.516+00:00 Test91 [ INFO    ] server[19800]: 29531
-2019-09-24T17:11:02.516+00:00 Test91 [ INFO    ] server[19800]: 6
-2019-09-24T17:11:02.538+00:00 Test91 [ INFO    ] server[19800]: 29
-2019-09-24T17:11:02.574+00:00 Test91 [ INFO    ] server[19800]: 29
-2019-09-24T17:11:02.574+00:00 Test91 [ INFO    ] server[19800]: Client is disconnected
-2019-09-24T17:11:02.625+00:00 Test91 [ INFO    ] server[19800]: 29
-2019-09-24T17:11:02.625+00:00 Test91 [ INFO    ] server[19800]: Client is disconnected
-2019-09-24T17:11:02.627+00:00 Test91 [ INFO    ] server[19800]: 29
-2019-09-24T17:11:02.627+00:00 Test91 [ INFO    ] server[19800]: Client is disconnected
-2019-09-24T17:11:02.661+00:00 Test91 [ INFO    ] server[19800]: Client is disconnected
-2019-09-24T17:11:02.745+00:00 Test91 [ INFO    ] server[19800]: Storlek på storlek-tringen
-2019-09-24T17:11:02.746+00:00 Test91 [ INFO    ] server[19800]: 6
-2019-09-24T17:11:02.747+00:00 Test91 [ INFO    ] server[19800]: 29531
-2019-09-24T17:11:02.750+00:00 Test91 [ INFO    ] server[19800]: 29
-2019-09-24T17:11:02.855+00:00 Test91 [ INFO    ] server[19800]: message repeated 8 times: [ 28]
-2019-09-24T17:11:02.856+00:00 Test91 [ INFO    ] server[19800]: message repeated 14 times: [ 29]
-2019-09-24T17:11:02.859+00:00 Test91 [ INFO    ] server[19800]: message repeated 2 times: [ 29]
-2019-09-24T17:11:02.863+00:00 Test91 [ INFO    ] server[19800]: Client is disconnected
-2019-09-24T17:11:02.899+00:00 Test91 [ INFO    ] server[19800]: message repeated 10 times: [ 29]
-2019-09-24T17:11:02.900+00:00 Test91 [ INFO    ] server[19800]: message repeated 7 times: [ 29]
-2019-09-24T17:11:02.904+00:00 Test91 [ INFO    ] server[19800]: message repeated 5 times: [ 29]
-2019-09-24T17:11:02.966+00:00 Test91 [ INFO    ] server[19800]: message repeated 17 times: [ 29]
-2019-09-24T17:11:03.002+00:00 Test91 [ INFO    ] server[19800]: message repeated 28 times: [ 29]
-2019-09-24T17:11:03.009+00:00 Test91 [ INFO    ] server[19800]: Storlek på storlek-tringen
-2019-09-24T17:11:03.011+00:00 Test91 [ INFO    ] server[19800]: 6
-2019-09-24T17:11:03.013+00:00 Test91 [ INFO    ] server[19800]: 29531
-2019-09-24T17:11:03.022+00:00 Test91 [ INFO    ] server[19800]: 29
-2019-09-24T17:11:03.064+00:00 Test91 [ INFO    ] server[19800]: Storlek på storlek-tringen
-2019-09-24T17:11:03.065+00:00 Test91 [ INFO    ] server[19800]: 5
-2019-09-24T17:11:03.067+00:00 Test91 [ INFO    ] server[19800]: message repeated 5 times: [ 29]
-2019-09-24T17:11:03.077+00:00 Test91 [ INFO    ] server[19800]: 3845
-2019-09-24T17:11:03.078+00:00 Test91 [ INFO    ] server[19800]: 3
-2019-09-24T17:11:03.084+00:00 Test91 [ INFO    ] server[19800]: 29
-2019-09-24T17:11:03.084+00:00 Test91 [ INFO    ] server[19800]: Client is disconnected
-2019-09-24T17:11:03.129+00:00 Test91 [ INFO    ] server[19800]: message repeated 2 times: [ 3]
-2019-09-24T17:11:03.140+00:00 Test91 [ INFO    ] server[19800]: Client is disconnected
-2019-09-24T17:11:03.156+00:00 Test91 [ INFO    ] server[19800]: message repeated 22 times: [ 29]
-2019-09-24T17:11:03.307+00:00 Test91 [ INFO    ] server[19800]: Storlek på storlek-tringen
-2019-09-24T17:11:03.317+00:00 Test91 [ INFO    ] server[19800]: 5
-2019-09-24T17:11:03.318+00:00 Test91 [ INFO    ] server[19800]: 3839
-2019-09-24T17:11:03.319+00:00 Test91 [ INFO    ] server[19800]: 3
-2019-09-24T17:11:03.344+00:00 Test91 [ INFO    ] control.cgi: calling: /etc/init.d/sdkserver stop
-2019-09-24T17:11:03.344+00:00 Test91 [ INFO    ] server[19800]: Client is disconnected
-2019-09-24T17:11:03.360+00:00 Test91 [ INFO    ] server[19800]: Storlek på storlek-tringen
-2019-09-24T17:11:03.361+00:00 Test91 [ INFO    ] server[19800]: 27336
-2019-09-24T17:11:03.361+00:00 Test91 [ INFO    ] server[19800]: 6
-2019-09-24T17:11:03.362+00:00 Test91 [ INFO    ] server[19800]: 27
-2019-09-24T17:11:03.363+00:00 Test91 [ INFO    ] server[19800]: message repeated 2 times: [ 3]
-2019-09-24T17:11:03.406+00:00 Test91 [ INFO    ] server[19800]: Storlek på storlek-tringen
-2019-09-24T17:11:03.411+00:00 Test91 [ INFO    ] server[19800]: 6
-2019-09-24T17:11:03.412+00:00 Test91 [ INFO    ] server[19800]: 35
-2019-09-24T17:11:03.412+00:00 Test91 [ INFO    ] server[19800]: 35470
-2019-09-24T17:11:03.430+00:00 Test91 [ INFO    ] server[19800]: 27
-2019-09-24T17:11:03.447+00:00 Test91 [ INFO    ] server[19800]: 35
-2019-09-24T17:11:03.466+00:00 Test91 [ INFO    ] server[19800]: 27
-2019-09-24T17:11:03.475+00:00 Test91 [ INFO    ] server[19800]: 35
-2019-09-24T17:11:03.475+00:00 Test91 [ INFO    ] server[19800]: Client is disconnected
-2019-09-24T17:11:03.479+00:00 Test91 [ INFO    ] server[19800]: message repeated 13 times: [ 27]
-2019-09-24T17:11:03.481+00:00 Test91 [ INFO    ] server[19800]: message repeated 7 times: [ 35]
-2019-09-24T17:11:03.507+00:00 Test91 [ INFO    ] server[19800]: Client is disconnected
-2019-09-24T17:11:03.547+00:00 Test91 [ INFO    ] server[0]: stopping server
-2019-09-24T17:11:03.547+00:00 Test91 [ INFO    ] server[19800]: Storlek på storlek-tringen
-2019-09-24T17:11:03.548+00:00 Test91 [ INFO    ] server[19800]: 29588
-2019-09-24T17:11:03.548+00:00 Test91 [ INFO    ] server[19800]: 6
-2019-09-24T17:11:03.549+00:00 Test91 [ INFO    ] server[19800]: 29
-2019-09-24T17:11:03.562+00:00 Test91 [ INFO    ] server[19800]: Storlek på storlek-tringen
-2019-09-24T17:11:03.574+00:00 Test91 [ INFO    ] server[19800]: 29
-2019-09-24T17:11:03.574+00:00 Test91 [ INFO    ] server[19800]: 6
-2019-09-24T17:11:03.575+00:00 Test91 [ INFO    ] server[19800]: 29
-2019-09-24T17:11:03.575+00:00 Test91 [ INFO    ] server[19800]: 29588
-2019-09-24T17:11:03.600+00:00 Test91 [ INFO    ] server[19800]: message repeated 6 times: [ 27]
-2019-09-24T17:11:03.601+00:00 Test91 [ INFO    ] server[19800]: message repeated 11 times: [ 35]
-2019-09-24T17:11:03.602+00:00 Test91 [ INFO    ] server[19800]: message repeated 5 times: [ 27]
-2019-09-24T17:11:03.634+00:00 Test91 [ INFO    ] server[19800]: 29
-2019-09-24T17:11:03.634+00:00 Test91 [ INFO    ] server[19800]: 29588
-2019-09-24T17:11:03.634+00:00 Test91 [ INFO    ] server[19800]: 6
-2019-09-24T17:11:03.634+00:00 Test91 [ INFO    ] server[19800]: Storlek på storlek-tringen
-2019-09-24T17:11:03.680+00:00 Test91 [ INFO    ] server[19800]: message repeated 14 times: [ 35]
-2019-09-24T17:11:03.719+00:00 Test91 [ INFO    ] server[19800]: Storlek på storlek-tringen
-2019-09-24T17:11:03.721+00:00 Test91 [ INFO    ] server[19800]: 29
-2019-09-24T17:11:03.740+00:00 Test91 [ INFO    ] server[19800]: Client is disconnected
-2019-09-24T17:11:03.747+00:00 Test91 [ INFO    ] server[19800]: 6
-2019-09-24T17:11:03.748+00:00 Test91 [ INFO    ] server[19800]: 29
-2019-09-24T17:11:03.748+00:00 Test91 [ INFO    ] server[19800]: 29588
-2019-09-24T17:11:03.774+00:00 Test91 [ INFO    ] server[19800]: message repeated 13 times: [ 29]
-2019-09-24T17:11:03.825+00:00 Test91 [ INFO    ] server[19800]: Client is disconnected
-2019-09-24T17:11:03.830+00:00 Test91 [ INFO    ] server[19800]: 29
-2019-09-24T17:11:03.866+00:00 Test91 [ INFO    ] server[19800]: message repeated 27 times: [ 29]
-2019-09-24T17:11:03.870+00:00 Test91 [ INFO    ] server[19800]: Client is disconnected
-2019-09-24T17:11:03.871+00:00 Test91 [ INFO    ] server[19800]: 29
-2019-09-24T17:11:03.878+00:00 Test91 [ INFO    ] server[19800]: message repeated 9 times: [ 29]
-2019-09-24T17:11:03.980+00:00 Test91 [ INFO    ] server[19800]: message repeated 31 times: [ 29]
-2019-09-24T17:11:03.981+00:00 Test91 [ INFO    ] server[19800]: message repeated 12 times: [ 29]
-2019-09-24T17:11:38.806+00:00 Test91 [ INFO    ] upload.cgi: Uploaded '/tmp/server_1_0_mipsisa32r2el.eap' size:39944
-2019-09-24T17:11:38.809+00:00 Test91 [ INFO    ] server[19800]: message repeated 9 times: [ 29]
-2019-09-24T17:11:40.007+00:00 Test91 [ NOTICE  ] dbus[436]: [system] Reloaded configuration
-2019-09-24T17:11:41.937+00:00 Test91 [ INFO    ] upload.cgi: Package /tmp/server_1_0_mipsisa32r2el.eap installation OK
-2019-09-24T17:11:41.939+00:00 Test91 [ NOTICE  ] dbus[436]: message repeated 2 times: [ [system] Reloaded configuration]
-2019-09-24T17:11:46.591+00:00 Test91 [ INFO    ] control.cgi: calling: /etc/init.d/sdkserver start
-2019-09-24T17:11:46.915+00:00 Test91 [ INFO    ] server[0]: starting server
-2019-09-24T17:11:47.087+00:00 Test91 [ INFO    ] server[27817]: Server running...
-2019-09-24T17:11:47.089+00:00 Test91 [ INFO    ] server[27817]: Listening
-2019-09-24T17:14:53.291+00:00 Test91 [ INFO    ] server[27817]: Thread CREATED ...
-2019-09-24T17:14:58.116+00:00 Test91 [ INFO    ] server[27817]: message below from client:
-2019-09-24T17:14:58.116+00:00 Test91 [ INFO    ] server[27817]: resolution=800x600&fps=1
-2019-09-24T17:14:58.116+00:00 Test91 [ INFO    ] server[27817]: resolution=800x600&fps=1
-2019-09-24T17:14:58.117+00:00 Test91 [ INFO    ] server[27817]: after int row.....
-2019-09-24T17:14:59.331+00:00 Test91 [ INFO    ] server[27817]: 6
-2019-09-24T17:14:59.331+00:00 Test91 [ INFO    ] server[27817]: Storlek på storlek-tringen
-2019-09-24T17:14:59.332+00:00 Test91 [ INFO    ] server[27817]: 34138
-2019-09-24T17:15:00.342+00:00 Test91 [ INFO    ] server[27817]: Storlek på storlek-tringen
-2019-09-24T17:15:00.343+00:00 Test91 [ INFO    ] server[27817]: 34263
-2019-09-24T17:15:00.343+00:00 Test91 [ INFO    ] server[27817]: 6
-2019-09-24T17:15:01.357+00:00 Test91 [ INFO    ] server[27817]: Storlek på storlek-tringen
-2019-09-24T17:15:01.361+00:00 Test91 [ INFO    ] server[27817]: 6
-2019-09-24T17:15:01.362+00:00 Test91 [ INFO    ] server[27817]: 34239
-2019-09-24T17:15:02.365+00:00 Test91 [ INFO    ] server[27817]: Storlek på storlek-tringen
-2019-09-24T17:15:02.366+00:00 Test91 [ INFO    ] server[27817]: 34277
-2019-09-24T17:15:02.366+00:00 Test91 [ INFO    ] server[27817]: 6
-2019-09-24T17:15:03.375+00:00 Test91 [ INFO    ] server[27817]: Storlek på storlek-tringen
-2019-09-24T17:15:03.382+00:00 Test91 [ INFO    ] server[27817]: 6
-2019-09-24T17:15:03.383+00:00 Test91 [ INFO    ] server[27817]: 34208
-2019-09-24T17:15:04.388+00:00 Test91 [ INFO    ] server[27817]: Storlek på storlek-tringen
-2019-09-24T17:15:04.399+00:00 Test91 [ INFO    ] server[27817]: 6
-2019-09-24T17:15:04.400+00:00 Test91 [ INFO    ] server[27817]: 34315
-2019-09-24T17:15:05.406+00:00 Test91 [ INFO    ] server[27817]: Storlek på storlek-tringen
-2019-09-24T17:15:05.408+00:00 Test91 [ INFO    ] server[27817]: 6
-2019-09-24T17:15:05.409+00:00 Test91 [ INFO    ] server[27817]: 34362
-2019-09-24T17:15:06.430+00:00 Test91 [ INFO    ] server[27817]: 34190
-2019-09-24T17:15:06.430+00:00 Test91 [ INFO    ] server[27817]: 6
-2019-09-24T17:15:06.430+00:00 Test91 [ INFO    ] server[27817]: Storlek på storlek-tringen
-2019-09-24T17:15:07.440+00:00 Test91 [ INFO    ] server[27817]: Storlek på storlek-tringen
-2019-09-24T17:15:07.441+00:00 Test91 [ INFO    ] server[27817]: 34316
-2019-09-24T17:15:07.441+00:00 Test91 [ INFO    ] server[27817]: 6
-2019-09-24T17:15:08.460+00:00 Test91 [ INFO    ] server[27817]: Storlek på storlek-tringen
-2019-09-24T17:15:08.461+00:00 Test91 [ INFO    ] server[27817]: 6
-2019-09-24T17:15:08.462+00:00 Test91 [ INFO    ] server[27817]: 34318
-2019-09-24T17:15:09.471+00:00 Test91 [ INFO    ] server[27817]: Storlek på storlek-tringen
-2019-09-24T17:15:09.472+00:00 Test91 [ INFO    ] server[27817]: 34282
-2019-09-24T17:15:09.472+00:00 Test91 [ INFO    ] server[27817]: 6
-2019-09-24T17:15:09.476+00:00 Test91 [ INFO    ] server[27817]: Client is disconnected
-2019-09-24T17:15:10.480+00:00 Test91 [ INFO    ] server[27817]: Storlek på storlek-tringen
-2019-09-24T17:15:10.485+00:00 Test91 [ INFO    ] server[27817]: 6
-2019-09-24T17:15:10.486+00:00 Test91 [ INFO    ] server[27817]: 34308
-2019-09-24T17:15:10.486+00:00 Test91 [ INFO    ] server[27817]: Client is disconnected
-2019-09-24T17:15:11.491+00:00 Test91 [ INFO    ] server[27817]: Storlek på storlek-tringen
-2019-09-24T17:15:11.492+00:00 Test91 [ INFO    ] server[27817]: 34251
-2019-09-24T17:15:11.492+00:00 Test91 [ INFO    ] server[27817]: 6
-2019-09-24T17:15:11.503+00:00 Test91 [ INFO    ] server[27817]: Client is disconnected
-2019-09-24T17:15:12.507+00:00 Test91 [ INFO    ] server[27817]: 6
-2019-09-24T17:15:12.507+00:00 Test91 [ INFO    ] server[27817]: Storlek på storlek-tringen
-2019-09-24T17:15:12.508+00:00 Test91 [ INFO    ] server[27817]: 34170
-2019-09-24T17:15:12.515+00:00 Test91 [ INFO    ] server[27817]: Client is disconnected
-2019-09-24T17:15:13.520+00:00 Test91 [ INFO    ] server[27817]: Storlek på storlek-tringen
-2019-09-24T17:15:13.521+00:00 Test91 [ INFO    ] server[27817]: 6
-2019-09-24T17:15:13.522+00:00 Test91 [ INFO    ] server[27817]: 34171
-2019-09-24T17:15:13.525+00:00 Test91 [ INFO    ] server[27817]: Client is disconnected
-2019-09-24T17:15:14.527+00:00 Test91 [ INFO    ] server[27817]: Storlek på storlek-tringen
-2019-09-24T17:15:14.533+00:00 Test91 [ INFO    ] server[27817]: 6
-2019-09-24T17:15:14.534+00:00 Test91 [ INFO    ] server[27817]: 34342
-2019-09-24T17:15:14.534+00:00 Test91 [ INFO    ] server[27817]: Client is disconnected
-2019-09-24T17:15:15.540+00:00 Test91 [ INFO    ] server[27817]: 34111
-2019-09-24T17:15:15.540+00:00 Test91 [ INFO    ] server[27817]: 6
-2019-09-24T17:15:15.540+00:00 Test91 [ INFO    ] server[27817]: Storlek på storlek-tringen
-2019-09-24T17:15:15.544+00:00 Test91 [ INFO    ] server[27817]: Client is disconnected
-2019-09-24T17:15:16.548+00:00 Test91 [ INFO    ] server[27817]: 6
-2019-09-24T17:15:16.548+00:00 Test91 [ INFO    ] server[27817]: Storlek på storlek-tringen
-2019-09-24T17:15:16.549+00:00 Test91 [ INFO    ] server[27817]: 34256
-2019-09-24T17:15:16.553+00:00 Test91 [ INFO    ] server[27817]: Client is disconnected
-2019-09-24T17:15:17.557+00:00 Test91 [ INFO    ] server[27817]: Storlek på storlek-tringen
-2019-09-24T17:15:17.561+00:00 Test91 [ INFO    ] server[27817]: 6
-2019-09-24T17:15:17.562+00:00 Test91 [ INFO    ] server[27817]: 34204
-2019-09-24T17:15:17.562+00:00 Test91 [ INFO    ] server[27817]: Client is disconnected
-2019-09-24T17:15:18.567+00:00 Test91 [ INFO    ] server[27817]: Storlek på storlek-tringen
-2019-09-24T17:15:18.568+00:00 Test91 [ INFO    ] server[27817]: 6
-2019-09-24T17:15:18.574+00:00 Test91 [ INFO    ] server[27817]: 34218
-2019-09-24T17:15:18.577+00:00 Test91 [ INFO    ] server[27817]: Client is disconnected
-2019-09-24T17:15:19.582+00:00 Test91 [ INFO    ] server[27817]: 6
-2019-09-24T17:15:19.582+00:00 Test91 [ INFO    ] server[27817]: Storlek på storlek-tringen
-2019-09-24T17:15:19.583+00:00 Test91 [ INFO    ] server[27817]: 34150
-2019-09-24T17:15:19.584+00:00 Test91 [ INFO    ] server[27817]: Client is disconnected
-2019-09-24T17:15:20.589+00:00 Test91 [ INFO    ] server[27817]: Storlek på storlek-tringen
-2019-09-24T17:15:20.592+00:00 Test91 [ INFO    ] server[27817]: 34328
-2019-09-24T17:15:20.592+00:00 Test91 [ INFO    ] server[27817]: 6
-2019-09-24T17:15:20.597+00:00 Test91 [ INFO    ] server[27817]: Client is disconnected
-2019-09-24T17:15:21.600+00:00 Test91 [ INFO    ] server[27817]: 6
-2019-09-24T17:15:21.600+00:00 Test91 [ INFO    ] server[27817]: Storlek på storlek-tringen
-2019-09-24T17:15:21.601+00:00 Test91 [ INFO    ] server[27817]: 34298
-2019-09-24T17:15:21.605+00:00 Test91 [ INFO    ] server[27817]: Client is disconnected
-2019-09-24T17:15:22.611+00:00 Test91 [ INFO    ] server[27817]: 34315
-2019-09-24T17:15:22.611+00:00 Test91 [ INFO    ] server[27817]: 6
-2019-09-24T17:15:22.611+00:00 Test91 [ INFO    ] server[27817]: Storlek på storlek-tringen
-2019-09-24T17:15:22.614+00:00 Test91 [ INFO    ] server[27817]: Client is disconnected
-2019-09-24T17:15:23.622+00:00 Test91 [ INFO    ] server[27817]: Storlek på storlek-tringen
-2019-09-24T17:15:23.623+00:00 Test91 [ INFO    ] server[27817]: 34182
-2019-09-24T17:15:23.623+00:00 Test91 [ INFO    ] server[27817]: 6
-2019-09-24T17:15:23.627+00:00 Test91 [ INFO    ] server[27817]: Client is disconnected
-2019-09-24T17:15:24.631+00:00 Test91 [ INFO    ] server[27817]: Storlek på storlek-tringen
-2019-09-24T17:15:24.632+00:00 Test91 [ INFO    ] server[27817]: 34236
-2019-09-24T17:15:24.632+00:00 Test91 [ INFO    ] server[27817]: 6
-2019-09-24T17:15:24.639+00:00 Test91 [ INFO    ] server[27817]: Client is disconnected
-2019-09-24T17:15:25.646+00:00 Test91 [ INFO    ] server[27817]: 34287
-2019-09-24T17:15:25.646+00:00 Test91 [ INFO    ] server[27817]: 6
-2019-09-24T17:15:25.646+00:00 Test91 [ INFO    ] server[27817]: Storlek på storlek-tringen
-2019-09-24T17:15:25.651+00:00 Test91 [ INFO    ] server[27817]: Client is disconnected
-2019-09-24T17:15:26.653+00:00 Test91 [ INFO    ] server[27817]: Storlek på storlek-tringen
-2019-09-24T17:15:26.654+00:00 Test91 [ INFO    ] server[27817]: 34266
-2019-09-24T17:15:26.654+00:00 Test91 [ INFO    ] server[27817]: 6
-2019-09-24T17:15:26.658+00:00 Test91 [ INFO    ] server[27817]: Client is disconnected
-2019-09-24T17:15:27.666+00:00 Test91 [ INFO    ] server[27817]: Storlek på storlek-tringen
-2019-09-24T17:15:27.667+00:00 Test91 [ INFO    ] server[27817]: 34320
-2019-09-24T17:15:27.667+00:00 Test91 [ INFO    ] server[27817]: 6
-2019-09-24T17:15:27.668+00:00 Test91 [ INFO    ] server[27817]: Client is disconnected
-2019-09-24T17:15:28.673+00:00 Test91 [ INFO    ] server[27817]: 34353
-2019-09-24T17:15:28.673+00:00 Test91 [ INFO    ] server[27817]: 6
-2019-09-24T17:15:28.673+00:00 Test91 [ INFO    ] server[27817]: Storlek på storlek-tringen
-2019-09-24T17:15:28.680+00:00 Test91 [ INFO    ] server[27817]: Client is disconnected
-2019-09-24T17:15:29.686+00:00 Test91 [ INFO    ] server[27817]: 6
-2019-09-24T17:15:29.686+00:00 Test91 [ INFO    ] server[27817]: Storlek på storlek-tringen
-2019-09-24T17:15:29.687+00:00 Test91 [ INFO    ] server[27817]: 34322
-2019-09-24T17:15:29.690+00:00 Test91 [ INFO    ] server[27817]: Client is disconnected
-2019-09-24T17:15:30.694+00:00 Test91 [ INFO    ] server[27817]: 6
-2019-09-24T17:15:30.694+00:00 Test91 [ INFO    ] server[27817]: Storlek på storlek-tringen
-2019-09-24T17:15:30.695+00:00 Test91 [ INFO    ] server[27817]: 34271
-2019-09-24T17:15:30.705+00:00 Test91 [ INFO    ] server[27817]: Client is disconnected
-2019-09-24T17:15:31.710+00:00 Test91 [ INFO    ] server[27817]: 34381
-2019-09-24T17:15:31.710+00:00 Test91 [ INFO    ] server[27817]: 6
-2019-09-24T17:15:31.710+00:00 Test91 [ INFO    ] server[27817]: Storlek på storlek-tringen
-2019-09-24T17:15:31.715+00:00 Test91 [ INFO    ] server[27817]: Client is disconnected
-2019-09-24T17:15:32.720+00:00 Test91 [ INFO    ] server[27817]: 34233
-2019-09-24T17:15:32.720+00:00 Test91 [ INFO    ] server[27817]: 6
-2019-09-24T17:15:32.720+00:00 Test91 [ INFO    ] server[27817]: Storlek på storlek-tringen
-2019-09-24T17:15:32.724+00:00 Test91 [ INFO    ] server[27817]: Client is disconnected
-2019-09-24T17:15:33.729+00:00 Test91 [ INFO    ] server[27817]: 6
-2019-09-24T17:15:33.729+00:00 Test91 [ INFO    ] server[27817]: Storlek på storlek-tringen
-2019-09-24T17:15:33.730+00:00 Test91 [ INFO    ] server[27817]: 34166
-2019-09-24T17:15:33.734+00:00 Test91 [ INFO    ] server[27817]: Client is disconnected
-2019-09-24T17:15:34.744+00:00 Test91 [ INFO    ] server[27817]: 6
-2019-09-24T17:15:34.744+00:00 Test91 [ INFO    ] server[27817]: Storlek på storlek-tringen
-2019-09-24T17:15:34.745+00:00 Test91 [ INFO    ] server[27817]: 34187
-2019-09-24T17:15:34.745+00:00 Test91 [ INFO    ] server[27817]: Client is disconnected
-2019-09-24T17:15:35.750+00:00 Test91 [ INFO    ] server[27817]: Storlek på storlek-tringen
-2019-09-24T17:15:35.751+00:00 Test91 [ INFO    ] server[27817]: 34241
-2019-09-24T17:15:35.751+00:00 Test91 [ INFO    ] server[27817]: 6
-2019-09-24T17:15:35.757+00:00 Test91 [ INFO    ] server[27817]: Client is disconnected
-2019-09-24T17:15:36.758+00:00 Test91 [ INFO    ] server[27817]: Storlek på storlek-tringen
-2019-09-24T17:15:36.759+00:00 Test91 [ INFO    ] server[27817]: 34229
-2019-09-24T17:15:36.759+00:00 Test91 [ INFO    ] server[27817]: 6
-2019-09-24T17:15:36.761+00:00 Test91 [ INFO    ] server[27817]: Client is disconnected
-2019-09-24T17:15:37.765+00:00 Test91 [ INFO    ] server[27817]: 6
-2019-09-24T17:15:37.765+00:00 Test91 [ INFO    ] server[27817]: Storlek på storlek-tringen
-2019-09-24T17:15:37.766+00:00 Test91 [ INFO    ] server[27817]: 34337
-2019-09-24T17:15:37.770+00:00 Test91 [ INFO    ] server[27817]: Client is disconnected
-2019-09-24T17:15:38.775+00:00 Test91 [ INFO    ] server[27817]: 6
-2019-09-24T17:15:38.775+00:00 Test91 [ INFO    ] server[27817]: Storlek på storlek-tringen
-2019-09-24T17:15:38.779+00:00 Test91 [ INFO    ] server[27817]: 34266
-2019-09-24T17:15:38.779+00:00 Test91 [ INFO    ] server[27817]: Client is disconnected
-2019-09-24T17:15:39.781+00:00 Test91 [ INFO    ] server[27817]: Storlek på storlek-tringen
-2019-09-24T17:15:39.782+00:00 Test91 [ INFO    ] server[27817]: 34378
-2019-09-24T17:15:39.782+00:00 Test91 [ INFO    ] server[27817]: 6
-2019-09-24T17:15:39.787+00:00 Test91 [ INFO    ] server[27817]: Client is disconnected
-2019-09-24T17:15:40.791+00:00 Test91 [ INFO    ] server[27817]: 34266
-2019-09-24T17:15:40.791+00:00 Test91 [ INFO    ] server[27817]: 6
-2019-09-24T17:15:40.791+00:00 Test91 [ INFO    ] server[27817]: Storlek på storlek-tringen
-2019-09-24T17:15:40.797+00:00 Test91 [ INFO    ] server[27817]: Client is disconnected
-2019-09-24T17:15:41.805+00:00 Test91 [ INFO    ] server[27817]: Storlek på storlek-tringen
-2019-09-24T17:15:41.806+00:00 Test91 [ INFO    ] server[27817]: 34385
-2019-09-24T17:15:41.806+00:00 Test91 [ INFO    ] server[27817]: 6
-2019-09-24T17:15:41.811+00:00 Test91 [ INFO    ] server[27817]: Client is disconnected
-2019-09-24T17:15:42.815+00:00 Test91 [ INFO    ] server[27817]: Storlek på storlek-tringen
-2019-09-24T17:15:42.816+00:00 Test91 [ INFO    ] server[27817]: 34203
-2019-09-24T17:15:42.816+00:00 Test91 [ INFO    ] server[27817]: 6
-2019-09-24T17:15:42.821+00:00 Test91 [ INFO    ] server[27817]: Client is disconnected
-2019-09-24T17:15:43.829+00:00 Test91 [ INFO    ] server[27817]: Storlek på storlek-tringen
-2019-09-24T17:15:43.830+00:00 Test91 [ INFO    ] server[27817]: 34248
-2019-09-24T17:15:43.830+00:00 Test91 [ INFO    ] server[27817]: 6
-2019-09-24T17:15:43.834+00:00 Test91 [ INFO    ] server[27817]: Client is disconnected
-2019-09-24T17:15:44.840+00:00 Test91 [ INFO    ] server[27817]: 34275
-2019-09-24T17:15:44.840+00:00 Test91 [ INFO    ] server[27817]: 6
-2019-09-24T17:15:44.840+00:00 Test91 [ INFO    ] server[27817]: Storlek på storlek-tringen
-2019-09-24T17:15:44.845+00:00 Test91 [ INFO    ] server[27817]: Client is disconnected
-2019-09-24T17:15:45.847+00:00 Test91 [ INFO    ] server[27817]: Storlek på storlek-tringen
-2019-09-24T17:15:45.850+00:00 Test91 [ INFO    ] server[27817]: 6
-2019-09-24T17:15:45.853+00:00 Test91 [ INFO    ] server[27817]: 34192
-2019-09-24T17:15:45.853+00:00 Test91 [ INFO    ] server[27817]: Client is disconnected
-2019-09-24T17:15:46.857+00:00 Test91 [ INFO    ] server[27817]: Storlek på storlek-tringen
-2019-09-24T17:15:46.858+00:00 Test91 [ INFO    ] server[27817]: 34228
-2019-09-24T17:15:46.858+00:00 Test91 [ INFO    ] server[27817]: 6
-2019-09-24T17:15:46.862+00:00 Test91 [ INFO    ] server[27817]: Client is disconnected
-2019-09-24T17:15:47.867+00:00 Test91 [ INFO    ] server[27817]: 6
-2019-09-24T17:15:47.867+00:00 Test91 [ INFO    ] server[27817]: Storlek på storlek-tringen
-2019-09-24T17:15:47.872+00:00 Test91 [ INFO    ] server[27817]: 34235
-2019-09-24T17:15:47.872+00:00 Test91 [ INFO    ] server[27817]: Client is disconnected
-2019-09-24T17:15:48.876+00:00 Test91 [ INFO    ] server[27817]: 6
-2019-09-24T17:15:48.876+00:00 Test91 [ INFO    ] server[27817]: Storlek på storlek-tringen
-2019-09-24T17:15:48.877+00:00 Test91 [ INFO    ] server[27817]: 34200
-2019-09-24T17:15:48.880+00:00 Test91 [ INFO    ] server[27817]: Client is disconnected
-2019-09-24T17:15:49.886+00:00 Test91 [ INFO    ] server[27817]: Storlek på storlek-tringen
-2019-09-24T17:15:49.887+00:00 Test91 [ INFO    ] server[27817]: 34277
-2019-09-24T17:15:49.887+00:00 Test91 [ INFO    ] server[27817]: 6
-2019-09-24T17:15:49.890+00:00 Test91 [ INFO    ] server[27817]: Client is disconnected
-2019-09-24T17:15:50.892+00:00 Test91 [ INFO    ] server[27817]: Storlek på storlek-tringen
-2019-09-24T17:15:50.893+00:00 Test91 [ INFO    ] server[27817]: 34291
-2019-09-24T17:15:50.893+00:00 Test91 [ INFO    ] server[27817]: 6
-2019-09-24T17:15:50.898+00:00 Test91 [ INFO    ] server[27817]: Client is disconnected
-2019-09-24T17:15:51.907+00:00 Test91 [ INFO    ] server[27817]: Storlek på storlek-tringen
-2019-09-24T17:15:51.909+00:00 Test91 [ INFO    ] server[27817]: 34445
-2019-09-24T17:15:51.909+00:00 Test91 [ INFO    ] server[27817]: 6
-2019-09-24T17:15:51.910+00:00 Test91 [ INFO    ] server[27817]: Client is disconnected
-2019-09-24T17:15:52.911+00:00 Test91 [ INFO    ] server[27817]: Storlek på storlek-tringen
-2019-09-24T17:15:52.912+00:00 Test91 [ INFO    ] server[27817]: 33794
-2019-09-24T17:15:52.912+00:00 Test91 [ INFO    ] server[27817]: 6
-2019-09-24T17:15:52.916+00:00 Test91 [ INFO    ] server[27817]: Client is disconnected
-2019-09-24T17:15:53.919+00:00 Test91 [ INFO    ] server[27817]: Storlek på storlek-tringen
-2019-09-24T17:15:53.923+00:00 Test91 [ INFO    ] server[27817]: 6
-2019-09-24T17:15:53.924+00:00 Test91 [ INFO    ] server[27817]: 33843
-2019-09-24T17:15:53.925+00:00 Test91 [ INFO    ] server[27817]: Client is disconnected
-2019-09-24T17:15:54.930+00:00 Test91 [ INFO    ] server[27817]: 33925
-2019-09-24T17:15:54.930+00:00 Test91 [ INFO    ] server[27817]: 6
-2019-09-24T17:15:54.930+00:00 Test91 [ INFO    ] server[27817]: Storlek på storlek-tringen
-2019-09-24T17:15:54.936+00:00 Test91 [ INFO    ] server[27817]: Client is disconnected
-2019-09-24T17:15:55.944+00:00 Test91 [ INFO    ] server[27817]: Storlek på storlek-tringen
-2019-09-24T17:15:55.945+00:00 Test91 [ INFO    ] server[27817]: 33787
-2019-09-24T17:15:55.945+00:00 Test91 [ INFO    ] server[27817]: 6
-2019-09-24T17:15:55.946+00:00 Test91 [ INFO    ] server[27817]: Client is disconnected
-2019-09-24T17:15:56.954+00:00 Test91 [ INFO    ] server[27817]: Storlek på storlek-tringen
-2019-09-24T17:15:56.959+00:00 Test91 [ INFO    ] server[27817]: 6
-2019-09-24T17:15:56.975+00:00 Test91 [ INFO    ] server[27817]: 33797
-2019-09-24T17:15:56.988+00:00 Test91 [ INFO    ] server[27817]: Client is disconnected
-2019-09-24T17:15:57.489+00:00 Test91 [ INFO    ] control.cgi: calling: /etc/init.d/sdkserver stop
-2019-09-24T17:15:57.545+00:00 Test91 [ INFO    ] server[0]: stopping server
-2019-09-24T17:16:12.325+00:00 Test91 [ INFO    ] upload.cgi: Uploaded '/tmp/server_1_0_mipsisa32r2el.eap' size:39910
-2019-09-24T17:16:13.535+00:00 Test91 [ NOTICE  ] dbus[436]: [system] Reloaded configuration
-2019-09-24T17:16:15.405+00:00 Test91 [ INFO    ] upload.cgi: Package /tmp/server_1_0_mipsisa32r2el.eap installation OK
-2019-09-24T17:16:15.406+00:00 Test91 [ NOTICE  ] dbus[436]: message repeated 2 times: [ [system] Reloaded configuration]
+2019-09-24T17:39:38.223+00:00 Test91 [ INFO    ] server[29193]: 34983
+2019-09-24T17:39:38.223+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:39:39.219+00:00 Test91 [ INFO    ] server[29193]: 35103
+2019-09-24T17:39:39.219+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:39:39.219+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:39:39.225+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:39:40.225+00:00 Test91 [ INFO    ] server[29193]: 34908
+2019-09-24T17:39:40.225+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:39:40.225+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:39:40.225+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:39:41.224+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:39:41.224+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:39:41.225+00:00 Test91 [ INFO    ] server[29193]: 35043
+2019-09-24T17:39:41.226+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:39:42.227+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:39:42.232+00:00 Test91 [ INFO    ] server[29193]: 34889
+2019-09-24T17:39:42.232+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:39:42.233+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:39:43.222+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:39:43.223+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:39:43.224+00:00 Test91 [ INFO    ] server[29193]: 35162
+2019-09-24T17:39:43.233+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:39:44.228+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:39:44.229+00:00 Test91 [ INFO    ] server[29193]: 35047
+2019-09-24T17:39:44.229+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:39:44.233+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:39:45.224+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:39:45.225+00:00 Test91 [ INFO    ] server[29193]: 34930
+2019-09-24T17:39:45.225+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:39:45.232+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:39:46.227+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:39:46.231+00:00 Test91 [ INFO    ] server[29193]: 34979
+2019-09-24T17:39:46.231+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:39:46.233+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:39:47.228+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:39:47.228+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:39:47.229+00:00 Test91 [ INFO    ] server[29193]: 35141
+2019-09-24T17:39:47.231+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:39:48.229+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:39:48.230+00:00 Test91 [ INFO    ] server[29193]: 34941
+2019-09-24T17:39:48.230+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:39:48.232+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:39:49.233+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:39:49.233+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:39:49.234+00:00 Test91 [ INFO    ] server[29193]: 34846
+2019-09-24T17:39:49.235+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:39:50.230+00:00 Test91 [ INFO    ] server[29193]: 35048
+2019-09-24T17:39:50.230+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:39:50.230+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:39:50.237+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:39:51.233+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:39:51.234+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:39:51.235+00:00 Test91 [ INFO    ] server[29193]: 35168
+2019-09-24T17:39:51.236+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:39:52.234+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:39:52.235+00:00 Test91 [ INFO    ] server[29193]: 35061
+2019-09-24T17:39:52.235+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:39:52.237+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:39:53.234+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:39:53.234+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:39:53.235+00:00 Test91 [ INFO    ] server[29193]: 34968
+2019-09-24T17:39:53.238+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:39:54.233+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:39:54.234+00:00 Test91 [ INFO    ] server[29193]: 35109
+2019-09-24T17:39:54.234+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:39:54.241+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:39:55.207+00:00 Test91 [ INFO    ] server[29193]: 34878
+2019-09-24T17:39:55.207+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:39:55.207+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:39:55.208+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:39:56.207+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:39:56.207+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:39:56.208+00:00 Test91 [ INFO    ] server[29193]: 35067
+2019-09-24T17:39:56.208+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:39:57.209+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:39:57.209+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:39:57.210+00:00 Test91 [ INFO    ] server[29193]: 35039
+2019-09-24T17:39:57.216+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:39:58.207+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:39:58.210+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:39:58.212+00:00 Test91 [ INFO    ] server[29193]: 34891
+2019-09-24T17:39:58.212+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:39:59.211+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:39:59.211+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:39:59.212+00:00 Test91 [ INFO    ] server[29193]: 35031
+2019-09-24T17:39:59.212+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:40:00.209+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:40:00.210+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:40:00.211+00:00 Test91 [ INFO    ] server[29193]: 35111
+2019-09-24T17:40:00.218+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:40:01.210+00:00 Test91 [ INFO    ] server[29193]: 35029
+2019-09-24T17:40:01.210+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:40:01.210+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:40:01.212+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:40:02.210+00:00 Test91 [ INFO    ] server[29193]: 35023
+2019-09-24T17:40:02.210+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:40:02.210+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:40:02.214+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:40:03.208+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:40:03.209+00:00 Test91 [ INFO    ] server[29193]: 35034
+2019-09-24T17:40:03.209+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:40:03.218+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:40:04.209+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:40:04.209+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:40:04.210+00:00 Test91 [ INFO    ] server[29193]: 35050
+2019-09-24T17:40:04.217+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:40:05.215+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:40:05.216+00:00 Test91 [ INFO    ] server[29193]: 34744
+2019-09-24T17:40:05.216+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:40:05.216+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:40:06.212+00:00 Test91 [ INFO    ] server[29193]: 35056
+2019-09-24T17:40:06.212+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:40:06.212+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:40:06.217+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:40:07.212+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:40:07.212+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:40:07.213+00:00 Test91 [ INFO    ] server[29193]: 34999
+2019-09-24T17:40:07.220+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:40:08.213+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:40:08.214+00:00 Test91 [ INFO    ] server[29193]: 34775
+2019-09-24T17:40:08.214+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:40:08.222+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:40:09.215+00:00 Test91 [ INFO    ] server[29193]: 35058
+2019-09-24T17:40:09.215+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:40:09.215+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:40:09.219+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:40:10.215+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:40:10.216+00:00 Test91 [ INFO    ] server[29193]: 35028
+2019-09-24T17:40:10.216+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:40:10.223+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:40:11.217+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:40:11.217+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:40:11.218+00:00 Test91 [ INFO    ] server[29193]: 34863
+2019-09-24T17:40:11.223+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:40:12.218+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:40:12.219+00:00 Test91 [ INFO    ] server[29193]: 34828
+2019-09-24T17:40:12.219+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:40:12.224+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:40:13.220+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:40:13.221+00:00 Test91 [ INFO    ] server[29193]: 34936
+2019-09-24T17:40:13.221+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:40:13.227+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:40:14.223+00:00 Test91 [ INFO    ] server[29193]: 35017
+2019-09-24T17:40:14.223+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:40:14.223+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:40:14.231+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:40:15.220+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:40:15.221+00:00 Test91 [ INFO    ] server[29193]: 34823
+2019-09-24T17:40:15.221+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:40:15.227+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:40:16.225+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:40:16.225+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:40:16.226+00:00 Test91 [ INFO    ] server[29193]: 34869
+2019-09-24T17:40:16.227+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:40:17.227+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:40:17.228+00:00 Test91 [ INFO    ] server[29193]: 34959
+2019-09-24T17:40:17.228+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:40:17.235+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:40:18.223+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:40:18.224+00:00 Test91 [ INFO    ] server[29193]: 34841
+2019-09-24T17:40:18.224+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:40:18.228+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:40:19.229+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:40:19.230+00:00 Test91 [ INFO    ] server[29193]: 35043
+2019-09-24T17:40:19.230+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:40:19.230+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:40:20.225+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:40:20.225+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:40:20.226+00:00 Test91 [ INFO    ] server[29193]: 34966
+2019-09-24T17:40:20.232+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:40:21.227+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:40:21.227+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:40:21.228+00:00 Test91 [ INFO    ] server[29193]: 35041
+2019-09-24T17:40:21.228+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:40:22.233+00:00 Test91 [ INFO    ] server[29193]: 34885
+2019-09-24T17:40:22.233+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:40:22.233+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:40:22.236+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:40:23.227+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:40:23.232+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:40:23.233+00:00 Test91 [ INFO    ] server[29193]: 35002
+2019-09-24T17:40:23.233+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:40:24.234+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:40:24.235+00:00 Test91 [ INFO    ] server[29193]: 34886
+2019-09-24T17:40:24.235+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:40:24.235+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:40:25.231+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:40:25.231+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:40:25.232+00:00 Test91 [ INFO    ] server[29193]: 34877
+2019-09-24T17:40:25.236+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:40:26.230+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:40:26.231+00:00 Test91 [ INFO    ] server[29193]: 35028
+2019-09-24T17:40:26.231+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:40:26.236+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:40:27.237+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:40:27.237+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:40:27.238+00:00 Test91 [ INFO    ] server[29193]: 35050
+2019-09-24T17:40:27.238+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:40:28.236+00:00 Test91 [ INFO    ] server[29193]: 34947
+2019-09-24T17:40:28.236+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:40:28.236+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:40:28.245+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:40:29.240+00:00 Test91 [ INFO    ] server[29193]: 35006
+2019-09-24T17:40:29.240+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:40:29.240+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:40:29.241+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:40:30.206+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:40:30.207+00:00 Test91 [ INFO    ] server[29193]: 34974
+2019-09-24T17:40:30.207+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:40:30.207+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:40:31.202+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:40:31.203+00:00 Test91 [ INFO    ] server[29193]: 35084
+2019-09-24T17:40:31.203+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:40:31.205+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:40:32.207+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:40:32.207+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:40:32.208+00:00 Test91 [ INFO    ] server[29193]: 34909
+2019-09-24T17:40:32.208+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:40:33.207+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:40:33.212+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:40:33.213+00:00 Test91 [ INFO    ] server[29193]: 34868
+2019-09-24T17:40:33.213+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:40:34.207+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:40:34.208+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:40:34.209+00:00 Test91 [ INFO    ] server[29193]: 35055
+2019-09-24T17:40:34.210+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:40:35.206+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:40:35.207+00:00 Test91 [ INFO    ] server[29193]: 35215
+2019-09-24T17:40:35.207+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:40:35.213+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:40:36.208+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:40:36.208+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:40:36.209+00:00 Test91 [ INFO    ] server[29193]: 35094
+2019-09-24T17:40:36.211+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:40:37.214+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:40:37.214+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:40:37.215+00:00 Test91 [ INFO    ] server[29193]: 34908
+2019-09-24T17:40:37.215+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:40:38.209+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:40:38.209+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:40:38.210+00:00 Test91 [ INFO    ] server[29193]: 35037
+2019-09-24T17:40:38.215+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:40:39.215+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:40:39.216+00:00 Test91 [ INFO    ] server[29193]: 35092
+2019-09-24T17:40:39.216+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:40:39.218+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:40:40.213+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:40:40.214+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:40:40.215+00:00 Test91 [ INFO    ] server[29193]: 34996
+2019-09-24T17:40:40.215+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:40:41.212+00:00 Test91 [ INFO    ] server[29193]: 35001
+2019-09-24T17:40:41.212+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:40:41.212+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:40:41.217+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:40:42.213+00:00 Test91 [ INFO    ] server[29193]: 34895
+2019-09-24T17:40:42.213+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:40:42.213+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:40:42.218+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:40:43.216+00:00 Test91 [ INFO    ] server[29193]: 35019
+2019-09-24T17:40:43.216+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:40:43.216+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:40:43.221+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:40:44.214+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:40:44.215+00:00 Test91 [ INFO    ] server[29193]: 35083
+2019-09-24T17:40:44.215+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:40:44.217+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:40:45.219+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:40:45.220+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:40:45.225+00:00 Test91 [ INFO    ] server[29193]: 34966
+2019-09-24T17:40:45.225+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:40:46.218+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:40:46.218+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:40:46.219+00:00 Test91 [ INFO    ] server[29193]: 35043
+2019-09-24T17:40:46.221+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:40:47.223+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:40:47.224+00:00 Test91 [ INFO    ] server[29193]: 34980
+2019-09-24T17:40:47.224+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:40:47.225+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:40:48.219+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:40:48.220+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:40:48.226+00:00 Test91 [ INFO    ] server[29193]: 34967
+2019-09-24T17:40:48.227+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:40:49.219+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:40:49.220+00:00 Test91 [ INFO    ] server[29193]: 35124
+2019-09-24T17:40:49.220+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:40:49.224+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:40:50.220+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:40:50.221+00:00 Test91 [ INFO    ] server[29193]: 35102
+2019-09-24T17:40:50.221+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:40:50.225+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:40:51.225+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:40:51.225+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:40:51.226+00:00 Test91 [ INFO    ] server[29193]: 34946
+2019-09-24T17:40:51.227+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:40:52.225+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:40:52.226+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:40:52.227+00:00 Test91 [ INFO    ] server[29193]: 34910
+2019-09-24T17:40:52.228+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:40:53.227+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:40:53.230+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:40:53.231+00:00 Test91 [ INFO    ] server[29193]: 35031
+2019-09-24T17:40:53.231+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:40:54.230+00:00 Test91 [ INFO    ] server[29193]: Storlek på storlek-tringen
+2019-09-24T17:40:54.232+00:00 Test91 [ INFO    ] server[29193]: 6
+2019-09-24T17:40:54.238+00:00 Test91 [ INFO    ] server[29193]: 35109
+2019-09-24T17:40:54.263+00:00 Test91 [ INFO    ] server[29193]: Client is disconnected
+2019-09-24T17:40:54.309+00:00 Test91 [ INFO    ] control.cgi: calling: /etc/init.d/sdkserver stop
+2019-09-24T17:40:54.362+00:00 Test91 [ INFO    ] server[0]: stopping server
+2019-09-24T17:41:07.820+00:00 Test91 [ INFO    ] upload.cgi: Uploaded '/tmp/server_1_0_mipsisa32r2el.eap' size:39908
+2019-09-24T17:41:09.005+00:00 Test91 [ NOTICE  ] dbus[436]: [system] Reloaded configuration
+2019-09-24T17:41:10.850+00:00 Test91 [ INFO    ] upload.cgi: Package /tmp/server_1_0_mipsisa32r2el.eap installation OK
+2019-09-24T17:41:10.851+00:00 Test91 [ NOTICE  ] dbus[436]: message repeated 2 times: [ [system] Reloaded configuration]

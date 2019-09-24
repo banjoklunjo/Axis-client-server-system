@@ -114,7 +114,9 @@ while(1) {
 
     	//Send the image data to the client
 	//old
-    	int error = write(newSocket, row_data, sizeof(row_data));
+    	//int error = write(newSocket, row_data, sizeof(row_data));
+	//sleep(1);
+	int error = send(newSocket, data, sizeof(data), 1);
 
      	//Checking if the write failed
      	//Might then be that the client is disconnected, so we break out of the loop
