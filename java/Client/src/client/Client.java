@@ -1,19 +1,24 @@
 package client;
 
+import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.*;
 import java.net.Socket;
+import java.nio.ByteBuffer;
 import java.util.Arrays;
 import java.util.List;
-
-import javax.imageio.ImageIO;
 
 public class Client implements Runnable {
     private Controller controller;
     private Socket socket;
-    private BufferedReader buffReader;
-    private InputStreamReader input;
+    private BufferedReader bufferedReader;
+    private InputStreamReader inputStreamReader;
     private boolean online;
+    private int length = 40000;
+    private InputStream inputStream;
+    private int realSize = 0;
+
+    private byte[] imgBuf;
 
 
     public Client(Controller controller, Socket socket) {
@@ -23,18 +28,77 @@ public class Client implements Runnable {
 
     private void readServerImage() {
         try {
-            int length = socket.getInputStream().available();
-            if(length > 0) {
-                System.out.println("the lenth of the received message" + length);
+            int bytesAvailable = inputStream.available();
+
+            // The server has sent the image size
+            if (bytesAvailable > 2 && bytesAvailable < 7) {
+                byte[] message = readExactly(inputStream, length);
+                String stringMessge = new String(message);
+                try {
+                    realSize = Integer.valueOf(stringMessge.trim());
+                    System.out.println("skriv ut realSize nuuu: ");
+                    System.out.println(realSize);
+                } catch (NumberFormatException e) {
+                    System.out.println(e.toString());
+                }
             }
 
+            //
+            else if (length > 20) {
+                byte[] message = new byte[realSize];
+
+                int index = inputStream.read(message);
+
+                ByteArrayInputStream bais = new ByteArrayInputStream(message);
+                final BufferedImage bufferedImage = ImageIO.read(bais);
+            }
+
+
+            /*
+            if (length > 2 && length < 7) { // received image size
+                message = readExactly(inputStream, length);
+                System.out.println("ska skriva ut storleken: ");
+                s = new String(message);
+                System.out.println(s);
+
+                try {
+                    realSize = Integer.valueOf(s.trim());
+                    System.out.println("skriv ut realSize nuuu: ");
+                    System.out.println(realSize);
+                } catch (NumberFormatException e) {
+                    System.out.println(e.toString());
+                }
+
+            }
+
+            //
+            else if (length > 20) {
+
+            }
+
+             */
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+
+        /*try {
             BufferedImage bufferedImage = ImageIO.read(socket.getInputStream());
             if (bufferedImage != null)
                 controller.updateImage(bufferedImage);
-        } catch (IOException e) {
+        } catch (IOException | InterruptedException e) {
             close();
             e.printStackTrace();
+        }*/
+    }
+
+    public boolean isNumeric(String number){
+        try {
+            Integer.parseInt(number);
+        } catch(NumberFormatException | NullPointerException nullPointerException) {
+            return false;
         }
+        return true;
     }
 
     public byte[] readExactly(InputStream input, int size) throws IOException
@@ -56,7 +120,7 @@ public class Client implements Runnable {
     private String readServerMessage() {
         String message = null;
         try {
-            message = buffReader.readLine();
+            message = bufferedReader.readLine();
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -76,8 +140,9 @@ public class Client implements Runnable {
 
     private void init() {
         try {
-            input = new InputStreamReader(socket.getInputStream());
-            buffReader = new BufferedReader(input);
+            inputStream = socket.getInputStream();
+            inputStreamReader = new InputStreamReader(inputStream);
+            bufferedReader = new BufferedReader(inputStreamReader);
             online = true;
         } catch (IOException e1) {
             e1.printStackTrace();
@@ -108,7 +173,7 @@ public class Client implements Runnable {
     public void close() {
         try {
             online = false;
-            input.close();
+            inputStreamReader.close();
             socket.close();
             controller.onDisconnect();
         } catch (IOException e) {
