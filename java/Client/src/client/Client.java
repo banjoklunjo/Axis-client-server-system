@@ -28,34 +28,14 @@ public class Client implements Runnable {
 
     private void readServerImage() {
         try {
-            int bytesAvailable = inputStream.available();
 
-            // The server has sent the image size
-            if (bytesAvailable > 2 && bytesAvailable < 7) {
-                byte[] message = readExactly(inputStream, length);
-                String stringMessge = new String(message);
-                try {
-                    realSize = Integer.valueOf(stringMessge.trim());
-                    System.out.println("skriv ut realSize nuuu: ");
-                    System.out.println(realSize);
-                } catch (NumberFormatException e) {
-                    System.out.println(e.toString());
-                }
-            }
+            InputStream inputStream = socket.getInputStream();
+            int length = inputStream.available();
+            // byte[] message = readExactly(inputStream, length);
+            byte[] message = new byte[length];
 
-            //
-            else if (length > 20) {
-                byte[] message = new byte[realSize];
-
-                int index = inputStream.read(message);
-
-                ByteArrayInputStream bais = new ByteArrayInputStream(message);
-                final BufferedImage bufferedImage = ImageIO.read(bais);
-            }
-
-
-            /*
-            if (length > 2 && length < 7) { // received image size
+            String s = "";
+            if (length > 2 && length < 20) {
                 message = readExactly(inputStream, length);
                 System.out.println("ska skriva ut storleken: ");
                 s = new String(message);
@@ -74,22 +54,33 @@ public class Client implements Runnable {
             //
             else if (length > 20) {
 
+                message = new byte[realSize];
+
+                //int index = inputStream.read(message);
+                BufferedInputStream stream = new BufferedInputStream(inputStream);
+                // int index = inputStream.read(message);
+                // System.out.println("Index:   " + index);
+
+                // new
+                for (int read = 0; read < realSize;) { // read until the byte array is filled
+                    read += stream.read(message, read, message.length - read);
+                }
+
+                // System.out.println("Index:   " + length);
+                ByteArrayInputStream bais = new ByteArrayInputStream(message);
+                final BufferedImage bufferedImage = ImageIO.read(bais);
+
+                if (bufferedImage != null) {
+                    controller.updateImage(bufferedImage);
+                }
+
             }
 
-             */
         } catch (IOException e) {
+            System.out.println("readServerImage() --> Error = "
+                    + e.getMessage());
             e.printStackTrace();
         }
-
-
-        /*try {
-            BufferedImage bufferedImage = ImageIO.read(socket.getInputStream());
-            if (bufferedImage != null)
-                controller.updateImage(bufferedImage);
-        } catch (IOException | InterruptedException e) {
-            close();
-            e.printStackTrace();
-        }*/
     }
 
     public boolean isNumeric(String number){
