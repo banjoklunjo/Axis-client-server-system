@@ -6,7 +6,7 @@ import java.net.Socket;
 import java.util.List;
 import java.util.concurrent.ExecutorService;
 
-import ui.ImageTest;
+
 import ui.View;
 
 public class Controller {
@@ -14,7 +14,6 @@ public class Controller {
 	private Client client;
 	private ExecutorService executor;
 	private Socket socket;
-	private ImageTest imageTest;
 	private static int resetVar = 0;
 
 	public Controller(ExecutorService executor) {
@@ -39,24 +38,12 @@ public class Controller {
 	}
 
 	public void connect(String ip, String port) {
-		socket = createSocket("192.168.20.166", "55752");
+		socket = createSocket(ip, port);
 		if (socket != null) {
 			client = new Client(this, socket);
 			executor.submit(client);
 			view.onConnect();
 		}
-		
-		/*if (ip.isEmpty() || port.isEmpty()) {
-			view.onEmptyFields();
-		} else {
-			socket = createSocket(ip, port);
-			if (socket != null) {
-				client = new Client(this, socket);
-				executor.submit(client);
-				view.onConnect();
-			}
-		}
-		*/
 	}
 
 	public void sendMessage(String message) {
@@ -85,10 +72,7 @@ public class Controller {
 	}
 
 	public void updateImage(BufferedImage image) {
-		if(imageTest == null) {
-			imageTest = new ImageTest();
-		}
-		imageTest.updateImage(image);
+
 		
 		System.out.println("updateImage() --> received image");
 	}

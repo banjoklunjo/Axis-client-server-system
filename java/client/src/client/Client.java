@@ -27,13 +27,14 @@ public class Client implements Runnable {
 	private Socket socket;
 	private BufferedReader buffReader;;
 	private InputStreamReader input;
-	JFrame frame;
+
+	private JFrame frame;
 	private boolean online;
 
 	private int counter = 0;
 	private int realSize = 0;
 	private int section = 0;
-	byte[][] bilden;
+	private byte[][] bilden;
 
 	private InputStream inputStream;
 
@@ -80,66 +81,59 @@ public class Client implements Runnable {
 	}
 
 	private void readServerImage() {
+
+		//for first time start
 		if (frame == null) {
 			frame = new JFrame();
+			//else for the second image, third, fourth and so on
+			//remove everything old to show new image
 		} else
 			frame.getContentPane().removeAll();
-
+		//now we try
 		try {
 
-			InputStream inputStream = socket.getInputStream();
 			int length = inputStream.available();
-			// byte[] message = readExactly(inputStream, length);
+
 			byte[] message = new byte[length];
 
 			String s = "";
+
+			//if the message is so small, it means we are receiving the size first
 			if (length > 2 && length < 20) {
 				message = readExactly(inputStream, length);
-				System.out.println("ska skriva ut storleken: ");
-				s = new String(message);
-				System.out.println(s);
 
+				s = new String(message);
+				;
+
+				//here we receive the size as a message
 				try {
 					realSize = Integer.valueOf(s.trim());
-					System.out.println("skriv ut realSize nuuu: ");
-					System.out.println(realSize);
 				} catch (NumberFormatException e) {
 					System.out.println(e.toString());
 				}
 
 			}
 
-			//
+			//else if the message is bigger then we are receiving the image
 			else if (length > 20) {
-
-				message = new byte[realSize];
-				
-				//int index = inputStream.read(message);
+				message = new byte[realSize];	
+				//using bufferedinput for smoother reading of the byte array
 				BufferedInputStream stream = new BufferedInputStream(inputStream);
-				// int index = inputStream.read(message);
-				// System.out.println("Index:   " + index);
-
-				// new
-				for (int read = 0; read < realSize;) { // read until the byte array is filled
+				//with the bufferedinputstream we can read each byte 
+				for (int read = 0; read < realSize;) { 
 					read += stream.read(message, read, message.length - read);
 				}
-
-				// System.out.println("Index:   " + length);
+				//using bytearrayinputstream for reading images 
 				ByteArrayInputStream bais = new ByteArrayInputStream(message);
+				//from above bytearrayinputstream we have bufferedImage
 				final BufferedImage bufferedImage = ImageIO.read(bais);
-
+				//if the buffered image is not null, we will show it.
 				if (bufferedImage != null) {
-					SwingUtilities.invokeLater(new Runnable() {
-						public void run() {
-							frame.getContentPane().setLayout(new FlowLayout());
-							frame.getContentPane().add(new JLabel(new ImageIcon(bufferedImage)));
-							frame.pack();
-							frame.setVisible(true);
-						}
-					});
-
+					frame.getContentPane().setLayout(new FlowLayout());
+					frame.getContentPane().add(new JLabel(new ImageIcon(bufferedImage)));
+					frame.pack();
+					frame.setVisible(true);
 				}
-
 			}
 
 		} catch (IOException e) {
@@ -161,6 +155,7 @@ public class Client implements Runnable {
 		}
 		return data;
 	}
+	
 
 	private void init() {
 		online = true;
@@ -172,6 +167,8 @@ public class Client implements Runnable {
 			close();
 		}
 	}
+	
+	
 
 	private String readServerMessage() {
 		String message = null;
@@ -182,10 +179,14 @@ public class Client implements Runnable {
 		}
 		return message;
 	}
+	
+	
 
 	public void disconnect() {
 		this.online = false;
 	}
+	
+	
 
 	private void close() {
 		try {

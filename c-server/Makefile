@@ -4,8 +4,8 @@ include $(AXIS_TOP_DIR)/tools/build/rules/common.mak
 IDIR =../include
 
 PROG1	= server
-OBJS1	= server.c
-
+OBJS1	= server.c	cam_server.c
+SHLIB_NAME    = cam_server
 PROGS	= $(PROG1)
 LDIR =../lib
 PKGS = gio-2.0 glib-2.0  axhttp
