@@ -66,7 +66,8 @@ int start_up_server(void)
 
 	pthread_t tid[60];
 	int i = 0;
-	while(1)
+	bool isMore = true;
+	while(isMore)
 	{
 		//Accept call creates a new socket for the incoming connection
 		addr_size = sizeof serverStorage;
@@ -77,14 +78,12 @@ int start_up_server(void)
 		if( pthread_create(&tid[i], NULL, socketThread, &newSocket) != 0 )
 			syslog(LOG_INFO, "Failed to create thread \n");
 
+
+		i++;
+
 		if( i >= 50)
 		{
-			i = 0;
-			while(i < 50)
-			{
-				pthread_join(tid[i++],NULL);
-			}
-			i = 0;
+			isMore = false;
 		}
 	}
 	return 0;

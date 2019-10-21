@@ -17,6 +17,10 @@
 
 char client_message[2000];
 
+char stop_message[4];
+char *stop_arr = "stop";
+bool is_stop_requested = false;
+
 char buffer[1024];
 
 pthread_mutex_t lock = PTHREAD_MUTEX_INITIALIZER;
@@ -127,7 +131,13 @@ void * socketThread(void *arg)
 	//Opens a stream to the camera to get the img
 	stream = capture_open_stream(IMAGE_JPEG, client_message); 
 	int val = 0;
-	while(1) { 
+	is_stop_requested = false;
+	while(!is_stop_requested) { 
+		//Receive message
+		recv(newSocket , stop_message , 5 , 0);
+		if(stop_arr == stop_message)
+			is_stop_requested = true;
+		
 		//Get the frame
 		frame = capture_get_frame(stream);    
 
