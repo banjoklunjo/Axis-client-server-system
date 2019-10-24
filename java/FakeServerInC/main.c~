@@ -27,7 +27,7 @@ int main()
     client_socket = accept(server_socket, NULL, NULL);
     recv(client_socket, client_message, sizeof(client_message), 0);
     printf("Data received: %s",client_message);
-    memset(client_message, 0, strlen(client_message)); 
+    memset(msg, 0, strlen(msg)); 
 
     recv(client_socket, client_message, sizeof(client_message), 0);
     printf("Data received: %s",client_message);

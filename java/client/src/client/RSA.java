@@ -1,69 +1,100 @@
 package client;
 
-import java.security.KeyFactory;
-import java.security.KeyPair;
-import java.security.KeyPairGenerator;
-import java.security.NoSuchAlgorithmException;
-import java.security.spec.InvalidKeySpecException;
-import java.security.spec.RSAPrivateKeySpec;
-import java.security.spec.RSAPublicKeySpec;
-import java.util.Arrays;
+import java.io.IOException;
+import java.math.BigInteger;
+import java.util.Random;
 
-/**
- * https://www.javamex.com/tutorials/cryptography/rsa_encryption.shtml
-
- */
 public class RSA {
-	private RSAPublicKeySpec publicKeySpec;
-	private RSAPrivateKeySpec privateKeySpec;
+	private int bitlength = 16;
+	private Random r = new Random();
 
-	RSA(int keySize) {
-		KeyPairGenerator keyPairGenerator;
+	// p and q are primer numbers used to calculate N
+	private BigInteger p;
+	private BigInteger q;
 
-		try {
+	// N is the modulus and is part of the public key and private key
+	private BigInteger N;
+	private BigInteger phi;
 
-			// KeyPair is used to generate the public and private key
-			keyPairGenerator = KeyPairGenerator.getInstance("RSA");
-			keyPairGenerator.initialize(keySize);
+	// e is the public exponent and is part of the public key
+	private BigInteger e;
 
-			// KeyPair is used to retrieve the public and private key
-			KeyPair keyPair = keyPairGenerator.genKeyPair();
+	// d is the private exponent and is part of the private key
+	private BigInteger d;
 
-			KeyFactory keyFactory = KeyFactory.getInstance("RSA");
-			publicKeySpec = keyFactory.getKeySpec(keyPair.getPublic(), RSAPublicKeySpec.class);
-			privateKeySpec = keyFactory.getKeySpec(keyPair.getPrivate(), RSAPrivateKeySpec.class);
-			
-			printKeyInformation();
+	
+	public RSA() {
+		p = BigInteger.probablePrime(bitlength, r);
+		q = BigInteger.probablePrime(bitlength, r);
 
-		} catch (NoSuchAlgorithmException | InvalidKeySpecException e) {
-			e.printStackTrace();
+		// calculate the modulus to be used in the public and private key
+		N = p.multiply(q);
+
+		phi = p.subtract(BigInteger.ONE).multiply(q.subtract(BigInteger.ONE));
+
+		e = BigInteger.probablePrime(bitlength / 2, r);
+
+		// the greatest common divisor between phi and e must be 1 and e must be smaller than phi
+		while (phi.gcd(e).compareTo(BigInteger.ONE) > 0 && e.compareTo(phi) < 0) {
+			e.add(BigInteger.ONE);
 		}
-
+		d = e.modInverse(phi);
+		printKeyInformation();
 	}
 	
-	protected RSAPublicKeySpec getPublicKey() {
-		return this.publicKeySpec;
-	}
 	
-	protected RSAPrivateKeySpec getPrivateKey() {
-		return this.privateKeySpec;
+	public byte[] encrypt(byte[] message) {
+		return (new BigInteger(message)).modPow(e, N).toByteArray();
 	}
 
+	
+	public byte[] decrypt(byte[] message) {
+		return (new BigInteger(message)).modPow(d, N).toByteArray();
+	}
+
+	
+	public BigInteger getPublicExponent() {
+		return this.e;
+	}
+	
+	
+	public BigInteger getModulus() {
+		return this.N;
+	}
+
+
+	
+	
+	
+	
+	
+	
+	
+	public static void main(String[] args) throws IOException {
+		RSA rsa = new RSA();
+		rsa.printKeyInformation();
+		
+		String message = "Benjamin";
+
+		System.out.println("Encrypting String: " + message);
+		
+		byte[] encrypted = rsa.encrypt(message.getBytes());
+		byte[] decrypted = rsa.decrypt(encrypted);
+
+		//System.out.println("Decrypting Bytes: " + bytesToString(decrypted));
+		System.out.println("Decrypted String: " + new String(decrypted));
+	}
+	
+	
 	public void printKeyInformation() {
 		System.out.println("[PUBLIC KEY]");
-		System.out.println("modulus = " + publicKeySpec.getModulus() 
-		+ "\nexponent = " + publicKeySpec.getPublicExponent()
-		+ "\nmodulus length = " + publicKeySpec.getModulus().toByteArray().length);
+		System.out.println("modulus = " + N.toString()
+				+ "\nexponent = " + e.toString()
+				+ "\nmodulus length = "
+				+ N.toByteArray().length);
 
 		System.out.println("\n\n[PRIVATE KEY]");
-		System.out.println("modulus = " + privateKeySpec.getModulus()
-				+ "\nexponent = " + privateKeySpec.getPrivateExponent());
+		System.out.println("modulus = " + N.toString() + "\nexponent = " + d.toString());
 	}
 
-	public static void main(String[] args) throws NoSuchAlgorithmException, InvalidKeySpecException {
-		RSA rsa = new RSA(2048);
-		System.out.println(Arrays.toString(rsa.getPublicKey().getModulus().toByteArray()));
-		rsa.printKeyInformation();
-	}
-	
 }

@@ -44,13 +44,10 @@ public class Client implements Runnable {
 	// generate public and private key with this class
 	private RSA rsa;
 
-	// key size in bits
-	private int keySize = 2048;
-
 	public Client(Controller controller, Socket socket) {
 		this.controller = controller;
 		this.socket = socket;
-		this.rsa = new RSA(keySize);
+		this.rsa = new RSA();
 
 		try {
 			inputStream = socket.getInputStream();
@@ -74,19 +71,21 @@ public class Client implements Runnable {
 	@Override
 	public void run() {
 		init();
-		/*
-		 * String msgFromServer = readServerMessage();
-		 * 
-		 * if (msgFromServer != null) { List<String> resolutions =
-		 * Arrays.asList(msgFromServer.split(",")); if (!msgFromServer.equals("\n")) {
-		 * controller.receivedMessage(msgFromServer);
-		 * controller.setResolutions(resolutions); } }
-		 */
 
 		sendPublicKey();
 
+		String msgFromServer = readServerMessage();
+
+		if (msgFromServer != null) {
+			List<String> resolutions = Arrays.asList(msgFromServer.split(","));
+			if (!msgFromServer.equals("\n")) {
+				controller.receivedMessage(msgFromServer);
+				controller.setResolutions(resolutions);
+			}
+		}
+
 		while (online) {
-			// readServerImage();
+			readServerImage();
 		}
 	}
 
@@ -94,17 +93,10 @@ public class Client implements Runnable {
 	 * The public key is made of the modulus and the public exponent
 	 */
 	private void sendPublicKey() {
-		try {
-			// BigInteger is used because of the big integer calculations which exceeds the limit of the primitive data types.
-			// The RSA keys contains a lot of digits.
-			BigInteger publicKeyModulus = rsa.getPublicKey().getModulus();
-			BigInteger publicKeyExponent = rsa.getPublicKey().getPublicExponent();
-
-			outputStream.write(publicKeyModulus.toByteArray());  // send first part of the public key as a byte array
-			outputStream.write(publicKeyExponent.toByteArray()); // send second part of the public key as a byte array
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+		BigInteger modulus = rsa.getModulus();
+		BigInteger publicExponent = rsa.getPublicExponent();
+		sendToServer(modulus.toString());
+		sendToServer(publicExponent.toString());
 	}
 
 	private void readServerImage() {
@@ -125,7 +117,8 @@ public class Client implements Runnable {
 
 			String s = "";
 
-			// if the message is so small, it means we are receiving the size first
+			// if the message is so small, it means we are receiving the size
+			// first
 			if (length > 2 && length < 20) {
 				message = readExactly(inputStream, length);
 
@@ -145,7 +138,8 @@ public class Client implements Runnable {
 			else if (length > 20) {
 				message = new byte[realSize];
 				// using bufferedinput for smoother reading of the byte array
-				BufferedInputStream stream = new BufferedInputStream(inputStream);
+				BufferedInputStream stream = new BufferedInputStream(
+						inputStream);
 				// with the bufferedinputstream we can read each byte
 				for (int read = 0; read < realSize;) {
 					read += stream.read(message, read, message.length - read);
@@ -157,14 +151,16 @@ public class Client implements Runnable {
 				// if the buffered image is not null, we will show it.
 				if (bufferedImage != null) {
 					frame.getContentPane().setLayout(new FlowLayout());
-					frame.getContentPane().add(new JLabel(new ImageIcon(bufferedImage)));
+					frame.getContentPane().add(
+							new JLabel(new ImageIcon(bufferedImage)));
 					frame.pack();
 					frame.setVisible(true);
 				}
 			}
 
 		} catch (IOException e) {
-			System.out.println("readServerImage() --> Error = " + e.getMessage());
+			System.out.println("readServerImage() --> Error = "
+					+ e.getMessage());
 			e.printStackTrace();
 		}
 	}
@@ -185,7 +181,8 @@ public class Client implements Runnable {
 	private void init() {
 		online = true;
 		try {
-			bufferedReader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+			bufferedReader = new BufferedReader(new InputStreamReader(
+					socket.getInputStream()));
 			outputStream = new DataOutputStream(socket.getOutputStream());
 		} catch (IOException e1) {
 			e1.printStackTrace();
