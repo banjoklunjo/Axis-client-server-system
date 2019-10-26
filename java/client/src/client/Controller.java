@@ -14,7 +14,6 @@ public class Controller {
 	private Client client;
 	private ExecutorService executor;
 	private Socket socket;
-	private static int resetVar = 0;
 
 	public Controller(ExecutorService executor) {
 		this.executor = executor;
@@ -67,13 +66,8 @@ public class Controller {
 		executor.shutdown();
 	}
 
-	public void receivedMessage(String message) {
-		//view.onMessageReceived(message);
-	}
 
 	public void updateImage(BufferedImage image) {
-
-		
 		System.out.println("updateImage() --> received image");
 	}
 
