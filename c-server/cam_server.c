@@ -254,21 +254,35 @@ int gcd(int a, int h)
 } 
 
 
-char *encrypt(double eValue, double nValue, char array[])
+double encryptXOR(double eValue, double nValue, double xorKey)
 {
-    // Message to be encrypted array
-  
-    char result[2000];
-    // Encryption c = (array ^ eValue) % nValue 
-
-    for(int i = 0; i< 2000; i++)
-    {
-	result[i] = pow(array[i], eValue);
-	result[i] = fmod(result[i], nValue);
-    }
- 
+	double result = 0;
+        // Encryption result = (xorKey ^ eValue) % nValue 
+	result = pow(xorKey, eValue);
+	result = fmod(result, nValue)
 	return result;
+}
 
+double decryptXOR(double dValue, double nValue, double xorKey)
+{
+	double result = 0;
+        // Encryption result = (xorKey ^ dValue) % nValue 
+	result = pow(xorKey, dValue);
+	result = fmod(result, nValue)
+	return result;
 }
 
 
+
+// Message encrypting with XoR key
+char *encrypt_char(char *message, char* key){
+   int message_length = strlen(message);
+   int key_length = strlen(key);
+   char* encrypt_msg = malloc(message_length+1);
+   int i;
+   for ( i = 0; i< message_length; i++){
+       encrypt_msg[i] = message[i] ^( key[i%key_length]-48); //Encrypts message to another array with the xor key generated (-48 for int to ascii conversion)
+   }
+   encrypt_msg[message_length]='\0';
+   return encrypt_msg;
+}
