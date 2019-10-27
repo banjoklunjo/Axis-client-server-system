@@ -1,4 +1,6 @@
 #include <syslog.h>
+#include<stdio.h> 
+#include<math.h> 
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -16,6 +18,13 @@
 #include "cam_server.h"
 
 char client_message[2000];
+
+char cln_pKey_e[2000];
+char cln_pKey_n[2000];
+
+double e; 
+double n;
+double phi; 
 
 char stop_message[4];
 char *stop_arr = "stop";
@@ -94,20 +103,36 @@ int start_up_server(void)
 
 
 void * socketThread(void *arg)
-
 {
+	
 	int newSocket = *((int *)arg);
 	char *msg;
 
-
 	//Get all available resolutions on the camera
 	msg = capture_get_resolutions_list(0);  
+
+	//Receive the e-part & n-part of client public key
+	recv(newSocket , cln_pKey_e , 2000 , 0);
+	recv(newSocket , cln_pKey_n , 2000 , 0);
+
+	//Generate pserver public key as e and n
+	generate_pub_key();
+	double ee = e;
+	double nn = n;
+	double phii = phi;
+
+    	int k = 2;  // A constant value 
+    	double d = (1 + (k*phii))/ee; 
+
+	//Send the ee-part & nn-part of server public key
+
+
 
 	//Send the resolutions to the client
 	write(newSocket, msg, strlen(msg));   
 
 	//Send a breakline to client, else the client wont read the message
-	write(newSocket, "\n", strlen("\n"));   
+	write(newSocket, "\n", strlen("\generate_pub_keyn"));   
 
 	//Clear/empty the msg variable
 	memset(msg, 0, strlen(msg));  
@@ -150,7 +175,7 @@ void * socketThread(void *arg)
 		sprintf(msg,"%zu\n",img_size); 
 
 		//Send the size to the client   
-		write(newSocket, msg, strlen(msg));    
+		write(newSocket, msg, stgenerate_pub_keyrlen(msg));    
 
 		sprintf(msg,"%zu\n", strlen(msg)); 
 		syslog(LOG_INFO, "Storlek på storlek-stringen"); 
@@ -167,38 +192,83 @@ void * socketThread(void *arg)
 		//Send the image data to the client
 		int error = write(newSocket, row_data, sizeof(row_data));
 
-		//Checking if the write failed
+		//Checking if the write generate_pub_keyfailed
 		//Might then be that the client is disconnected, so we break out of the loop
-		if (error < 0)
-			syslog(LOG_INFO, "Client is disconnected");
+	
+ 	}
+}
 
-		val++;
+  
+
+  
 
 
-		//Emptying the variables to be sure nothing is stored 
-		memset(data, 0, sizeof(data));
-		memset(row_data, 0, sizeof(row_data));
-		capture_frame_free(frame);
+  
 
-	}
-	// Send message to the client socket
-	pthread_mutex_lock(&lock);
-	char *message = malloc(sizeof(client_message)+20);
-	strcpy(message,"Hello Client : ");
-	strcat(message,client_message);
-	strcat(message,"\n");
-	strcpy(buffer,message);
-	free(message);
-	pthread_mutex_unlock(&lock);
-	sleep(1);
-	send(newSocket,buffer,50,0);
+  
 
-	syslog(LOG_INFO, buffer);
-	syslog(LOG_INFO, "Exit socketThread\n");
-	close(newSocket);
-	pthread_exit(NULL);
+  
+
+
+
+void generate_pub_key()
+{
+    // Two random prime numbers 
+    double p = (rand() % (50 - 0 + 1)) + 0;
+    double q = (rand() % (50 - 0 + 1)) + 0;
+
+    // First part of public key: 
+    n = p*q; 
+
+    // Finding other part of public key. 
+    // e stands for encrypt 
+    e = (rand() % (50 - 0 + 1)) + 0;
+    phi = (p-1)*(q-1); 
+    while (e < phi) 
+    { 
+        // e must be co-prime to phi and 
+        // smaller than phi. 
+        if (gcd(e, phi)==1) 
+            break; 
+        else
+            e++; 
+    } 
+
+    //Now we have e and n
+
 }
 
 
+// Returns gcd of a and b 
+int gcd(int a, int h) 
+{ 
+    int temp; 
+    while (1) 
+    { 
+        temp = a%h; 
+        if (temp == 0) 
+          return h; 
+        a = h; 
+        h = temp; 
+    } 
+} 
+
+
+char *encrypt(double eValue, double nValue, char array[])
+{
+    // Message to be encrypted array
+  
+    char result[2000];
+    // Encryption c = (array ^ eValue) % nValue 
+
+    for(int i = 0; i< 2000; i++)
+    {
+	result[i] = pow(array[i], eValue);
+	result[i] = fmod(result[i], nValue);
+    }
+ 
+	return result;
+
+}
 
 
