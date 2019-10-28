@@ -4,6 +4,8 @@ import java.io.IOException;
 import java.math.BigInteger;
 import java.util.Random;
 
+import com.sun.xml.internal.messaging.saaj.util.Base64;
+
 public class RSA {
 	private int bitlength = 16;
 	private Random r = new Random();
@@ -64,10 +66,11 @@ public class RSA {
 		
 		System.out.println("Encrypting String: " + message);
 
-		byte[] encrypted = rsa.encrypt(message.getBytes());
+		byte[] encrypted = rsa.encrypt(message.getBytes("UTF-8"));
 		byte[] decrypted = rsa.decrypt(encrypted);
+		String decryptedMessage = new String(decrypted);
 
-		System.out.println("Decrypted String: " + new String(decrypted));
+		System.out.println("Decrypted String: " + decryptedMessage);
 	}
 
 }
