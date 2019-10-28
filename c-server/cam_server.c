@@ -22,13 +22,13 @@ char client_message[2000];
 char cln_pKey_e[2000];
 char cln_pKey_n[2000];
 
-double e; 
-double n;
-double phi; 
+//double e; 
+//double n;
+//double phi; 
 
 char stop_message[4];
 char *stop_arr = "stop";
-bool is_stop_requested = false;
+int is_stop_requested = 0;
 
 char buffer[1024];
 
@@ -75,7 +75,7 @@ int start_up_server(void)
 
 	pthread_t tid[60];
 	int i = 0;
-	bool isMore = true;
+	int isMore = 1;
 	while(isMore)
 	{
 		//Accept call creates a new socket for the incoming connection
@@ -92,7 +92,7 @@ int start_up_server(void)
 
 		if( i >= 50)
 		{
-			isMore = false;
+			isMore = 0;
 		}
 	}
 	return 0;
@@ -108,31 +108,50 @@ void * socketThread(void *arg)
 	int newSocket = *((int *)arg);
 	char *msg;
 
-	//Get all available resolutions on the camera
-	msg = capture_get_resolutions_list(0);  
+ 
 
 	//Receive the e-part & n-part of client public key
 	recv(newSocket , cln_pKey_e , 2000 , 0);
 	recv(newSocket , cln_pKey_n , 2000 , 0);
+	syslog(LOG_INFO, cln_pKey_e); 
+	syslog(LOG_INFO, cln_pKey_n); 
 
 	//Generate pserver public key as e and n
-	generate_pub_key();
-	double ee = e;
-	double nn = n;
-	double phii = phi;
+	double *keys;
+	keys = generate_pub_key();		//First value n; Second value e; Third value Phi;
 
     	int k = 2;  // A constant value 
-    	double d = (1 + (k*phii))/ee; 
+    	double d = (1 + (k*keys[2]))/keys[1]; 
 
 	//Send the ee-part & nn-part of server public key
 
+
+
+	char arr[50];
+	syslog(LOG_INFO, "E");
+	sprintf(arr,"%zu\n",keys[1]);
+	syslog(LOG_INFO, arr);
+	write(newSocket, arr, strlen(arr));
+	write(newSocket, "\n", strlen("\n"));
+	memset(arr, 0, strlen(arr)); 
+
+	syslog(LOG_INFO, "N");
+	sprintf(arr, "%d", keys[0]); 
+	write(newSocket, arr, strlen(arr));
+	write(newSocket, "\n", strlen("\n"));
+	syslog(LOG_INFO, arr);
+	memset(arr, 0, strlen(arr)); 
+
+
+	//Get all available resolutions on the camera
+	msg = capture_get_resolutions_list(0); 
 
 
 	//Send the resolutions to the client
 	write(newSocket, msg, strlen(msg));   
 
 	//Send a breakline to client, else the client wont read the message
-	write(newSocket, "\n", strlen("\generate_pub_keyn"));   
+	write(newSocket, "\n", strlen("\n"));   
 
 	//Clear/empty the msg variable
 	memset(msg, 0, strlen(msg));  
@@ -154,13 +173,13 @@ void * socketThread(void *arg)
 
 	//Opens a stream to the camera to get the img
 	stream = capture_open_stream(IMAGE_JPEG, client_message); 
-	int val = 0;
-	is_stop_requested = false;
-	while(!is_stop_requested) { 
+
+	is_stop_requested = 0;
+	while(is_stop_requested) { 
 		//Receive message
 		recv(newSocket , stop_message , 5 , 0);
 		if(stop_arr == stop_message)
-			is_stop_requested = true;
+			is_stop_requested = 0;
 		
 		//Get the frame
 		frame = capture_get_frame(stream);    
@@ -175,7 +194,7 @@ void * socketThread(void *arg)
 		sprintf(msg,"%zu\n",img_size); 
 
 		//Send the size to the client   
-		write(newSocket, msg, stgenerate_pub_keyrlen(msg));    
+		write(newSocket, msg, strlen(msg));    
 
 		sprintf(msg,"%zu\n", strlen(msg)); 
 		syslog(LOG_INFO, "Storlek på storlek-stringen"); 
@@ -191,7 +210,8 @@ void * socketThread(void *arg)
 
 		//Send the image data to the client
 		int error = write(newSocket, row_data, sizeof(row_data));
-
+		if(error == 0)
+			break;
 		//Checking if the write generate_pub_keyfailed
 		//Might then be that the client is disconnected, so we break out of the loop
 	
@@ -211,11 +231,45 @@ void * socketThread(void *arg)
 
 
 
-void generate_pub_key()
+double *generate_pub_key()
+{
+
+	double n, e, phi;
+	double p = (rand() % (50 - 0 + 1)) + 0;
+	double q = (rand() % (50 - 0 + 1)) + 0;
+
+	// First part of public key: 
+	n = p*q; 
+
+	// Finding other part of public key. 
+	// e stands for encrypt 
+	e = (rand() % (50 - 0 + 1)) + 0;
+	phi = (p-1)*(q-1); 
+	while (e < phi) 
+	{ 
+		// e must be co-prime to phi and 
+		// smaller than phi. 
+		if ( gcd(e, phi) == 1 ) 
+		    break; 
+		else
+		    e++; 
+	} 
+	//4294856960
+	// Two random prime numbers 
+	double rettt[3];
+	rettt[0] = n;
+	rettt[1] = e;
+	rettt[2] = phi;
+	return rettt;
+	//Now we have e and n
+}
+
+/*double generate_pub_key()
 {
     // Two random prime numbers 
     double p = (rand() % (50 - 0 + 1)) + 0;
     double q = (rand() % (50 - 0 + 1)) + 0;
+
 
     // First part of public key: 
     n = p*q; 
@@ -228,7 +282,7 @@ void generate_pub_key()
     { 
         // e must be co-prime to phi and 
         // smaller than phi. 
-        if (gcd(e, phi)==1) 
+        if ( gcd(e, phi) == 1 ) 
             break; 
         else
             e++; 
@@ -236,13 +290,12 @@ void generate_pub_key()
 
     //Now we have e and n
 
-}
-
+}*/
 
 // Returns gcd of a and b 
 int gcd(int a, int h) 
 { 
-    int temp; 
+    int temp = 0; 
     while (1) 
     { 
         temp = a%h; 
@@ -251,15 +304,16 @@ int gcd(int a, int h)
         a = h; 
         h = temp; 
     } 
+    return temp;
 } 
 
 
-double encryptXOR(double eValue, double nValue, double xorKey)
+/*double encryptXOR(double eValue, double nValue, double xorKey)
 {
 	double result = 0;
         // Encryption result = (xorKey ^ eValue) % nValue 
 	result = pow(xorKey, eValue);
-	result = fmod(result, nValue)
+	result = fmod(result, nValue);
 	return result;
 }
 
@@ -268,9 +322,9 @@ double decryptXOR(double dValue, double nValue, double xorKey)
 	double result = 0;
         // Encryption result = (xorKey ^ dValue) % nValue 
 	result = pow(xorKey, dValue);
-	result = fmod(result, nValue)
+	result = fmod(result, nValue);
 	return result;
-}
+}*/
 
 
 
