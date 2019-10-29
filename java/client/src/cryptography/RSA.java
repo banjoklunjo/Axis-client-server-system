@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.math.BigInteger;
 import java.util.Random;
 
-import com.sun.xml.internal.messaging.saaj.util.Base64;
 
 public class RSA {
 	private int bitlength = 16;
@@ -50,6 +49,16 @@ public class RSA {
 	public byte[] decrypt(byte[] message) {
 		return (new BigInteger(message)).modPow(privateKey.getPrivatExponent(), privateKey.getModulus()).toByteArray();
 	}
+	
+	public String decrypt(String message, PublicKey key) {
+		byte[] decrypted = new BigInteger(message).modPow(this.privateKey.getPrivatExponent(), key.getModulus()).toByteArray();
+		return new String(decrypted);
+	}
+	
+	public String encrypt(String message) {
+		byte[] encrypted = new BigInteger(message).modPow(this.publicKey.getPublicExponent(), this.publicKey.getModulus()).toByteArray();
+		return new String(encrypted);
+	}
 
 	public PublicKey getPublicKey() {
 		return this.publicKey;
@@ -62,15 +71,26 @@ public class RSA {
 	public static void main(String[] args) throws IOException {
 		RSA rsa = new RSA();
 
-		String message = "640×480, 800×600, 960×720, 1024×768, 1280×960, 1400×1050, 1440×1080, 1600×1200, 1856×1392, 1920×1440, and 2048×1536";
+		String message = "123";
 		
+		// Test 1
+		System.out.println("[TEST 1]");
 		System.out.println("Encrypting String: " + message);
-
 		byte[] encrypted = rsa.encrypt(message.getBytes("UTF-8"));
 		byte[] decrypted = rsa.decrypt(encrypted);
 		String decryptedMessage = new String(decrypted);
-
 		System.out.println("Decrypted String: " + decryptedMessage);
+		
+		// Test 2
+		System.out.println("\n[TEST 2]");
+		System.out.println("Encrypting String: " + message);
+		String encryptedString = rsa.encrypt(message);
+		System.out.println("Encrypted String: " + encryptedString);
+		String decryptedString = rsa.decrypt(encryptedString, rsa.getPublicKey());
+		String decryptedMessage2 = new String(decryptedString);
+		System.out.println("Decrypted String: " + decryptedMessage2);
+		
+	
 	}
 
 }

@@ -72,14 +72,20 @@ public class Client implements Runnable {
 		initializeStreams();
 
 		sendClientPublicKey();
-
+		
 		readServerPublicKey();
+		
+		getSymmetricXorKey();
 		
 		setCameraResolutions();
 		
-		//getSymmetricXorKey();
+		while(online);
 
+		//readServerPublicKey();
+		
 		//setCameraResolutions();
+		
+		//getSymmetricXorKey();
 
 		// while (online) readServerImage();
 
@@ -88,15 +94,15 @@ public class Client implements Runnable {
 	private void getSymmetricXorKey() {
 		String xorKey = readServerMessage();
 		xorCipher = new XorCipher(xorKey);
+		System.out.println("decrypted xor key = " + rsa.decrypt(xorKey, publicKeyServer));
 	}
 
 	private void readServerPublicKey() {
 		String publicExponentServer = readServerMessage();
-		System.out.println("publicExponentServer: " + publicExponentServer);
 		String modulusServer = readServerMessage();
-		System.out.println("modulusServer: " + modulusServer);
 		publicKeyServer = new PublicKey(new BigInteger(publicExponentServer), new BigInteger(modulusServer));
-		publicKeyServer.printKeyValues();
+		System.out.println("modulusServer = " + publicKeyServer.getModulus().toString());
+		System.out.println("publicExponentServer = " + publicKeyServer.getPublicExponent().toString());
 	}
 
 	private void sendClientPublicKey() {

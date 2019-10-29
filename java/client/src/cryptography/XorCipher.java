@@ -30,7 +30,7 @@ public class XorCipher {
 		}
 		return image;
 	}
-	
+		
 	
 	public static void main(String[] args) throws IOException {
 		XorCipher xorCipher = new XorCipher("0123456789");

@@ -3,13 +3,56 @@
 #include <sys/socket.h>
 #include <netinet/in.h>
 #include <string.h>
+#include <math.h>
+
+
+
+/* protoypes */
+void generate_rsa_key(void);
+int gcd(int a, int h);
+double gen_key(void);
+
+typedef struct rsa 
+{
+  double e;
+  double n;
+  double d;
+} rsa_variables;
+/* ---------- */
+
+
+
+
+/* Variables */
+char public_key_client_modulus[20];
+char public_key_client_exponent[20];
+char public_key_server_modulus[20];
+char public_key_server_exponent[20];
+char char_xor_key[20];
+char client_message[2000];
+rsa_variables rsa_variables_server;
+double xor_key; 
+/* --------- */
+
 
 
 int main()
 {
-    char message_size_one[16];
-    char message_size_two[16];
-    char client_message[2000];
+
+    generate_rsa_key();
+    xor_key = 5.0;//gen_key();
+    /*double c = pow(xor_key, rsa_variables_server.e); //encrypt the message
+    double m = pow(c, rsa_variables_server.d);
+    c=fmod(c, rsa_variables_server.n);
+    m=fmod(m, rsa_variables_server.n);
+    printf("Original message = %f \n", xor_key);
+    printf("Encrypted message c = %f \n", c);
+    printf("Decrypted message m = %f \n", m);   
+    */
+    printf("Server e = %f \n", rsa_variables_server.e);
+    printf("Server n = %f \n", rsa_variables_server.n);
+    printf("Server d = %f \n", rsa_variables_server.d);
+    printf("Server xor key = %f \n", xor_key);
 
     int server_socket;
     server_socket = socket(AF_INET, SOCK_STREAM, 0);
@@ -29,84 +72,96 @@ int main()
     int client_socket;
     client_socket = accept(server_socket, NULL, NULL);
 
-    /*recv(client_socket, client_message, strlen(client_message), 0);
-    printf("Data received: %s",client_message);
-    memset(client_message, 0, sizeof(client_message)); 
-
-    recv(client_socket, client_message, strlen(client_message), 0);
-    printf("Data received: %s",client_message);
-    */
     
+  
+    /* -------------- READ CLIENT PUBLIC KEY -------------- */
+    int bytes_read = 0;
+    bytes_read = recv(client_socket, public_key_client_modulus, 20, 0);
+    printf("Recevied -> Public Key Client Modulus: %s", public_key_client_modulus);
 
-    recv(client_socket, message_size_one, strlen(message_size_one), 0);
-    int i;
-    printf("Data size: %s",message_size_one);
-    //sscanf(message_size_one, "%d", &i);
-    //recv_all(client_socket, i);
+    bytes_read = recv(client_socket, public_key_client_exponent, 20, 0);
+    printf("Recevied -> Public Key Client Exponent: %s", public_key_client_exponent);
 
-    recv(client_socket, message_size_two, strlen(message_size_two), 0);
-    printf("Data size: %s",message_size_two);
-    int j;
-    //sscanf(message_size_two, "%d", &j);
-    //recv_all(client_socket, j);
+    /* ---------------------------------------------------- */
 
 
-    char public_key_exponent[] = "1995\n";
-    write(client_socket, public_key_exponent, strlen(public_key_exponent));
+    /* -------------- SEND SERVER PUBLIC KEY -------------- */
+    //snprintf(public_key_server_exponent, 20, "%f", rsa_variables_server.e);
+    gcvt(rsa_variables_server.e, 20, public_key_server_exponent);
+    printf("Sending -> Public Key Server Exponent: %s \n", public_key_server_exponent);
+    write(client_socket, public_key_server_exponent, strlen(public_key_server_exponent));
+    write(client_socket, "\n", strlen("\n"));
 
-    char public_key_modulus[] = "24\n";
-    write(client_socket, public_key_modulus, strlen(public_key_modulus));
+    //snprintf(public_key_server_modulus, 20, "%f", rsa_variables_server.n);
+    gcvt(rsa_variables_server.n, 20, public_key_server_modulus);
+    printf("Sending -> Public Key Server Modulus: %s \n", public_key_server_modulus);
+    write(client_socket, public_key_server_modulus, strlen(public_key_server_modulus));
+    write(client_socket, "\n", strlen("\n"));
+    /* ---------------------------------------------------- */
 
+
+    /* ----------- SEND XOR KEY ----------- */
+    double encrypted_xor = fmod( (pow(xor_key,rsa_variables_server.e)), rsa_variables_server.n);
+    printf("Encrypted xor = %f \n", encrypted_xor);
+    char encrypted_char_xor_key[20];
+    gcvt(encrypted_xor, 20, encrypted_char_xor_key);
+    printf("Sending -> Encrypted XOR key: %s \n", encrypted_char_xor_key);
+    write(client_socket, encrypted_char_xor_key, strlen(encrypted_char_xor_key));
+    write(client_socket, "\n", strlen("\n"));
+    /* ------------------------------------ */
+
+
+    /* -------------- SEND RESOLUTIONS -------------- */
     char resolutions[] = "640×480, 800×600, 960×720, 1024×768, 1280×960, 1400×1050, 1440×1080, 1600×1200, 1856×1392, 1920×1440, and 2048×1536\n";
     write(client_socket, resolutions, strlen(resolutions));
+    /* ---------------------------------------------- */
+
 
     close(server_socket);
+
 
     return 0;
 }
 
-//char *data_ptr = (char*) data;
-int recv_all(int client_socket, int data_size)
-{
-    char buff[2000];
-    char *data_ptr = buff;
-    int bytes_recv;
-
-    while (data_size > 0)
-    {
-        bytes_recv = recv(client_socket, data_ptr, data_size, 0);
-        if (bytes_recv <= 0)
-            return bytes_recv;
-
-        data_ptr += bytes_recv;
-        data_size -= bytes_recv;
+void generate_rsa_key(void) {
+    double p = 187787;
+    double q = 189019;
+    rsa_variables_server.n = p * q;
+    double phi = ( p-1 ) * ( q-1 );
+    double e = 7;
+    double track;
+    //for checking that 1 < e < phi(n) and gcd(e, phi(n)) = 1; i.e., e and phi(n) are coprime.
+    while(e<phi) {
+      track = gcd(e,phi);
+      if(track==1)
+         break;
+      else
+         e++;
     }
-    printf("recv_all --> Data received: %s",buff);
-    memset(buff, 0, sizeof(buff)); 
-
-    return 1;
+    double d1 = 1/e;
+    double d = fmod(d1,phi);
+    rsa_variables_server.d = d;
+    rsa_variables_server.e = e;
 }
 
-int read(int client_socket) {
-    char buff[16];
-    char *data_ptr = buff;
-    int bytes_recv;
-     
-    bytes_recv = recv(client_socket, data_ptr, data_size, 0);
-    while (data_size > 0)
-    {
-        bytes_recv = recv(client_socket, data_ptr, data_size, 0);
-        if (bytes_recv <= 0)
-            return bytes_recv;
-
-        data_ptr += bytes_recv;
-        data_size -= bytes_recv;
-    }
-    printf("recv_all --> Data received: %s",buff);
-    memset(buff, 0, sizeof(buff)); 
-
-    return 1;
+double gen_key(void) {
+    return (rand()%401)+100;
 }
+
+int gcd(int a, int h) 
+{ 
+    int temp = 0; 
+    while (1) 
+    { 
+        temp = a%h; 
+        if (temp == 0) 
+          return h; 
+        a = h; 
+        h = temp; 
+    } 
+    return temp;
+} 
+
 
 
 
