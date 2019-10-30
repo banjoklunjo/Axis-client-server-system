@@ -11,6 +11,7 @@
 
 #define KEY_LENGTH  1024
 #define PUB_EXP     65537
+#define PRINT_KEYS
 
 int send_all(int socket, void *buffer, size_t length);
 

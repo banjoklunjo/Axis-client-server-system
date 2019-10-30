@@ -10,7 +10,8 @@ import java.security.PublicKey;
 import java.security.interfaces.RSAPublicKey;
 import java.security.spec.InvalidKeySpecException;
 import java.security.spec.X509EncodedKeySpec;
-import java.util.Base64;
+import javax.xml.bind.DatatypeConverter;
+
 
 import javax.crypto.Cipher;
 
@@ -32,7 +33,7 @@ public class RSA {
 	}
 
 	public static String decrypt(String message, PrivateKey privateKey) throws Exception {
-		byte[] bytes = Base64.getDecoder().decode(message);
+		byte[] bytes = DatatypeConverter.parseBase64Binary(message);
 		Cipher decriptCipher = Cipher.getInstance("RSA");
 		decriptCipher.init(Cipher.DECRYPT_MODE, privateKey);
 		return new String(decriptCipher.doFinal(bytes), StandardCharsets.UTF_8);
@@ -42,7 +43,7 @@ public class RSA {
 		Cipher encryptCipher = Cipher.getInstance("RSA");
 		encryptCipher.init(Cipher.ENCRYPT_MODE, publicKey);
 		byte[] cipherText = encryptCipher.doFinal(message.getBytes(StandardCharsets.UTF_8));
-		return Base64.getEncoder().encodeToString(cipherText);
+		return DatatypeConverter.printBase64Binary(cipherText).toString();
 	}
 
 	public PrivateKey getPrivateKey() {
@@ -55,8 +56,7 @@ public class RSA {
 
 	public void loadPKCS1RSAPublicKey(String publicKeyBase64Format) {
 		System.out.println("loadPKCS1RSAPublicKey start");
-		Base64.Decoder decoder = Base64.getDecoder();
-		byte[] base64KeyInBytes = decoder.decode(publicKeyBase64Format);
+		byte[] base64KeyInBytes = DatatypeConverter.parseBase64Binary(publicKeyBase64Format);
 		System.out.println("base64KeyInBytes");
 		X509EncodedKeySpec publicKeySpec = new X509EncodedKeySpec(base64KeyInBytes);
 		System.out.println("publicKeySpec");
@@ -75,11 +75,9 @@ public class RSA {
 
 	public static void main(String[] args) throws Exception {
 		RSA rsa = new RSA(1024);
-		Base64.Encoder encoder = Base64.getEncoder();
-		Base64.Decoder decoder = Base64.getDecoder();
 
 		// decode the base64 to bytes
-		decoder.decode("hej");
+		DatatypeConverter.parseBase64Binary("hej");
 
 		System.out.println("Public Key Format: " + rsa.getPublicKey().getFormat());
 		System.out.println("Public Key Algortihm: " + rsa.getPublicKey().getAlgorithm());
@@ -87,13 +85,16 @@ public class RSA {
 		System.out.println("Private key algortihm: " + rsa.getPrivateKey().getAlgorithm());
 
 		System.out.println(
-				"Private Key (encoded with Base64): " + encoder.encodeToString(rsa.getPrivateKey().getEncoded()));
+				"Private Key (encoded with Base64): " + DatatypeConverter.printBase64Binary(rsa.getPrivateKey().getEncoded()));
 
+		
 		// secret message
 		String message = "the answer to life the universe and everything";
 
 		// Encrypt the message
 		String cipherText = encrypt(message, rsa.getPublicKey());
+		
+		System.out.println("cipherText = " + cipherText);
 
 		// Now decrypt it
 		String decipheredMessage = decrypt(cipherText, rsa.getPrivateKey());

@@ -86,13 +86,13 @@ public class Client implements Runnable {
 
 	private void readServerPublicKey() {
 		StringBuilder sb = new StringBuilder();
-		for(int i = 0; i < 4; i++) {
+		for(int i = 0; i < 9; i++) {
 			String frame = readServerMessage();
 			sb.append(frame);
 		}
 		String key = sb.toString()
-		.replace("-----BEGIN RSA PUBLIC KEY-----", "")
-		.replace("-----END RSA PUBLIC KEY-----", "");
+		.replace("-----BEGIN PUBLIC KEY-----", "")
+		.replace("-----END PUBLIC KEY-----", "");
 		System.out.println("Public key: " + key);
 		rsa.loadPKCS1RSAPublicKey(key);
 		
