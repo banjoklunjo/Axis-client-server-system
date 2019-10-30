@@ -14,6 +14,7 @@
 #define PRINT_KEYS
 
 int send_all(int socket, void *buffer, size_t length);
+EVP_PKEY* loadPUBLICKeyFromString( const char* publicKeyStr );
 
 
 EVP_PKEY*  pkey;
@@ -22,6 +23,10 @@ size_t     pri_len;             // Length of private key
 size_t     pub_len;             // Length of public key
 RSA*       rsa;
 BIGNUM*    bignum_e;
+
+RSA*       rsa_client;
+char       client_message_pub_key[2000];
+
 
 
 int main()
@@ -51,7 +56,12 @@ int main()
     int sent_all_data = send_all(client_socket, pub_key, pub_len); 
     if(sent_all_data) printf("Public key successfully sent\n");
     else printf("Failed to send the Public key\n");
-
+    
+    int bytes_read = recv(client_socket , client_message_pub_key , 2000 , 0);
+    if(bytes_read) printf("Bytes read OK\n");
+    else printf("Bytes read FAIL\n");
+    printf("Client message public key: %s\n", client_message_pub_key);
+    loadPUBLICKeyFromString(client_message_pub_key);
     close(server_socket);
     /* --------------------------- SOCKETS END --------------------------- */
 
@@ -123,6 +133,27 @@ int setupRSA() {
         printf("\n%s\n%s\n", pri_key, pub_key);
   
         printf("Public Key Length (Including Headers): %s\n", char_pub_key_len);
+}
+
+EVP_PKEY* loadPUBLICKeyFromString( const char* publicKeyStr )
+{
+  // A BIO is an I/O abstraction (Byte I/O?)
+  
+  // BIO_new_mem_buf: Create a read-only bio buf with data
+  // in string passed. -1 means string is null terminated,
+  // so BIO_new_mem_buf can find the dataLen itself.
+  // Since BIO_new_mem_buf will be READ ONLY, it's fine that publicKeyStr is const.
+  BIO* bio = BIO_new_mem_buf( (void*)publicKeyStr, -1 ) ; // -1: assume string is null terminated
+  EVP_PKEY*  pkey_client;
+  //BIO_set_flags( bio, BIO_FLAGS_BASE64_NO_NL ) ; // NO NL
+  
+  // Load the RSA key from the BIO
+  pkey_client = PEM_read_bio_PUBKEY( bio, NULL, NULL, NULL ) ;
+  if( !rsa_client )
+    printf( "ERROR: Could not load PUBLIC KEY!  PEM_read_bio_RSA_PUBKEY FAILED: %s\n", ERR_error_string( ERR_get_error(), NULL ) ) ;
+  
+  BIO_free( bio ) ;
+  return pkey_client ;
 }
 
 
