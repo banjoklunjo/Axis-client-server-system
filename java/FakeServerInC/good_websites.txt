@@ -1,0 +1,8 @@
+https://stackoverflow.com/questions/48951379/rsa-public-encryption-using-public-key-from-x509-certificate-c
+
+https://stackoverflow.com/questions/15536666/extract-rsa-public-key-from-a-x509-char-array-with-openssl
+
+
+https://stackoverflow.com/questions/12647220/reading-and-writing-rsa-keys-to-a-pem-file-in-c
+
+https://stackoverflow.com/questions/31685734/convert-a-x509-public-key-to-rsa-public-key

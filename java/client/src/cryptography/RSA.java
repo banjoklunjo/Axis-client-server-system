@@ -1,96 +1,104 @@
 package cryptography;
 
-import java.io.IOException;
-import java.math.BigInteger;
-import java.util.Random;
+import java.nio.charset.StandardCharsets;
+import java.security.KeyFactory;
+import java.security.KeyPair;
+import java.security.KeyPairGenerator;
+import java.security.NoSuchAlgorithmException;
+import java.security.PrivateKey;
+import java.security.PublicKey;
+import java.security.interfaces.RSAPublicKey;
+import java.security.spec.InvalidKeySpecException;
+import java.security.spec.X509EncodedKeySpec;
+import java.util.Base64;
 
+import javax.crypto.Cipher;
 
 public class RSA {
-	private int bitlength = 16;
-	private Random r = new Random();
-
-	private PublicKey publicKey;
 	private PrivateKey privateKey;
+	private PublicKey publicKey;
 
-	public RSA() {
-		// p and q are prime numbers and are used to calculate N
-		BigInteger p = BigInteger.probablePrime(bitlength, r);
-		BigInteger q = BigInteger.probablePrime(bitlength, r);
-
-		// calculate the modulus N which will be used in the public and private key
-		BigInteger N = p.multiply(q);
-
-		// calculate phi to be able to calculate e and d
-		BigInteger phi = p.subtract(BigInteger.ONE).multiply(q.subtract(BigInteger.ONE));
-
-		// e is the public exponent and is part of the public key
-		BigInteger e = BigInteger.probablePrime(bitlength / 2, r);
-
-		// the greatest common divisor between phi and e must be 1 and e must be smaller
-		// than phi
-		while (phi.gcd(e).compareTo(BigInteger.ONE) > 0 && e.compareTo(phi) < 0) {
-			e.add(BigInteger.ONE);
+	public RSA(int keyLength) {
+		KeyPairGenerator keyPairGenerator = null;
+		try {
+			keyPairGenerator = KeyPairGenerator.getInstance("RSA");
+		} catch (NoSuchAlgorithmException e) {
+			e.printStackTrace();
 		}
-
-		// d is the private exponent and is part of the private key
-		BigInteger d = e.modInverse(phi);
-
-		publicKey = new PublicKey(e, N);
-		privateKey = new PrivateKey(d, N);
-		
-		publicKey.printKeyValues();
-		privateKey.printKeyValues();
-	}
-	
-	public byte[] encrypt(byte[] message) {
-		return (new BigInteger(message)).modPow(publicKey.getPublicExponent(), publicKey.getModulus()).toByteArray();
+		keyPairGenerator.initialize(keyLength);
+		KeyPair keypair = keyPairGenerator.genKeyPair();
+		privateKey = keypair.getPrivate();
+		publicKey = keypair.getPublic();
 	}
 
-	public byte[] decrypt(byte[] message) {
-		return (new BigInteger(message)).modPow(privateKey.getPrivatExponent(), privateKey.getModulus()).toByteArray();
+	public static String decrypt(String message, PrivateKey privateKey) throws Exception {
+		byte[] bytes = Base64.getDecoder().decode(message);
+		Cipher decriptCipher = Cipher.getInstance("RSA");
+		decriptCipher.init(Cipher.DECRYPT_MODE, privateKey);
+		return new String(decriptCipher.doFinal(bytes), StandardCharsets.UTF_8);
 	}
-	
-	public String decrypt(String message, PublicKey key) {
-		byte[] decrypted = new BigInteger(message).modPow(this.privateKey.getPrivatExponent(), key.getModulus()).toByteArray();
-		return new String(decrypted);
+
+	public static String encrypt(String message, PublicKey publicKey) throws Exception {
+		Cipher encryptCipher = Cipher.getInstance("RSA");
+		encryptCipher.init(Cipher.ENCRYPT_MODE, publicKey);
+		byte[] cipherText = encryptCipher.doFinal(message.getBytes(StandardCharsets.UTF_8));
+		return Base64.getEncoder().encodeToString(cipherText);
 	}
-	
-	public String encrypt(String message) {
-		byte[] encrypted = new BigInteger(message).modPow(this.publicKey.getPublicExponent(), this.publicKey.getModulus()).toByteArray();
-		return new String(encrypted);
+
+	public PrivateKey getPrivateKey() {
+		return privateKey;
 	}
 
 	public PublicKey getPublicKey() {
-		return this.publicKey;
-	}
-	
-	public PrivateKey getPrivateKey() {
-		return this.privateKey;
+		return publicKey;
 	}
 
-	public static void main(String[] args) throws IOException {
-		RSA rsa = new RSA();
+	public void loadPKCS1RSAPublicKey(String publicKeyBase64Format) {
+		System.out.println("loadPKCS1RSAPublicKey start");
+		Base64.Decoder decoder = Base64.getDecoder();
+		byte[] base64KeyInBytes = decoder.decode(publicKeyBase64Format);
+		System.out.println("base64KeyInBytes");
+		X509EncodedKeySpec publicKeySpec = new X509EncodedKeySpec(base64KeyInBytes);
+		System.out.println("publicKeySpec");
+		try {
+			KeyFactory keyFactory = KeyFactory.getInstance("RSA");
+			System.out.println("keyFactory init done");
+			RSAPublicKey pubKey = (RSAPublicKey) keyFactory.generatePublic(publicKeySpec);
+			System.out.println("pubKey.getModulus().toString()");
+			
+		} catch (NoSuchAlgorithmException e) {
+			e.printStackTrace();
+		} catch (InvalidKeySpecException e) {
+			e.printStackTrace();
+		}
+	}
 
-		String message = "123";
-		
-		// Test 1
-		System.out.println("[TEST 1]");
-		System.out.println("Encrypting String: " + message);
-		byte[] encrypted = rsa.encrypt(message.getBytes("UTF-8"));
-		byte[] decrypted = rsa.decrypt(encrypted);
-		String decryptedMessage = new String(decrypted);
-		System.out.println("Decrypted String: " + decryptedMessage);
-		
-		// Test 2
-		System.out.println("\n[TEST 2]");
-		System.out.println("Encrypting String: " + message);
-		String encryptedString = rsa.encrypt(message);
-		System.out.println("Encrypted String: " + encryptedString);
-		String decryptedString = rsa.decrypt(encryptedString, rsa.getPublicKey());
-		String decryptedMessage2 = new String(decryptedString);
-		System.out.println("Decrypted String: " + decryptedMessage2);
-		
-	
+	public static void main(String[] args) throws Exception {
+		RSA rsa = new RSA(1024);
+		Base64.Encoder encoder = Base64.getEncoder();
+		Base64.Decoder decoder = Base64.getDecoder();
+
+		// decode the base64 to bytes
+		decoder.decode("hej");
+
+		System.out.println("Public Key Format: " + rsa.getPublicKey().getFormat());
+		System.out.println("Public Key Algortihm: " + rsa.getPublicKey().getAlgorithm());
+		System.out.println("Private key Format: " + rsa.getPrivateKey().getFormat());
+		System.out.println("Private key algortihm: " + rsa.getPrivateKey().getAlgorithm());
+
+		System.out.println(
+				"Private Key (encoded with Base64): " + encoder.encodeToString(rsa.getPrivateKey().getEncoded()));
+
+		// secret message
+		String message = "the answer to life the universe and everything";
+
+		// Encrypt the message
+		String cipherText = encrypt(message, rsa.getPublicKey());
+
+		// Now decrypt it
+		String decipheredMessage = decrypt(cipherText, rsa.getPrivateKey());
+
+		System.out.println("decipheredMessage = " + decipheredMessage);
 	}
 
 }

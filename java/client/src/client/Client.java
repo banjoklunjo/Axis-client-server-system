@@ -5,6 +5,7 @@ import java.awt.image.BufferedImage;
 import java.io.BufferedInputStream;
 import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
+import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -21,7 +22,6 @@ import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
-import cryptography.PublicKey;
 import cryptography.RSA;
 import cryptography.XorCipher;
 
@@ -46,24 +46,24 @@ public class Client implements Runnable {
 
 	// representing an output stream of bytes
 	private OutputStream outputStream;
+	
+	// representing an output stream of bytes
+	private DataInputStream dataInputStream;
 
 	// write unicode characters over the socket
 	private PrintWriter printWriter;
-
-	// generate public and private key
-	private RSA rsa;
-
-	// server public key
-	private PublicKey publicKeyServer;
 	
 	// encryption/decryption of messages to/from server
 	private XorCipher xorCipher;
+	
+	// generate private key and public key
+	private RSA rsa;
 
 	
 	public Client(Controller controller, Socket socket) {
 		this.controller = controller;
 		this.socket = socket;
-		this.rsa = new RSA();
+		this.rsa = new RSA(1024);
 	}
 
 	@Override
@@ -71,45 +71,67 @@ public class Client implements Runnable {
 
 		initializeStreams();
 
-		sendClientPublicKey();
+		//sendClientPublicKey();
 		
 		readServerPublicKey();
 		
-		getSymmetricXorKey();
-		
-		setCameraResolutions();
-		
-		while(online);
-
-		//readServerPublicKey();
-		
 		//setCameraResolutions();
 		
-		//getSymmetricXorKey();
+		while(online);
 
 		// while (online) readServerImage();
 
 	}
 
-	private void getSymmetricXorKey() {
-		String xorKey = readServerMessage();
-		xorCipher = new XorCipher(xorKey);
-		System.out.println("decrypted xor key = " + rsa.decrypt(xorKey, publicKeyServer));
-	}
 
 	private void readServerPublicKey() {
-		String publicExponentServer = readServerMessage();
+		StringBuilder sb = new StringBuilder();
+		for(int i = 0; i < 4; i++) {
+			String frame = readServerMessage();
+			sb.append(frame);
+		}
+		String key = sb.toString()
+		.replace("-----BEGIN RSA PUBLIC KEY-----", "")
+		.replace("-----END RSA PUBLIC KEY-----", "");
+		System.out.println("Public key: " + key);
+		rsa.loadPKCS1RSAPublicKey(key);
+		
+		/*byte[] messageByte = new byte[1000];
+		String pubLength="";
+		boolean end = false;
+		String dataString = "";
+		try 
+		{
+		    int bytesRead = 0;
+		    int bytesToRead = Integer.valueOf(pubLength);
+
+		    while(!end)
+		    {
+		        bytesRead = dataInputStream.read(messageByte);
+		        System.out.println("BytesRead: " + bytesRead);
+		        dataString += new String(messageByte, 0, bytesRead);
+		        if (dataString.length() == bytesToRead )
+		        {
+		            end = true;
+		        }
+		    }
+		    //dataInputStream.readFully(messageByte, 0, bytesToRead);
+            //dataString = new String(messageByte, 0, bytesToRead);
+		    System.out.println("MESSAGE: " + dataString);
+		}
+		catch (Exception e)
+		{
+		    e.printStackTrace();
+		}*/
+		/*String publicExponentServer = readServerMessage();
 		String modulusServer = readServerMessage();
 		publicKeyServer = new PublicKey(new BigInteger(publicExponentServer), new BigInteger(modulusServer));
 		System.out.println("modulusServer = " + publicKeyServer.getModulus().toString());
-		System.out.println("publicExponentServer = " + publicKeyServer.getPublicExponent().toString());
+		System.out.println("publicExponentServer = " + publicKeyServer.getPublicExponent().toString());*/
 	}
 
 	private void sendClientPublicKey() {
-		//sendToServer(String.valueOf(rsa.getPublicKey().getModulus().toString().length()));
-		sendToServer(rsa.getPublicKey().getModulus().toString());
-		//sendToServer(String.valueOf(rsa.getPublicKey().getPublicExponent().toString().length()));
-		sendToServer(rsa.getPublicKey().getPublicExponent().toString());
+		//sendToServer(rsa.getPublicKey().getEncoded());
 	}
 
 	private void readServerImage() {
@@ -179,6 +201,7 @@ public class Client implements Runnable {
 		int index = 0;
 		while (index < size) {
 			int bytesRead = input.read(data, index, size - index);
+			System.out.println("Bytes read = " + String.valueOf(bytesRead));
 			if (bytesRead < 0) {
 				throw new IOException("Insufficient data in stream");
 			}
@@ -224,6 +247,7 @@ public class Client implements Runnable {
 			bufferedReader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 			outputStream = new DataOutputStream(socket.getOutputStream());
 			printWriter = new PrintWriter(socket.getOutputStream());
+			dataInputStream = new DataInputStream(socket.getInputStream());
 		} catch (IOException e1) {
 			e1.printStackTrace();
 			online = false;
