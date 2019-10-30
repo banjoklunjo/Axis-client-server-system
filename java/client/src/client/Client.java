@@ -21,6 +21,7 @@ import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.xml.bind.DatatypeConverter;
 
 import cryptography.RSA;
 import cryptography.XorCipher;
@@ -71,9 +72,9 @@ public class Client implements Runnable {
 
 		initializeStreams();
 
-		//sendClientPublicKey();
-		
 		readServerPublicKey();
+		
+		sendClientPublicKey();
 		
 		//setCameraResolutions();
 		
@@ -86,7 +87,7 @@ public class Client implements Runnable {
 
 	private void readServerPublicKey() {
 		StringBuilder sb = new StringBuilder();
-		for(int i = 0; i < 9; i++) {
+		for(int i = 0; i < 6; i++) {
 			String frame = readServerMessage();
 			sb.append(frame);
 		}
@@ -131,7 +132,11 @@ public class Client implements Runnable {
 	}
 
 	private void sendClientPublicKey() {
-		//sendToServer(rsa.getPublicKey().getEncoded());
+		StringBuilder _sb = new StringBuilder(DatatypeConverter.printBase64Binary(rsa.getPublicKey().getEncoded()));
+		_sb.insert(0, "-----BEGIN PUBLIC KEY-----\n");
+		_sb.append("\n-----END PUBLIC KEY-----");
+		String parsedStr = _sb.toString().replaceAll("(.{64})", "$1\n");
+		sendToServer(parsedStr);
 	}
 
 	private void readServerImage() {
