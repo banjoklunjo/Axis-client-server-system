@@ -64,7 +64,8 @@ public class RSA {
 			KeyFactory keyFactory = KeyFactory.getInstance("RSA");
 			System.out.println("keyFactory init done");
 			RSAPublicKey pubKey = (RSAPublicKey) keyFactory.generatePublic(publicKeySpec);
-			System.out.println("pubKey.getModulus().toString()");
+			System.out.println("pubKey.getModulus().toString() " + pubKey.getModulus().toString());
+			System.out.println("pubKey.getPublicExponent().toString() " + pubKey.getPublicExponent().toString());
 			
 		} catch (NoSuchAlgorithmException e) {
 			e.printStackTrace();
@@ -87,7 +88,6 @@ public class RSA {
 		System.out.println(
 				"Private Key (encoded with Base64): " + DatatypeConverter.printBase64Binary(rsa.getPrivateKey().getEncoded()));
 
-		
 		// secret message
 		String message = "the answer to life the universe and everything";
 

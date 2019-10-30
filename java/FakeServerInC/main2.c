@@ -19,53 +19,67 @@ int send_all(int socket, void *buffer, size_t length);
 
 int main()
 {
-	int rc;
-	RSA* rsa = RSA_new();
-	BIGNUM* bignum_e = BN_new();
-	EVP_PKEY* pub_key;
-        EVP_PKEY* pri_key;
-	BIO* bio_public;
-        BIO* bio_private;
+	int        rc;
+	RSA*       rsa = RSA_new();
+	BIGNUM*    bignum_e = BN_new();
+	EVP_PKEY*  pkey;
+	BIO*       pem1;
 
-	bio_public = BIO_new_fp(stdout, BIO_NOCLOSE);
-        bio_private = BIO_new_fp(stdout, BIO_NOCLOSE);
-	char * string = (char*)malloc(600*sizeof(char)); //bigger than I need
-	setbuf(stdout, string);
+        size_t     pri_len;             // Length of private key
+        size_t     pub_len;             // Length of public key
+        char       *pri_key;            // Private key
+        char       *pub_key;            // Public key
+        char       msg[KEY_LENGTH/8];   // Message to encrypt
+        char       *encrypt = NULL;     // Encrypted message
+        char       *decrypt = NULL;     // Decrypted message
+        char       *err;                // Buffer for any error messages
+        char       char_pub_key_len[5];
+
+        // To get the C-string PEM form:
+        BIO *pri = BIO_new(BIO_s_mem());
+        BIO *pub = BIO_new(BIO_s_mem());
+
 	int size = 0;
 
         // set public exponent e to 65537 (RSA_F4 = 65537)
-	rc = BN_set_word(bignum_e,RSA_F4);
+	rc = BN_set_word(bignum_e, RSA_F4);
 	if(rc != 1) {
 	    //error message
 	}
 
-        // generates the keypair with 2048-bits with the public exponent bignum_e (in this case 65537)
-	rc = RSA_generate_key_ex(rsa, 2048, bignum_e, NULL);
-	if(rc != 1) {
-	    //error message
-	 }
-
-	pub_key = EVP_PKEY_new();
-	rc = EVP_PKEY_set1_RSA(pub_key,rsa);
+        // generates the keypair with KEY_LENGTH with the public exponent bignum_e (in this case 65537)
+	rc = RSA_generate_key_ex(rsa, KEY_LENGTH, bignum_e, NULL);
 	if(rc != 1) {
 	    //error message
 	}
 
-        pri_key = EVP_PKEY_new();
-	rc = EVP_PKEY_set1_RSA(pri_key,rsa);
+        // EVP structure containing public and private key
+	pkey = EVP_PKEY_new();
+	rc = EVP_PKEY_set1_RSA(pkey, rsa);
 	if(rc != 1) {
 	    //error message
 	}
-
-	rc = PEM_write_bio_PrivateKey(bio_private, pri_key, NULL, NULL, 0, NULL, NULL);
-        rc = PEM_write_bio_PUBKEY(bio_public,pub_key);
-	size = strlen(string);
-	setbuf(stdout, NULL);
+     
+	rc = PEM_write_bio_PrivateKey(pri, pkey, NULL, NULL, 0, NULL, NULL);
+        rc = PEM_write_bio_PUBKEY(pub, pkey);
         
-	int p_size = EVP_PKEY_size(pub_key);
-        char str[10];
-        sprintf(str, "%d", p_size);
-	printf("Public Key Length: %s\n", str);
+        pri_len = BIO_pending(pri);
+        pub_len = BIO_pending(pub);
+
+        pri_key = malloc(pri_len + 1);
+        pub_key = malloc(pub_len + 1);
+
+        BIO_read(pri, pri_key, pri_len);
+        BIO_read(pub, pub_key, pub_len);
+
+        pri_key[pri_len] = '\0';
+        pub_key[pub_len] = '\0';
+        
+        snprintf(char_pub_key_len, sizeof char_pub_key_len, "%zu", pub_len);
+
+        printf("\n%s\n%s\n", pri_key, pub_key);
+  
+        printf("Public Key Length: %s\n", char_pub_key_len);
     /* --------------------------- OPEN SSL END --------------------------- */
 
 
@@ -92,7 +106,7 @@ int main()
     //write(client_socket, char_pub_key_len, strlen(char_pub_key_len));
     //write(client_socket, "\n", strlen("\n"));
 
-    int sent_all_data = send_all(client_socket, string, strlen(string)); 
+    int sent_all_data = send_all(client_socket, pub_key, pub_len); 
     if(sent_all_data) printf("Public key successfully sent\n");
     else printf("Failed to send the Public key\n");
     //write(client_socket, pub_key, strlen(pub_len_char_array));
@@ -102,9 +116,9 @@ int main()
 
 
     //IO_free(pem1);
-	EVP_PKEY_free(pub_key);
-	RSA_free(rsa);
-	BN_free(bignum_e);
+    EVP_PKEY_free(pkey);
+    RSA_free(rsa); 
+    BN_free(bignum_e);
 
     return 0;
 }
