@@ -23,6 +23,7 @@ import javax.swing.JLabel;
 
 import cryptography.CryptUtils;
 import cryptography.RSA;
+import cryptography.TestRSA;
 import cryptography.XorCipher;
 
 public class Client implements Runnable {
@@ -47,9 +48,6 @@ public class Client implements Runnable {
 	// representing an output stream of bytes
 	private OutputStream outputStream;
 
-	// representing an output stream of bytes
-	private DataInputStream dataInputStream;
-
 	// write unicode characters over the socket
 	private PrintWriter printWriter;
 
@@ -67,29 +65,17 @@ public class Client implements Runnable {
 
 	@Override
 	public void run() {
-		
+
 		initializeStreams();
 
 		readServerPublicKey();
 
 		sendClientPublicKey();
 
-		try {
-			while (bufferedReader.ready()) {
-				String msg = bufferedReader.readLine();
-				System.out.println("Encrypted: " + msg);
-				String decrypted = RSA.decrypt(msg, rsa.getPrivateKey());
-				System.out.println("decrypted: " + decrypted);
-			}
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		TestRSA.DecryptMessageFromServer(bufferedReader, rsa);
+		TestRSA.EncryptMessageAndSendToServer(printWriter, rsa);
 
-		
+		close();
 	}
 
 	private void readServerPublicKey() {
@@ -221,7 +207,6 @@ public class Client implements Runnable {
 			bufferedReader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 			outputStream = new DataOutputStream(socket.getOutputStream());
 			printWriter = new PrintWriter(socket.getOutputStream());
-			dataInputStream = new DataInputStream(socket.getInputStream());
 		} catch (IOException e1) {
 			e1.printStackTrace();
 			online = false;
@@ -238,6 +223,7 @@ public class Client implements Runnable {
 			inputStream.close();
 			outputStream.close();
 			socket.close();
+			bufferedReader.close();
 			printWriter.close();
 			controller.onDisconnect();
 		} catch (IOException e) {

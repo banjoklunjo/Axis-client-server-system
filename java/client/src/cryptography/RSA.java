@@ -45,11 +45,15 @@ public class RSA {
 	}
 
 	public PrivateKey getPrivateKey() {
-		return privateKey;
+		return this.privateKey;
 	}
 
 	public PublicKey getPublicKey() {
-		return publicKey;
+		return this.publicKey;
+	}
+	
+	public PublicKey getServerPublicKey() {
+		return this.publicKeyServer;
 	}
 
 	public void loadPKCS1RSAPublicKey(String publicKeyBase64Format) {

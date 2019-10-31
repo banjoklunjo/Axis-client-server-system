@@ -9,6 +9,10 @@
 #include <netinet/in.h>
 #include "base64.h"
 
+/* prototypes in order to avoid implicit declaration warning */
+void test_function_send_encrypted_message_to_client();
+void test_function_recieve_encrypted_message_and_decrypt_it();
+
 #define RSA_KEY_SIZE  1024
 #define PADDING RSA_PKCS1_PADDING
 #define PORT_NUMBER 6666
@@ -19,6 +23,7 @@ EVP_PKEY* pkey; /* structure for holding public and private key [EVP stands for 
 char* str_private_key;
 char* str_public_key;
 char str_public_key_client[271] ;
+char client_message[300];
 
 /*------------------------------------------------------------------------*/
 /*------------------------------------------------------------------------*/
@@ -240,28 +245,74 @@ int main( int argc, const char* argv[] )
 
   receive_client_public_key();
 
-  // LOAD PUBLIC KEY
-  RSA *pubKey = loadPublicKeyFromString( str_public_key_client  ) ;
 
-  int dataSize = 10 ;
-  unsigned char *str = "123456789";
+  // --------------- TEST FUNCTIONS ---------------
+  test_function_send_encrypted_message_to_client();
+  test_function_recieve_encrypted_message_and_decrypt_it();
+  // ----------------------------------------------
+  
+  close(server_socket);
+}
+
+
+
+// ------------------------------------------------------------------------
+// ---------------------------- TEST FUNCTIONS ----------------------------
+// ------------------------------------------------------------------------
+void test_function_send_encrypted_message_to_client()
+{
+  RSA *rsa_client_public_key = loadPublicKeyFromString( str_public_key_client  ) ;
+
+  int data_size = 10 ; /* 1-9 + null terminator = 10 */
+  unsigned char *message = "123456789";
   int asciiB64ELen;
-  char* asciiB64E = rsaEncryptThenBase64( pubKey, str, dataSize, &asciiB64ELen ) ;
-  printf( "Sending base64_encoded ( rsa_encrypted ( <<binary data>> ) ):\n%s\n", asciiB64E ) ;
+
+  char* asciiB64E = rsaEncryptThenBase64( rsa_client_public_key, message, data_size, &asciiB64ELen ) ;
+  printf( "Sending base64_encoded message:\n%s\n", asciiB64E ) ;
+
   write(client_socket, asciiB64E, 172);
   write(client_socket, "\n", sizeof("\n"));
-  while(1);
-  close(server_socket);
-  
-  /*char testing[] = "This is a test";
-  int bytes_sent = write(client_socket, testing, strlen(testing)); 
-  if(bytes_sent) printf("\nThis is a test, Was Sent To The Client\n");
-  else if(bytes_sent == 0) printf("\n0 Bytes Was Sent To The Client\n");
-  else printf("\nError: This is a test Was Not Sent To The Client\n");
-  write(client_socket, "\n", sizeof("\n"));
-  while(1);
-  close(server_socket);
-*/
-  //puts( "We are going to: rsa_decrypt( unbase64( base64( rsa_encrypt( <<binary data>> ) ) ) )" );
 
+  RSA_free( rsa_client_public_key ) ; // free the public key when you are done all your encryption
+  free( asciiB64E ) ;
 }
+/*------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------*/
+void test_function_recieve_encrypted_message_and_decrypt_it()
+{ 
+  // RECEIVE ENCRYPED MESSAGE FROM CLIENT AND DECRYPT IT
+  while ( 1 ) {
+    ssize_t nb = recv(client_socket, client_message, 300, 0);
+    if ( nb == -1 ) err( "recv failed" );
+    if ( nb == 0 ) break; /* got end-of-stream */
+  }  
+
+  printf( "Received Encrypted Message From Client: %s", client_message ) ;  
+   
+ 
+  
+  RSA* rsa_server_private_key = loadPRIVATEKeyFromString( str_private_key ) ;
+  int rBinLen ;
+  unsigned char* rBin = rsaDecryptThisBase64( rsa_server_private_key, client_message, &rBinLen ) ;
+  printf("Decrypted %d bytes, the recovered data is:\n%.*s\n\n", rBinLen, rBinLen, rBin ) ; // rBin is not necessarily NULL
+
+  RSA_free( rsa_server_private_key ) ;
+  free( rBin ) ;
+}
+
+/*
+void ReadXBytes(int socket, unsigned int x, void* buffer)
+{
+    int bytesRead = 0;
+    int result;
+    while (bytesRead < x)
+    {
+        result = read(socket, buffer + bytesRead, x - bytesRead);
+        if (result < 1 )
+        {
+            // Throw your error.
+        }
+
+        bytesRead += result;
+    }
+}*/
