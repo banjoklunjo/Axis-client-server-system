@@ -12,7 +12,6 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.io.PrintWriter;
-import java.math.BigInteger;
 import java.net.Socket;
 import java.util.Arrays;
 import java.util.List;
@@ -21,8 +20,8 @@ import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.xml.bind.DatatypeConverter;
 
+import cryptography.CryptUtils;
 import cryptography.RSA;
 import cryptography.XorCipher;
 
@@ -47,20 +46,19 @@ public class Client implements Runnable {
 
 	// representing an output stream of bytes
 	private OutputStream outputStream;
-	
+
 	// representing an output stream of bytes
 	private DataInputStream dataInputStream;
 
 	// write unicode characters over the socket
 	private PrintWriter printWriter;
-	
+
 	// encryption/decryption of messages to/from server
 	private XorCipher xorCipher;
-	
+
 	// generate private key and public key
 	private RSA rsa;
 
-	
 	public Client(Controller controller, Socket socket) {
 		this.controller = controller;
 		this.socket = socket;
@@ -69,74 +67,45 @@ public class Client implements Runnable {
 
 	@Override
 	public void run() {
-
+		
 		initializeStreams();
 
 		readServerPublicKey();
-		
+
 		sendClientPublicKey();
-		
-		//setCameraResolutions();
-		
-		while(online);
 
-		// while (online) readServerImage();
+		try {
+			while (bufferedReader.ready()) {
+				String msg = bufferedReader.readLine();
+				System.out.println("Encrypted: " + msg);
+				String decrypted = RSA.decrypt(msg, rsa.getPrivateKey());
+				System.out.println("decrypted: " + decrypted);
+			}
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
+		
 	}
-
 
 	private void readServerPublicKey() {
 		StringBuilder sb = new StringBuilder();
-		for(int i = 0; i < 6; i++) {
+		for (int i = 0; i < 6; i++) {
 			String frame = readServerMessage();
 			sb.append(frame);
 		}
-		String key = sb.toString()
-		.replace("-----BEGIN PUBLIC KEY-----", "")
-		.replace("-----END PUBLIC KEY-----", "");
-		System.out.println("Public key: " + key);
+		String key = CryptUtils.RemovePublicPemHeaders(sb.toString());
 		rsa.loadPKCS1RSAPublicKey(key);
-		
-		/*byte[] messageByte = new byte[1000];
-		String pubLength="";
-		boolean end = false;
-		String dataString = "";
-		try 
-		{
-		    int bytesRead = 0;
-		    int bytesToRead = Integer.valueOf(pubLength);
-
-		    while(!end)
-		    {
-		        bytesRead = dataInputStream.read(messageByte);
-		        System.out.println("BytesRead: " + bytesRead);
-		        dataString += new String(messageByte, 0, bytesRead);
-		        if (dataString.length() == bytesToRead )
-		        {
-		            end = true;
-		        }
-		    }
-		    //dataInputStream.readFully(messageByte, 0, bytesToRead);
-            //dataString = new String(messageByte, 0, bytesToRead);
-		    System.out.println("MESSAGE: " + dataString);
-		}
-		catch (Exception e)
-		{
-		    e.printStackTrace();
-		}*/
-		/*String publicExponentServer = readServerMessage();
-		String modulusServer = readServerMessage();
-		publicKeyServer = new PublicKey(new BigInteger(publicExponentServer), new BigInteger(modulusServer));
-		System.out.println("modulusServer = " + publicKeyServer.getModulus().toString());
-		System.out.println("publicExponentServer = " + publicKeyServer.getPublicExponent().toString());*/
 	}
 
 	private void sendClientPublicKey() {
-		StringBuilder _sb = new StringBuilder(DatatypeConverter.printBase64Binary(rsa.getPublicKey().getEncoded()));
-		_sb.insert(0, "-----BEGIN PUBLIC KEY-----\n");
-		_sb.append("\n-----END PUBLIC KEY-----");
-		String parsedStr = _sb.toString().replaceAll("(.{64})", "$1\n");
-		sendToServer(parsedStr);
+		String publicKeyBase64 = CryptUtils
+				.AddPublicPemHeaders(CryptUtils.Base64EncodeToString(rsa.getPublicKey().getEncoded()));
+		sendToServer(publicKeyBase64);
 	}
 
 	private void readServerImage() {
@@ -220,7 +189,7 @@ public class Client implements Runnable {
 		printWriter.flush();
 		System.out.println("sendToServer -> " + message);
 	}
-	
+
 	private String readServerMessage() {
 		String message = null;
 		try {
@@ -236,7 +205,7 @@ public class Client implements Runnable {
 		if (resolutions != null)
 			controller.setResolutions(resolutions);
 	}
-	
+
 	private List<String> getListResolutions() {
 		String cameraResolutions = readServerMessage();
 		List<String> listOfResolutions = null;
@@ -259,7 +228,7 @@ public class Client implements Runnable {
 			close();
 		}
 	}
-	
+
 	public void disconnect() {
 		this.online = false;
 	}
