@@ -12,6 +12,7 @@
 /* prototypes in order to avoid implicit declaration warning */
 void test_function_send_encrypted_message_to_client();
 void test_function_recieve_encrypted_message_and_decrypt_it();
+void generate_xor_key();
 
 #define RSA_KEY_SIZE  1024
 #define PADDING RSA_PKCS1_PADDING
@@ -24,6 +25,7 @@ char* str_private_key;
 char* str_public_key;
 char str_public_key_client[271] ;
 char client_message[300];
+char xor_key[8];
 
 /*------------------------------------------------------------------------*/
 /*------------------------------------------------------------------------*/
@@ -237,6 +239,8 @@ int receive_client_public_key()
 /*------------------------------------------------------------------------*/
 int main( int argc, const char* argv[] )
 {
+  generate_xor_key();
+
   generateRSAKeyPair();
 
   initSocket();
@@ -245,7 +249,6 @@ int main( int argc, const char* argv[] )
 
   receive_client_public_key();
 
-
   // --------------- TEST FUNCTIONS ---------------
   test_function_send_encrypted_message_to_client();
   test_function_recieve_encrypted_message_and_decrypt_it();
@@ -253,8 +256,25 @@ int main( int argc, const char* argv[] )
   
   close(server_socket);
 }
-
-
+/*------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------*/
+/* rand() returns pseudo-random numbers. It generates numbers based on a given algorithm. 
+The starting point of that algorithm is always the same, so you'll see the same sequence 
+generated for each invocation.
+You can set the "seed" of the random generator with the srand function(only call srand once in a program). 
+One common way to get different sequences from the rand() generator is to set the seed to the current time 
+https://stackoverflow.com/questions/42570700/generating-10-random-characters */
+void generate_xor_key()
+{
+  srand(time(NULL));
+  int i; 
+  char abc[26]="abcdefghijklmnopqrstuvwxyz";
+  for (i = 0; i < 8; ++i) {
+	xor_key[i] = abc[rand() % (sizeof(abc) - 1)];
+        printf("%c", xor_key[i]);
+  }
+  xor_key[8] = 0;
+}
 
 // ------------------------------------------------------------------------
 // ---------------------------- TEST FUNCTIONS ----------------------------
@@ -263,11 +283,9 @@ void test_function_send_encrypted_message_to_client()
 {
   RSA *rsa_client_public_key = loadPublicKeyFromString( str_public_key_client  ) ;
 
-  int data_size = 10 ; /* 1-9 + null terminator = 10 */
-  unsigned char *message = "123456789";
   int asciiB64ELen;
 
-  char* asciiB64E = rsaEncryptThenBase64( rsa_client_public_key, message, data_size, &asciiB64ELen ) ;
+  char* asciiB64E = rsaEncryptThenBase64( rsa_client_public_key, xor_key, sizeof(xor_key), &asciiB64ELen ) ;
   printf( "Sending base64_encoded message:\n%s\n", asciiB64E ) ;
 
   write(client_socket, asciiB64E, 172);
@@ -289,8 +307,6 @@ void test_function_recieve_encrypted_message_and_decrypt_it()
 
   printf( "Received Encrypted Message From Client: %s", client_message ) ;  
    
- 
-  
   RSA* rsa_server_private_key = loadPRIVATEKeyFromString( str_private_key ) ;
   int rBinLen ;
   unsigned char* rBin = rsaDecryptThisBase64( rsa_server_private_key, client_message, &rBinLen ) ;

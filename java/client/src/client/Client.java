@@ -71,11 +71,26 @@ public class Client implements Runnable {
 		readServerPublicKey();
 
 		sendClientPublicKey();
+		
+		readXorKey();
 
 		TestRSA.DecryptMessageFromServer(bufferedReader, rsa);
 		TestRSA.EncryptMessageAndSendToServer(printWriter, rsa);
 
 		close();
+	}
+
+	private void readXorKey() {
+		String encryptedMessage = readServerMessage();
+		System.out.println("Received Encrypted Message From Server: " + encryptedMessage);
+		String decrypted;
+		try {
+			decrypted = RSA.decrypt(encryptedMessage, rsa.getPrivateKey());
+			xorCipher = new XorCipher(decrypted);
+			System.out.println("Decrypted Message From Server: " + decrypted);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 	private void readServerPublicKey() {
