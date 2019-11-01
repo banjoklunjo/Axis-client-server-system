@@ -273,7 +273,7 @@ int main( int argc, const char* argv[] )
   }
   else printf("\nError: Xor Encrypted Message [%s] Was Not Sent To The Client\n", asciiBase64Enc);
   write(client_socket, "\n", sizeof("\n"));
-   printf("after second write");
+printf("after second write");
   free(encrypted);
 
 
