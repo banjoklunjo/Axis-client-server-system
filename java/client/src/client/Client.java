@@ -5,7 +5,6 @@ import java.awt.image.BufferedImage;
 import java.io.BufferedInputStream;
 import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
-import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -23,7 +22,6 @@ import javax.swing.JLabel;
 
 import cryptography.CryptUtils;
 import cryptography.RSA;
-import cryptography.TestRSA;
 import cryptography.XorCipher;
 
 public class Client implements Runnable {
@@ -68,45 +66,35 @@ public class Client implements Runnable {
 
 		initializeStreams();
 
-		readServerPublicKey();
+		sendPublicKey();
 
-		sendClientPublicKey();
-		
 		readXorKey();
 
-		TestRSA.DecryptMessageFromServer(bufferedReader, rsa);
-		TestRSA.EncryptMessageAndSendToServer(printWriter, rsa);
+		readXorEncryptedMessage();
 
 		close();
 	}
 
+	private void sendPublicKey() {
+		String keyBase64 = CryptUtils.EncodeToBase64(rsa.getPublicKey().getEncoded());
+		String pemKeyBase64 = CryptUtils.AddPublicPemHeaders(keyBase64);
+		sendToServer(pemKeyBase64);
+	}
+	
 	private void readXorKey() {
-		String encryptedMessage = readServerMessage();
-		System.out.println("Received Encrypted Message From Server: " + encryptedMessage);
-		String decrypted;
-		try {
-			decrypted = RSA.decrypt(encryptedMessage, rsa.getPrivateKey());
-			xorCipher = new XorCipher(decrypted);
-			System.out.println("Decrypted Message From Server: " + decrypted);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+		String encryptedXorKey = readServerMessage();
+		System.out.println("Encrypted Base64 XOR Key: " + encryptedXorKey);
+		
+		String decryptedXorKey = RSA.decrypt(encryptedXorKey, rsa.getPrivateKey());
+		xorCipher = new XorCipher(decryptedXorKey);
 	}
 
-	private void readServerPublicKey() {
-		StringBuilder sb = new StringBuilder();
-		for (int i = 0; i < 6; i++) {
-			String frame = readServerMessage();
-			sb.append(frame);
-		}
-		String key = CryptUtils.RemovePublicPemHeaders(sb.toString());
-		rsa.loadPKCS1RSAPublicKey(key);
-	}
-
-	private void sendClientPublicKey() {
-		String publicKeyBase64 = CryptUtils
-				.AddPublicPemHeaders(CryptUtils.Base64EncodeToString(rsa.getPublicKey().getEncoded()));
-		sendToServer(publicKeyBase64);
+	private void readXorEncryptedMessage() {
+		String xorMessage = readServerMessage();
+		System.out.println("Encrypted Base64 XOR Message: " + xorMessage);
+		
+		String originalMessageFromServer = xorCipher.xorMessage(xorMessage);
+		System.out.println("Encrypted Base64 ORIGINAL Message: " + originalMessageFromServer);
 	}
 
 	private void readServerImage() {
@@ -222,7 +210,9 @@ public class Client implements Runnable {
 			bufferedReader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 			outputStream = new DataOutputStream(socket.getOutputStream());
 			printWriter = new PrintWriter(socket.getOutputStream());
+			System.out.println("initializeStreams() --> Success.");
 		} catch (IOException e1) {
+			System.out.println("initializeStreams() --> IOException.");
 			e1.printStackTrace();
 			online = false;
 			close();
@@ -241,6 +231,7 @@ public class Client implements Runnable {
 			bufferedReader.close();
 			printWriter.close();
 			controller.onDisconnect();
+			System.out.println("Socket closed.");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
