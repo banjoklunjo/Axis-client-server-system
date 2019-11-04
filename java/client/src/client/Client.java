@@ -11,7 +11,6 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.io.PrintWriter;
-import java.math.BigInteger;
 import java.net.Socket;
 import java.util.Arrays;
 import java.util.List;
@@ -21,7 +20,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
-import cryptography.PublicKey;
+import cryptography.CryptUtils;
 import cryptography.RSA;
 import cryptography.XorCipher;
 
@@ -50,20 +49,16 @@ public class Client implements Runnable {
 	// write unicode characters over the socket
 	private PrintWriter printWriter;
 
-	// generate public and private key
-	private RSA rsa;
-
-	// server public key
-	private PublicKey publicKeyServer;
-	
 	// encryption/decryption of messages to/from server
 	private XorCipher xorCipher;
 
-	
+	// generate private key and public key
+	private RSA rsa;
+
 	public Client(Controller controller, Socket socket) {
 		this.controller = controller;
 		this.socket = socket;
-		this.rsa = new RSA();
+		this.rsa = new RSA(1024);
 	}
 
 	@Override
@@ -71,45 +66,35 @@ public class Client implements Runnable {
 
 		initializeStreams();
 
-		sendClientPublicKey();
-		
-		readServerPublicKey();
-		
-		getSymmetricXorKey();
-		
-		setCameraResolutions();
-		
-		while(online);
+		sendPublicKey();
 
-		//readServerPublicKey();
-		
-		//setCameraResolutions();
-		
-		//getSymmetricXorKey();
+		readXorKey();
 
-		// while (online) readServerImage();
+		readXorEncryptedMessage();
 
+		close();
 	}
 
-	private void getSymmetricXorKey() {
-		String xorKey = readServerMessage();
-		xorCipher = new XorCipher(xorKey);
-		System.out.println("decrypted xor key = " + rsa.decrypt(xorKey, publicKeyServer));
+	private void sendPublicKey() {
+		String keyBase64 = CryptUtils.EncodeToBase64(rsa.getPublicKey().getEncoded());
+		String pemKeyBase64 = CryptUtils.AddPublicPemHeaders(keyBase64);
+		sendToServer(pemKeyBase64);
+	}
+	
+	private void readXorKey() {
+		String encryptedXorKey = readServerMessage();
+		System.out.println("Encrypted Base64 XOR Key: " + encryptedXorKey);
+		
+		String decryptedXorKey = RSA.decrypt(encryptedXorKey, rsa.getPrivateKey());
+		xorCipher = new XorCipher(decryptedXorKey);
 	}
 
-	private void readServerPublicKey() {
-		String publicExponentServer = readServerMessage();
-		String modulusServer = readServerMessage();
-		publicKeyServer = new PublicKey(new BigInteger(publicExponentServer), new BigInteger(modulusServer));
-		System.out.println("modulusServer = " + publicKeyServer.getModulus().toString());
-		System.out.println("publicExponentServer = " + publicKeyServer.getPublicExponent().toString());
-	}
-
-	private void sendClientPublicKey() {
-		//sendToServer(String.valueOf(rsa.getPublicKey().getModulus().toString().length()));
-		sendToServer(rsa.getPublicKey().getModulus().toString());
-		//sendToServer(String.valueOf(rsa.getPublicKey().getPublicExponent().toString().length()));
-		sendToServer(rsa.getPublicKey().getPublicExponent().toString());
+	private void readXorEncryptedMessage() {
+		String xorMessage = readServerMessage();
+		System.out.println("Encrypted Base64 XOR Message: " + xorMessage);
+		
+		String originalMessageFromServer = xorCipher.xorMessage(xorMessage);
+		System.out.println("Encrypted Base64 ORIGINAL Message: " + originalMessageFromServer);
 	}
 
 	private void readServerImage() {
@@ -179,6 +164,7 @@ public class Client implements Runnable {
 		int index = 0;
 		while (index < size) {
 			int bytesRead = input.read(data, index, size - index);
+			System.out.println("Bytes read = " + String.valueOf(bytesRead));
 			if (bytesRead < 0) {
 				throw new IOException("Insufficient data in stream");
 			}
@@ -192,7 +178,7 @@ public class Client implements Runnable {
 		printWriter.flush();
 		System.out.println("sendToServer -> " + message);
 	}
-	
+
 	private String readServerMessage() {
 		String message = null;
 		try {
@@ -208,7 +194,7 @@ public class Client implements Runnable {
 		if (resolutions != null)
 			controller.setResolutions(resolutions);
 	}
-	
+
 	private List<String> getListResolutions() {
 		String cameraResolutions = readServerMessage();
 		List<String> listOfResolutions = null;
@@ -224,13 +210,15 @@ public class Client implements Runnable {
 			bufferedReader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 			outputStream = new DataOutputStream(socket.getOutputStream());
 			printWriter = new PrintWriter(socket.getOutputStream());
+			System.out.println("initializeStreams() --> Success.");
 		} catch (IOException e1) {
+			System.out.println("initializeStreams() --> IOException.");
 			e1.printStackTrace();
 			online = false;
 			close();
 		}
 	}
-	
+
 	public void disconnect() {
 		this.online = false;
 	}
@@ -240,8 +228,10 @@ public class Client implements Runnable {
 			inputStream.close();
 			outputStream.close();
 			socket.close();
+			bufferedReader.close();
 			printWriter.close();
 			controller.onDisconnect();
+			System.out.println("Socket closed.");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
