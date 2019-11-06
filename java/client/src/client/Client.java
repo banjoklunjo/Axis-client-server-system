@@ -20,7 +20,6 @@ import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
-import cryptography.CryptUtils;
 import cryptography.RSA;
 import cryptography.XorCipher;
 
@@ -58,7 +57,7 @@ public class Client implements Runnable {
 	public Client(Controller controller, Socket socket) {
 		this.controller = controller;
 		this.socket = socket;
-		this.rsa = new RSA(1024);
+		this.rsa = new RSA();
 	}
 
 	@Override
@@ -76,25 +75,26 @@ public class Client implements Runnable {
 	}
 
 	private void sendPublicKey() {
-		String keyBase64 = CryptUtils.EncodeToBase64(rsa.getPublicKey().getEncoded());
-		String pemKeyBase64 = CryptUtils.AddPublicPemHeaders(keyBase64);
-		sendToServer(pemKeyBase64);
+		String n = rsa.getModulus().toString();
+		String e = rsa.getE().toString();
+		sendToServer(n);
+		sendToServer(e);
 	}
 	
 	private void readXorKey() {
 		String encryptedXorKey = readServerMessage();
-		System.out.println("Encrypted Base64 XOR Key: " + encryptedXorKey);
+		System.out.println("RSA Encrypted XOR Key: " + encryptedXorKey);
 		
-		String decryptedXorKey = RSA.decrypt(encryptedXorKey, rsa.getPrivateKey());
-		xorCipher = new XorCipher(decryptedXorKey);
+		byte[] decryptedXorKey = rsa.decrypt(encryptedXorKey.getBytes());
+		xorCipher = new XorCipher(new String(decryptedXorKey));
 	}
 
 	private void readXorEncryptedMessage() {
-		String xorMessage = readServerMessage();
-		System.out.println("Encrypted Base64 XOR Message: " + xorMessage);
+		String xorEncryptedMessage = readServerMessage();
+		System.out.println("XOR Encrypted Message: " + xorEncryptedMessage);
 		
-		String originalMessageFromServer = xorCipher.xorMessage(xorMessage);
-		System.out.println("Encrypted Base64 ORIGINAL Message: " + originalMessageFromServer);
+		String xorDecryptedMessage = xorCipher.xorMessage(xorEncryptedMessage);
+		System.out.println("XOR Decrypted Message: " + xorDecryptedMessage);
 	}
 
 	private void readServerImage() {
