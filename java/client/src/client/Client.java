@@ -65,11 +65,17 @@ public class Client implements Runnable {
 
 		initializeStreams();
 
-		sendPublicKey();
+		//sendPublicKey();
 
-		readXorKey();
+		//readXorKey();
 
-		readXorEncryptedMessage();
+		//readXorEncryptedMessage();
+		
+		setCameraResolutions();
+		
+		while(online) {
+			readServerImage();
+		}
 
 		close();
 	}

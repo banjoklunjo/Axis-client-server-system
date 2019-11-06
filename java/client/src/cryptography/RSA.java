@@ -54,6 +54,7 @@ public class RSA {
 		return this.e;
 	}
 
+	
 	public static void main(String[] args) throws IOException {
 		RSA rsa = new RSA();
 		rsa.printKeyInformation();
@@ -68,6 +69,7 @@ public class RSA {
 		System.out.println("Decrypted String: " + new String(decrypted));
 	}
 
+	
 	public void printKeyInformation() {
 		System.out.println("[PUBLIC KEY]");
 		System.out
