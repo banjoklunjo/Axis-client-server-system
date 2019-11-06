@@ -62,7 +62,7 @@ int start_up_server(void)
 
 	pthread_t tid[60];
 	int i = 0;
-	bool isMore = true;
+	int isMore = 1;
 	while(isMore)
 	{
 		//Accept call creates a new socket for the incoming connection
@@ -77,7 +77,7 @@ int start_up_server(void)
             	i++;
 
 		if( i > 50)
-            		isMore = false;
+            		isMore = 0;
 	}
 	return 0;
 }
@@ -119,15 +119,19 @@ void * socketThread(void *arg)
 	size_t   img_size;
 	int row = 0;
 	syslog(LOG_INFO, "after int row.....");    
+int is_stop_requested = 1;
 
 	//Opens a stream to the camera to get the img
 	stream = capture_open_stream(IMAGE_JPEG, client_message); 
 	int val = 0;
+	char stop_message[5];
+	char stop_arr[5] = "stop";
+
 	while(1) {
 		//Receive message
-		recv(newSocket , stop_message , 5 , 0);
-		if(stop_arr == stop_message)
-			is_stop_requested = true;
+		//recv(newSocket , stop_message , 5 , 0);
+		//if(stop_arr == stop_message)
+		//	is_stop_requested = 0;
 		//Get the frame
 		frame = capture_get_frame(stream);    
 
@@ -189,4 +193,8 @@ void * socketThread(void *arg)
 	close(newSocket);
 	pthread_exit(NULL);
 }
+
+
+
+
 

@@ -1,333 +1,293 @@
 
 ----- System log -----
 
-2019-10-24T13:48:09.654+00:00 axis-00408cf5b0f1 [ INFO    ] kernel: potentially unexpected fatal signal 11.
-2019-10-24T14:05:03.784+00:00 axis-00408cf5b0f1 [ INFO    ] kernel: potentially unexpected fatal signal 11.
-2019-10-24T22:50:55.612+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-24T23:50:55.611+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-25T00:50:55.608+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-25T01:50:55.611+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-25T02:50:55.608+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-25T03:50:55.608+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-25T04:50:55.608+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-25T05:50:55.608+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-25T06:50:55.613+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-25T07:50:55.609+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-25T08:50:55.608+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-25T09:50:55.608+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-25T10:50:55.607+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-25T11:50:55.608+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-25T12:50:55.609+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-25T13:50:55.607+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-25T14:50:55.615+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-25T15:50:55.616+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-25T16:50:55.607+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-25T17:50:55.614+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-25T18:50:55.609+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-25T19:50:55.610+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-25T20:50:55.606+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-25T21:50:55.609+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-25T22:50:55.608+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-25T23:50:55.608+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-26T00:50:55.608+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-26T01:50:55.608+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-26T02:50:55.609+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-26T03:50:55.609+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-26T04:50:55.607+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-26T05:50:55.605+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-26T06:50:55.609+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-26T07:50:55.607+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-26T08:50:55.614+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-26T09:50:55.612+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-26T10:50:55.606+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-26T11:50:55.609+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-26T12:50:55.616+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-26T13:50:55.608+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-26T14:50:55.609+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-26T15:50:55.613+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-26T16:50:55.608+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-26T17:50:55.609+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-26T18:50:55.604+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-26T19:50:55.603+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-26T20:50:55.604+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-26T21:50:55.606+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-26T22:50:55.605+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-26T23:50:55.609+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-27T00:50:55.614+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-27T01:50:55.604+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-27T02:50:55.605+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-27T03:50:55.605+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-27T04:50:55.606+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-27T05:50:55.604+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-27T06:50:55.605+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-27T07:50:55.604+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-27T08:50:55.605+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-27T09:50:55.615+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-27T10:50:55.604+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-27T11:50:55.605+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-27T12:50:55.615+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-27T13:50:55.609+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-27T14:50:55.609+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-27T15:50:55.605+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-27T16:50:55.608+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-27T17:50:55.613+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-27T18:50:55.607+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-27T19:50:55.608+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-27T20:50:55.608+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-27T21:50:55.610+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-27T22:50:55.606+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-27T23:50:55.607+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-28T00:50:55.610+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-28T01:50:55.615+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-28T02:50:55.609+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-28T03:50:55.604+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-28T04:50:55.609+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-28T05:50:55.614+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-28T06:50:55.614+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-28T07:50:55.608+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-28T08:50:55.606+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-28T09:50:55.608+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-28T10:50:55.613+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-28T11:50:55.615+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-28T12:50:55.615+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-28T13:50:55.607+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-28T14:50:55.606+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-28T15:50:55.603+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-28T16:50:55.607+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-28T16:52:20.790+00:00 axis-00408cf5b0f1 [ WARNING ] server[18163]: Could not get VideoType from com.axis.VideoControl: Method "Get" with signature "ss" on interface "org.freedesktop.DBus.Properties" doesn't exist
-2019-10-28T16:59:40.373+00:00 axis-00408cf5b0f1 [ INFO    ] kernel: potentially unexpected fatal signal 11.
-2019-10-28T17:02:44.006+00:00 axis-00408cf5b0f1 [ INFO    ] kernel: potentially unexpected fatal signal 11.
-2019-10-28T17:08:17.412+00:00 axis-00408cf5b0f1 [ INFO    ] kernel: potentially unexpected fatal signal 11.
-2019-10-28T17:11:29.313+00:00 axis-00408cf5b0f1 [ INFO    ] kernel: potentially unexpected fatal signal 11.
-2019-10-28T17:13:41.063+00:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[871]: [system] Reloaded configuration
-2019-10-28T17:13:42.701+00:00 axis-00408cf5b0f1 [ INFO    ] upload.cgi: Package /tmp/server_1_0_mipsisa32r2el.eap installation OK
-2019-10-28T17:13:42.702+00:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[871]: message repeated 2 times: [ [system] Reloaded configuration]
-2019-10-28T17:13:45.937+00:00 axis-00408cf5b0f1 [ INFO    ] server[0]: starting server
-2019-10-28T17:13:46.084+00:00 axis-00408cf5b0f1 [ INFO    ] server[21313]: Server running...
-2019-10-28T17:13:46.087+00:00 axis-00408cf5b0f1 [ INFO    ] server[21313]: Listening
-2019-10-28T17:14:01.823+00:00 axis-00408cf5b0f1 [ INFO    ] server[21313]: 1845374807
-2019-10-28T17:14:01.825+00:00 axis-00408cf5b0f1 [ INFO    ] server[21313]: 173
-2019-10-28T17:14:01.828+00:00 axis-00408cf5b0f1 [ INFO    ] server[21313]: 1
-2019-10-28T17:14:01.830+00:00 axis-00408cf5b0f1 [ INFO    ] server[21313]: 2
-2019-10-28T17:14:01.832+00:00 axis-00408cf5b0f1 [ INFO    ] server[21313]: 3
-2019-10-28T17:14:01.833+00:00 axis-00408cf5b0f1 [ INFO    ] server[21313]: 4
-2019-10-28T17:14:01.834+00:00 axis-00408cf5b0f1 [ INFO    ] server[21313]: 5
-2019-10-28T17:14:01.900+00:00 axis-00408cf5b0f1 [ INFO    ] kernel: potentially unexpected fatal signal 11.
-2019-10-28T17:15:03.213+00:00 axis-00408cf5b0f1 [ INFO    ] upload.cgi: Uploaded '/tmp/server_1_0_mipsisa32r2el.eap' size:56709
-2019-10-28T17:15:04.242+00:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[871]: [system] Reloaded configuration
-2019-10-28T17:15:05.925+00:00 axis-00408cf5b0f1 [ INFO    ] upload.cgi: Package /tmp/server_1_0_mipsisa32r2el.eap installation OK
-2019-10-28T17:15:05.927+00:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[871]: message repeated 2 times: [ [system] Reloaded configuration]
-2019-10-28T17:15:14.664+00:00 axis-00408cf5b0f1 [ INFO    ] server[0]: starting server
-2019-10-28T17:15:14.809+00:00 axis-00408cf5b0f1 [ INFO    ] server[21623]: Server running...
-2019-10-28T17:15:14.811+00:00 axis-00408cf5b0f1 [ INFO    ] server[21623]: Listening
-2019-10-28T17:15:32.035+00:00 axis-00408cf5b0f1 [ INFO    ] server[21623]: 1494155983
-2019-10-28T17:15:32.038+00:00 axis-00408cf5b0f1 [ INFO    ] server[21623]: 241
-2019-10-28T17:15:32.050+00:00 axis-00408cf5b0f1 [ INFO    ] kernel: potentially unexpected fatal signal 11.
-2019-10-28T17:17:45.473+00:00 axis-00408cf5b0f1 [ INFO    ] upload.cgi: Uploaded '/tmp/server_1_0_mipsisa32r2el.eap' size:56650
-2019-10-28T17:17:46.502+00:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[871]: [system] Reloaded configuration
-2019-10-28T17:17:48.142+00:00 axis-00408cf5b0f1 [ INFO    ] upload.cgi: Package /tmp/server_1_0_mipsisa32r2el.eap installation OK
-2019-10-28T17:17:48.144+00:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[871]: message repeated 2 times: [ [system] Reloaded configuration]
-2019-10-28T17:17:53.089+00:00 axis-00408cf5b0f1 [ INFO    ] server[0]: starting server
-2019-10-28T17:17:53.239+00:00 axis-00408cf5b0f1 [ INFO    ] server[21933]: Server running...
-2019-10-28T17:17:53.241+00:00 axis-00408cf5b0f1 [ INFO    ] server[21933]: Listening
-2019-10-28T17:18:07.919+00:00 axis-00408cf5b0f1 [ INFO    ] server[21933]: 1812171209
-2019-10-28T17:18:07.921+00:00 axis-00408cf5b0f1 [ INFO    ] server[21933]: 149
-2019-10-28T17:18:07.984+00:00 axis-00408cf5b0f1 [ INFO    ] kernel: potentially unexpected fatal signal 11.
-2019-10-28T17:22:12.423+00:00 axis-00408cf5b0f1 [ INFO    ] upload.cgi: Uploaded '/tmp/server_1_0_mipsisa32r2el.eap' size:56651
-2019-10-28T17:22:13.472+00:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[871]: [system] Reloaded configuration
-2019-10-28T17:22:15.175+00:00 axis-00408cf5b0f1 [ INFO    ] upload.cgi: Package /tmp/server_1_0_mipsisa32r2el.eap installation OK
-2019-10-28T17:22:15.176+00:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[871]: message repeated 2 times: [ [system] Reloaded configuration]
-2019-10-28T17:22:18.702+00:00 axis-00408cf5b0f1 [ INFO    ] server[0]: starting server
-2019-10-28T17:22:18.846+00:00 axis-00408cf5b0f1 [ INFO    ] server[22296]: Server running...
-2019-10-28T17:22:18.849+00:00 axis-00408cf5b0f1 [ INFO    ] server[22296]: Listening
-2019-10-28T17:22:36.374+00:00 axis-00408cf5b0f1 [ INFO    ] server[22296]: 1355397767
-2019-10-28T17:22:36.377+00:00 axis-00408cf5b0f1 [ INFO    ] server[22296]: 139
-2019-10-28T17:22:36.442+00:00 axis-00408cf5b0f1 [ INFO    ] kernel: potentially unexpected fatal signal 11.
-2019-10-28T17:27:38.112+00:00 axis-00408cf5b0f1 [ INFO    ] upload.cgi: Uploaded '/tmp/server_1_0_mipsisa32r2el.eap' size:56708
-2019-10-28T17:27:39.146+00:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[871]: [system] Reloaded configuration
-2019-10-28T17:27:39.552+00:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[871]: [system] Reloaded configuration
-2019-10-28T17:27:40.749+00:00 axis-00408cf5b0f1 [ INFO    ] upload.cgi: Package /tmp/server_1_0_mipsisa32r2el.eap installation OK
-2019-10-28T17:27:40.783+00:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[871]: [system] Reloaded configuration
-2019-10-28T17:27:45.359+00:00 axis-00408cf5b0f1 [ INFO    ] server[0]: starting server
-2019-10-28T17:27:45.505+00:00 axis-00408cf5b0f1 [ INFO    ] server[22606]: Server running...
-2019-10-28T17:27:45.509+00:00 axis-00408cf5b0f1 [ INFO    ] server[22606]: Listening
-2019-10-28T17:28:04.241+00:00 axis-00408cf5b0f1 [ INFO    ] server[22606]: 1603514821
-2019-10-28T17:28:04.244+00:00 axis-00408cf5b0f1 [ INFO    ] server[22606]: 139
-2019-10-28T17:28:04.310+00:00 axis-00408cf5b0f1 [ INFO    ] kernel: potentially unexpected fatal signal 11.
-2019-10-28T17:30:03.486+00:00 axis-00408cf5b0f1 [ INFO    ] upload.cgi: Uploaded '/tmp/server_1_0_mipsisa32r2el.eap' size:56740
-2019-10-28T17:30:04.516+00:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[871]: [system] Reloaded configuration
-2019-10-28T17:30:06.160+00:00 axis-00408cf5b0f1 [ INFO    ] upload.cgi: Package /tmp/server_1_0_mipsisa32r2el.eap installation OK
-2019-10-28T17:30:06.161+00:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[871]: message repeated 2 times: [ [system] Reloaded configuration]
-2019-10-28T17:30:09.421+00:00 axis-00408cf5b0f1 [ INFO    ] server[0]: starting server
-2019-10-28T17:30:09.566+00:00 axis-00408cf5b0f1 [ INFO    ] server[22916]: Listening
-2019-10-28T17:30:09.566+00:00 axis-00408cf5b0f1 [ INFO    ] server[22916]: Server running...
-2019-10-28T17:30:24.213+00:00 axis-00408cf5b0f1 [ INFO    ] server[22916]: 2623096519
-2019-10-28T17:30:24.216+00:00 axis-00408cf5b0f1 [ INFO    ] server[22916]: 239
-2019-10-28T17:30:24.218+00:00 axis-00408cf5b0f1 [ INFO    ] server[22916]: 0
-2019-10-28T17:30:24.283+00:00 axis-00408cf5b0f1 [ INFO    ] kernel: potentially unexpected fatal signal 11.
-2019-10-28T17:31:56.629+00:00 axis-00408cf5b0f1 [ INFO    ] upload.cgi: Uploaded '/tmp/server_1_0_mipsisa32r2el.eap' size:56739
-2019-10-28T17:31:57.651+00:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[871]: [system] Reloaded configuration
-2019-10-28T17:31:59.316+00:00 axis-00408cf5b0f1 [ INFO    ] upload.cgi: Package /tmp/server_1_0_mipsisa32r2el.eap installation OK
-2019-10-28T17:31:59.318+00:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[871]: message repeated 2 times: [ [system] Reloaded configuration]
-2019-10-28T17:32:02.777+00:00 axis-00408cf5b0f1 [ INFO    ] server[0]: starting server
-2019-10-28T17:32:02.932+00:00 axis-00408cf5b0f1 [ INFO    ] server[23226]: Server running...
-2019-10-28T17:32:02.934+00:00 axis-00408cf5b0f1 [ INFO    ] server[23226]: Listening
-2019-10-28T17:32:30.494+00:00 axis-00408cf5b0f1 [ INFO    ] server[23226]: 233
-2019-10-28T17:32:30.494+00:00 axis-00408cf5b0f1 [ INFO    ] server[23226]: 2997000047
-2019-10-28T17:32:30.497+00:00 axis-00408cf5b0f1 [ INFO    ] server[23226]: 0
-2019-10-28T17:32:30.561+00:00 axis-00408cf5b0f1 [ INFO    ] kernel: potentially unexpected fatal signal 11.
-2019-10-28T17:33:45.395+00:00 axis-00408cf5b0f1 [ INFO    ] upload.cgi: Uploaded '/tmp/server_1_0_mipsisa32r2el.eap' size:56753
-2019-10-28T17:33:46.420+00:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[871]: [system] Reloaded configuration
-2019-10-28T17:33:48.092+00:00 axis-00408cf5b0f1 [ INFO    ] upload.cgi: Package /tmp/server_1_0_mipsisa32r2el.eap installation OK
-2019-10-28T17:33:48.093+00:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[871]: message repeated 2 times: [ [system] Reloaded configuration]
-2019-10-28T17:33:52.810+00:00 axis-00408cf5b0f1 [ INFO    ] server[0]: starting server
-2019-10-28T17:33:52.961+00:00 axis-00408cf5b0f1 [ INFO    ] server[23593]: Server running...
-2019-10-28T17:33:52.964+00:00 axis-00408cf5b0f1 [ INFO    ] server[23593]: Listening
-2019-10-28T17:34:26.547+00:00 axis-00408cf5b0f1 [ INFO    ] upload.cgi: Uploaded '/tmp/server_1_0_mipsisa32r2el.eap' size:56752
-2019-10-28T17:34:26.890+00:00 axis-00408cf5b0f1 [ INFO    ] server[0]: stopping server
-2019-10-28T17:34:27.861+00:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[871]: [system] Reloaded configuration
-2019-10-28T17:34:29.475+00:00 axis-00408cf5b0f1 [ INFO    ] upload.cgi: Package /tmp/server_1_0_mipsisa32r2el.eap installation OK
-2019-10-28T17:34:29.477+00:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[871]: message repeated 2 times: [ [system] Reloaded configuration]
-2019-10-28T17:34:35.194+00:00 axis-00408cf5b0f1 [ INFO    ] server[0]: starting server
-2019-10-28T17:34:35.345+00:00 axis-00408cf5b0f1 [ INFO    ] server[23856]: Server running...
-2019-10-28T17:34:35.348+00:00 axis-00408cf5b0f1 [ INFO    ] server[23856]: Listening
-2019-10-28T17:34:58.062+00:00 axis-00408cf5b0f1 [ INFO    ] server[23856]: 1634081333
-2019-10-28T17:34:58.063+00:00 axis-00408cf5b0f1 [ INFO    ] server[23856]: 149
-2019-10-28T17:34:58.065+00:00 axis-00408cf5b0f1 [ INFO    ] server[23856]: 0
-2019-10-28T17:34:58.069+00:00 axis-00408cf5b0f1 [ INFO    ] kernel: potentially unexpected fatal signal 11.
-2019-10-28T17:38:19.549+00:00 axis-00408cf5b0f1 [ INFO    ] upload.cgi: Uploaded '/tmp/server_1_0_mipsisa32r2el.eap' size:56734
-2019-10-28T17:38:20.582+00:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[871]: [system] Reloaded configuration
-2019-10-28T17:38:22.308+00:00 axis-00408cf5b0f1 [ INFO    ] upload.cgi: Package /tmp/server_1_0_mipsisa32r2el.eap installation OK
-2019-10-28T17:38:22.309+00:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[871]: message repeated 2 times: [ [system] Reloaded configuration]
-2019-10-28T17:38:25.779+00:00 axis-00408cf5b0f1 [ INFO    ] server[0]: starting server
-2019-10-28T17:38:25.921+00:00 axis-00408cf5b0f1 [ INFO    ] server[24177]: Server running...
-2019-10-28T17:38:25.925+00:00 axis-00408cf5b0f1 [ INFO    ] server[24177]: Listening
-2019-10-28T17:38:43.859+00:00 axis-00408cf5b0f1 [ INFO    ] server[24177]: 2957621609
-2019-10-28T17:38:43.882+00:00 axis-00408cf5b0f1 [ INFO    ] kernel: potentially unexpected fatal signal 11.
-2019-10-28T17:38:43.929+00:00 axis-00408cf5b0f1 [ INFO    ] server[24177]: 0
-2019-10-28T17:38:43.929+00:00 axis-00408cf5b0f1 [ INFO    ] server[24177]: 197
-2019-10-28T17:40:15.395+00:00 axis-00408cf5b0f1 [ INFO    ] upload.cgi: Uploaded '/tmp/server_1_0_mipsisa32r2el.eap' size:56781
-2019-10-28T17:40:16.416+00:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[871]: [system] Reloaded configuration
-2019-10-28T17:40:18.106+00:00 axis-00408cf5b0f1 [ INFO    ] upload.cgi: Package /tmp/server_1_0_mipsisa32r2el.eap installation OK
-2019-10-28T17:40:18.106+00:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[871]: message repeated 2 times: [ [system] Reloaded configuration]
-2019-10-28T17:40:21.824+00:00 axis-00408cf5b0f1 [ INFO    ] server[0]: starting server
-2019-10-28T17:40:21.972+00:00 axis-00408cf5b0f1 [ INFO    ] server[24491]: Listening
-2019-10-28T17:40:21.972+00:00 axis-00408cf5b0f1 [ INFO    ] server[24491]: Server running...
-2019-10-28T17:40:42.765+00:00 axis-00408cf5b0f1 [ INFO    ] server[24491]: 1408144841
-2019-10-28T17:40:42.765+00:00 axis-00408cf5b0f1 [ INFO    ] server[24491]: 241
-2019-10-28T17:40:42.771+00:00 axis-00408cf5b0f1 [ INFO    ] server[24491]: 0
-2019-10-28T17:40:42.772+00:00 axis-00408cf5b0f1 [ INFO    ] server[24491]: 1
-2019-10-28T17:40:42.772+00:00 axis-00408cf5b0f1 [ INFO    ] server[24491]: 2
-2019-10-28T17:40:42.772+00:00 axis-00408cf5b0f1 [ INFO    ] server[24491]: 3
-2019-10-28T17:40:42.776+00:00 axis-00408cf5b0f1 [ INFO    ] server[24491]: 11
-2019-10-28T17:40:42.781+00:00 axis-00408cf5b0f1 [ INFO    ] server[24491]: 4
-2019-10-28T17:40:42.785+00:00 axis-00408cf5b0f1 [ INFO    ] kernel: potentially unexpected fatal signal 11.
-2019-10-28T17:40:42.834+00:00 axis-00408cf5b0f1 [ INFO    ] server[24491]: 5
-2019-10-28T17:40:42.839+00:00 axis-00408cf5b0f1 [ INFO    ] server[24491]: 22
-2019-10-28T17:42:13.712+00:00 axis-00408cf5b0f1 [ INFO    ] upload.cgi: Uploaded '/tmp/server_1_0_mipsisa32r2el.eap' size:56748
-2019-10-28T17:42:14.743+00:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[871]: [system] Reloaded configuration
-2019-10-28T17:42:16.382+00:00 axis-00408cf5b0f1 [ INFO    ] upload.cgi: Package /tmp/server_1_0_mipsisa32r2el.eap installation OK
-2019-10-28T17:42:16.383+00:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[871]: message repeated 2 times: [ [system] Reloaded configuration]
-2019-10-28T17:42:20.674+00:00 axis-00408cf5b0f1 [ INFO    ] server[0]: starting server
-2019-10-28T17:42:20.824+00:00 axis-00408cf5b0f1 [ INFO    ] server[24858]: Listening
-2019-10-28T17:42:20.824+00:00 axis-00408cf5b0f1 [ INFO    ] server[24858]: Server running...
-2019-10-28T17:42:30.679+00:00 axis-00408cf5b0f1 [ INFO    ] server[24858]: 2155116569
-2019-10-28T17:42:30.680+00:00 axis-00408cf5b0f1 [ INFO    ] server[24858]: 0
-2019-10-28T17:42:30.680+00:00 axis-00408cf5b0f1 [ INFO    ] server[24858]: 1
-2019-10-28T17:42:30.680+00:00 axis-00408cf5b0f1 [ INFO    ] server[24858]: 229
-2019-10-28T17:42:30.681+00:00 axis-00408cf5b0f1 [ INFO    ] server[24858]: 2
-2019-10-28T17:42:30.681+00:00 axis-00408cf5b0f1 [ INFO    ] server[24858]: 3
-2019-10-28T17:42:30.688+00:00 axis-00408cf5b0f1 [ INFO    ] server[24858]: 0
-2019-10-28T17:42:30.690+00:00 axis-00408cf5b0f1 [ INFO    ] server[24858]: 4
-2019-10-28T17:42:30.692+00:00 axis-00408cf5b0f1 [ INFO    ] server[24858]: 5
-2019-10-28T17:42:30.697+00:00 axis-00408cf5b0f1 [ INFO    ] server[24858]: 0
-2019-10-28T17:42:30.769+00:00 axis-00408cf5b0f1 [ WARNING ] server[24858]: Could not get VideoType from com.axis.VideoControl: Method "Get" with signature "ss" on interface "org.freedesktop.DBus.Properties" doesn't exist
-2019-10-28T17:42:30.774+00:00 axis-00408cf5b0f1 [ INFO    ] server[24858]: Thread CREATED ...
-2019-10-28T17:44:52.898+00:00 axis-00408cf5b0f1 [ INFO    ] server[24858]: message below from client:
-2019-10-28T17:44:52.899+00:00 axis-00408cf5b0f1 [ INFO    ] server[24858]: 
-2019-10-28T17:44:52.909+00:00 axis-00408cf5b0f1 [ INFO    ] server[24858]: 
-2019-10-28T17:44:52.909+00:00 axis-00408cf5b0f1 [ INFO    ] server[24858]: after int row.....
-2019-10-28T17:45:45.109+00:00 axis-00408cf5b0f1 [ INFO    ] server[24858]: 1796499409
-2019-10-28T17:45:45.126+00:00 axis-00408cf5b0f1 [ INFO    ] server[24858]: 179
-2019-10-28T17:45:45.129+00:00 axis-00408cf5b0f1 [ INFO    ] server[24858]: 0
-2019-10-28T17:45:45.131+00:00 axis-00408cf5b0f1 [ INFO    ] server[24858]: 1
-2019-10-28T17:45:45.133+00:00 axis-00408cf5b0f1 [ INFO    ] server[24858]: 2
-2019-10-28T17:45:45.136+00:00 axis-00408cf5b0f1 [ INFO    ] server[24858]: 0
-2019-10-28T17:45:45.136+00:00 axis-00408cf5b0f1 [ INFO    ] server[24858]: 3
-2019-10-28T17:45:45.139+00:00 axis-00408cf5b0f1 [ INFO    ] server[24858]: 4
-2019-10-28T17:45:45.141+00:00 axis-00408cf5b0f1 [ INFO    ] server[24858]: 5
-2019-10-28T17:45:45.143+00:00 axis-00408cf5b0f1 [ INFO    ] server[24858]: 0
-2019-10-28T17:45:45.145+00:00 axis-00408cf5b0f1 [ WARNING ] server[24858]: Could not get VideoType from com.axis.VideoControl: Method "Get" with signature "ss" on interface "org.freedesktop.DBus.Properties" doesn't exist
-2019-10-28T17:45:45.148+00:00 axis-00408cf5b0f1 [ INFO    ] server[24858]: Thread CREATED ...
-2019-10-28T17:48:13.625+00:00 axis-00408cf5b0f1 [ INFO    ] server[0]: stopping server
-2019-10-28T17:48:17.611+00:00 axis-00408cf5b0f1 [ INFO    ] upload.cgi: Uploaded '/tmp/server_1_0_mipsisa32r2el.eap' size:56749
-2019-10-28T17:48:18.671+00:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[871]: [system] Reloaded configuration
-2019-10-28T17:48:20.386+00:00 axis-00408cf5b0f1 [ INFO    ] upload.cgi: Package /tmp/server_1_0_mipsisa32r2el.eap installation OK
-2019-10-28T17:48:20.388+00:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[871]: message repeated 2 times: [ [system] Reloaded configuration]
-2019-10-28T17:48:25.521+00:00 axis-00408cf5b0f1 [ INFO    ] server[0]: starting server
-2019-10-28T17:48:25.673+00:00 axis-00408cf5b0f1 [ INFO    ] server[25442]: Server running...
-2019-10-28T17:48:25.675+00:00 axis-00408cf5b0f1 [ INFO    ] server[25442]: Listening
-2019-10-28T17:49:48.041+00:00 axis-00408cf5b0f1 [ INFO    ] server[0]: stopping server
-2019-10-28T17:49:55.611+00:00 axis-00408cf5b0f1 [ INFO    ] server[0]: starting server
-2019-10-28T17:49:55.821+00:00 axis-00408cf5b0f1 [ INFO    ] server[26076]: Server running...
-2019-10-28T17:49:55.824+00:00 axis-00408cf5b0f1 [ INFO    ] server[26076]: Listening
-2019-10-28T17:50:16.472+00:00 axis-00408cf5b0f1 [ INFO    ] server[26076]: 1511401391
-2019-10-28T17:50:16.474+00:00 axis-00408cf5b0f1 [ INFO    ] server[26076]: 0
-2019-10-28T17:50:16.474+00:00 axis-00408cf5b0f1 [ INFO    ] server[26076]: 181
-2019-10-28T17:50:16.475+00:00 axis-00408cf5b0f1 [ INFO    ] server[26076]: 1
-2019-10-28T17:50:16.478+00:00 axis-00408cf5b0f1 [ INFO    ] server[26076]: 2
-2019-10-28T17:50:16.490+00:00 axis-00408cf5b0f1 [ INFO    ] server[26076]: 3
-2019-10-28T17:50:16.501+00:00 axis-00408cf5b0f1 [ INFO    ] server[26076]: 0
-2019-10-28T17:50:16.501+00:00 axis-00408cf5b0f1 [ INFO    ] server[26076]: 4
-2019-10-28T17:50:16.502+00:00 axis-00408cf5b0f1 [ INFO    ] server[26076]: 0
-2019-10-28T17:50:16.502+00:00 axis-00408cf5b0f1 [ INFO    ] server[26076]: 5
-2019-10-28T17:50:16.569+00:00 axis-00408cf5b0f1 [ WARNING ] server[26076]: Could not get VideoType from com.axis.VideoControl: Method "Get" with signature "ss" on interface "org.freedesktop.DBus.Properties" doesn't exist
-2019-10-28T17:50:16.570+00:00 axis-00408cf5b0f1 [ INFO    ] server[26076]: Thread CREATED ...
-2019-10-28T17:50:46.010+00:00 axis-00408cf5b0f1 [ INFO    ] server[0]: stopping server
-2019-10-28T17:50:52.234+00:00 axis-00408cf5b0f1 [ INFO    ] upload.cgi: Uploaded '/tmp/server_1_0_mipsisa32r2el.eap' size:56713
-2019-10-28T17:50:53.276+00:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[871]: [system] Reloaded configuration
-2019-10-28T17:50:54.948+00:00 axis-00408cf5b0f1 [ INFO    ] upload.cgi: Package /tmp/server_1_0_mipsisa32r2el.eap installation OK
-2019-10-28T17:50:54.950+00:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[871]: message repeated 2 times: [ [system] Reloaded configuration]
-2019-10-28T17:50:55.605+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1287]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-10-28T17:50:59.095+00:00 axis-00408cf5b0f1 [ INFO    ] server[0]: starting server
-2019-10-28T17:50:59.243+00:00 axis-00408cf5b0f1 [ INFO    ] server[26645]: Listening
-2019-10-28T17:50:59.243+00:00 axis-00408cf5b0f1 [ INFO    ] server[26645]: Server running...
-2019-10-28T17:51:38.681+00:00 axis-00408cf5b0f1 [ INFO    ] server[0]: stopping server
-2019-10-28T17:51:45.813+00:00 axis-00408cf5b0f1 [ INFO    ] server[0]: starting server
-2019-10-28T17:51:46.029+00:00 axis-00408cf5b0f1 [ INFO    ] server[26930]: Server running...
-2019-10-28T17:51:46.034+00:00 axis-00408cf5b0f1 [ INFO    ] server[26930]: Listening
-2019-10-28T17:51:56.481+00:00 axis-00408cf5b0f1 [ INFO    ] server[26930]: 2476553831
-2019-10-28T17:51:56.484+00:00 axis-00408cf5b0f1 [ INFO    ] server[26930]: 179
-2019-10-28T17:51:56.487+00:00 axis-00408cf5b0f1 [ INFO    ] server[26930]: 0
-2019-10-28T17:51:56.491+00:00 axis-00408cf5b0f1 [ INFO    ] server[26930]: 0
-2019-10-28T17:51:56.572+00:00 axis-00408cf5b0f1 [ WARNING ] server[26930]: Could not get VideoType from com.axis.VideoControl: Method "Get" with signature "ss" on interface "org.freedesktop.DBus.Properties" doesn't exist
-2019-10-28T17:51:56.577+00:00 axis-00408cf5b0f1 [ INFO    ] server[26930]: Thread CREATED ...
-2019-10-28T18:03:51.952+00:00 axis-00408cf5b0f1 [ INFO    ] server[0]: stopping server
-2019-10-28T18:14:17.426+00:00 axis-00408cf5b0f1 [ INFO    ] upload.cgi: Uploaded '/tmp/server_1_0_mipsisa32r2el.eap' size:56661
-2019-10-28T18:14:18.547+00:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[871]: [system] Reloaded configuration
-2019-10-28T18:14:20.206+00:00 axis-00408cf5b0f1 [ INFO    ] upload.cgi: Package /tmp/server_1_0_mipsisa32r2el.eap installation OK
-2019-10-28T18:14:20.208+00:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[871]: message repeated 2 times: [ [system] Reloaded configuration]
-2019-10-28T18:14:25.225+00:00 axis-00408cf5b0f1 [ INFO    ] server[0]: starting server
-2019-10-28T18:14:25.371+00:00 axis-00408cf5b0f1 [ INFO    ] server[27511]: Server running...
-2019-10-28T18:14:25.374+00:00 axis-00408cf5b0f1 [ INFO    ] server[27511]: Listening
-2019-10-28T18:14:43.562+00:00 axis-00408cf5b0f1 [ INFO    ] server[27511]: 2028719023
-2019-10-28T18:14:43.565+00:00 axis-00408cf5b0f1 [ INFO    ] server[27511]: 229
-2019-10-28T18:14:43.568+00:00 axis-00408cf5b0f1 [ INFO    ] server[27511]: 4294856960
-2019-10-28T18:14:43.571+00:00 axis-00408cf5b0f1 [ INFO    ] server[27511]: 1
-2019-10-28T18:14:43.660+00:00 axis-00408cf5b0f1 [ WARNING ] server[27511]: Could not get VideoType from com.axis.VideoControl: Method "Get" with signature "ss" on interface "org.freedesktop.DBus.Properties" doesn't exist
-2019-10-28T18:14:43.664+00:00 axis-00408cf5b0f1 [ INFO    ] server[27511]: Thread CREATED ...
-2019-10-28T18:15:05.264+00:00 axis-00408cf5b0f1 [ INFO    ] server[27511]: message below from client:
-2019-10-28T18:15:05.267+00:00 axis-00408cf5b0f1 [ INFO    ] server[27511]: 
-2019-10-28T18:15:05.267+00:00 axis-00408cf5b0f1 [ INFO    ] server[27511]: 
-2019-10-28T18:15:05.268+00:00 axis-00408cf5b0f1 [ INFO    ] server[27511]: after int row.....
-2019-10-28T18:15:18.519+00:00 axis-00408cf5b0f1 [ INFO    ] server[27511]: 2389979881
-2019-10-28T18:15:18.522+00:00 axis-00408cf5b0f1 [ INFO    ] server[27511]: 131
-2019-10-28T18:15:18.523+00:00 axis-00408cf5b0f1 [ INFO    ] server[27511]: 2863253475
-2019-10-28T18:15:18.526+00:00 axis-00408cf5b0f1 [ INFO    ] server[27511]: 1
-2019-10-28T18:15:18.534+00:00 axis-00408cf5b0f1 [ WARNING ] server[27511]: Could not get VideoType from com.axis.VideoControl: Method "Get" with signature "ss" on interface "org.freedesktop.DBus.Properties" doesn't exist
-2019-10-28T18:15:18.537+00:00 axis-00408cf5b0f1 [ INFO    ] server[27511]: Thread CREATED ...
-2019-10-28T18:16:57.502+00:00 axis-00408cf5b0f1 [ INFO    ] server[0]: stopping server
-2019-10-28T18:17:03.642+00:00 axis-00408cf5b0f1 [ INFO    ] upload.cgi: Uploaded '/tmp/server_1_0_mipsisa32r2el.eap' size:56685
-2019-10-28T18:17:04.676+00:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[871]: [system] Reloaded configuration
-2019-10-28T18:17:06.299+00:00 axis-00408cf5b0f1 [ INFO    ] upload.cgi: Package /tmp/server_1_0_mipsisa32r2el.eap installation OK
-2019-10-28T18:17:06.301+00:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[871]: message repeated 2 times: [ [system] Reloaded configuration]
+2019-11-06T12:54:41.435+00:00 axis-00408cf5b0f1 [ WARNING ] mergeresolv.sh[680]: nothing to merge falling back to backup plan!
+2019-11-06T12:54:47.784+00:00 axis-00408cf5b0f1 [ WARNING ] ipchanged[799]: respawnd not running.
+2019-11-06T12:54:52.029+00:00 axis-00408cf5b0f1 [ WARNING ] mergeresolv.sh[1201]: nothing to merge falling back to backup plan!
+2019-11-06T12:54:55.536+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1269]: Failed to get /sys/ path for /dev/mmcblk0p1
+2019-11-06T12:54:55.806+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1269]: disk.c : Disk disruption detection status changed for NetworkShare. Status = 'disruption'
+2019-11-06T12:54:55.806+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1269]: disk.c : Disk disruption detection status changed for SD_DISK. Status = 'disruption'
+2019-11-06T12:55:01.149+00:00 axis-00408cf5b0f1 [ WARNING ] blinkenlights[1153]: CancelState - Failed to cancel state.
+2019-11-06T12:56:53.190+00:00 axis-00408cf5b0f1 [ INFO    ] kernel: potentially unexpected fatal signal 11.
+2019-11-06T12:58:45.179+00:00 axis-00408cf5b0f1 [ INFO    ] kernel: potentially unexpected fatal signal 11.
+2019-11-06T13:04:51.130+00:00 axis-00408cf5b0f1 [ INFO    ] kernel: potentially unexpected fatal signal 11.
+2019-11-06T13:09:29.877+00:00 axis-00408cf5b0f1 [ INFO    ] kernel: potentially unexpected fatal signal 11.
+2019-11-06T13:13:26.264+00:00 axis-00408cf5b0f1 [ INFO    ] kernel: potentially unexpected fatal signal 11.
+2019-11-06T13:20:42.229+00:00 axis-00408cf5b0f1 [ INFO    ] kernel: potentially unexpected fatal signal 11.
+2019-11-06T13:22:21.532+00:00 axis-00408cf5b0f1 [ INFO    ] kernel: potentially unexpected fatal signal 11.
+2019-11-06T13:23:40.959+00:00 axis-00408cf5b0f1 [ INFO    ] kernel: potentially unexpected fatal signal 11.
+2019-11-06T13:54:55.595+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1269]: Failed to get /sys/ path for /dev/mmcblk0p1
+2019-11-06T13:56:17.623+00:00 axis-00408cf5b0f1 [ INFO    ] kernel: potentially unexpected fatal signal 11.
+2019-11-06T14:13:46.374+00:00 axis-00408cf5b0f1 [ INFO    ] kernel: potentially unexpected fatal signal 11.
+2019-11-06T14:54:55.595+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1269]: Failed to get /sys/ path for /dev/mmcblk0p1
+2019-11-06T15:53:45.259+00:00 axis-00408cf5b0f1 [ WARNING ] server[8632]: Could not get VideoType from com.axis.VideoControl: Method "Get" with signature "ss" on interface "org.freedesktop.DBus.Properties" doesn't exist
+2019-11-06T15:54:55.594+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1269]: Failed to get /sys/ path for /dev/mmcblk0p1
+2019-11-06T16:02:05.021+00:00 axis-00408cf5b0f1 [ WARNING ] server[8632]: Could not get VideoType from com.axis.VideoControl: Method "Get" with signature "ss" on interface "org.freedesktop.DBus.Properties" doesn't exist
+2019-11-06T16:02:53.598+00:00 axis-00408cf5b0f1 [ WARNING ] server[8632]: Could not get VideoType from com.axis.VideoControl: Method "Get" with signature "ss" on interface "org.freedesktop.DBus.Properties" doesn't exist
+2019-11-06T16:03:40.236+00:00 axis-00408cf5b0f1 [ WARNING ] server[8632]: Could not get VideoType from com.axis.VideoControl: Method "Get" with signature "ss" on interface "org.freedesktop.DBus.Properties" doesn't exist
+2019-11-06T16:05:05.394+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 6
+2019-11-06T16:05:05.395+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 30718
+2019-11-06T16:05:05.397+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Client is disconnected
+2019-11-06T16:05:05.479+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Storlek på storlek-stringen
+2019-11-06T16:05:05.481+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 6
+2019-11-06T16:05:05.486+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 30772
+2019-11-06T16:05:05.492+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Client is disconnected
+2019-11-06T16:05:05.572+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Storlek på storlek-stringen
+2019-11-06T16:05:05.609+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 30793
+2019-11-06T16:05:05.609+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 6
+2019-11-06T16:05:05.621+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Storlek på storlek-stringen
+2019-11-06T16:05:05.622+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 30881
+2019-11-06T16:05:05.622+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 6
+2019-11-06T16:05:05.630+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Client is disconnected
+2019-11-06T16:05:05.630+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Client is disconnected
+2019-11-06T16:05:05.679+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Storlek på storlek-stringen
+2019-11-06T16:05:05.681+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 6
+2019-11-06T16:05:05.709+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 30805
+2019-11-06T16:05:05.710+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Client is disconnected
+2019-11-06T16:05:05.806+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Storlek på storlek-stringen
+2019-11-06T16:05:05.807+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 6
+2019-11-06T16:05:05.808+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 30807
+2019-11-06T16:05:05.809+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Client is disconnected
+2019-11-06T16:05:05.877+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Storlek på storlek-stringen
+2019-11-06T16:05:05.878+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 6
+2019-11-06T16:05:05.881+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 30764
+2019-11-06T16:05:05.882+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Client is disconnected
+2019-11-06T16:05:05.989+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Storlek på storlek-stringen
+2019-11-06T16:05:05.990+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 5
+2019-11-06T16:05:05.992+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 9085
+2019-11-06T16:05:05.999+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Client is disconnected
+2019-11-06T16:05:06.009+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Storlek på storlek-stringen
+2019-11-06T16:05:06.010+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 6
+2019-11-06T16:05:06.011+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 30874
+2019-11-06T16:05:06.012+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Client is disconnected
+2019-11-06T16:05:06.076+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Storlek på storlek-stringen
+2019-11-06T16:05:06.078+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 30820
+2019-11-06T16:05:06.078+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 6
+2019-11-06T16:05:06.084+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Client is disconnected
+2019-11-06T16:05:06.198+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Storlek på storlek-stringen
+2019-11-06T16:05:06.199+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 30779
+2019-11-06T16:05:06.199+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 6
+2019-11-06T16:05:06.199+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Client is disconnected
+2019-11-06T16:05:06.277+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 6
+2019-11-06T16:05:06.277+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Storlek på storlek-stringen
+2019-11-06T16:05:06.278+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 30807
+2019-11-06T16:05:06.278+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Client is disconnected
+2019-11-06T16:05:06.393+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Storlek på storlek-stringen
+2019-11-06T16:05:06.394+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 6
+2019-11-06T16:05:06.395+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 30867
+2019-11-06T16:05:06.397+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Client is disconnected
+2019-11-06T16:05:06.474+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Storlek på storlek-stringen
+2019-11-06T16:05:06.475+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 6
+2019-11-06T16:05:06.476+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 30884
+2019-11-06T16:05:06.479+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Client is disconnected
+2019-11-06T16:05:06.558+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Storlek på storlek-stringen
+2019-11-06T16:05:06.561+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 30873
+2019-11-06T16:05:06.561+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 6
+2019-11-06T16:05:06.562+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Client is disconnected
+2019-11-06T16:05:06.607+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Storlek på storlek-stringen
+2019-11-06T16:05:06.608+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 6
+2019-11-06T16:05:06.612+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 30737
+2019-11-06T16:05:06.640+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Client is disconnected
+2019-11-06T16:05:06.679+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Storlek på storlek-stringen
+2019-11-06T16:05:06.682+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 6
+2019-11-06T16:05:06.684+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 30850
+2019-11-06T16:05:06.690+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Client is disconnected
+2019-11-06T16:05:06.806+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 6
+2019-11-06T16:05:06.806+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Storlek på storlek-stringen
+2019-11-06T16:05:06.807+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 30832
+2019-11-06T16:05:06.807+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Client is disconnected
+2019-11-06T16:05:06.875+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Storlek på storlek-stringen
+2019-11-06T16:05:06.876+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 6
+2019-11-06T16:05:06.877+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 30890
+2019-11-06T16:05:06.879+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Client is disconnected
+2019-11-06T16:05:07.006+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Storlek på storlek-stringen
+2019-11-06T16:05:07.007+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 5
+2019-11-06T16:05:07.007+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 9060
+2019-11-06T16:05:07.007+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Client is disconnected
+2019-11-06T16:05:07.018+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Storlek på storlek-stringen
+2019-11-06T16:05:07.025+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 6
+2019-11-06T16:05:07.026+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 30872
+2019-11-06T16:05:07.026+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Client is disconnected
+2019-11-06T16:05:07.080+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Storlek på storlek-stringen
+2019-11-06T16:05:07.081+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 6
+2019-11-06T16:05:07.085+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 30736
+2019-11-06T16:05:07.090+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Client is disconnected
+2019-11-06T16:05:07.199+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 6
+2019-11-06T16:05:07.199+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Storlek på storlek-stringen
+2019-11-06T16:05:07.200+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 30960
+2019-11-06T16:05:07.200+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Client is disconnected
+2019-11-06T16:05:07.274+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Storlek på storlek-stringen
+2019-11-06T16:05:07.275+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 6
+2019-11-06T16:05:07.276+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 30865
+2019-11-06T16:05:07.278+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Client is disconnected
+2019-11-06T16:05:07.396+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 6
+2019-11-06T16:05:07.396+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Storlek på storlek-stringen
+2019-11-06T16:05:07.397+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 30770
+2019-11-06T16:05:07.399+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Client is disconnected
+2019-11-06T16:05:07.474+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Storlek på storlek-stringen
+2019-11-06T16:05:07.475+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 6
+2019-11-06T16:05:07.476+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 30698
+2019-11-06T16:05:07.478+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Client is disconnected
+2019-11-06T16:05:07.559+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Storlek på storlek-stringen
+2019-11-06T16:05:07.560+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 6
+2019-11-06T16:05:07.562+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 30723
+2019-11-06T16:05:07.566+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Client is disconnected
+2019-11-06T16:05:07.621+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Storlek på storlek-stringen
+2019-11-06T16:05:07.622+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 30702
+2019-11-06T16:05:07.622+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 6
+2019-11-06T16:05:07.622+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Client is disconnected
+2019-11-06T16:05:07.687+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Storlek på storlek-stringen
+2019-11-06T16:05:07.688+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 30628
+2019-11-06T16:05:07.688+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 6
+2019-11-06T16:05:07.705+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Client is disconnected
+2019-11-06T16:05:07.802+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Storlek på storlek-stringen
+2019-11-06T16:05:07.808+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 6
+2019-11-06T16:05:07.820+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 30601
+2019-11-06T16:05:07.822+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Client is disconnected
+2019-11-06T16:05:07.884+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Storlek på storlek-stringen
+2019-11-06T16:05:07.885+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 30762
+2019-11-06T16:05:07.885+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 6
+2019-11-06T16:05:07.887+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Client is disconnected
+2019-11-06T16:05:07.987+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Storlek på storlek-stringen
+2019-11-06T16:05:07.988+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 5
+2019-11-06T16:05:07.988+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 9036
+2019-11-06T16:05:08.004+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Client is disconnected
+2019-11-06T16:05:08.008+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Storlek på storlek-stringen
+2019-11-06T16:05:08.011+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 6
+2019-11-06T16:05:08.013+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 30660
+2019-11-06T16:05:08.017+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Client is disconnected
+2019-11-06T16:05:08.081+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 6
+2019-11-06T16:05:08.081+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Storlek på storlek-stringen
+2019-11-06T16:05:08.082+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 30735
+2019-11-06T16:05:08.091+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Client is disconnected
+2019-11-06T16:05:08.197+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Storlek på storlek-stringen
+2019-11-06T16:05:08.199+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 6
+2019-11-06T16:05:08.210+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 30637
+2019-11-06T16:05:08.211+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Client is disconnected
+2019-11-06T16:05:08.279+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Storlek på storlek-stringen
+2019-11-06T16:05:08.280+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 30715
+2019-11-06T16:05:08.280+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 6
+2019-11-06T16:05:08.287+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Client is disconnected
+2019-11-06T16:05:08.398+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Storlek på storlek-stringen
+2019-11-06T16:05:08.407+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 6
+2019-11-06T16:05:08.408+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 30946
+2019-11-06T16:05:08.408+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Client is disconnected
+2019-11-06T16:05:08.479+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Storlek på storlek-stringen
+2019-11-06T16:05:08.483+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 6
+2019-11-06T16:05:08.490+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 30854
+2019-11-06T16:05:08.499+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Client is disconnected
+2019-11-06T16:05:08.569+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Storlek på storlek-stringen
+2019-11-06T16:05:08.580+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 6
+2019-11-06T16:05:08.581+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 30621
+2019-11-06T16:05:08.619+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Storlek på storlek-stringen
+2019-11-06T16:05:08.620+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 6
+2019-11-06T16:05:08.624+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 30679
+2019-11-06T16:05:08.634+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Client is disconnected
+2019-11-06T16:05:08.635+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Client is disconnected
+2019-11-06T16:05:08.699+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 6
+2019-11-06T16:05:08.699+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Storlek på storlek-stringen
+2019-11-06T16:05:08.700+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 30795
+2019-11-06T16:05:08.700+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Client is disconnected
+2019-11-06T16:05:08.830+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 6
+2019-11-06T16:05:08.830+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Storlek på storlek-stringen
+2019-11-06T16:05:08.831+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 30857
+2019-11-06T16:05:08.832+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Client is disconnected
+2019-11-06T16:05:08.899+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Storlek på storlek-stringen
+2019-11-06T16:05:08.900+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 6
+2019-11-06T16:05:08.901+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 30816
+2019-11-06T16:05:08.919+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Client is disconnected
+2019-11-06T16:05:09.016+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 5
+2019-11-06T16:05:09.016+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Storlek på storlek-stringen
+2019-11-06T16:05:09.017+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 9070
+2019-11-06T16:05:09.017+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Client is disconnected
+2019-11-06T16:05:09.070+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Storlek på storlek-stringen
+2019-11-06T16:05:09.071+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 6
+2019-11-06T16:05:09.075+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 30790
+2019-11-06T16:05:09.079+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Client is disconnected
+2019-11-06T16:05:09.107+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Storlek på storlek-stringen
+2019-11-06T16:05:09.108+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 6
+2019-11-06T16:05:09.125+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 30711
+2019-11-06T16:05:09.155+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Client is disconnected
+2019-11-06T16:05:09.229+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Storlek på storlek-stringen
+2019-11-06T16:05:09.233+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 30730
+2019-11-06T16:05:09.233+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 6
+2019-11-06T16:05:09.233+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Client is disconnected
+2019-11-06T16:05:09.289+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 6
+2019-11-06T16:05:09.289+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Storlek på storlek-stringen
+2019-11-06T16:05:09.291+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 30922
+2019-11-06T16:05:09.344+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Client is disconnected
+2019-11-06T16:05:09.402+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Storlek på storlek-stringen
+2019-11-06T16:05:09.403+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 30769
+2019-11-06T16:05:09.403+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 6
+2019-11-06T16:05:09.409+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Client is disconnected
+2019-11-06T16:05:09.435+00:00 axis-00408cf5b0f1 [ INFO    ] server[0]: stopping server
+2019-11-06T16:05:09.486+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 6
+2019-11-06T16:05:09.486+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Storlek på storlek-stringen
+2019-11-06T16:05:09.487+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 30802
+2019-11-06T16:05:09.487+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Client is disconnected
+2019-11-06T16:05:09.560+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 6
+2019-11-06T16:05:09.560+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Storlek på storlek-stringen
+2019-11-06T16:05:09.561+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 30742
+2019-11-06T16:05:09.582+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Client is disconnected
+2019-11-06T16:05:09.683+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Storlek på storlek-stringen
+2019-11-06T16:05:09.684+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 6
+2019-11-06T16:05:09.691+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 30706
+2019-11-06T16:05:09.699+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Client is disconnected
+2019-11-06T16:05:09.730+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Storlek på storlek-stringen
+2019-11-06T16:05:09.733+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 6
+2019-11-06T16:05:09.734+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: 30753
+2019-11-06T16:05:09.735+00:00 axis-00408cf5b0f1 [ INFO    ] server[8632]: Client is disconnected
+2019-11-06T16:05:23.490+00:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[843]: [system] Reloaded configuration
+2019-11-06T16:05:24.406+00:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[843]: [system] Reloaded configuration
+2019-11-06T16:05:25.879+00:00 axis-00408cf5b0f1 [ INFO    ] upload.cgi: Uploaded '/tmp/server_1_0_mipsisa32r2el.eap' size:43070
+2019-11-06T16:05:29.999+00:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[843]: [system] Reloaded configuration
+2019-11-06T16:05:30.683+00:00 axis-00408cf5b0f1 [ INFO    ] upload.cgi: Package /tmp/server_1_0_mipsisa32r2el.eap installation OK
+2019-11-06T16:06:28.761+00:00 axis-00408cf5b0f1 [ INFO    ] server[0]: starting server
+2019-11-06T16:06:29.105+00:00 axis-00408cf5b0f1 [ INFO    ] server[11193]: Server running...
+2019-11-06T16:06:29.109+00:00 axis-00408cf5b0f1 [ INFO    ] server[11193]: Listening
+2019-11-06T16:06:52.525+00:00 axis-00408cf5b0f1 [ INFO    ] control.cgi: Application 'server' is running already pid=11193
+2019-11-06T16:07:08.185+00:00 axis-00408cf5b0f1 [ INFO    ] monolith[1021]: monolith[1021]: HTTP image/jpeg session terminated from 192.168.20.238
+2019-11-06T16:07:31.274+00:00 axis-00408cf5b0f1 [ INFO    ] server[0]: stopping server
+2019-11-06T16:07:39.350+00:00 axis-00408cf5b0f1 [ INFO    ] server[0]: starting server
+2019-11-06T16:07:39.569+00:00 axis-00408cf5b0f1 [ INFO    ] server[11548]: Server running...
+2019-11-06T16:07:39.574+00:00 axis-00408cf5b0f1 [ INFO    ] server[11548]: Listening
+2019-11-06T16:07:45.203+00:00 axis-00408cf5b0f1 [ WARNING ] server[11548]: Could not get VideoType from com.axis.VideoControl: Method "Get" with signature "ss" on interface "org.freedesktop.DBus.Properties" doesn't exist
+2019-11-06T16:07:45.207+00:00 axis-00408cf5b0f1 [ INFO    ] server[11548]: Thread CREATED ...
+2019-11-06T16:07:50.637+00:00 axis-00408cf5b0f1 [ INFO    ] server[11548]: message below from client:
+2019-11-06T16:07:50.638+00:00 axis-00408cf5b0f1 [ INFO    ] server[11548]: resolution=800x450&fps=1
+2019-11-06T16:07:50.638+00:00 axis-00408cf5b0f1 [ INFO    ] server[11548]: resolution=800x450&fps=1
+2019-11-06T16:07:50.643+00:00 axis-00408cf5b0f1 [ INFO    ] server[11548]: after int row.....
+2019-11-06T16:07:51.714+00:00 axis-00408cf5b0f1 [ INFO    ] server[11548]: 6
+2019-11-06T16:07:51.714+00:00 axis-00408cf5b0f1 [ INFO    ] server[11548]: Storlek på storlek-stringen
+2019-11-06T16:07:51.715+00:00 axis-00408cf5b0f1 [ INFO    ] server[11548]: 31934
+2019-11-06T16:07:52.713+00:00 axis-00408cf5b0f1 [ INFO    ] server[11548]: Storlek på storlek-stringen
+2019-11-06T16:07:52.714+00:00 axis-00408cf5b0f1 [ INFO    ] server[11548]: 31604
+2019-11-06T16:07:52.714+00:00 axis-00408cf5b0f1 [ INFO    ] server[11548]: 6
+2019-11-06T16:07:53.714+00:00 axis-00408cf5b0f1 [ INFO    ] server[11548]: 6
+2019-11-06T16:07:53.714+00:00 axis-00408cf5b0f1 [ INFO    ] server[11548]: Storlek på storlek-stringen
+2019-11-06T16:07:53.715+00:00 axis-00408cf5b0f1 [ INFO    ] server[11548]: 31804
+2019-11-06T16:07:54.713+00:00 axis-00408cf5b0f1 [ INFO    ] server[11548]: 6
+2019-11-06T16:07:54.713+00:00 axis-00408cf5b0f1 [ INFO    ] server[11548]: Storlek på storlek-stringen
+2019-11-06T16:07:54.714+00:00 axis-00408cf5b0f1 [ INFO    ] server[11548]: 31916
+2019-11-06T16:07:55.713+00:00 axis-00408cf5b0f1 [ INFO    ] server[11548]: 6
+2019-11-06T16:07:55.713+00:00 axis-00408cf5b0f1 [ INFO    ] server[11548]: Storlek på storlek-stringen
+2019-11-06T16:07:55.714+00:00 axis-00408cf5b0f1 [ INFO    ] server[11548]: 31840
+2019-11-06T16:08:22.077+00:00 axis-00408cf5b0f1 [ INFO    ] server[0]: stopping server
+2019-11-06T16:08:29.932+00:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[843]: [system] Reloaded configuration
+2019-11-06T16:08:30.321+00:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[843]: [system] Reloaded configuration
+2019-11-06T16:09:04.292+00:00 axis-00408cf5b0f1 [ INFO    ] upload.cgi: Uploaded '/tmp/server_1_0_mipsisa32r2el.eap' size:43059
+2019-11-06T16:09:05.758+00:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[843]: [system] Reloaded configuration
+2019-11-06T16:09:05.910+00:00 axis-00408cf5b0f1 [ INFO    ] upload.cgi: Package /tmp/server_1_0_mipsisa32r2el.eap installation OK
+2019-11-06T16:09:10.220+00:00 axis-00408cf5b0f1 [ INFO    ] server[0]: starting server
+2019-11-06T16:09:10.380+00:00 axis-00408cf5b0f1 [ INFO    ] server[12263]: Server running...
+2019-11-06T16:09:10.383+00:00 axis-00408cf5b0f1 [ INFO    ] server[12263]: Listening
+2019-11-06T16:09:58.941+00:00 axis-00408cf5b0f1 [ INFO    ] server[0]: stopping server
+2019-11-06T16:10:06.433+00:00 axis-00408cf5b0f1 [ INFO    ] server[0]: starting server
+2019-11-06T16:10:06.641+00:00 axis-00408cf5b0f1 [ INFO    ] server[12543]: Server running...
+2019-11-06T16:10:06.644+00:00 axis-00408cf5b0f1 [ INFO    ] server[12543]: Listening
+2019-11-06T16:11:47.344+00:00 axis-00408cf5b0f1 [ INFO    ] server[0]: stopping server
+2019-11-06T16:11:51.262+00:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[843]: [system] Reloaded configuration
+2019-11-06T16:12:04.132+00:00 axis-00408cf5b0f1 [ INFO    ] upload.cgi: Uploaded '/tmp/server_1_0_mipsisa32r2el.eap' size:43056
+2019-11-06T16:12:04.134+00:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[843]: message repeated 3 times: [ [system] Reloaded configuration]
+2019-11-06T16:12:05.703+00:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[843]: [system] Reloaded configuration
+2019-11-06T16:12:05.711+00:00 axis-00408cf5b0f1 [ INFO    ] upload.cgi: Package /tmp/server_1_0_mipsisa32r2el.eap installation OK
