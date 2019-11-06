@@ -160,7 +160,7 @@ void * socketThread(void *arg)
 		}
 
                 int size_image = strlen(data);
-		//data = encrypt_char(data, "ABC", img_size);
+		data = encrypt_char(data, "ABC", img_size);
 
 		//data = encrypt_char(data, "ABC", img_size);
 
@@ -211,6 +211,10 @@ char *encrypt_char(char *message, char *key, int img_size){
    encrypt_msg[img_size]='\0';
    return encrypt_msg;
 }
+
+	return fmod( pow( m, e) , n );
+
+
 
 
 

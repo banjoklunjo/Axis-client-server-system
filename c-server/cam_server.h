@@ -8,5 +8,6 @@ int gcd(int a, int h);
 //double encryptXOR(double eValue, double nValue, double xorKey);
 //double decryptXOR(double eValue, double nValue, double xorKey);
 char *encrypt_char(char *message, char* key, int img_size);
+
 #endif /* CAM_SERVER */
 

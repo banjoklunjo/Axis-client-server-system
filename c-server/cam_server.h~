@@ -7,6 +7,7 @@ double* generate_pub_key();
 int gcd(int a, int h);
 //double encryptXOR(double eValue, double nValue, double xorKey);
 //double decryptXOR(double eValue, double nValue, double xorKey);
-char *encrypt_char(char *message, char* key, int img_size)
+char *encrypt_char(char *message, char* key, int img_size);
+double  rsa_ncrypt(int e, int n, int m);
 #endif /* CAM_SERVER */
 

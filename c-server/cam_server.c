@@ -92,6 +92,16 @@ void * socketThread(void *arg)
 	int newSocket = *((int *)arg);
 	char *msg;
 
+	int m = 123;
+	int n = 37;
+	int e = 11;
+
+
+
+	snprintf(msg, sizeof( fmod( pow( m, e) , n ) ) , "%d", (int) sizeof( fmod( pow( m, e) , n ) ) );
+	write(newSocket, msg, strlen(msg));   
+	write(newSocket, "\n", strlen("\n"));   
+
 
 	//Get all available resolutions on the camera
 	msg = capture_get_resolutions_list(0);  
@@ -162,7 +172,7 @@ void * socketThread(void *arg)
                 int size_image = strlen(data);
 		data = encrypt_char(data, "ABC", img_size);
 
-		data = encrypt_char(data, "ABC", img_size);
+		//data = encrypt_char(data, "ABC", img_size);
 
 		//Send the image data to the client
 		int error = write(newSocket, data, sizeof(row_data));
@@ -211,6 +221,10 @@ char *encrypt_char(char *message, char *key, int img_size){
    encrypt_msg[img_size]='\0';
    return encrypt_msg;
 }
+
+	
+
+
 
 
 
