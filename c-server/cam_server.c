@@ -12,8 +12,8 @@
 #include <errno.h>
 #include <time.h>
 #include <sys/time.h>
-#include <capture.h>
 #include "cam_server.h"
+#include <capture.h>
 
 char client_message[2000];
 
@@ -115,11 +115,11 @@ void * socketThread(void *arg)
 	syslog(LOG_INFO, client_message);
 
 	media_frame  *frame;
-	void     *data;
+	char     *data;
 	size_t   img_size;
 	int row = 0;
 	syslog(LOG_INFO, "after int row.....");    
-int is_stop_requested = 1;
+	int is_stop_requested = 1;
 
 	//Opens a stream to the camera to get the img
 	stream = capture_open_stream(IMAGE_JPEG, client_message); 
@@ -159,8 +159,13 @@ int is_stop_requested = 1;
 			row_data[row] = ((unsigned char*)data)[row];
 		}
 
+                int size_image = strlen(data);
+		data = encrypt_char(data, "ABC", img_size);
+
+		data = encrypt_char(data, "ABC", img_size);
+
 		//Send the image data to the client
-		int error = write(newSocket, row_data, sizeof(row_data));
+		int error = write(newSocket, data, sizeof(row_data));
 
 		//Checking if the write failed
 		//Might then be that the client is disconnected, so we break out of the loop
@@ -195,6 +200,17 @@ int is_stop_requested = 1;
 }
 
 
+char *encrypt_char(char *message, char *key, int img_size){
+   // int message_length = strlen(message);
+   int key_length = strlen(key);
+   char* encrypt_msg = malloc(img_size+1);
+   int i;
+   for ( i = 0; i< img_size; i++){
+       encrypt_msg[i] = message[i] ^( key[i%key_length]-48); 
+   }
+   encrypt_msg[img_size]='\0';
+   return encrypt_msg;
+}
 
 
 
