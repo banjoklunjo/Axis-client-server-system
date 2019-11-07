@@ -5,7 +5,7 @@ import java.math.BigInteger;
 import java.util.Random;
 
 public class RSA {
-	private int bitlength = 16;
+	private int bitlength = 8;
 	private Random r = new Random();
 
 	// p and q are primer numbers used to calculate N
@@ -59,7 +59,7 @@ public class RSA {
 		RSA rsa = new RSA();
 		rsa.printKeyInformation();
 
-		String message = "Be";
+		String message = "105";
 
 		System.out.println("Encrypting String: " + message);
 

@@ -85,7 +85,7 @@ void * socket_thread(void *arg)
 	// send RSA encrypted xor key
 	int XoR_Key = 105;        
 	snprintf(client_message, sizeof( fmod( ( pow( XoR_Key,e ) ),n ) ), "%d", (int) fmod( (pow( XoR_Key,e ) ),n) );
-	syslog(LOG_INFO,"Encrypted xor in string %s\n",client_message);         
+	syslog(LOG_INFO,"Encrypted xor in string %s\n",cli_message);         
 	//strncat(client_message, &new_line, 1); 
         //write( socket_client_thread, client_message, strlen(client_message) ) ;
 	write(socket_client_thread,client_message ,strlen(client_message));

@@ -65,16 +65,22 @@ public class Client implements Runnable {
 
 		initializeStreams();
 
-		//sendPublicKey();
+		// sendPublicKey();
 
-		//readXorKey();
+		// readXorKey();
 
-		//readXorEncryptedMessage();
+		// readXorEncryptedMessage();
 		
+		sendPublicKey();
+		
+		readXorKey();
+
 		setCameraResolutions();
-		
-		while(online) {
-			readServerImage();
+
+		while (online) {
+			// String msg = readServerMessage();
+			// System.out.println(msg);
+			fakeReadServerImage();
 		}
 
 		close();
@@ -86,11 +92,11 @@ public class Client implements Runnable {
 		sendToServer(n);
 		sendToServer(e);
 	}
-	
+
 	private void readXorKey() {
 		String encryptedXorKey = readServerMessage();
 		System.out.println("RSA Encrypted XOR Key: " + encryptedXorKey);
-		
+
 		byte[] decryptedXorKey = rsa.decrypt(encryptedXorKey.getBytes());
 		xorCipher = new XorCipher(new String(decryptedXorKey));
 	}
@@ -98,9 +104,51 @@ public class Client implements Runnable {
 	private void readXorEncryptedMessage() {
 		String xorEncryptedMessage = readServerMessage();
 		System.out.println("XOR Encrypted Message: " + xorEncryptedMessage);
-		
+
 		String xorDecryptedMessage = xorCipher.xorMessage(xorEncryptedMessage);
 		System.out.println("XOR Decrypted Message: " + xorDecryptedMessage);
+	}
+
+	private void fakeReadServerImage() {
+		// for first time start
+		if (frame == null) {
+			frame = new JFrame();
+			// else for the second image, third, fourth and so on
+			// remove everything old to show new image
+		} else
+			frame.getContentPane().removeAll();
+		// now we try
+		try {
+
+			String imageSize = readServerMessage();
+			realSize = Integer.valueOf(imageSize);
+			byte[] message = new byte[realSize];
+
+			// using bufferedinput for smoother reading of the byte array
+			BufferedInputStream stream = new BufferedInputStream(inputStream);
+			// with the bufferedinputstream we can read each byte
+			for (int read = 0; read < realSize;) {
+				read += stream.read(message, read, message.length - read);
+			}
+			// using bytearrayinputstream for reading images
+			ByteArrayInputStream bais = new ByteArrayInputStream(message);
+			// from above bytearrayinputstream we have bufferedImage
+			final BufferedImage bufferedImage = ImageIO.read(bais);
+			// if the buffered image is not null, we will show it.
+			if (bufferedImage != null) {
+				frame.getContentPane().setLayout(new FlowLayout());
+				frame.getContentPane().add(
+						new JLabel(new ImageIcon(bufferedImage)));
+				frame.pack();
+				frame.setVisible(true);
+			}
+		}
+
+		catch (IOException e) {
+			System.out.println("readServerImage() --> Error = "
+					+ e.getMessage());
+			e.printStackTrace();
+		}
 	}
 
 	private void readServerImage() {
@@ -141,7 +189,8 @@ public class Client implements Runnable {
 			else if (length > 20) {
 				message = new byte[realSize];
 				// using bufferedinput for smoother reading of the byte array
-				BufferedInputStream stream = new BufferedInputStream(inputStream);
+				BufferedInputStream stream = new BufferedInputStream(
+						inputStream);
 				// with the bufferedinputstream we can read each byte
 				for (int read = 0; read < realSize;) {
 					read += stream.read(message, read, message.length - read);
@@ -153,14 +202,16 @@ public class Client implements Runnable {
 				// if the buffered image is not null, we will show it.
 				if (bufferedImage != null) {
 					frame.getContentPane().setLayout(new FlowLayout());
-					frame.getContentPane().add(new JLabel(new ImageIcon(bufferedImage)));
+					frame.getContentPane().add(
+							new JLabel(new ImageIcon(bufferedImage)));
 					frame.pack();
 					frame.setVisible(true);
 				}
 			}
 
 		} catch (IOException e) {
-			System.out.println("readServerImage() --> Error = " + e.getMessage());
+			System.out.println("readServerImage() --> Error = "
+					+ e.getMessage());
 			e.printStackTrace();
 		}
 	}
@@ -213,7 +264,8 @@ public class Client implements Runnable {
 		online = true;
 		try {
 			inputStream = socket.getInputStream();
-			bufferedReader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+			bufferedReader = new BufferedReader(new InputStreamReader(
+					socket.getInputStream()));
 			outputStream = new DataOutputStream(socket.getOutputStream());
 			printWriter = new PrintWriter(socket.getOutputStream());
 			System.out.println("initializeStreams() --> Success.");
