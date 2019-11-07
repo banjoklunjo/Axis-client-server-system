@@ -8,17 +8,7 @@
 2019-11-06T12:54:55.806+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1269]: disk.c : Disk disruption detection status changed for NetworkShare. Status = 'disruption'
 2019-11-06T12:54:55.806+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1269]: disk.c : Disk disruption detection status changed for SD_DISK. Status = 'disruption'
 2019-11-06T12:55:01.149+00:00 axis-00408cf5b0f1 [ WARNING ] blinkenlights[1153]: CancelState - Failed to cancel state.
-2019-11-06T12:56:53.190+00:00 axis-00408cf5b0f1 [ INFO    ] kernel: potentially unexpected fatal signal 11.
-2019-11-06T12:58:45.179+00:00 axis-00408cf5b0f1 [ INFO    ] kernel: potentially unexpected fatal signal 11.
-2019-11-06T13:04:51.130+00:00 axis-00408cf5b0f1 [ INFO    ] kernel: potentially unexpected fatal signal 11.
-2019-11-06T13:09:29.877+00:00 axis-00408cf5b0f1 [ INFO    ] kernel: potentially unexpected fatal signal 11.
-2019-11-06T13:13:26.264+00:00 axis-00408cf5b0f1 [ INFO    ] kernel: potentially unexpected fatal signal 11.
-2019-11-06T13:20:42.229+00:00 axis-00408cf5b0f1 [ INFO    ] kernel: potentially unexpected fatal signal 11.
-2019-11-06T13:22:21.532+00:00 axis-00408cf5b0f1 [ INFO    ] kernel: potentially unexpected fatal signal 11.
-2019-11-06T13:23:40.959+00:00 axis-00408cf5b0f1 [ INFO    ] kernel: potentially unexpected fatal signal 11.
 2019-11-06T13:54:55.595+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1269]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-11-06T13:56:17.623+00:00 axis-00408cf5b0f1 [ INFO    ] kernel: potentially unexpected fatal signal 11.
-2019-11-06T14:13:46.374+00:00 axis-00408cf5b0f1 [ INFO    ] kernel: potentially unexpected fatal signal 11.
 2019-11-06T14:54:55.595+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1269]: Failed to get /sys/ path for /dev/mmcblk0p1
 2019-11-06T15:53:45.259+00:00 axis-00408cf5b0f1 [ WARNING ] server[8632]: Could not get VideoType from com.axis.VideoControl: Method "Get" with signature "ss" on interface "org.freedesktop.DBus.Properties" doesn't exist
 2019-11-06T15:54:55.594+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1269]: Failed to get /sys/ path for /dev/mmcblk0p1
@@ -347,7 +337,6 @@
 2019-11-06T17:31:48.403+00:00 axis-00408cf5b0f1 [ WARNING ] tourplayerd[2078]: Tour sample syncing fault, restoring
 2019-11-06T17:31:48.403+00:00 axis-00408cf5b0f1 [ WARNING ] tourplayerd[2078]: Tour sample syncing fault, restoring
 2019-11-06T17:31:48.404+00:00 axis-00408cf5b0f1 [ WARNING ] scheduled: Time was manipulated!
-2019-11-06T17:31:49.949+00:00 axis-00408cf5b0f1 [ INFO    ] kernel: potentially unexpected fatal signal 11.
 2019-11-06T17:31:50.543+00:00 axis-00408cf5b0f1 [ WARNING ] tourplayerd[2078]: Tour sample syncing fault, restoring
 2019-11-06T17:42:38.604+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1269]: Failed to get /sys/ path for /dev/mmcblk0p1
 2019-11-06T18:42:38.594+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1269]: Failed to get /sys/ path for /dev/mmcblk0p1
@@ -366,8 +355,6 @@
 2019-11-07T07:42:38.596+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1269]: Failed to get /sys/ path for /dev/mmcblk0p1
 2019-11-07T08:42:38.593+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1269]: Failed to get /sys/ path for /dev/mmcblk0p1
 2019-11-07T09:38:58.063+00:00 axis-00408cf5b0f1 [ WARNING ] server[21140]: Could not get VideoType from com.axis.VideoControl: Method "Get" with signature "ss" on interface "org.freedesktop.DBus.Properties" doesn't exist
-2019-11-07T09:38:58.086+00:00 axis-00408cf5b0f1 [ INFO    ] kernel: potentially unexpected fatal signal 11.
-2019-11-07T09:40:46.464+00:00 axis-00408cf5b0f1 [ INFO    ] kernel: potentially unexpected fatal signal 11.
 2019-11-07T09:40:46.527+00:00 axis-00408cf5b0f1 [ WARNING ] server[21900]: Could not get VideoType from com.axis.VideoControl: Method "Get" with signature "ss" on interface "org.freedesktop.DBus.Properties" doesn't exist
 2019-11-07T09:42:38.602+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1269]: Failed to get /sys/ path for /dev/mmcblk0p1
 2019-11-07T09:46:25.459+00:00 axis-00408cf5b0f1 [ WARNING ] server[22383]: Could not get VideoType from com.axis.VideoControl: Method "Get" with signature "ss" on interface "org.freedesktop.DBus.Properties" doesn't exist
@@ -382,3 +369,50 @@
 2019-11-07T10:59:15.989+00:00 axis-00408cf5b0f1 [ WARNING ] server: Could not get VideoType from com.axis.VideoControl: Method "Get" with signature "ss" on interface "org.freedesktop.DBus.Properties" doesn't exist
 2019-11-07T11:15:28.729+00:00 axis-00408cf5b0f1 [ WARNING ] server: Could not get VideoType from com.axis.VideoControl: Method "Get" with signature "ss" on interface "org.freedesktop.DBus.Properties" doesn't exist
 2019-11-07T11:21:19.837+00:00 axis-00408cf5b0f1 [ WARNING ] server: Could not get VideoType from com.axis.VideoControl: Method "Get" with signature "ss" on interface "org.freedesktop.DBus.Properties" doesn't exist
+2019-11-07T11:31:50.766+00:00 axis-00408cf5b0f1 [ WARNING ] server[27496]: Could not get VideoType from com.axis.VideoControl: Method "Get" with signature "ss" on interface "org.freedesktop.DBus.Properties" doesn't exist
+2019-11-07T11:31:57.083+00:00 axis-00408cf5b0f1 [ INFO    ] kernel: potentially unexpected fatal signal 11.
+2019-11-07T11:42:38.595+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1269]: Failed to get /sys/ path for /dev/mmcblk0p1
+2019-11-07T11:45:21.833+00:00 axis-00408cf5b0f1 [ WARNING ] server[28450]: Could not get VideoType from com.axis.VideoControl: Method "Get" with signature "ss" on interface "org.freedesktop.DBus.Properties" doesn't exist
+2019-11-07T11:45:32.099+00:00 axis-00408cf5b0f1 [ WARNING ] server[28450]: Could not get VideoType from com.axis.VideoControl: Method "Get" with signature "ss" on interface "org.freedesktop.DBus.Properties" doesn't exist
+2019-11-07T12:42:38.599+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1269]: Failed to get /sys/ path for /dev/mmcblk0p1
+2019-11-07T12:53:11.387+00:00 axis-00408cf5b0f1 [ INFO    ] kernel: potentially unexpected fatal signal 11.
+2019-11-07T13:21:22.356+00:00 axis-00408cf5b0f1 [ WARNING ] server[2310]: Could not get VideoType from com.axis.VideoControl: Method "Get" with signature "ss" on interface "org.freedesktop.DBus.Properties" doesn't exist
+2019-11-07T13:22:49.401+00:00 axis-00408cf5b0f1 [ WARNING ] server[2803]: Could not get VideoType from com.axis.VideoControl: Method "Get" with signature "ss" on interface "org.freedesktop.DBus.Properties" doesn't exist
+2019-11-07T13:42:38.600+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1269]: Failed to get /sys/ path for /dev/mmcblk0p1
+2019-11-07T13:49:58.486+00:00 axis-00408cf5b0f1 [ WARNING ] server[3316]: Could not get VideoType from com.axis.VideoControl: Method "Get" with signature "ss" on interface "org.freedesktop.DBus.Properties" doesn't exist
+2019-11-07T13:50:14.515+00:00 axis-00408cf5b0f1 [ INFO    ] kernel: potentially unexpected fatal signal 11.
+2019-11-07T13:51:55.084+00:00 axis-00408cf5b0f1 [ INFO    ] kernel: potentially unexpected fatal signal 11.
+2019-11-07T14:21:10.415+00:00 axis-00408cf5b0f1 [ WARNING ] server[6122]: Could not get VideoType from com.axis.VideoControl: Method "Get" with signature "ss" on interface "org.freedesktop.DBus.Properties" doesn't exist
+2019-11-07T14:22:56.709+00:00 axis-00408cf5b0f1 [ WARNING ] server[6122]: Could not get VideoType from com.axis.VideoControl: Method "Get" with signature "ss" on interface "org.freedesktop.DBus.Properties" doesn't exist
+2019-11-07T14:23:57.764+00:00 axis-00408cf5b0f1 [ WARNING ] server[6122]: Could not get VideoType from com.axis.VideoControl: Method "Get" with signature "ss" on interface "org.freedesktop.DBus.Properties" doesn't exist
+2019-11-07T14:24:21.619+00:00 axis-00408cf5b0f1 [ WARNING ] server[6122]: Could not get VideoType from com.axis.VideoControl: Method "Get" with signature "ss" on interface "org.freedesktop.DBus.Properties" doesn't exist
+2019-11-07T14:25:30.216+00:00 axis-00408cf5b0f1 [ WARNING ] tourplayerd[2078]: Tour sample syncing fault, restoring
+2019-11-07T14:29:06.732+00:00 axis-00408cf5b0f1 [ INFO    ] kernel: potentially unexpected fatal signal 11.
+2019-11-07T14:31:50.532+00:00 axis-00408cf5b0f1 [ WARNING ] server[6122]: Could not get VideoType from com.axis.VideoControl: Method "Get" with signature "ss" on interface "org.freedesktop.DBus.Properties" doesn't exist
+2019-11-07T14:34:02.026+00:00 axis-00408cf5b0f1 [ WARNING ] server[6122]: Could not get VideoType from com.axis.VideoControl: Method "Get" with signature "ss" on interface "org.freedesktop.DBus.Properties" doesn't exist
+2019-11-07T14:42:38.629+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1269]: Failed to get /sys/ path for /dev/mmcblk0p1
+2019-11-07T14:46:00.229+00:00 axis-00408cf5b0f1 [ INFO    ] kernel: potentially unexpected fatal signal 11.
+2019-11-07T14:52:12.640+00:00 axis-00408cf5b0f1 [ INFO    ] kernel: potentially unexpected fatal signal 11.
+2019-11-07T14:56:09.340+00:00 axis-00408cf5b0f1 [ INFO    ] kernel: potentially unexpected fatal signal 11.
+2019-11-07T14:59:11.269+00:00 axis-00408cf5b0f1 [ INFO    ] kernel: potentially unexpected fatal signal 11.
+2019-11-07T15:03:28.350+00:00 axis-00408cf5b0f1 [ INFO    ] kernel: potentially unexpected fatal signal 11.
+2019-11-07T15:04:15.173+00:00 axis-00408cf5b0f1 [ INFO    ] kernel: potentially unexpected fatal signal 11.
+2019-11-07T15:05:23.989+00:00 axis-00408cf5b0f1 [ INFO    ] kernel: potentially unexpected fatal signal 11.
+2019-11-07T15:08:50.274+00:00 axis-00408cf5b0f1 [ WARNING ] server[11007]: Could not get VideoType from com.axis.VideoControl: Method "Get" with signature "ss" on interface "org.freedesktop.DBus.Properties" doesn't exist
+2019-11-07T15:08:56.006+00:00 axis-00408cf5b0f1 [ INFO    ] kernel: potentially unexpected fatal signal 11.
+2019-11-07T15:14:05.087+00:00 axis-00408cf5b0f1 [ INFO    ] kernel: potentially unexpected fatal signal 11.
+2019-11-07T15:20:34.216+00:00 axis-00408cf5b0f1 [ WARNING ] server[12283]: Could not get VideoType from com.axis.VideoControl: Method "Get" with signature "ss" on interface "org.freedesktop.DBus.Properties" doesn't exist
+2019-11-07T15:20:39.062+00:00 axis-00408cf5b0f1 [ INFO    ] kernel: potentially unexpected fatal signal 11.
+2019-11-07T15:23:06.207+00:00 axis-00408cf5b0f1 [ INFO    ] kernel: potentially unexpected fatal signal 11.
+2019-11-07T15:26:28.654+00:00 axis-00408cf5b0f1 [ INFO    ] kernel: potentially unexpected fatal signal 11.
+2019-11-07T15:28:23.555+00:00 axis-00408cf5b0f1 [ WARNING ] server[14242]: Could not get VideoType from com.axis.VideoControl: Method "Get" with signature "ss" on interface "org.freedesktop.DBus.Properties" doesn't exist
+2019-11-07T15:28:28.876+00:00 axis-00408cf5b0f1 [ INFO    ] kernel: potentially unexpected fatal signal 11.
+2019-11-07T15:30:47.153+00:00 axis-00408cf5b0f1 [ WARNING ] server[15505]: Could not get VideoType from com.axis.VideoControl: Method "Get" with signature "ss" on interface "org.freedesktop.DBus.Properties" doesn't exist
+2019-11-07T15:30:52.054+00:00 axis-00408cf5b0f1 [ INFO    ] kernel: potentially unexpected fatal signal 11.
+2019-11-07T15:34:01.419+00:00 axis-00408cf5b0f1 [ INFO    ] kernel: potentially unexpected fatal signal 11.
+2019-11-07T15:35:53.660+00:00 axis-00408cf5b0f1 [ INFO    ] kernel: potentially unexpected fatal signal 11.
+2019-11-07T15:37:13.999+00:00 axis-00408cf5b0f1 [ INFO    ] kernel: potentially unexpected fatal signal 11.
+2019-11-07T15:41:03.980+00:00 axis-00408cf5b0f1 [ INFO    ] kernel: potentially unexpected fatal signal 11.
+2019-11-07T15:42:18.673+00:00 axis-00408cf5b0f1 [ INFO    ] kernel: potentially unexpected fatal signal 11.
+2019-11-07T15:42:38.600+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1269]: Failed to get /sys/ path for /dev/mmcblk0p1
+2019-11-07T15:43:11.331+00:00 axis-00408cf5b0f1 [ INFO    ] kernel: potentially unexpected fatal signal 11.

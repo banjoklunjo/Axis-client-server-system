@@ -34,13 +34,15 @@ int init_socket();
 void send_message_to_client( int socket, char* message );
 
 void * socket_thread(void *arg);
+
+char *encrypt_char(char *message, char *key, int img_size);
 /*------------------------------------------------------------------------*/
 
 
 
 /*---------------------------- VARIABLES ---------------------------------*/
 #define PADDING RSA_PKCS1_PADDING
-#define PORT_NUMBER 55752
+#define PORT_NUMBER 55777
 #define XOR_KEY_LENGTH 8
 
 int server_socket;
@@ -75,21 +77,21 @@ void * socket_thread(void *arg)
         char new_line = '\n';
         
 	// receive public key from client
-        recv( socket_client_thread , client_message , 2000 , 0 );
-        int e = atoi( client_message ); // e
-        memset(client_message, 0, 2000);
         recv(socket_client_thread , client_message , 2000 , 0);
         long long int n = atoi(client_message); // n
         memset(client_message, 0, 2000);
-	
+        recv( socket_client_thread , client_message , 2000 , 0 );
+        int e = atoi( client_message ); // e
+        memset(client_message, 0, 2000);
+
 	// send RSA encrypted xor key
-	int XoR_Key = 105;        
-	snprintf(client_message, sizeof( fmod( ( pow( XoR_Key,e ) ),n ) ), "%d", (int) fmod( (pow( XoR_Key,e ) ),n) );
-	syslog(LOG_INFO,"Encrypted xor in string %s\n",cli_message);         
-	//strncat(client_message, &new_line, 1); 
-        //write( socket_client_thread, client_message, strlen(client_message) ) ;
-	write(socket_client_thread,client_message ,strlen(client_message));
-	write(socket_client_thread, "\n", sizeof("\n"));
+	int XoR_Key = 5;
+        double pow_value = pow( XoR_Key,e );
+        double fmod_value = fmod( pow_value, n );       
+	sprintf(client_message, "%d", (int) fmod_value);
+      
+	strncat(client_message, &new_line, 1); 
+        write( socket_client_thread, client_message, strlen(client_message) ) ;
 
         // send resolutions
         char *resolutions = capture_get_resolutions_list(0);
@@ -101,14 +103,11 @@ void * socket_thread(void *arg)
         media_frame  *frame;
         char *data;
 
-        size_t   img_size;
+        size_t img_size;
 	
 	recv(socket_client_thread , client_message , 2000 , 0);
 
 	stream = capture_open_stream(IMAGE_JPEG, client_message); 
-
-	int val = 0;
-        int row = 0;
 
 	while(1) 
         {
@@ -128,15 +127,12 @@ void * socket_thread(void *arg)
         	strncat(message, &new_line, 1); 
         	write( socket_client_thread, message, strlen(message) ) ;
 
-                unsigned char row_data[img_size]; 
-		for(row = 0; row < img_size; row++){
-			row_data[row] = ((unsigned char*)data)[row];
-		} 
-                write(socket_client_thread, row_data, sizeof(row_data));  
+		data = encrypt_char(data, XoR_Key, sizeof(data));
+
+                write(socket_client_thread, data, sizeof(data));  
 
 		//Emptying the variables to be sure nothing is stored 
 		memset(data, 0, sizeof(data));
-		memset(row_data, 0, sizeof(row_data));
 		capture_frame_free(frame);
 
 	}
@@ -253,6 +249,19 @@ int init_socket()
   	else syslog(LOG_INFO,"Error: A client was not able to connect to the server\n");
   }
   
+}
+/*------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------*/
+char *encrypt_char(char *message, char *key, int img_size){
+   // int message_length = strlen(message);
+   int key_length = strlen(key);
+   char* encrypt_msg = malloc(img_size+1);
+   int i;
+   for ( i = 0; i< img_size; i++){
+       encrypt_msg[i] = message[i] ^( key[i%key_length]-48); 
+   }
+   encrypt_msg[img_size]='\0';
+   return encrypt_msg;
 }
 /*------------------------------------------------------------------------*/
 /*------------------------------------------------------------------------*/

@@ -1,6 +1,7 @@
 package cryptography;
 
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.util.Random;
 
@@ -53,13 +54,19 @@ public class RSA {
 	public BigInteger getE() {
 		return this.e;
 	}
+	
+	public BigInteger RSADecrypt(int key) {
+		return new BigDecimal(key).toBigInteger().modPow(
+				new BigDecimal(d).toBigInteger(),
+				new BigDecimal(n).toBigInteger());
+}
 
 	
 	public static void main(String[] args) throws IOException {
 		RSA rsa = new RSA();
 		rsa.printKeyInformation();
 
-		String message = "105";
+		String message = "1";
 
 		System.out.println("Encrypting String: " + message);
 
