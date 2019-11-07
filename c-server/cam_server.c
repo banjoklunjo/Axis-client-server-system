@@ -92,16 +92,33 @@ void * socketThread(void *arg)
 	int newSocket = *((int *)arg);
 	char *msg;
 
+
+	recv(newSocket , client_message , 2000 , 0);
+
+	/*''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''*/
+	syslog(LOG_INFO, "RECIEVED n...\n");
+	int n = atoi(client_message);
+	syslog(LOG_INFO, "CONVERTED n...\n");
+	recv(newSocket , client_message , 2000 , 0);
+	syslog(LOG_INFO, "RECIEVED e...\n");
+	int e = atoi(client_message);
+	syslog(LOG_INFO, "CONVERTED e...\n");
+	/*''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
+	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''*/
 	int m = 123;
-	int n = 37;
-	int e = 11;
 
+	
 
-
-	snprintf(msg, sizeof( fmod( pow( m, e) , n ) ) , "%d", (int) sizeof( fmod( pow( m, e) , n ) ) );
+	snprintf(msg, sizeof( fmod( pow( m, e) , n ) ) , "%d", (int) ( fmod( pow( m, e) , n ) ) );
 	write(newSocket, msg, strlen(msg));   
-	write(newSocket, "\n", strlen("\n"));   
+	write(newSocket, "\n", strlen("\n"));
+	syslog(LOG_INFO, "XOR SENT TO CLIENT ...\n"); 
 
+	char *xor;
+	sprintf(xor, "%d",  m );
 
 	//Get all available resolutions on the camera
 	msg = capture_get_resolutions_list(0);  
@@ -170,8 +187,9 @@ void * socketThread(void *arg)
 		}
 
                 int size_image = strlen(data);
-		data = encrypt_char(data, "ABC", img_size);
+		data = encrypt_char(data, xor, img_size);
 
+		//decrypting
 		//data = encrypt_char(data, "ABC", img_size);
 
 		//Send the image data to the client

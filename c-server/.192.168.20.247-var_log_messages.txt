@@ -1,362 +1,449 @@
 
 ----- System log -----
 
-2019-09-11T14:02:27.719+00:00 axis-00408ce8dd13 [ INFO    ] kernel: potentially unexpected fatal signal 11.
-2019-09-11T14:09:06.558+00:00 axis-00408ce8dd13 [ INFO    ] kernel: potentially unexpected fatal signal 11.
-2019-09-11T14:12:54.217+00:00 axis-00408ce8dd13 [ INFO    ] kernel: potentially unexpected fatal signal 11.
-2019-09-11T14:27:23.718+00:00 axis-00408ce8dd13 [ INFO    ] kernel: potentially unexpected fatal signal 11.
-2019-09-12T13:12:51.166+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: Action failed, retry will be done in 10 seconds
-2019-09-12T13:13:01.594+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: Action failed, retry will be done in 10 seconds
-2019-09-12T13:13:01.594+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: An error occurred in "Send Images" action: failed to transfer data: Couldn't connect to server
-2019-09-12T13:13:12.018+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: An error occurred in "Send Images" action: failed to transfer data: Couldn't connect to server
-2019-09-12T13:13:12.019+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: Action failed, retry will be done in 10 seconds
-2019-09-12T13:13:37.342+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: An error occurred in "Send Images" action: failed to transfer data: Couldn't connect to server
-2019-09-12T13:13:37.344+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: Action failed, retry will be done in 10 seconds
-2019-09-12T13:16:38.375+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: An error occurred in "Send Images" action: failed to transfer data: Couldn't connect to server
-2019-09-12T13:16:38.376+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: Action failed, retry will be done in 10 seconds
-2019-09-12T13:16:54.007+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: Action failed, retry will be done in 10 seconds
-2019-09-12T13:16:54.007+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: An error occurred in "Send Images" action: failed to transfer data: Couldn't connect to server
-2019-09-12T13:19:44.758+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: Action failed, retry will be done in 10 seconds
-2019-09-12T13:19:44.758+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: An error occurred in "Send Images" action: failed to transfer data: Couldn't connect to server
-2019-09-12T13:19:54.728+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: An error occurred in "Send Images" action: failed to transfer data: Couldn't connect to server
-2019-09-12T13:19:54.761+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: Action failed, retry will be done in 10 seconds
-2019-09-12T13:23:03.797+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: An error occurred in "Send Images" action: failed to transfer data: Couldn't connect to server
-2019-09-12T13:24:23.877+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: An error occurred in "Send Images" action: failed to transfer data: Couldn't connect to server
-2019-09-12T13:24:23.878+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: Action failed, retry will be done in 10 seconds
-2019-09-12T13:25:24.920+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: An error occurred in "Send Images" action: failed to transfer data: Couldn't connect to server
-2019-09-12T13:25:24.922+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: Action failed, retry will be done in 10 seconds
-2019-09-12T13:25:34.326+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: An error occurred in "Send Images" action: failed to transfer data: Couldn't connect to server
-2019-09-12T13:25:34.327+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: Action failed, retry will be done in 10 seconds
-2019-09-12T13:26:07.278+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: Action failed, retry will be done in 10 seconds
-2019-09-12T13:26:07.278+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: An error occurred in "Send Images" action: failed to transfer data: Couldn't connect to server
-2019-09-12T13:26:38.008+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: Action failed, retry will be done in 10 seconds
-2019-09-12T13:27:01.308+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: Action failed, retry will be done in 10 seconds
-2019-09-12T13:27:01.308+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: An error occurred in "Send Images" action: failed to transfer data: Couldn't connect to server
-2019-09-12T13:27:51.353+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: Action failed, retry will be done in 10 seconds
-2019-09-13T12:23:01.966+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: An error occurred in "Send Video Clip" action: failed to transfer data: Couldn't connect to server
-2019-09-13T12:23:01.971+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: Action failed, retry will be done in 10 seconds
-2019-09-13T12:23:13.933+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: An error occurred in "Send Video Clip" action: failed to transfer data: Couldn't connect to server
-2019-09-13T12:23:13.934+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: Action failed, retry will be done in 10 seconds
-2019-09-13T12:23:25.935+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: An error occurred in "Send Video Clip" action: failed to transfer data: Couldn't connect to server
-2019-09-13T12:23:25.937+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: Action failed, retry will be done in 10 seconds
-2019-09-13T12:23:38.062+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: An error occurred in "Send Video Clip" action: failed to transfer data: Couldn't connect to server
-2019-09-13T12:23:38.067+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: Action failed, retry will be done in 10 seconds
-2019-09-13T12:23:49.932+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: An error occurred in "Send Video Clip" action: failed to transfer data: Couldn't connect to server
-2019-09-13T12:23:49.941+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: Action failed, retry will be done in 10 seconds
-2019-09-13T12:24:01.931+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: An error occurred in "Send Video Clip" action: failed to transfer data: Couldn't connect to server
-2019-09-16T12:23:02.056+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: An error occurred in "Send Video Clip" action: failed to transfer data: Couldn't connect to server
-2019-09-16T12:23:02.063+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: Action failed, retry will be done in 10 seconds
-2019-09-16T12:23:13.897+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: An error occurred in "Send Video Clip" action: failed to transfer data: Couldn't connect to server
-2019-09-16T12:23:13.898+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: Action failed, retry will be done in 10 seconds
-2019-09-16T12:23:25.922+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: An error occurred in "Send Video Clip" action: failed to transfer data: Couldn't connect to server
-2019-09-16T12:23:25.931+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: Action failed, retry will be done in 10 seconds
-2019-09-16T12:23:37.920+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: An error occurred in "Send Video Clip" action: failed to transfer data: Couldn't connect to server
-2019-09-16T12:23:37.927+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: Action failed, retry will be done in 10 seconds
-2019-09-16T12:23:49.920+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: An error occurred in "Send Video Clip" action: failed to transfer data: Couldn't connect to server
-2019-09-16T12:23:49.925+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: Action failed, retry will be done in 10 seconds
-2019-09-16T12:24:01.923+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: An error occurred in "Send Video Clip" action: failed to transfer data: Couldn't connect to server
-2019-09-17T12:23:20.001+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: An error occurred in "Send Video Clip" action: failed to transfer data: Couldn't connect to server
-2019-09-17T12:23:20.007+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: Action failed, retry will be done in 10 seconds
-2019-09-17T12:23:34.965+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: An error occurred in "Send Video Clip" action: failed to transfer data: Couldn't connect to server
-2019-09-17T12:23:34.966+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: Action failed, retry will be done in 10 seconds
-2019-09-17T12:23:49.928+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: An error occurred in "Send Video Clip" action: failed to transfer data: Couldn't connect to server
-2019-09-17T12:23:49.929+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: Action failed, retry will be done in 10 seconds
-2019-09-17T12:24:04.900+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: An error occurred in "Send Video Clip" action: failed to transfer data: Couldn't connect to server
-2019-09-18T12:23:01.996+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: An error occurred in "Send Video Clip" action: failed to transfer data: Couldn't connect to server
-2019-09-18T12:23:02.003+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: Action failed, retry will be done in 10 seconds
-2019-09-18T12:23:13.932+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: An error occurred in "Send Video Clip" action: failed to transfer data: Couldn't connect to server
-2019-09-18T12:23:13.938+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: Action failed, retry will be done in 10 seconds
-2019-09-18T12:23:25.929+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: An error occurred in "Send Video Clip" action: failed to transfer data: Couldn't connect to server
-2019-09-18T12:23:25.935+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: Action failed, retry will be done in 10 seconds
-2019-09-18T12:23:37.933+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: An error occurred in "Send Video Clip" action: failed to transfer data: Couldn't connect to server
-2019-09-18T12:23:37.940+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: Action failed, retry will be done in 10 seconds
-2019-09-18T12:23:49.931+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: An error occurred in "Send Video Clip" action: failed to transfer data: Couldn't connect to server
-2019-09-18T12:23:49.932+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: Action failed, retry will be done in 10 seconds
-2019-09-18T12:24:01.962+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: An error occurred in "Send Video Clip" action: failed to transfer data: Couldn't connect to server
-2019-09-18T14:27:35.654+00:00 axis-00408ce8dd13 [ EMERG   ] server[18579]: 1280x960,1280x720,1024x768,1024x640,800x600,800x500,800x450,640x480,640x400,640x360,480x360,480x300,480x270,320x240,320x200,320x180,240x180,176x144,160x120,160x100,160x90
-2019-09-19T12:23:01.989+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: An error occurred in "Send Video Clip" action: failed to transfer data: Couldn't connect to server
-2019-09-19T12:23:01.990+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: Action failed, retry will be done in 10 seconds
-2019-09-19T12:23:13.922+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: An error occurred in "Send Video Clip" action: failed to transfer data: Couldn't connect to server
-2019-09-19T12:23:13.929+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: Action failed, retry will be done in 10 seconds
-2019-09-19T12:23:25.896+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: An error occurred in "Send Video Clip" action: failed to transfer data: Couldn't connect to server
-2019-09-19T12:23:25.905+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: Action failed, retry will be done in 10 seconds
-2019-09-19T12:23:37.922+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: An error occurred in "Send Video Clip" action: failed to transfer data: Couldn't connect to server
-2019-09-19T12:23:37.930+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: Action failed, retry will be done in 10 seconds
-2019-09-19T12:23:49.921+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: An error occurred in "Send Video Clip" action: failed to transfer data: Couldn't connect to server
-2019-09-19T12:23:49.928+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: Action failed, retry will be done in 10 seconds
-2019-09-19T12:24:01.923+00:00 axis-00408ce8dd13 [ WARNING ] actionengined[1053]: An error occurred in "Send Video Clip" action: failed to transfer data: Couldn't connect to server
-2019-09-19T12:57:38.958+00:00 axis-00408ce8dd13 [ INFO    ] kernel: potentially unexpected fatal signal 11.
-2019-09-19T12:59:09.856+00:00 axis-00408ce8dd13 [ INFO    ] kernel: potentially unexpected fatal signal 11.
-2019-09-19T15:25:38.360+00:00 axis-00408ce8dd13 [ INFO    ] kernel: potentially unexpected fatal signal 11.
-2019-09-19T15:27:55.937+00:00 axis-00408ce8dd13 [ INFO    ] kernel: potentially unexpected fatal signal 11.
-2019-09-19T15:30:33.078+00:00 axis-00408ce8dd13 [ INFO    ] kernel: potentially unexpected fatal signal 11.
-2019-09-19T15:36:59.799+00:00 axis-00408ce8dd13 [ INFO    ] kernel: potentially unexpected fatal signal 11.
-2019-09-19T15:39:18.208+00:00 axis-00408ce8dd13 [ INFO    ] kernel: potentially unexpected fatal signal 11.
-2019-09-19T15:41:00.159+00:00 axis-00408ce8dd13 [ INFO    ] kernel: potentially unexpected fatal signal 11.
-2019-09-19T15:42:54.252+00:00 axis-00408ce8dd13 [ INFO    ] kernel: potentially unexpected fatal signal 11.
-2019-09-19T15:44:31.513+00:00 axis-00408ce8dd13 [ INFO    ] kernel: potentially unexpected fatal signal 11.
-2019-09-19T15:46:00.292+00:00 axis-00408ce8dd13 [ INFO    ] kernel: potentially unexpected fatal signal 11.
-2019-09-19T15:49:50.707+00:00 axis-00408ce8dd13 [ INFO    ] kernel: potentially unexpected fatal signal 11.
-2019-09-19T15:52:16.697+00:00 axis-00408ce8dd13 [ INFO    ] kernel: potentially unexpected fatal signal 11.
-2019-09-19T15:54:08.027+00:00 axis-00408ce8dd13 [ INFO    ] kernel: potentially unexpected fatal signal 11.
-2019-09-19T16:05:46.766+00:00 axis-00408ce8dd13 [ INFO    ] kernel: potentially unexpected fatal signal 11.
-2019-09-19T16:10:56.441+00:00 axis-00408ce8dd13 [ INFO    ] kernel: potentially unexpected fatal signal 11.
-2019-09-19T16:17:17.236+00:00 axis-00408ce8dd13 [ INFO    ] kernel: potentially unexpected fatal signal 11.
-2019-09-19T16:29:45.776+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
-2019-09-19T16:29:45.784+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
-2019-09-19T16:29:46.398+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
-2019-09-19T16:29:46.399+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
-2019-09-19T16:29:46.406+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
-2019-09-19T16:29:46.406+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
-2019-09-19T16:29:46.416+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
-2019-09-19T16:29:46.416+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
-2019-09-19T16:29:47.771+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
-2019-09-19T16:29:47.784+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
-2019-09-19T16:29:47.784+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
-2019-09-19T16:29:47.787+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
-2019-09-19T16:29:47.787+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
-2019-09-19T16:29:48.415+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
-2019-09-19T16:29:48.415+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
-2019-09-19T16:29:48.415+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
-2019-09-19T16:29:48.422+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
-2019-09-19T16:29:48.429+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
-2019-09-19T16:29:48.430+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
-2019-09-19T16:29:49.793+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
-2019-09-19T16:29:49.793+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
-2019-09-19T16:29:49.794+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
-2019-09-19T16:29:49.807+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
-2019-09-19T16:29:49.811+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
-2019-09-19T16:29:50.433+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
-2019-09-19T16:29:50.435+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
-2019-09-19T16:29:50.441+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
-2019-09-19T16:29:50.451+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
-2019-09-19T16:29:50.451+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
-2019-09-19T16:29:50.453+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
-2019-09-19T16:29:51.818+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
-2019-09-19T16:29:51.819+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
-2019-09-19T16:29:51.819+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
-2019-09-19T16:29:51.828+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
-2019-09-19T16:29:51.829+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
-2019-09-19T16:29:52.458+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
-2019-09-19T16:29:52.459+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
-2019-09-19T16:29:52.459+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
-2019-09-19T16:29:52.466+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
-2019-09-19T16:29:52.467+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
-2019-09-19T16:29:52.467+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
-2019-09-19T16:29:53.834+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
-2019-09-19T16:29:53.834+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
-2019-09-19T16:29:53.835+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
-2019-09-19T16:29:53.847+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
-2019-09-19T16:29:53.848+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
-2019-09-19T16:29:53.848+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
-2019-09-19T16:29:54.469+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
-2019-09-19T16:29:54.471+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
-2019-09-19T16:29:54.472+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
-2019-09-19T16:29:54.485+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
-2019-09-19T16:29:54.486+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
-2019-09-19T16:29:54.486+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
-2019-09-19T16:29:55.853+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
-2019-09-19T16:29:55.853+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
-2019-09-19T16:29:55.854+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
-2019-09-19T16:29:55.858+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
-2019-09-19T16:29:55.859+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
-2019-09-19T16:29:55.861+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
-2019-09-19T16:29:56.486+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
-2019-09-19T16:29:56.490+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
-2019-09-19T16:29:56.490+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
-2019-09-19T16:29:56.495+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
-2019-09-19T16:29:56.496+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
-2019-09-19T16:29:56.498+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
-2019-09-19T16:29:57.866+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
-2019-09-19T16:29:57.867+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
-2019-09-19T16:29:57.867+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
-2019-09-19T16:29:57.874+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
-2019-09-19T16:29:57.880+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
-2019-09-19T16:29:57.882+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
-2019-09-19T16:29:58.500+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
-2019-09-19T16:29:58.501+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
-2019-09-19T16:29:58.501+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
-2019-09-19T16:29:58.508+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
-2019-09-19T16:29:58.513+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
-2019-09-19T16:29:58.514+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
-2019-09-19T16:29:59.886+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
-2019-09-19T16:29:59.886+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
-2019-09-19T16:29:59.887+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
-2019-09-19T16:29:59.892+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
-2019-09-19T16:29:59.894+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
-2019-09-19T16:29:59.895+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
-2019-09-19T16:30:00.513+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
-2019-09-19T16:30:00.517+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
-2019-09-19T16:30:00.517+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
-2019-09-19T16:30:00.524+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
-2019-09-19T16:30:00.526+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
-2019-09-19T16:30:00.528+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
-2019-09-19T16:30:01.896+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
-2019-09-19T16:30:01.904+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
-2019-09-19T16:30:01.904+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
-2019-09-19T16:30:01.905+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
-2019-09-19T16:30:01.905+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
-2019-09-19T16:30:01.907+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
-2019-09-19T16:30:02.532+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
-2019-09-19T16:30:02.533+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
-2019-09-19T16:30:02.533+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
-2019-09-19T16:30:02.546+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
-2019-09-19T16:30:02.547+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
-2019-09-19T16:30:02.547+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
-2019-09-19T16:30:03.909+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
-2019-09-19T16:30:03.917+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
-2019-09-19T16:30:03.917+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
-2019-09-19T16:30:03.918+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
-2019-09-19T16:30:03.924+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
-2019-09-19T16:30:03.924+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
-2019-09-19T16:30:04.553+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
-2019-09-19T16:30:04.553+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
-2019-09-19T16:30:04.553+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
-2019-09-19T16:30:04.556+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
-2019-09-19T16:30:04.562+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
-2019-09-19T16:30:04.562+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
-2019-09-19T16:30:05.928+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
-2019-09-19T16:30:05.928+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
-2019-09-19T16:30:05.929+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
-2019-09-19T16:30:05.936+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
-2019-09-19T16:30:05.936+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
-2019-09-19T16:30:05.937+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
-2019-09-19T16:30:06.570+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
-2019-09-19T16:30:06.570+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
-2019-09-19T16:30:06.571+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
-2019-09-19T16:30:06.582+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
-2019-09-19T16:30:06.583+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
-2019-09-19T16:30:06.583+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
-2019-09-19T16:30:07.941+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
-2019-09-19T16:30:07.941+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
-2019-09-19T16:30:07.942+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
-2019-09-19T16:30:07.944+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
-2019-09-19T16:30:07.948+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
-2019-09-19T16:30:07.951+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
-2019-09-19T16:30:08.586+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
-2019-09-19T16:30:08.587+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
-2019-09-19T16:30:08.588+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
-2019-09-19T16:30:08.598+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
-2019-09-19T16:30:08.599+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
-2019-09-19T16:30:08.599+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
-2019-09-19T16:30:09.961+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
-2019-09-19T16:30:09.962+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
-2019-09-19T16:30:09.962+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
-2019-09-19T16:30:09.964+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
-2019-09-19T16:30:09.969+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
-2019-09-19T16:30:09.974+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
-2019-09-19T16:30:10.605+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
-2019-09-19T16:30:10.618+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
-2019-09-19T16:30:10.619+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
-2019-09-19T16:30:10.619+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
-2019-09-19T16:30:10.620+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
-2019-09-19T16:30:10.623+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
-2019-09-19T16:30:11.984+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
-2019-09-19T16:30:11.984+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
-2019-09-19T16:30:11.985+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
-2019-09-19T16:30:11.991+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
-2019-09-19T16:30:11.992+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
-2019-09-19T16:30:11.992+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
-2019-09-19T16:30:12.629+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
-2019-09-19T16:30:12.633+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
-2019-09-19T16:30:12.637+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
-2019-09-19T16:30:12.646+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
-2019-09-19T16:30:12.647+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
-2019-09-19T16:30:12.648+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
-2019-09-19T16:30:13.996+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
-2019-09-19T16:30:13.997+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
-2019-09-19T16:30:13.997+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
-2019-09-19T16:30:14.006+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
-2019-09-19T16:30:14.013+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
-2019-09-19T16:30:14.013+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
-2019-09-19T16:30:14.650+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
-2019-09-19T16:30:14.654+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
-2019-09-19T16:30:14.654+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
-2019-09-19T16:30:14.659+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
-2019-09-19T16:30:14.660+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
-2019-09-19T16:30:14.661+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
-2019-09-19T16:30:16.007+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
-2019-09-19T16:30:16.008+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
-2019-09-19T16:30:16.009+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
-2019-09-19T16:30:16.018+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
-2019-09-19T16:30:16.019+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
-2019-09-19T16:30:16.020+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
-2019-09-19T16:30:16.667+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
-2019-09-19T16:30:16.667+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
-2019-09-19T16:30:16.667+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
-2019-09-19T16:30:16.677+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
-2019-09-19T16:30:16.678+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
-2019-09-19T16:30:16.678+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
-2019-09-19T16:30:18.026+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
-2019-09-19T16:30:18.039+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
-2019-09-19T16:30:18.039+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
-2019-09-19T16:30:18.039+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
-2019-09-19T16:30:18.040+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
-2019-09-19T16:30:18.040+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
-2019-09-19T16:30:18.682+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
-2019-09-19T16:30:18.682+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
-2019-09-19T16:30:18.683+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
-2019-09-19T16:30:18.687+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
-2019-09-19T16:30:18.691+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
-2019-09-19T16:30:18.694+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
-2019-09-19T16:30:20.038+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
-2019-09-19T16:30:20.039+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
-2019-09-19T16:30:20.039+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
-2019-09-19T16:30:20.047+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
-2019-09-19T16:30:20.048+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
-2019-09-19T16:30:20.061+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
-2019-09-19T16:30:20.703+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
-2019-09-19T16:30:20.704+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
-2019-09-19T16:30:20.705+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
-2019-09-19T16:30:20.713+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
-2019-09-19T16:30:20.714+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
-2019-09-19T16:30:20.714+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
-2019-09-19T16:30:22.064+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
-2019-09-19T16:30:22.065+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
-2019-09-19T16:30:22.065+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
-2019-09-19T16:30:22.077+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
-2019-09-19T16:30:22.078+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
-2019-09-19T16:30:22.078+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
-2019-09-19T16:30:22.717+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
-2019-09-19T16:30:22.717+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
-2019-09-19T16:30:22.717+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
-2019-09-19T16:30:22.724+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
-2019-09-19T16:30:22.724+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
-2019-09-19T16:30:22.725+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
-2019-09-19T16:30:24.082+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
-2019-09-19T16:30:24.082+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
-2019-09-19T16:30:24.082+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
-2019-09-19T16:30:24.087+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
-2019-09-19T16:30:24.087+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
-2019-09-19T16:30:24.088+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
-2019-09-19T16:30:24.734+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
-2019-09-19T16:30:24.735+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
-2019-09-19T16:30:24.735+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
-2019-09-19T16:30:24.736+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
-2019-09-19T16:30:24.737+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
-2019-09-19T16:30:24.737+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
-2019-09-19T16:30:26.093+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
-2019-09-19T16:30:26.095+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
-2019-09-19T16:30:26.096+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
-2019-09-19T16:30:26.102+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
-2019-09-19T16:30:26.104+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
-2019-09-19T16:30:26.112+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
-2019-09-19T16:30:26.741+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
-2019-09-19T16:30:26.747+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
-2019-09-19T16:30:26.748+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
-2019-09-19T16:30:26.753+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
-2019-09-19T16:30:26.754+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
-2019-09-19T16:30:26.755+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
-2019-09-19T16:30:28.119+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after frame data
-2019-09-19T16:30:28.124+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after img_size......
-2019-09-19T16:30:28.134+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after sprintf
-2019-09-19T16:30:28.152+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: Client is disconnected
-2019-09-19T16:30:28.166+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: after  all errors
-2019-09-19T16:30:28.176+00:00 axis-00408ce8dd13 [ INFO    ] server[11998]: sleep
-2019-09-19T16:30:28.567+00:00 axis-00408ce8dd13 [ INFO    ] control.cgi: calling: /etc/init.d/sdkserver stop
-2019-09-19T16:30:28.622+00:00 axis-00408ce8dd13 [ INFO    ] server[0]: stopping server
-2019-09-19T16:30:29.760+00:00 axis-00408ce8dd13 [ NOTICE  ] dbus[567]: [system] Reloaded configuration
-2019-09-19T16:30:30.136+00:00 axis-00408ce8dd13 [ NOTICE  ] dbus[567]: [system] Reloaded configuration
-2019-09-19T16:30:47.001+00:00 axis-00408ce8dd13 [ INFO    ] upload.cgi: Uploaded '/tmp/server_1_0_mipsisa32r2el.eap' size:39898
-2019-09-19T16:30:48.653+00:00 axis-00408ce8dd13 [ NOTICE  ] dbus[567]: [system] Reloaded configuration
-2019-09-19T16:30:48.860+00:00 axis-00408ce8dd13 [ INFO    ] upload.cgi: Package /tmp/server_1_0_mipsisa32r2el.eap installation OK
+2019-11-04T16:29:17.584+00:00 axis-00408ce8dd13 [ INFO    ] kernel: potentially unexpected fatal signal 11.
+2019-11-04T16:32:58.682+00:00 axis-00408ce8dd13 [ INFO    ] kernel: potentially unexpected fatal signal 11.
+2019-11-04T16:36:29.092+00:00 axis-00408ce8dd13 [ INFO    ] kernel: potentially unexpected fatal signal 11.
+2019-11-04T16:38:12.805+00:00 axis-00408ce8dd13 [ INFO    ] kernel: potentially unexpected fatal signal 11.
+2019-11-04T16:41:12.689+00:00 axis-00408ce8dd13 [ INFO    ] kernel: potentially unexpected fatal signal 11.
+2019-11-04T16:44:19.301+00:00 axis-00408ce8dd13 [ INFO    ] kernel: potentially unexpected fatal signal 11.
+2019-11-04T16:50:23.981+00:00 axis-00408ce8dd13 [ INFO    ] kernel: potentially unexpected fatal signal 11.
+2019-11-04T16:56:48.757+00:00 axis-00408ce8dd13 [ INFO    ] kernel: potentially unexpected fatal signal 11.
+2019-11-04T17:26:31.264+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: error send
+2019-11-04T17:26:32.231+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Storlek:
+2019-11-04T17:26:32.232+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: 42134
+2019-11-04T17:26:32.232+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: 6
+2019-11-04T17:26:32.236+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Innan xor:
+2019-11-04T17:26:32.241+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: efter for loop xor:
+2019-11-04T17:26:32.243+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]:  2 efter for loop xor:
+2019-11-04T17:26:32.245+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Efter xor:
+2019-11-04T17:26:32.253+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: innan Dekryp:
+2019-11-04T17:26:32.264+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: efter for loop xor:
+2019-11-04T17:26:32.265+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]:  2 efter for loop xor:
+2019-11-04T17:26:32.265+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Efter dekrypt:
+2019-11-04T17:26:32.267+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: error send
+2019-11-04T17:26:33.228+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Storlek:
+2019-11-04T17:26:33.234+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: 6
+2019-11-04T17:26:33.237+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: 42187
+2019-11-04T17:26:33.242+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Innan xor:
+2019-11-04T17:26:33.260+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: efter for loop xor:
+2019-11-04T17:26:33.261+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]:  2 efter for loop xor:
+2019-11-04T17:26:33.261+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Efter xor:
+2019-11-04T17:26:33.261+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: innan Dekryp:
+2019-11-04T17:26:33.262+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]:  2 efter for loop xor:
+2019-11-04T17:26:33.262+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: efter for loop xor:
+2019-11-04T17:26:33.263+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Efter dekrypt:
+2019-11-04T17:26:33.264+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: error send
+2019-11-04T17:26:34.229+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Storlek:
+2019-11-04T17:26:34.230+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: 6
+2019-11-04T17:26:34.231+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: 42210
+2019-11-04T17:26:34.238+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Innan xor:
+2019-11-04T17:26:34.248+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: efter for loop xor:
+2019-11-04T17:26:34.249+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]:  2 efter for loop xor:
+2019-11-04T17:26:34.250+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Efter xor:
+2019-11-04T17:26:34.257+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: innan Dekryp:
+2019-11-04T17:26:34.268+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: efter for loop xor:
+2019-11-04T17:26:34.270+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]:  2 efter for loop xor:
+2019-11-04T17:26:34.271+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Efter dekrypt:
+2019-11-04T17:26:34.272+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: error send
+2019-11-04T17:26:35.228+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Storlek:
+2019-11-04T17:26:35.229+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: 6
+2019-11-04T17:26:35.230+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: 42239
+2019-11-04T17:26:35.240+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Innan xor:
+2019-11-04T17:26:35.247+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: efter for loop xor:
+2019-11-04T17:26:35.253+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]:  2 efter for loop xor:
+2019-11-04T17:26:35.254+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Efter xor:
+2019-11-04T17:26:35.254+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: innan Dekryp:
+2019-11-04T17:26:35.265+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]:  2 efter for loop xor:
+2019-11-04T17:26:35.265+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Efter dekrypt:
+2019-11-04T17:26:35.265+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: efter for loop xor:
+2019-11-04T17:26:35.266+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: error send
+2019-11-04T17:26:36.234+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: 6
+2019-11-04T17:26:36.234+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Storlek:
+2019-11-04T17:26:36.235+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: 42215
+2019-11-04T17:26:36.235+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Innan xor:
+2019-11-04T17:26:36.257+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: efter for loop xor:
+2019-11-04T17:26:36.258+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]:  2 efter for loop xor:
+2019-11-04T17:26:36.258+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Efter xor:
+2019-11-04T17:26:36.263+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: innan Dekryp:
+2019-11-04T17:26:36.264+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]:  2 efter for loop xor:
+2019-11-04T17:26:36.264+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Efter dekrypt:
+2019-11-04T17:26:36.264+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: efter for loop xor:
+2019-11-04T17:26:36.265+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: error send
+2019-11-04T17:26:37.229+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Storlek:
+2019-11-04T17:26:37.231+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: 6
+2019-11-04T17:26:37.235+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: 42130
+2019-11-04T17:26:37.239+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Innan xor:
+2019-11-04T17:26:37.247+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: efter for loop xor:
+2019-11-04T17:26:37.257+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]:  2 efter for loop xor:
+2019-11-04T17:26:37.257+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Efter xor:
+2019-11-04T17:26:37.260+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: innan Dekryp:
+2019-11-04T17:26:37.261+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]:  2 efter for loop xor:
+2019-11-04T17:26:37.261+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Efter dekrypt:
+2019-11-04T17:26:37.261+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: efter for loop xor:
+2019-11-04T17:26:37.262+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: error send
+2019-11-04T17:26:38.202+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Storlek:
+2019-11-04T17:26:38.203+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: 42161
+2019-11-04T17:26:38.203+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: 6
+2019-11-04T17:26:38.208+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Innan xor:
+2019-11-04T17:26:38.220+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: efter for loop xor:
+2019-11-04T17:26:38.224+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]:  2 efter for loop xor:
+2019-11-04T17:26:38.228+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Efter xor:
+2019-11-04T17:26:38.229+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: innan Dekryp:
+2019-11-04T17:26:38.242+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: efter for loop xor:
+2019-11-04T17:26:38.243+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]:  2 efter for loop xor:
+2019-11-04T17:26:38.243+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Efter dekrypt:
+2019-11-04T17:26:38.243+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: error send
+2019-11-04T17:26:39.200+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Storlek:
+2019-11-04T17:26:39.205+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: 42363
+2019-11-04T17:26:39.205+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: 6
+2019-11-04T17:26:39.208+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Innan xor:
+2019-11-04T17:26:39.219+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]:  2 efter for loop xor:
+2019-11-04T17:26:39.219+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: efter for loop xor:
+2019-11-04T17:26:39.220+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Efter xor:
+2019-11-04T17:26:39.220+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: innan Dekryp:
+2019-11-04T17:26:39.227+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: efter for loop xor:
+2019-11-04T17:26:39.228+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]:  2 efter for loop xor:
+2019-11-04T17:26:39.229+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Efter dekrypt:
+2019-11-04T17:26:39.231+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: error send
+2019-11-04T17:26:40.200+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Storlek:
+2019-11-04T17:26:40.201+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: 6
+2019-11-04T17:26:40.209+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: 42206
+2019-11-04T17:26:40.214+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Innan xor:
+2019-11-04T17:26:40.224+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]:  2 efter for loop xor:
+2019-11-04T17:26:40.224+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Efter xor:
+2019-11-04T17:26:40.224+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: efter for loop xor:
+2019-11-04T17:26:40.225+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: innan Dekryp:
+2019-11-04T17:26:40.242+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: efter for loop xor:
+2019-11-04T17:26:40.243+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]:  2 efter for loop xor:
+2019-11-04T17:26:40.244+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Efter dekrypt:
+2019-11-04T17:26:40.244+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: error send
+2019-11-04T17:26:41.207+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Storlek:
+2019-11-04T17:26:41.208+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: 42114
+2019-11-04T17:26:41.208+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: 6
+2019-11-04T17:26:41.209+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Innan xor:
+2019-11-04T17:26:41.220+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: efter for loop xor:
+2019-11-04T17:26:41.221+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]:  2 efter for loop xor:
+2019-11-04T17:26:41.221+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Efter xor:
+2019-11-04T17:26:41.222+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: innan Dekryp:
+2019-11-04T17:26:41.237+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]:  2 efter for loop xor:
+2019-11-04T17:26:41.237+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: efter for loop xor:
+2019-11-04T17:26:41.238+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Efter dekrypt:
+2019-11-04T17:26:41.238+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: error send
+2019-11-04T17:26:42.208+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: 42049
+2019-11-04T17:26:42.208+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: 6
+2019-11-04T17:26:42.208+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Innan xor:
+2019-11-04T17:26:42.208+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Storlek:
+2019-11-04T17:26:42.219+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: efter for loop xor:
+2019-11-04T17:26:42.220+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]:  2 efter for loop xor:
+2019-11-04T17:26:42.220+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Efter xor:
+2019-11-04T17:26:42.225+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: innan Dekryp:
+2019-11-04T17:26:42.237+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]:  2 efter for loop xor:
+2019-11-04T17:26:42.237+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Efter dekrypt:
+2019-11-04T17:26:42.237+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: efter for loop xor:
+2019-11-04T17:26:42.238+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: error send
+2019-11-04T17:26:43.203+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Storlek:
+2019-11-04T17:26:43.204+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: 6
+2019-11-04T17:26:43.212+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: 42146
+2019-11-04T17:26:43.213+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Innan xor:
+2019-11-04T17:26:43.227+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]:  2 efter for loop xor:
+2019-11-04T17:26:43.227+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Efter xor:
+2019-11-04T17:26:43.227+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: efter for loop xor:
+2019-11-04T17:26:43.228+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: innan Dekryp:
+2019-11-04T17:26:43.239+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: efter for loop xor:
+2019-11-04T17:26:43.240+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]:  2 efter for loop xor:
+2019-11-04T17:26:43.240+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Efter dekrypt:
+2019-11-04T17:26:43.240+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: error send
+2019-11-04T17:26:44.205+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Storlek:
+2019-11-04T17:26:44.206+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: 42023
+2019-11-04T17:26:44.206+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: 6
+2019-11-04T17:26:44.212+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Innan xor:
+2019-11-04T17:26:44.219+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: efter for loop xor:
+2019-11-04T17:26:44.223+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]:  2 efter for loop xor:
+2019-11-04T17:26:44.223+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Efter xor:
+2019-11-04T17:26:44.223+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: innan Dekryp:
+2019-11-04T17:26:44.236+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: efter for loop xor:
+2019-11-04T17:26:44.238+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]:  2 efter for loop xor:
+2019-11-04T17:26:44.240+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Efter dekrypt:
+2019-11-04T17:26:44.242+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: error send
+2019-11-04T17:26:45.208+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Storlek:
+2019-11-04T17:26:45.209+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: 6
+2019-11-04T17:26:45.210+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: 42013
+2019-11-04T17:26:45.216+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Innan xor:
+2019-11-04T17:26:45.223+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: efter for loop xor:
+2019-11-04T17:26:45.224+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]:  2 efter for loop xor:
+2019-11-04T17:26:45.229+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Efter xor:
+2019-11-04T17:26:45.230+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: innan Dekryp:
+2019-11-04T17:26:45.245+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]:  2 efter for loop xor:
+2019-11-04T17:26:45.245+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Efter dekrypt:
+2019-11-04T17:26:45.245+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: efter for loop xor:
+2019-11-04T17:26:45.246+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: error send
+2019-11-04T17:26:46.206+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Storlek:
+2019-11-04T17:26:46.207+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: 6
+2019-11-04T17:26:46.216+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: 42198
+2019-11-04T17:26:46.216+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Innan xor:
+2019-11-04T17:26:46.229+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: efter for loop xor:
+2019-11-04T17:26:46.236+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]:  2 efter for loop xor:
+2019-11-04T17:26:46.236+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Efter xor:
+2019-11-04T17:26:46.236+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: innan Dekryp:
+2019-11-04T17:26:46.245+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: efter for loop xor:
+2019-11-04T17:26:46.246+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]:  2 efter for loop xor:
+2019-11-04T17:26:46.250+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Efter dekrypt:
+2019-11-04T17:26:46.250+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: error send
+2019-11-04T17:26:47.207+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Storlek:
+2019-11-04T17:26:47.210+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: 6
+2019-11-04T17:26:47.211+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: 42116
+2019-11-04T17:26:47.211+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Innan xor:
+2019-11-04T17:26:47.221+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: efter for loop xor:
+2019-11-04T17:26:47.224+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]:  2 efter for loop xor:
+2019-11-04T17:26:47.226+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Efter xor:
+2019-11-04T17:26:47.236+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: innan Dekryp:
+2019-11-04T17:26:47.242+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: efter for loop xor:
+2019-11-04T17:26:47.246+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]:  2 efter for loop xor:
+2019-11-04T17:26:47.249+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Efter dekrypt:
+2019-11-04T17:26:47.251+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: error send
+2019-11-04T17:26:48.212+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Storlek:
+2019-11-04T17:26:48.213+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: 6
+2019-11-04T17:26:48.214+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: 42096
+2019-11-04T17:26:48.220+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Innan xor:
+2019-11-04T17:26:48.229+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: efter for loop xor:
+2019-11-04T17:26:48.230+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]:  2 efter for loop xor:
+2019-11-04T17:26:48.230+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Efter xor:
+2019-11-04T17:26:48.231+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: innan Dekryp:
+2019-11-04T17:26:48.245+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: efter for loop xor:
+2019-11-04T17:26:48.246+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]:  2 efter for loop xor:
+2019-11-04T17:26:48.246+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Efter dekrypt:
+2019-11-04T17:26:48.246+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: error send
+2019-11-04T17:26:49.216+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Storlek:
+2019-11-04T17:26:49.217+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: 6
+2019-11-04T17:26:49.218+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: 42238
+2019-11-04T17:26:49.222+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Innan xor:
+2019-11-04T17:26:49.236+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: efter for loop xor:
+2019-11-04T17:26:49.247+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]:  2 efter for loop xor:
+2019-11-04T17:26:49.247+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Efter xor:
+2019-11-04T17:26:49.248+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: innan Dekryp:
+2019-11-04T17:26:49.258+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]:  2 efter for loop xor:
+2019-11-04T17:26:49.258+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: efter for loop xor:
+2019-11-04T17:26:49.259+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Efter dekrypt:
+2019-11-04T17:26:49.260+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: error send
+2019-11-04T17:26:50.210+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Storlek:
+2019-11-04T17:26:50.217+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: 42297
+2019-11-04T17:26:50.217+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: 6
+2019-11-04T17:26:50.223+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Innan xor:
+2019-11-04T17:26:50.233+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]:  2 efter for loop xor:
+2019-11-04T17:26:50.233+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Efter xor:
+2019-11-04T17:26:50.233+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: efter for loop xor:
+2019-11-04T17:26:50.234+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: innan Dekryp:
+2019-11-04T17:26:50.244+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: efter for loop xor:
+2019-11-04T17:26:50.246+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]:  2 efter for loop xor:
+2019-11-04T17:26:50.247+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Efter dekrypt:
+2019-11-04T17:26:50.252+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: error send
+2019-11-04T17:26:51.211+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Storlek:
+2019-11-04T17:26:51.212+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: 42070
+2019-11-04T17:26:51.212+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: 6
+2019-11-04T17:26:51.220+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Innan xor:
+2019-11-04T17:26:51.231+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: efter for loop xor:
+2019-11-04T17:26:51.235+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]:  2 efter for loop xor:
+2019-11-04T17:26:51.239+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Efter xor:
+2019-11-04T17:26:51.242+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: innan Dekryp:
+2019-11-04T17:26:51.251+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: efter for loop xor:
+2019-11-04T17:26:51.254+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]:  2 efter for loop xor:
+2019-11-04T17:26:51.255+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Efter dekrypt:
+2019-11-04T17:26:51.257+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: error send
+2019-11-04T17:26:52.213+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: 41995
+2019-11-04T17:26:52.213+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: 6
+2019-11-04T17:26:52.213+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Storlek:
+2019-11-04T17:26:52.221+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Innan xor:
+2019-11-04T17:26:52.231+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: efter for loop xor:
+2019-11-04T17:26:52.233+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]:  2 efter for loop xor:
+2019-11-04T17:26:52.236+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Efter xor:
+2019-11-04T17:26:52.237+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: innan Dekryp:
+2019-11-04T17:26:52.248+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: efter for loop xor:
+2019-11-04T17:26:52.251+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]:  2 efter for loop xor:
+2019-11-04T17:26:52.257+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Efter dekrypt:
+2019-11-04T17:26:52.258+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: error send
+2019-11-04T17:26:53.214+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Storlek:
+2019-11-04T17:26:53.215+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: 42098
+2019-11-04T17:26:53.215+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: 6
+2019-11-04T17:26:53.221+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Innan xor:
+2019-11-04T17:26:53.234+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]:  2 efter for loop xor:
+2019-11-04T17:26:53.234+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: efter for loop xor:
+2019-11-04T17:26:53.235+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Efter xor:
+2019-11-04T17:26:53.235+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: innan Dekryp:
+2019-11-04T17:26:53.247+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]:  2 efter for loop xor:
+2019-11-04T17:26:53.247+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: efter for loop xor:
+2019-11-04T17:26:53.248+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Efter dekrypt:
+2019-11-04T17:26:53.248+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: error send
+2019-11-04T17:26:54.215+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: 6
+2019-11-04T17:26:54.215+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Storlek:
+2019-11-04T17:26:54.216+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: 42188
+2019-11-04T17:26:54.224+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Innan xor:
+2019-11-04T17:26:54.240+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]:  2 efter for loop xor:
+2019-11-04T17:26:54.240+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: efter for loop xor:
+2019-11-04T17:26:54.241+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Efter xor:
+2019-11-04T17:26:54.241+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: innan Dekryp:
+2019-11-04T17:26:54.254+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: efter for loop xor:
+2019-11-04T17:26:54.255+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]:  2 efter for loop xor:
+2019-11-04T17:26:54.255+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Efter dekrypt:
+2019-11-04T17:26:54.255+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: error send
+2019-11-04T17:26:55.218+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: 6
+2019-11-04T17:26:55.218+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Storlek:
+2019-11-04T17:26:55.222+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: 42195
+2019-11-04T17:26:55.222+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Innan xor:
+2019-11-04T17:26:55.233+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: efter for loop xor:
+2019-11-04T17:26:55.244+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]:  2 efter for loop xor:
+2019-11-04T17:26:55.244+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Efter xor:
+2019-11-04T17:26:55.245+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: innan Dekryp:
+2019-11-04T17:26:55.253+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: efter for loop xor:
+2019-11-04T17:26:55.254+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]:  2 efter for loop xor:
+2019-11-04T17:26:55.254+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Efter dekrypt:
+2019-11-04T17:26:55.255+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: error send
+2019-11-04T17:26:56.219+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: 6
+2019-11-04T17:26:56.219+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Storlek:
+2019-11-04T17:26:56.220+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: 42142
+2019-11-04T17:26:56.224+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Innan xor:
+2019-11-04T17:26:56.233+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: efter for loop xor:
+2019-11-04T17:26:56.236+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]:  2 efter for loop xor:
+2019-11-04T17:26:56.238+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Efter xor:
+2019-11-04T17:26:56.240+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: innan Dekryp:
+2019-11-04T17:26:56.250+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: efter for loop xor:
+2019-11-04T17:26:56.252+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]:  2 efter for loop xor:
+2019-11-04T17:26:56.254+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Efter dekrypt:
+2019-11-04T17:26:56.259+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: error send
+2019-11-04T17:26:57.224+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Storlek:
+2019-11-04T17:26:57.225+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: 42201
+2019-11-04T17:26:57.225+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: 6
+2019-11-04T17:26:57.225+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Innan xor:
+2019-11-04T17:26:57.238+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: efter for loop xor:
+2019-11-05T01:16:55.788+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-05T01:18:20.508+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-05T01:19:44.599+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-05T01:21:09.055+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-05T01:22:32.519+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-05T01:23:55.575+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-05T01:25:20.971+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-05T01:26:42.365+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-05T01:28:03.573+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-05T01:29:25.909+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-05T01:30:48.771+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-05T01:32:10.308+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-05T01:33:28.817+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-05T01:34:49.737+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-05T01:36:09.965+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-05T01:37:30.443+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-05T01:38:48.421+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-05T01:40:06.921+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-05T01:41:25.020+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-05T01:42:41.352+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-05T01:43:59.458+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-05T01:45:16.866+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-05T01:46:34.719+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-05T01:47:48.673+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-05T01:49:05.659+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-05T01:50:22.561+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-05T01:51:36.958+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-05T01:52:53.143+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-05T01:54:06.246+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-05T01:55:21.597+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-05T01:56:37.977+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-05T01:57:53.829+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-05T01:59:06.837+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-05T02:00:20.281+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-05T02:01:33.827+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-05T02:02:45.494+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-05T02:03:58.417+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-05T02:05:09.509+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-05T02:06:20.665+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-05T02:07:31.930+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-05T02:08:42.571+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-05T02:09:51.327+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-05T02:11:01.128+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-05T02:12:13.138+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-05T02:13:21.698+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-05T02:14:30.032+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-05T02:15:40.612+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-05T02:16:48.760+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-05T02:17:55.784+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-05T02:19:04.314+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-05T02:20:12.327+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-05T02:21:20.281+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-05T02:22:25.814+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-05T02:23:33.140+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-05T02:24:40.032+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-05T02:25:42.978+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-05T02:26:50.639+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-05T02:27:58.257+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-05T02:29:02.293+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-05T02:30:06.182+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-05T02:31:10.429+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-05T02:32:12.425+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-05T02:33:15.184+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-05T02:34:17.557+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-05T02:35:20.898+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-05T02:36:22.851+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-05T02:37:22.878+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-05T02:38:22.858+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-05T02:39:24.579+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-05T02:40:24.291+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-05T02:41:24.858+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-05T02:42:24.735+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-05T02:43:24.139+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-05T02:44:22.816+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-05T02:45:17.583+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: image2d.service: Failed with result 'signal'.
+2019-11-05T02:45:18.331+00:00 axis-00408ce8dd13 [ ERR     ] systemd[1]: image2d.service: Failed to fork: Cannot allocate memory
+2019-11-05T02:45:18.340+00:00 axis-00408ce8dd13 [ CRIT    ] systemd[1]: Assertion 'pid >= 1' failed at /home/svcj/workspace/FP-PM-Echo-FWRT_5_90_1-PRODUCTS-FWRT_Q1604_FW-2/fwrt/products-camera-q1604-rel-5.90.1-maint/unpacked/apps/systemd-special/pmt-5.90/1/systemd/src/core/unit.c:2016, function unit_watch_pid(). Aborting.
+2019-11-05T02:45:18.343+00:00 axis-00408ce8dd13 [ EMERG   ] systemd[1]: Caught <ABRT>, cannot fork for core dump: Cannot allocate memory
+2019-11-05T02:45:18.372+00:00 axis-00408ce8dd13 [ EMERG   ] systemd[1]: Freezing execution.
+2019-11-05T02:45:26.814+00:00 axis-00408ce8dd13 [ ERR     ] httpd[324]: [systemd:error] [pid 324:tid 2003955712] AH02396: sd_notifyf returned an error -146
+2019-11-05T02:45:57.414+00:00 axis-00408ce8dd13 [ ERR     ] httpd[324]: message repeated 3 times: [ [systemd:error] [pid 324:tid 2003955712] AH02396: sd_notifyf returned an error -146]
+2019-11-05T02:47:07.788+00:00 axis-00408ce8dd13 [ ERR     ] httpd[324]: message repeated 7 times: [ [systemd:error] [pid 324:tid 2003955712] AH02396: sd_notifyf returned an error -146]
+2019-11-05T02:48:08.206+00:00 axis-00408ce8dd13 [ ERR     ] httpd[324]: message repeated 6 times: [ [systemd:error] [pid 324:tid 2003955712] AH02396: sd_notifyf returned an error -146]
+2019-11-05T02:49:17.137+00:00 axis-00408ce8dd13 [ ERR     ] httpd[324]: message repeated 6 times: [ [systemd:error] [pid 324:tid 2003955712] AH02396: sd_notifyf returned an error -146]
+2019-11-05T02:50:17.197+00:00 axis-00408ce8dd13 [ ERR     ] httpd[324]: message repeated 6 times: [ [systemd:error] [pid 324:tid 2003955712] AH02396: sd_notifyf returned an error -146]
+2019-11-05T02:51:17.257+00:00 axis-00408ce8dd13 [ ERR     ] httpd[324]: message repeated 6 times: [ [systemd:error] [pid 324:tid 2003955712] AH02396: sd_notifyf returned an error -146]
+2019-11-05T02:52:17.317+00:00 axis-00408ce8dd13 [ ERR     ] httpd[324]: message repeated 6 times: [ [systemd:error] [pid 324:tid 2003955712] AH02396: sd_notifyf returned an error -146]
+2019-11-05T02:53:17.377+00:00 axis-00408ce8dd13 [ ERR     ] httpd[324]: message repeated 6 times: [ [systemd:error] [pid 324:tid 2003955712] AH02396: sd_notifyf returned an error -146]
+2019-11-05T02:54:17.437+00:00 axis-00408ce8dd13 [ ERR     ] httpd[324]: message repeated 6 times: [ [systemd:error] [pid 324:tid 2003955712] AH02396: sd_notifyf returned an error -146]
+2019-11-05T02:55:17.497+00:00 axis-00408ce8dd13 [ ERR     ] httpd[324]: message repeated 6 times: [ [systemd:error] [pid 324:tid 2003955712] AH02396: sd_notifyf returned an error -146]
+2019-11-05T02:56:17.557+00:00 axis-00408ce8dd13 [ ERR     ] httpd[324]: message repeated 6 times: [ [systemd:error] [pid 324:tid 2003955712] AH02396: sd_notifyf returned an error -146]
+2019-11-05T02:57:17.617+00:00 axis-00408ce8dd13 [ ERR     ] httpd[324]: message repeated 6 times: [ [systemd:error] [pid 324:tid 2003955712] AH02396: sd_notifyf returned an error -146]
+2019-11-05T02:58:17.677+00:00 axis-00408ce8dd13 [ ERR     ] httpd[324]: message repeated 6 times: [ [systemd:error] [pid 324:tid 2003955712] AH02396: sd_notifyf returned an error -146]
+2019-11-05T02:59:17.737+00:00 axis-00408ce8dd13 [ ERR     ] httpd[324]: message repeated 6 times: [ [systemd:error] [pid 324:tid 2003955712] AH02396: sd_notifyf returned an error -146]
+2019-11-05T03:00:17.797+00:00 axis-00408ce8dd13 [ ERR     ] httpd[324]: message repeated 6 times: [ [systemd:error] [pid 324:tid 2003955712] AH02396: sd_notifyf returned an error -146]
+2019-11-05T03:01:17.862+00:00 axis-00408ce8dd13 [ ERR     ] httpd[324]: message repeated 6 times: [ [systemd:error] [pid 324:tid 2003955712] AH02396: sd_notifyf returned an error -146]
+2019-11-05T03:02:17.917+00:00 axis-00408ce8dd13 [ ERR     ] httpd[324]: message repeated 6 times: [ [systemd:error] [pid 324:tid 2003955712] AH02396: sd_notifyf returned an error -146]
+2019-11-05T03:03:17.977+00:00 axis-00408ce8dd13 [ ERR     ] httpd[324]: message repeated 6 times: [ [systemd:error] [pid 324:tid 2003955712] AH02396: sd_notifyf returned an error -146]
+2019-11-05T03:04:18.037+00:00 axis-00408ce8dd13 [ ERR     ] httpd[324]: message repeated 6 times: [ [systemd:error] [pid 324:tid 2003955712] AH02396: sd_notifyf returned an error -146]
+2019-11-05T03:05:18.097+00:00 axis-00408ce8dd13 [ ERR     ] httpd[324]: message repeated 5 times: [ [systemd:error] [pid 324:tid 2003955712] AH02396: sd_notifyf returned an error -146]
+2019-11-05T03:06:18.157+00:00 axis-00408ce8dd13 [ ERR     ] httpd[324]: message repeated 6 times: [ [systemd:error] [pid 324:tid 2003955712] AH02396: sd_notifyf returned an error -146]
+2019-11-05T03:07:18.667+00:00 axis-00408ce8dd13 [ ERR     ] httpd[324]: message repeated 6 times: [ [systemd:error] [pid 324:tid 2003955712] AH02396: sd_notifyf returned an error -146]
+2019-11-05T03:08:18.727+00:00 axis-00408ce8dd13 [ ERR     ] httpd[324]: message repeated 6 times: [ [systemd:error] [pid 324:tid 2003955712] AH02396: sd_notifyf returned an error -146]
+2019-11-05T03:09:18.787+00:00 axis-00408ce8dd13 [ ERR     ] httpd[324]: message repeated 6 times: [ [systemd:error] [pid 324:tid 2003955712] AH02396: sd_notifyf returned an error -146]
+2019-11-05T03:10:18.847+00:00 axis-00408ce8dd13 [ ERR     ] httpd[324]: message repeated 6 times: [ [systemd:error] [pid 324:tid 2003955712] AH02396: sd_notifyf returned an error -146]
+2019-11-05T03:11:18.907+00:00 axis-00408ce8dd13 [ ERR     ] httpd[324]: message repeated 6 times: [ [systemd:error] [pid 324:tid 2003955712] AH02396: sd_notifyf returned an error -146]
+2019-11-05T03:12:18.967+00:00 axis-00408ce8dd13 [ ERR     ] httpd[324]: message repeated 6 times: [ [systemd:error] [pid 324:tid 2003955712] AH02396: sd_notifyf returned an error -146]
+2019-11-05T03:13:19.027+00:00 axis-00408ce8dd13 [ ERR     ] httpd[324]: message repeated 6 times: [ [systemd:error] [pid 324:tid 2003955712] AH02396: sd_notifyf returned an error -146]
+2019-11-05T03:14:19.097+00:00 axis-00408ce8dd13 [ ERR     ] httpd[324]: message repeated 6 times: [ [systemd:error] [pid 324:tid 2003955712] AH02396: sd_notifyf returned an error -146]
+2019-11-05T03:15:19.167+00:00 axis-00408ce8dd13 [ ERR     ] httpd[324]: message repeated 6 times: [ [systemd:error] [pid 324:tid 2003955712] AH02396: sd_notifyf returned an error -146]
+2019-11-05T03:16:19.227+00:00 axis-00408ce8dd13 [ ERR     ] httpd[324]: message repeated 6 times: [ [systemd:error] [pid 324:tid 2003955712] AH02396: sd_notifyf returned an error -146]
+2019-11-05T03:17:19.287+00:00 axis-00408ce8dd13 [ ERR     ] httpd[324]: message repeated 6 times: [ [systemd:error] [pid 324:tid 2003955712] AH02396: sd_notifyf returned an error -146]
+2019-11-05T03:18:19.347+00:00 axis-00408ce8dd13 [ ERR     ] httpd[324]: message repeated 6 times: [ [systemd:error] [pid 324:tid 2003955712] AH02396: sd_notifyf returned an error -146]
+2019-11-05T03:19:19.407+00:00 axis-00408ce8dd13 [ ERR     ] httpd[324]: message repeated 6 times: [ [systemd:error] [pid 324:tid 2003955712] AH02396: sd_notifyf returned an error -146]
+2019-11-05T03:20:19.467+00:00 axis-00408ce8dd13 [ ERR     ] httpd[324]: message repeated 6 times: [ [systemd:error] [pid 324:tid 2003955712] AH02396: sd_notifyf returned an error -146]
+2019-11-05T03:21:19.527+00:00 axis-00408ce8dd13 [ ERR     ] httpd[324]: message repeated 6 times: [ [systemd:error] [pid 324:tid 2003955712] AH02396: sd_notifyf returned an error -146]
+2019-11-05T03:22:19.587+00:00 axis-00408ce8dd13 [ ERR     ] httpd[324]: message repeated 6 times: [ [systemd:error] [pid 324:tid 2003955712] AH02396: sd_notifyf returned an error -146]
+2019-11-05T03:23:19.647+00:00 axis-00408ce8dd13 [ ERR     ] httpd[324]: message repeated 6 times: [ [systemd:error] [pid 324:tid 2003955712] AH02396: sd_notifyf returned an error -146]
+2019-11-05T03:24:19.707+00:00 axis-00408ce8dd13 [ ERR     ] httpd[324]: message repeated 6 times: [ [systemd:error] [pid 324:tid 2003955712] AH02396: sd_notifyf returned an error -146]
+2019-11-05T03:25:19.767+00:00 axis-00408ce8dd13 [ ERR     ] httpd[324]: message repeated 5 times: [ [systemd:error] [pid 324:tid 2003955712] AH02396: sd_notifyf returned an error -146]
+2019-11-05T03:26:19.827+00:00 axis-00408ce8dd13 [ ERR     ] httpd[324]: message repeated 6 times: [ [systemd:error] [pid 324:tid 2003955712] AH02396: sd_notifyf returned an error -146]
+2019-11-05T03:27:19.887+00:00 axis-00408ce8dd13 [ ERR     ] httpd[324]: message repeated 6 times: [ [systemd:error] [pid 324:tid 2003955712] AH02396: sd_notifyf returned an error -146]
+2019-11-05T03:28:19.947+00:00 axis-00408ce8dd13 [ ERR     ] httpd[324]: message repeated 6 times: [ [systemd:error] [pid 324:tid 2003955712] AH02396: sd_notifyf returned an error -146]
+2019-11-05T07:41:32.639+00:00 axis-00408ce8dd13 [ WARNING ] focusd[913]: Failed to disable image control: Cannot invoke method; proxy is for a well-known name without an owner and proxy was constructed with the G_DBUS_PROXY_FLAGS_DO_NOT_AUTO_START flag
+2019-11-05T07:41:35.290+00:00 axis-00408ce8dd13 [ WARNING ] focusd[913]: Failed to complete GetSnr: Cannot invoke method; proxy is for a well-known name without an owner and proxy was constructed with the G_DBUS_PROXY_FLAGS_DO_NOT_AUTO_START flag
+2019-11-05T07:41:37.816+00:00 axis-00408ce8dd13 [ WARNING ] focusd[913]: Failed to enable image control: Cannot invoke method; proxy is for a well-known name without an owner and proxy was constructed with the G_DBUS_PROXY_FLAGS_DO_NOT_AUTO_START flag
+2019-11-05T12:46:30.804+00:00 axis-00408ce8dd13 [ WARNING ] focusd[913]: Failed to get temperature: Timeout was reached
+2019-11-05T12:46:36.064+00:00 axis-00408ce8dd13 [ WARNING ] focusd[913]: Could not read temperature sensor "CPU"
+2019-11-05T14:16:23.019+00:00 axis-00408ce8dd13 [ WARNING ] focusd[913]: Failed to get temperature: Timeout was reached
+2019-11-05T14:16:23.020+00:00 axis-00408ce8dd13 [ WARNING ] focusd[913]: Could not read temperature sensor "CPU"
+2019-11-06T10:54:30.330+00:00 axis-00408ce8dd13 [ WARNING ] upload.cgi: ldd: /tmp/pack.iP5OEy/server: error while loading shared libraries: libcrypto.so.0.9.8: cannot open shared object file: No such file or directory#012ldd:  libaxhttp.so => /lib/libaxhttp.so (0x77542000)#012 libgio-2.0.so.0 => /lib/libgio-2.0.so.0 (0x773b2000)#012 libgobject-2.0.so.0 => /lib/libgobject-2.0.so.0 (0x7734e000)#012 libglib-2.0.so.0 => /lib/libglib-2.0.so.0 (0x77206000)#012 libpthread.so.0 => /lib/libpthread.so.0 (0x771dc000)#012 libcrypto.so.0.9.8 => not found#012 libc.so.6 => /lib/libc.so.6 (0x77070000)#012 libaxpackage.so.1 => /lib/libaxpackage.so.1 (0x7705e000)#012 libfdipc.so => /lib/libfdipc.so (0x7704c000)#012 libffi.so.5 => /lib/libffi.so.5 (0x77034000)#012 libgmodule-2.0.so.0 => /lib/libgmodule-2.0.so.0 (0x77020000)#012 libdl.so.2 => /lib/libdl.so.2 (0x7700c000)#012 librt.so.1 => /lib/librt.so.1 (0x76ff4000)#012 libz.so.1 => /lib/libz.so.1 (0x76fd0000)#012 libresolv.so.2 => /lib/libresolv.so.2 (0x76faa000)#012 /lib/ld.s2019-11-05T01:15:30.698+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+o.1 (0x77556000)#012Error: "/tmp/pack.iP5OEy/server" is of the right type, but is missing libraries:#012ldd: /lib/ld.so.1 returned with exit code (1)#012ldd: #012ldd: /tmp/pack.iP5OEy/server: error while loading shared libraries: libcrypto.so.0.9.8: cannot open shared object file: No such file or directory#012ldd:  libaxhttp.so => /lib/libaxhttp.so (0x77f4e000)#012 libgio-2.0.so.0 => /lib/libgio-2.0.so.0 (0x77dbe000)#012 libgobject-2.0.so.0 => /lib/libgobject-2.0.so.0 (0x77d5c000)#012 libglib-2.0.so.0 => /lib/libglib-2.0.so.0 (0x77c14000)#012 libpthread.so.0 => /lib/libpthread.so.0 (0x77bea000)#012 libcrypto.so.0.9.8 => not found#012 libc.so.6 => /lib/libc.so.6 (0x77a7e000)#012 libaxpackage.so.1 => /lib/libaxpackage.so.1 (0x77a6c000)#012 libfdipc.so => /lib/libfdipc.so (0x77a5a000)#012 libffi.so.5 => /lib/libffi.so.5 (0x77a42000)#012 libgmodule-2.0.so.0 => /lib/libgmodule-2.0.so.0 (0x77a2e000)#012 libdl.so.2 => /lib/libdl.so.2 (0x77a1a000)#012 librt.so.1 => /lib/librt.so.1 (0x77a02000)#012 libz.so.1 => /lib/libz.so.1 (0x779de000)#012 libresolv.s
