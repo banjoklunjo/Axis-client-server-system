@@ -65,22 +65,16 @@ public class Client implements Runnable {
 
 		initializeStreams();
 
-		// sendPublicKey();
-
-		// readXorKey();
-
-		// readXorEncryptedMessage();
-		
 		sendPublicKey();
-		
+
 		readXorKey();
 
 		setCameraResolutions();
+		
+		xorCipher = new XorCipher("ABC");
 
 		while (online) {
-			// String msg = readServerMessage();
-			// System.out.println(msg);
-			fakeReadServerImage();
+			readServerImage();
 		}
 
 		close();
@@ -95,10 +89,10 @@ public class Client implements Runnable {
 
 	private void readXorKey() {
 		String encryptedXorKey = readServerMessage();
-		System.out.println("RSA Encrypted XOR Key: " + encryptedXorKey);
-
-		byte[] decryptedXorKey = rsa.decrypt(encryptedXorKey.getBytes());
-		xorCipher = new XorCipher(new String(decryptedXorKey));
+		System.out.println("Encrypted xor key: " + encryptedXorKey);
+		int keyInteger = Integer.valueOf(encryptedXorKey);
+		String keyString = String.valueOf(rsa.RSADecrypt(keyInteger));
+		xorCipher = new XorCipher(keyString);
 	}
 
 	private void readXorEncryptedMessage() {
@@ -130,8 +124,12 @@ public class Client implements Runnable {
 			for (int read = 0; read < realSize;) {
 				read += stream.read(message, read, message.length - read);
 			}
+			System.out.println("image size:" + realSize);
+
 			// using bytearrayinputstream for reading images
-			ByteArrayInputStream bais = new ByteArrayInputStream(message);
+			ByteArrayInputStream bais = new ByteArrayInputStream(
+					xorCipher.xorImage(message));
+
 			// from above bytearrayinputstream we have bufferedImage
 			final BufferedImage bufferedImage = ImageIO.read(bais);
 			// if the buffered image is not null, we will show it.
@@ -187,6 +185,7 @@ public class Client implements Runnable {
 
 			// else if the message is bigger then we are receiving the image
 			else if (length > 20) {
+				System.out.println("length > 20");
 				message = new byte[realSize];
 				// using bufferedinput for smoother reading of the byte array
 				BufferedInputStream stream = new BufferedInputStream(
@@ -196,7 +195,7 @@ public class Client implements Runnable {
 					read += stream.read(message, read, message.length - read);
 				}
 				// using bytearrayinputstream for reading images
-				ByteArrayInputStream bais = new ByteArrayInputStream(message);
+				ByteArrayInputStream bais = new ByteArrayInputStream(xorCipher.xorImage(message));
 				// from above bytearrayinputstream we have bufferedImage
 				final BufferedImage bufferedImage = ImageIO.read(bais);
 				// if the buffered image is not null, we will show it.
@@ -221,7 +220,6 @@ public class Client implements Runnable {
 		int index = 0;
 		while (index < size) {
 			int bytesRead = input.read(data, index, size - index);
-			System.out.println("Bytes read = " + String.valueOf(bytesRead));
 			if (bytesRead < 0) {
 				throw new IOException("Insufficient data in stream");
 			}

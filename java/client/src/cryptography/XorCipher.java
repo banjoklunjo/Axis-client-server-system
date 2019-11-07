@@ -24,7 +24,7 @@ public class XorCipher {
 
 	public byte[] xorImage(byte[] image) {
 		for (int i = 0; i < image.length; i++) {
-			image[i] = ((byte) (image[i] ^ key.charAt(i % keyLength)));
+			image[i] = ( (byte) (image[i] ^ key.charAt(i % keyLength) - 48));
 		}
 		return image;
 	}
