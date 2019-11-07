@@ -315,50 +315,6 @@
 2019-11-04T17:26:57.225+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: 6
 2019-11-04T17:26:57.225+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: Innan xor:
 2019-11-04T17:26:57.238+00:00 axis-00408ce8dd13 [ INFO    ] server[16100]: efter for loop xor:
-2019-11-05T01:16:55.788+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
-2019-11-05T01:18:20.508+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
-2019-11-05T01:19:44.599+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
-2019-11-05T01:21:09.055+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
-2019-11-05T01:22:32.519+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
-2019-11-05T01:23:55.575+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
-2019-11-05T01:25:20.971+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
-2019-11-05T01:26:42.365+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
-2019-11-05T01:28:03.573+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
-2019-11-05T01:29:25.909+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
-2019-11-05T01:30:48.771+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
-2019-11-05T01:32:10.308+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
-2019-11-05T01:33:28.817+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
-2019-11-05T01:34:49.737+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
-2019-11-05T01:36:09.965+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
-2019-11-05T01:37:30.443+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
-2019-11-05T01:38:48.421+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
-2019-11-05T01:40:06.921+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
-2019-11-05T01:41:25.020+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
-2019-11-05T01:42:41.352+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
-2019-11-05T01:43:59.458+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
-2019-11-05T01:45:16.866+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
-2019-11-05T01:46:34.719+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
-2019-11-05T01:47:48.673+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
-2019-11-05T01:49:05.659+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
-2019-11-05T01:50:22.561+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
-2019-11-05T01:51:36.958+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
-2019-11-05T01:52:53.143+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
-2019-11-05T01:54:06.246+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
-2019-11-05T01:55:21.597+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
-2019-11-05T01:56:37.977+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
-2019-11-05T01:57:53.829+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
-2019-11-05T01:59:06.837+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
-2019-11-05T02:00:20.281+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
-2019-11-05T02:01:33.827+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
-2019-11-05T02:02:45.494+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
-2019-11-05T02:03:58.417+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
-2019-11-05T02:05:09.509+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
-2019-11-05T02:06:20.665+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
-2019-11-05T02:07:31.930+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
-2019-11-05T02:08:42.571+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
-2019-11-05T02:09:51.327+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
-2019-11-05T02:11:01.128+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
-2019-11-05T02:12:13.138+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
 2019-11-05T02:13:21.698+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
 2019-11-05T02:14:30.032+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
 2019-11-05T02:15:40.612+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
@@ -416,7 +372,6 @@
 2019-11-05T03:04:18.037+00:00 axis-00408ce8dd13 [ ERR     ] httpd[324]: message repeated 6 times: [ [systemd:error] [pid 324:tid 2003955712] AH02396: sd_notifyf returned an error -146]
 2019-11-05T03:05:18.097+00:00 axis-00408ce8dd13 [ ERR     ] httpd[324]: message repeated 5 times: [ [systemd:error] [pid 324:tid 2003955712] AH02396: sd_notifyf returned an error -146]
 2019-11-05T03:06:18.157+00:00 axis-00408ce8dd13 [ ERR     ] httpd[324]: message repeated 6 times: [ [systemd:error] [pid 324:tid 2003955712] AH02396: sd_notifyf returned an error -146]
-2019-11-05T03:07:18.667+00:00 axis-00408ce8dd13 [ ERR     ] httpd[324]: message repeated 6 times: [ [systemd:error] [pid 324:tid 2003955712] AH02396: sd_notifyf returned an error -146]
 2019-11-05T03:08:18.727+00:00 axis-00408ce8dd13 [ ERR     ] httpd[324]: message repeated 6 times: [ [systemd:error] [pid 324:tid 2003955712] AH02396: sd_notifyf returned an error -146]
 2019-11-05T03:09:18.787+00:00 axis-00408ce8dd13 [ ERR     ] httpd[324]: message repeated 6 times: [ [systemd:error] [pid 324:tid 2003955712] AH02396: sd_notifyf returned an error -146]
 2019-11-05T03:10:18.847+00:00 axis-00408ce8dd13 [ ERR     ] httpd[324]: message repeated 6 times: [ [systemd:error] [pid 324:tid 2003955712] AH02396: sd_notifyf returned an error -146]
@@ -445,5 +400,28 @@
 2019-11-05T12:46:36.064+00:00 axis-00408ce8dd13 [ WARNING ] focusd[913]: Could not read temperature sensor "CPU"
 2019-11-05T14:16:23.019+00:00 axis-00408ce8dd13 [ WARNING ] focusd[913]: Failed to get temperature: Timeout was reached
 2019-11-05T14:16:23.020+00:00 axis-00408ce8dd13 [ WARNING ] focusd[913]: Could not read temperature sensor "CPU"
-2019-11-06T10:54:30.330+00:00 axis-00408ce8dd13 [ WARNING ] upload.cgi: ldd: /tmp/pack.iP5OEy/server: error while loading shared libraries: libcrypto.so.0.9.8: cannot open shared object file: No such file or directory#012ldd:  libaxhttp.so => /lib/libaxhttp.so (0x77542000)#012 libgio-2.0.so.0 => /lib/libgio-2.0.so.0 (0x773b2000)#012 libgobject-2.0.so.0 => /lib/libgobject-2.0.so.0 (0x7734e000)#012 libglib-2.0.so.0 => /lib/libglib-2.0.so.0 (0x77206000)#012 libpthread.so.0 => /lib/libpthread.so.0 (0x771dc000)#012 libcrypto.so.0.9.8 => not found#012 libc.so.6 => /lib/libc.so.6 (0x77070000)#012 libaxpackage.so.1 => /lib/libaxpackage.so.1 (0x7705e000)#012 libfdipc.so => /lib/libfdipc.so (0x7704c000)#012 libffi.so.5 => /lib/libffi.so.5 (0x77034000)#012 libgmodule-2.0.so.0 => /lib/libgmodule-2.0.so.0 (0x77020000)#012 libdl.so.2 => /lib/libdl.so.2 (0x7700c000)#012 librt.so.1 => /lib/librt.so.1 (0x76ff4000)#012 libz.so.1 => /lib/libz.so.1 (0x76fd0000)#012 libresolv.so.2 => /lib/libresolv.so.2 (0x76faa000)#012 /lib/ld.s2019-11-05T01:15:30.698+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-06T10:54:30.330+00:00 axis-00408ce8dd13 [ WARNING ] upload.cgi: ldd: /tmp/pack.iP5OEy/server: error while loading shared libraries: libcrypto.so.0.9.8: cannot open shared object file: No such file or directory#012ldd:  libaxhttp.so => /lib/libaxhttp.so (0x77542000)#012 libgio-2.0.so.0 => /lib/libgio-2.0.so.0 (0x773b2000)#012 libgobject-2.0.so.0 => /lib/libgobject-2.0.so.0 (0x7734e000)#012 libglib-2.0.so.0 => /lib/libglib-2.0.so.0 (0x77206000)#012 libpthread.so.0 => /lib/libpthread.so.0 (0x771dc000)#012 libcrypto.so.0.9.8 => not found#012 libc.so.6 => /lib/libc.so.6 (0x77070000)#012 libaxpackage.so.1 => /lib/libaxpackage.so.1 (0x7705e000)#012 libfdipc.so => /lib/libfdipc.so (0x7704c000)#012 libffi.so.5 => /lib/libffi.so.5 (0x77034000)#012 libgmodule-2.0.so.0 => /lib/libgmodule-2.0.so.0 (0x77020000)#012 libdl.so.2 => /lib/libdl.so.2 (0x7700c000)#012 librt.so.1 => /lib/librt.so.1 (0x76ff4000)#012 libz.so.1 => /lib/libz.so.1 (0x76fd0000)#012 libresolv.so.2 => /lib/libresolv.so.2 (0x76faa000)#012 /lib/ld.s2019-11-05T03:07:18.667+00:00 axis-00408ce8dd13 [ ERR     ] httpd[324]: message repeated 6 times: [ [systemd:error] [pid 324:tid 2003955712] AH02396: sd_notifyf returned an error -146]
+2019-11-07T14:42:14.161+00:00 axis-00408ce8dd13 [ WARNING ] confcached[669]: Failed to get proxy for 'com.axis.TriggerData:/com/axis/TriggerData/0:com.axis.Configuration.Legacy': Error calling StartServiceByName for com.axis.TriggerData: GDBus.Error:org.freedesktop.DBus.Error.TimedOut: Activation of com.axis.TriggerData timed out
+2019-11-07T14:43:14.240+00:00 axis-00408ce8dd13 [ WARNING ] confcached[669]: Failed to get proxy for 'com.axis.TriggerData:/com/axis/TriggerData/0:com.axis.Configuration.Legacy': Error calling StartServiceByName for com.axis.TriggerData: GDBus.Error:org.freedesktop.DBus.Error.TimedOut: Activation of com.axis.TriggerData timed out
+2019-11-07T14:44:14.290+00:00 axis-00408ce8dd13 [ WARNING ] confcached[669]: Failed to get proxy for 'com.axis.TriggerData:/com/axis/TriggerData/0:com.axis.Configuration.Legacy': Error calling StartServiceByName for com.axis.TriggerData: GDBus.Error:org.freedesktop.DBus.Error.TimedOut: Activation of com.axis.TriggerData timed out
+2019-11-07T14:45:14.343+00:00 axis-00408ce8dd13 [ WARNING ] confcached[669]: Failed to get proxy for 'com.axis.TriggerData:/com/axis/TriggerData/0:com.axis.Configuration.Legacy': Error calling StartServiceByName for com.axis.TriggerData: GDBus.Error:org.freedesktop.DBus.Error.TimedOut: Activation of com.axis.TriggerData timed out
+2019-11-07T14:46:14.387+00:00 axis-00408ce8dd13 [ WARNING ] confcached[669]: Failed to get proxy for 'com.axis.TriggerData:/com/axis/TriggerData/0:com.axis.Configuration.Legacy': Error calling StartServiceByName for com.axis.TriggerData: GDBus.Error:org.freedesktop.DBus.Error.TimedOut: Activation of com.axis.TriggerData timed out
+2019-11-07T14:47:14.442+00:00 axis-00408ce8dd13 [ WARNING ] confcached[669]: Failed to get proxy for 'com.axis.TriggerData:/com/axis/TriggerData/0:com.axis.Configuration.Legacy': Error calling StartServiceByName for com.axis.TriggerData: GDBus.Error:org.freedesktop.DBus.Error.TimedOut: Activation of com.axis.TriggerData timed out
+2019-11-07T15:04:18.969+00:00 axis-00408ce8dd13 [ WARNING ] ssid: Couldn't write to socket: No route to host
+2019-11-07T15:05:19.115+00:00 axis-00408ce8dd13 [ WARNING ] confcached[669]: Failed to get proxy for 'com.axis.TriggerData:/com/axis/TriggerData/0:com.axis.Configuration.Legacy': Error calling StartServiceByName for com.axis.TriggerData: GDBus.Error:org.freedesktop.DBus.Error.TimedOut: Activation of com.axis.TriggerData timed out
+2019-11-07T15:06:19.168+00:00 axis-00408ce8dd13 [ WARNING ] confcached[669]: Failed to get proxy for 'com.axis.TriggerData:/com/axis/TriggerData/0:com.axis.Configuration.Legacy': Error calling StartServiceByName for com.axis.TriggerData: GDBus.Error:org.freedesktop.DBus.Error.TimedOut: Activation of com.axis.TriggerData timed out
+2019-11-07T15:07:19.223+00:00 axis-00408ce8dd13 [ WARNING ] confcached[669]: Failed to get proxy for 'com.axis.TriggerData:/com/axis/TriggerData/0:com.axis.Configuration.Legacy': Error calling StartServiceByName for com.axis.TriggerData: GDBus.Error:org.freedesktop.DBus.Error.TimedOut: Activation of com.axis.TriggerData timed out
+2019-11-07T15:08:19.275+00:00 axis-00408ce8dd13 [ WARNING ] confcached[669]: Failed to get proxy for 'com.axis.TriggerData:/com/axis/TriggerData/0:com.axis.Configuration.Legacy': Error calling StartServiceByName for com.axis.TriggerData: GDBus.Error:org.freedesktop.DBus.Error.TimedOut: Activation of com.axis.TriggerData timed out
+2019-11-07T15:09:19.330+00:00 axis-00408ce8dd13 [ WARNING ] confcached[669]: Failed to get proxy for 'com.axis.TriggerData:/com/axis/TriggerData/0:com.axis.Configuration.Legacy': Error calling StartServiceByName for com.axis.TriggerData: GDBus.Error:org.freedesktop.DBus.Error.TimedOut: Activation of com.axis.TriggerData timed out
+2019-11-07T15:10:19.379+00:00 axis-00408ce8dd13 [ WARNING ] confcached[669]: Failed to get proxy for 'com.axis.TriggerData:/com/axis/TriggerData/0:com.axis.Configuration.Legacy': Error calling StartServiceByName for com.axis.TriggerData: GDBus.Error:org.freedesktop.DBus.Error.TimedOut: Activation of com.axis.TriggerData timed out
+2019-11-07T15:27:22.008+00:00 axis-00408ce8dd13 [ WARNING ] ssid: Couldn't write to socket: No route to host
+2019-11-07T15:28:22.154+00:00 axis-00408ce8dd13 [ WARNING ] confcached[669]: Failed to get proxy for 'com.axis.TriggerData:/com/axis/TriggerData/0:com.axis.Configuration.Legacy': Error calling StartServiceByName for com.axis.TriggerData: GDBus.Error:org.freedesktop.DBus.Error.TimedOut: Activation of com.axis.TriggerData timed out
+2019-11-07T15:29:22.220+00:00 axis-00408ce8dd13 [ WARNING ] confcached[669]: Failed to get proxy for 'com.axis.TriggerData:/com/axis/TriggerData/0:com.axis.Configuration.Legacy': Error calling StartServiceByName for com.axis.TriggerData: GDBus.Error:org.freedesktop.DBus.Error.TimedOut: Activation of com.axis.TriggerData timed out
+2019-11-07T15:30:22.265+00:00 axis-00408ce8dd13 [ WARNING ] confcached[669]: Failed to get proxy for 'com.axis.TriggerData:/com/axis/TriggerData/0:com.axis.Configuration.Legacy': Error calling StartServiceByName for com.axis.TriggerData: GDBus.Error:org.freedesktop.DBus.Error.TimedOut: Activation of com.axis.TriggerData timed out
+2019-11-07T15:31:22.319+00:00 axis-00408ce8dd13 [ WARNING ] confcached[669]: Failed to get proxy for 'com.axis.TriggerData:/com/axis/TriggerData/0:com.axis.Configuration.Legacy': Error calling StartServiceByName for com.axis.TriggerData: GDBus.Error:org.freedesktop.DBus.Error.TimedOut: Activation of com.axis.TriggerData timed out
+2019-11-07T15:32:22.371+00:00 axis-00408ce8dd13 [ WARNING ] confcached[669]: Failed to get proxy for 'com.axis.TriggerData:/com/axis/TriggerData/0:com.axis.Configuration.Legacy': Error calling StartServiceByName for com.axis.TriggerData: GDBus.Error:org.freedesktop.DBus.Error.TimedOut: Activation of com.axis.TriggerData timed out
+2019-11-07T15:33:22.417+00:00 axis-00408ce8dd13 [ WARNING ] confcached[669]: Failed to get proxy for 'com.axis.TriggerData:/com/axis/TriggerData/0:com.axis.Configuration.Legacy': Error calling StartServiceByName for com.axis.TriggerData: GDBus.Error:org.freedesktop.DBus.Error.TimedOut: Activation of com.axis.TriggerData timed out
+2019-11-07T15:51:01.209+00:00 axis-00408ce8dd13 [ WARNING ] ssid: Couldn't write to socket: No route to host
+2019-11-07T16:34:14.630+00:00 axis-00408ce8dd13 [ WARNING ] control.cgi: Application server[16100] can not be stopped
+2019-11-07T16:54:15.860+00:00 axis-00408ce8dd13 [ WARNING ] control.cgi: Failed to restart the web server, some settings might not take effect.
 o.1 (0x77556000)#012Error: "/tmp/pack.iP5OEy/server" is of the right type, but is missing libraries:#012ldd: /lib/ld.so.1 returned with exit code (1)#012ldd: #012ldd: /tmp/pack.iP5OEy/server: error while loading shared libraries: libcrypto.so.0.9.8: cannot open shared object file: No such file or directory#012ldd:  libaxhttp.so => /lib/libaxhttp.so (0x77f4e000)#012 libgio-2.0.so.0 => /lib/libgio-2.0.so.0 (0x77dbe000)#012 libgobject-2.0.so.0 => /lib/libgobject-2.0.so.0 (0x77d5c000)#012 libglib-2.0.so.0 => /lib/libglib-2.0.so.0 (0x77c14000)#012 libpthread.so.0 => /lib/libpthread.so.0 (0x77bea000)#012 libcrypto.so.0.9.8 => not found#012 libc.so.6 => /lib/libc.so.6 (0x77a7e000)#012 libaxpackage.so.1 => /lib/libaxpackage.so.1 (0x77a6c000)#012 libfdipc.so => /lib/libfdipc.so (0x77a5a000)#012 libffi.so.5 => /lib/libffi.so.5 (0x77a42000)#012 libgmodule-2.0.so.0 => /lib/libgmodule-2.0.so.0 (0x77a2e000)#012 libdl.so.2 => /lib/libdl.so.2 (0x77a1a000)#012 librt.so.1 => /lib/librt.so.1 (0x77a02000)#012 libz.so.1 => /lib/libz.so.1 (0x779de000)#012 libresolv.s

@@ -110,15 +110,23 @@ void * socketThread(void *arg)
 	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''*/
 	int m = 123;
 
+	long int rsa = ( fmod( pow( m, e) , n ) );
+
+	char char_rsa[1000];
+
+	//itoa(rsa, char_rsa, 1000);
+
+	sprintf(char_rsa, "%ld", rsa);
+
 	
 
-	snprintf(msg, sizeof( fmod( pow( m, e) , n ) ) , "%d", (int) ( fmod( pow( m, e) , n ) ) );
-	write(newSocket, msg, strlen(msg));   
+	//snprintf(msg, sizeof( rsa ) , "%d", rsa);
+	write(newSocket, char_rsa, strlen(char_rsa));   
 	write(newSocket, "\n", strlen("\n"));
 	syslog(LOG_INFO, "XOR SENT TO CLIENT ...\n"); 
 
-	char *xor;
-	sprintf(xor, "%d",  m );
+	char *xor = "123";
+
 
 	//Get all available resolutions on the camera
 	msg = capture_get_resolutions_list(0);  

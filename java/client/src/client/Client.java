@@ -71,7 +71,7 @@ public class Client implements Runnable {
 
 		setCameraResolutions();
 		
-		xorCipher = new XorCipher("ABC");
+		//xorCipher = new XorCipher("123");
 
 		while (online) {
 			readServerImage();

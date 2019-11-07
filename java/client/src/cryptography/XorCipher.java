@@ -8,7 +8,7 @@ public class XorCipher {
 		if (key != null && !key.isEmpty()) {
 			this.key = key;
 			this.keyLength = key.length();
-			System.out.println("Xor key: " + this.key + ", Xor key length: " + this.keyLength);
+			System.out.println("Xor key: " + this.key + ", Xor key length1: " + this.keyLength);
 		} else {
 			System.out.println("********* XOR KEY IS NULL OR EMPTY *********");
 		}
