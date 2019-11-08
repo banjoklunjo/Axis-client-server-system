@@ -19,7 +19,6 @@
 
 /*------------------------------------------------------------------------*/
 // Function Prototypes Requried To Avoid Implicit Declaration Warning
-int receive_client_public_key();
 
 void send_xor_key();
 
@@ -80,15 +79,18 @@ void * socket_thread(void *arg)
         recv(socket_client_thread , client_message , 2000 , 0);
         long long int n = atoi(client_message); // n
         memset(client_message, 0, 2000);
+	syslog(LOG_INFO, "socket_thread: received n --> %lld", n);
         recv( socket_client_thread , client_message , 2000 , 0 );
         int e = atoi( client_message ); // e
         memset(client_message, 0, 2000);
+	syslog(LOG_INFO, "socket_thread: received e --> %d", e);
 
 	// send RSA encrypted xor key
 	int XoR_Key = 5;
         double pow_value = pow( XoR_Key,e );
         double fmod_value = fmod( pow_value, n );       
 	sprintf(client_message, "%d", (int) fmod_value);
+	syslog(LOG_INFO, "socket_thread: sending RSA encrypted Xor key --> %s", client_message);
       
 	strncat(client_message, &new_line, 1); 
         write( socket_client_thread, client_message, strlen(client_message) ) ;
@@ -96,6 +98,7 @@ void * socket_thread(void *arg)
         // send resolutions
         char *resolutions = capture_get_resolutions_list(0);
         strncat(resolutions, &new_line, 1); 
+	syslog(LOG_INFO, "socket_thread: sending resolutions --> %s", resolutions);
         write( socket_client_thread, resolutions, strlen(resolutions) ) ;
 
         // start sending image
@@ -105,31 +108,48 @@ void * socket_thread(void *arg)
 
         size_t img_size;
 	
+	memset(client_message, 0, 2000);
 	recv(socket_client_thread , client_message , 2000 , 0);
+	syslog(LOG_INFO, "socket_thread: receive resolution and fps --> %s", client_message);
 
-	stream = capture_open_stream(IMAGE_JPEG, client_message); 
+	stream = capture_open_stream(IMAGE_JPEG, client_message);
+	syslog(LOG_INFO, "socket_thread: capture open stream"); 
 
 	while(1) 
         {
+                syslog(LOG_INFO, "while-loop: capture get frame");
 		frame = capture_get_frame(stream);    
 
 		//Get image data
-		data = capture_frame_data(frame);  
+		data = capture_frame_data(frame);
+         	syslog(LOG_INFO, "while-loop: Get image data");  
 
 		//Get the image size
-		img_size  = capture_frame_size(frame);    
+		img_size  = capture_frame_size(frame); 
+		syslog(LOG_INFO, "while-loop: Get the image size --> %zu", img_size);     
 
 		//Convert the image size to a char * to send to the client
                 char message[10] = "";
-		sprintf( message,"%zu" ,img_size ); 
+		sprintf( message,"%zu" ,img_size );
+		syslog(LOG_INFO, "while-loop: Convert the image size to a char array --> %s", message);   
 
 		//Send the size to the client
+		syslog(LOG_INFO, "while-loop: sending size to client");
         	strncat(message, &new_line, 1); 
         	write( socket_client_thread, message, strlen(message) ) ;
 
-		data = encrypt_char(data, XoR_Key, sizeof(data));
+		//data = encrypt_char(data, XoR_Key, sizeof(data));
 
-                write(socket_client_thread, data, sizeof(data));  
+                int bytes_sent = write(socket_client_thread, data, img_size);
+		syslog(LOG_INFO, "while-loop: sending image to client [%d bytes sent]", bytes_sent); 
+                
+                /*while (length > 0)
+    		{
+        		int i = write(socket_client_thread, ptr, length);
+        		if (i < 1) return false;
+        		ptr += i;
+        		length -= i;
+    		}*/ 
 
 		//Emptying the variables to be sure nothing is stored 
 		memset(data, 0, sizeof(data));
@@ -137,28 +157,8 @@ void * socket_thread(void *arg)
 
 	}
 }
-/*------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------*/
-int receive_client_public_key() 
-{
-  int bytes_read = recv( client_socket, str_public_key_client, 300, 0 );
-  if( bytes_read ) printf( "\nClient Public Key: \n%s\n", str_public_key_client );
-  return bytes_read; //hej
-}
-/*------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------*/
-/*void send_xor_encrypted_message()
-{ 
-  char* message = "this is a message from the server";
-  
-  int message_length = strlen( message );
-  
-  char* encrypted_xor_message = xor_message( message, message_length );
 
-  send_message_to_client( encrypted_xor_message );
 
-  free( encrypted_xor_message );
-}*/
 /*------------------------------------------------------------------------*/
 /*------------------------------------------------------------------------*/
 /* If a message character happens to match the xor key character, the result will be 0.

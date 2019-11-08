@@ -17,7 +17,7 @@ public class XorCipher {
 	public String xorMessage(String message) {
 		StringBuilder output = new StringBuilder();
 		for (int i = 0; i < message.length(); i++) {
-			output.append((char) (message.charAt(i) ^ key.charAt(i % keyLength)));
+			output.append((char) (message.charAt(i) ^ key.charAt(i % keyLength)-48));
 		}
 		return output.toString();
 	}

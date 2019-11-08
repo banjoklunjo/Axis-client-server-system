@@ -42,7 +42,8 @@ public class View implements ActionListener {
 			controller.connect(ip, port);
 		} else if (event.getSource() == btnSend) {
 			if( sendRefreshrateField.getText().length() != 0){
-				controller.sendMessage("resolution=" + resolutions.getSelectedItem() + "&fps=" + sendRefreshrateField.getText());
+				controller.sendXorEncryptedResolution("resolution=" + resolutions.getSelectedItem() + "&fps=" + sendRefreshrateField.getText());
+				//controller.sendMessage("resolution=" + resolutions.getSelectedItem() + "&fps=" + sendRefreshrateField.getText());
 			}else{
 				System.out.println("Please choose resolution.");
 			}

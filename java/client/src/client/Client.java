@@ -24,6 +24,7 @@ import cryptography.RSA;
 import cryptography.XorCipher;
 
 public class Client implements Runnable {
+	
 	private JFrame frame;
 	private Controller controller;
 
@@ -54,12 +55,15 @@ public class Client implements Runnable {
 	// generate private key and public key
 	private RSA rsa;
 
+	
+	
 	public Client(Controller controller, Socket socket) {
 		this.controller = controller;
 		this.socket = socket;
 		this.rsa = new RSA();
 	}
 
+	
 	@Override
 	public void run() {
 
@@ -67,11 +71,9 @@ public class Client implements Runnable {
 
 		sendPublicKey();
 
-		readXorKey();
+		readRSAXorKey();
 
 		setCameraResolutions();
-		
-		//xorCipher = new XorCipher("123");
 
 		while (online) {
 			readServerImage();
@@ -87,20 +89,34 @@ public class Client implements Runnable {
 		sendToServer(e);
 	}
 
-	private void readXorKey() {
+	private void readRSAXorKey() {
 		String encryptedXorKey = readServerMessage();
-		System.out.println("Encrypted xor key: " + encryptedXorKey);
+		System.out.println("RSA Encrypted XOR key: " + encryptedXorKey);
+		
 		int keyInteger = Integer.valueOf(encryptedXorKey);
 		String keyString = String.valueOf(rsa.RSADecrypt(keyInteger));
+		
 		xorCipher = new XorCipher(keyString);
 	}
+	
+	private void setCameraResolutions() {
+		List<String> resolutions = getListResolutions();
+		
+		if (resolutions != null)
+			controller.setResolutions(resolutions);
+	}
 
-	private void readXorEncryptedMessage() {
-		String xorEncryptedMessage = readServerMessage();
-		System.out.println("XOR Encrypted Message: " + xorEncryptedMessage);
-
-		String xorDecryptedMessage = xorCipher.xorMessage(xorEncryptedMessage);
-		System.out.println("XOR Decrypted Message: " + xorDecryptedMessage);
+	private List<String> getListResolutions() {
+		String xorEncryptedCameraResolutions = readServerMessage();
+		System.out.println("xorEncryptedCameraResolutions: " + xorEncryptedCameraResolutions);
+		
+		String xorDecryptedResolutions = xorCipher.xorMessage(xorEncryptedCameraResolutions);
+		System.out.println("Xor Decrypted Resolutions: " + xorDecryptedResolutions);
+		
+		List<String> listOfResolutions = null;
+		if (xorDecryptedResolutions != null)
+			listOfResolutions = Arrays.asList(xorDecryptedResolutions.split(","));
+		return listOfResolutions;
 	}
 
 	private void fakeReadServerImage() {
@@ -116,6 +132,7 @@ public class Client implements Runnable {
 
 			String imageSize = readServerMessage();
 			realSize = Integer.valueOf(imageSize);
+			System.out.println("image size: " + realSize);
 			byte[] message = new byte[realSize];
 
 			// using bufferedinput for smoother reading of the byte array
@@ -123,12 +140,11 @@ public class Client implements Runnable {
 			// with the bufferedinputstream we can read each byte
 			for (int read = 0; read < realSize;) {
 				read += stream.read(message, read, message.length - read);
+				System.out.println("image bytes read: " + read);
 			}
-			System.out.println("image size:" + realSize);
 
 			// using bytearrayinputstream for reading images
-			ByteArrayInputStream bais = new ByteArrayInputStream(
-					xorCipher.xorImage(message));
+			ByteArrayInputStream bais = new ByteArrayInputStream(message);
 
 			// from above bytearrayinputstream we have bufferedImage
 			final BufferedImage bufferedImage = ImageIO.read(bais);
@@ -244,19 +260,6 @@ public class Client implements Runnable {
 		return message;
 	}
 
-	private void setCameraResolutions() {
-		List<String> resolutions = getListResolutions();
-		if (resolutions != null)
-			controller.setResolutions(resolutions);
-	}
-
-	private List<String> getListResolutions() {
-		String cameraResolutions = readServerMessage();
-		List<String> listOfResolutions = null;
-		if (cameraResolutions != null)
-			listOfResolutions = Arrays.asList(cameraResolutions.split(","));
-		return listOfResolutions;
-	}
 
 	private void initializeStreams() {
 		online = true;
@@ -291,6 +294,12 @@ public class Client implements Runnable {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+	}
+
+
+	public void sendXorEncryptedResolution(String resolution) {
+		String xorEncryptedResolution = xorCipher.xorMessage(resolution);
+		sendToServer(xorEncryptedResolution);
 	}
 
 }

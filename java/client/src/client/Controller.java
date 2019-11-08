@@ -32,6 +32,14 @@ public class Controller {
 			view.onConnect();
 		}
 	}
+	
+	public void sendXorEncryptedResolution(String resolution) {
+		if (resolution != null && !resolution.isEmpty()) {
+			client.sendXorEncryptedResolution(resolution);
+		} else {
+			System.out.println("Type a message to send to the server");
+		}
+	}
 
 	public void sendMessage(String message) {
 		if (message != null && !message.isEmpty()) {
