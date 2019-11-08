@@ -1,0 +1,256 @@
+
+----- System log -----
+
+2019-11-08T09:26:21.315+00:00 axis-00408cf5b0f1 [ WARNING ] mergeresolv.sh[676]: nothing to merge falling back to backup plan!
+2019-11-08T09:26:27.248+00:00 axis-00408cf5b0f1 [ WARNING ] ipchanged[796]: respawnd not running.
+2019-11-08T09:26:30.836+00:00 axis-00408cf5b0f1 [ WARNING ] mergeresolv.sh[1191]: nothing to merge falling back to backup plan!
+2019-11-08T09:26:35.055+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1279]: Failed to get /sys/ path for /dev/mmcblk0p1
+2019-11-08T09:26:35.363+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1279]: disk.c : Disk disruption detection status changed for NetworkShare. Status = 'disruption'
+2019-11-08T09:26:35.363+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1279]: disk.c : Disk disruption detection status changed for SD_DISK. Status = 'disruption'
+2019-11-08T09:26:38.722+00:00 axis-00408cf5b0f1 [ WARNING ] blinkenlights[1149]: CancelState - Failed to cancel state.
+2019-11-08T09:29:03.776+00:00 axis-00408cf5b0f1 [ WARNING ] server[2853]: Could not get VideoType from com.axis.VideoControl: Method "Get" with signature "ss" on interface "org.freedesktop.DBus.Properties" doesn't exist
+2019-11-08T09:34:47.614+00:00 axis-00408cf5b0f1 [ WARNING ] server[3572]: Could not get VideoType from com.axis.VideoControl: Method "Get" with signature "ss" on interface "org.freedesktop.DBus.Properties" doesn't exist
+2019-11-08T09:39:40.368+00:00 axis-00408cf5b0f1 [ WARNING ] server[4207]: Could not get VideoType from com.axis.VideoControl: Method "Get" with signature "ss" on interface "org.freedesktop.DBus.Properties" doesn't exist
+2019-11-08T09:43:32.602+00:00 axis-00408cf5b0f1 [ WARNING ] server[4207]: Could not get VideoType from com.axis.VideoControl: Method "Get" with signature "ss" on interface "org.freedesktop.DBus.Properties" doesn't exist
+2019-11-08T09:44:06.471+00:00 axis-00408cf5b0f1 [ WARNING ] server[4207]: Could not get VideoType from com.axis.VideoControl: Method "Get" with signature "ss" on interface "org.freedesktop.DBus.Properties" doesn't exist
+2019-11-08T09:45:44.868+00:00 axis-00408cf5b0f1 [ WARNING ] server[4207]: Could not get VideoType from com.axis.VideoControl: Method "Get" with signature "ss" on interface "org.freedesktop.DBus.Properties" doesn't exist
+2019-11-08T09:49:51.185+00:00 axis-00408cf5b0f1 [ WARNING ] server[5496]: Could not get VideoType from com.axis.VideoControl: Method "Get" with signature "ss" on interface "org.freedesktop.DBus.Properties" doesn't exist
+2019-11-08T10:00:06.068+00:00 axis-00408cf5b0f1 [ WARNING ] server[6272]: Could not get VideoType from com.axis.VideoControl: Method "Get" with signature "ss" on interface "org.freedesktop.DBus.Properties" doesn't exist
+2019-11-08T10:26:35.601+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1279]: Failed to get /sys/ path for /dev/mmcblk0p1
+2019-11-08T11:17:56.379+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending size to client
+2019-11-08T11:17:56.381+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending image to client [-1 bytes sent]
+2019-11-08T11:17:56.382+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: capture get frame
+2019-11-08T11:17:57.371+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get image data
+2019-11-08T11:17:57.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get the image size --> 38490
+2019-11-08T11:17:57.375+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Convert the image size to a char array --> 38490
+2019-11-08T11:17:57.375+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending size to client
+2019-11-08T11:17:57.376+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: capture get frame
+2019-11-08T11:17:57.376+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending image to client [-1 bytes sent]
+2019-11-08T11:17:58.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Convert the image size to a char array --> 38349
+2019-11-08T11:17:58.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get image data
+2019-11-08T11:17:58.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get the image size --> 38349
+2019-11-08T11:17:58.377+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: capture get frame
+2019-11-08T11:17:58.377+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending image to client [-1 bytes sent]
+2019-11-08T11:17:58.377+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending size to client
+2019-11-08T11:17:59.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Convert the image size to a char array --> 38503
+2019-11-08T11:17:59.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get image data
+2019-11-08T11:17:59.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get the image size --> 38503
+2019-11-08T11:17:59.373+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending size to client
+2019-11-08T11:17:59.379+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: capture get frame
+2019-11-08T11:17:59.379+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending image to client [-1 bytes sent]
+2019-11-08T11:18:00.371+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get image data
+2019-11-08T11:18:00.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Convert the image size to a char array --> 38454
+2019-11-08T11:18:00.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get the image size --> 38454
+2019-11-08T11:18:00.373+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending size to client
+2019-11-08T11:18:00.378+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: capture get frame
+2019-11-08T11:18:00.378+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending image to client [-1 bytes sent]
+2019-11-08T11:18:01.370+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get image data
+2019-11-08T11:18:01.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get the image size --> 38528
+2019-11-08T11:18:01.374+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Convert the image size to a char array --> 38528
+2019-11-08T11:18:01.377+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending size to client
+2019-11-08T11:18:01.379+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending image to client [-1 bytes sent]
+2019-11-08T11:18:01.382+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: capture get frame
+2019-11-08T11:18:02.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get image data
+2019-11-08T11:18:02.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get the image size --> 38498
+2019-11-08T11:18:02.373+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Convert the image size to a char array --> 38498
+2019-11-08T11:18:02.377+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending image to client [-1 bytes sent]
+2019-11-08T11:18:02.377+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending size to client
+2019-11-08T11:18:02.378+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: capture get frame
+2019-11-08T11:18:03.373+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get image data
+2019-11-08T11:18:03.373+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get the image size --> 38485
+2019-11-08T11:18:03.374+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Convert the image size to a char array --> 38485
+2019-11-08T11:18:03.374+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending image to client [-1 bytes sent]
+2019-11-08T11:18:03.374+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending size to client
+2019-11-08T11:18:03.375+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: capture get frame
+2019-11-08T11:18:04.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get image data
+2019-11-08T11:18:04.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get the image size --> 38478
+2019-11-08T11:18:04.375+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Convert the image size to a char array --> 38478
+2019-11-08T11:18:04.376+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: capture get frame
+2019-11-08T11:18:04.376+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending image to client [-1 bytes sent]
+2019-11-08T11:18:04.376+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending size to client
+2019-11-08T11:18:05.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Convert the image size to a char array --> 38315
+2019-11-08T11:18:05.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get image data
+2019-11-08T11:18:05.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get the image size --> 38315
+2019-11-08T11:18:05.376+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending size to client
+2019-11-08T11:18:05.377+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: capture get frame
+2019-11-08T11:18:05.377+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending image to client [-1 bytes sent]
+2019-11-08T11:18:06.369+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get image data
+2019-11-08T11:18:06.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get the image size --> 38326
+2019-11-08T11:18:06.374+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Convert the image size to a char array --> 38326
+2019-11-08T11:18:06.377+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending image to client [-1 bytes sent]
+2019-11-08T11:18:06.377+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending size to client
+2019-11-08T11:18:06.380+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: capture get frame
+2019-11-08T11:18:07.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Convert the image size to a char array --> 38335
+2019-11-08T11:18:07.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get image data
+2019-11-08T11:18:07.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get the image size --> 38335
+2019-11-08T11:18:07.376+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending size to client
+2019-11-08T11:18:07.377+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: capture get frame
+2019-11-08T11:18:07.377+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending image to client [-1 bytes sent]
+2019-11-08T11:18:08.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Convert the image size to a char array --> 38245
+2019-11-08T11:18:08.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get image data
+2019-11-08T11:18:08.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get the image size --> 38245
+2019-11-08T11:18:08.373+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending size to client
+2019-11-08T11:18:08.378+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending image to client [-1 bytes sent]
+2019-11-08T11:18:08.379+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: capture get frame
+2019-11-08T11:18:09.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get image data
+2019-11-08T11:18:09.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get the image size --> 38336
+2019-11-08T11:18:09.373+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Convert the image size to a char array --> 38336
+2019-11-08T11:18:09.373+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending size to client
+2019-11-08T11:18:09.380+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending image to client [-1 bytes sent]
+2019-11-08T11:18:09.381+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: capture get frame
+2019-11-08T11:18:10.369+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get image data
+2019-11-08T11:18:10.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get the image size --> 38368
+2019-11-08T11:18:10.374+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Convert the image size to a char array --> 38368
+2019-11-08T11:18:10.377+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending size to client
+2019-11-08T11:18:10.381+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending image to client [-1 bytes sent]
+2019-11-08T11:18:10.382+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: capture get frame
+2019-11-08T11:18:11.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Convert the image size to a char array --> 38105
+2019-11-08T11:18:11.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get image data
+2019-11-08T11:18:11.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get the image size --> 38105
+2019-11-08T11:18:11.373+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending size to client
+2019-11-08T11:18:11.378+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending image to client [-1 bytes sent]
+2019-11-08T11:18:11.379+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: capture get frame
+2019-11-08T11:18:12.370+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get image data
+2019-11-08T11:18:12.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get the image size --> 38078
+2019-11-08T11:18:12.374+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Convert the image size to a char array --> 38078
+2019-11-08T11:18:12.377+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending size to client
+2019-11-08T11:18:12.380+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending image to client [-1 bytes sent]
+2019-11-08T11:18:12.381+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: capture get frame
+2019-11-08T11:18:13.371+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get image data
+2019-11-08T11:18:13.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Convert the image size to a char array --> 38043
+2019-11-08T11:18:13.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get the image size --> 38043
+2019-11-08T11:18:13.373+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending size to client
+2019-11-08T11:18:13.378+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending image to client [-1 bytes sent]
+2019-11-08T11:18:13.379+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: capture get frame
+2019-11-08T11:18:14.369+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get image data
+2019-11-08T11:18:14.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get the image size --> 38047
+2019-11-08T11:18:14.375+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Convert the image size to a char array --> 38047
+2019-11-08T11:18:14.375+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending size to client
+2019-11-08T11:18:14.379+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending image to client [-1 bytes sent]
+2019-11-08T11:18:14.382+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: capture get frame
+2019-11-08T11:18:15.371+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get image data
+2019-11-08T11:18:15.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Convert the image size to a char array --> 38067
+2019-11-08T11:18:15.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get the image size --> 38067
+2019-11-08T11:18:15.376+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending size to client
+2019-11-08T11:18:15.377+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: capture get frame
+2019-11-08T11:18:15.377+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending image to client [-1 bytes sent]
+2019-11-08T11:18:16.371+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get image data
+2019-11-08T11:18:16.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Convert the image size to a char array --> 37969
+2019-11-08T11:18:16.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get the image size --> 37969
+2019-11-08T11:18:16.377+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: capture get frame
+2019-11-08T11:18:16.377+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending image to client [-1 bytes sent]
+2019-11-08T11:18:16.377+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending size to client
+2019-11-08T11:18:17.370+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get image data
+2019-11-08T11:18:17.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get the image size --> 38083
+2019-11-08T11:18:17.375+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Convert the image size to a char array --> 38083
+2019-11-08T11:18:17.377+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending size to client
+2019-11-08T11:18:17.380+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending image to client [-1 bytes sent]
+2019-11-08T11:18:17.382+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: capture get frame
+2019-11-08T11:18:18.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Convert the image size to a char array --> 37923
+2019-11-08T11:18:18.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get image data
+2019-11-08T11:18:18.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get the image size --> 37923
+2019-11-08T11:18:18.376+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending size to client
+2019-11-08T11:18:18.377+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: capture get frame
+2019-11-08T11:18:18.377+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending image to client [-1 bytes sent]
+2019-11-08T11:18:19.370+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get image data
+2019-11-08T11:18:19.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get the image size --> 38004
+2019-11-08T11:18:19.375+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Convert the image size to a char array --> 38004
+2019-11-08T11:18:19.378+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending size to client
+2019-11-08T11:18:19.382+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending image to client [-1 bytes sent]
+2019-11-08T11:18:19.383+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: capture get frame
+2019-11-08T11:18:20.369+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get image data
+2019-11-08T11:18:20.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get the image size --> 37888
+2019-11-08T11:18:20.374+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Convert the image size to a char array --> 37888
+2019-11-08T11:18:20.377+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending size to client
+2019-11-08T11:18:20.380+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending image to client [-1 bytes sent]
+2019-11-08T11:18:20.382+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: capture get frame
+2019-11-08T11:18:21.370+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get image data
+2019-11-08T11:18:21.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get the image size --> 38081
+2019-11-08T11:18:21.374+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Convert the image size to a char array --> 38081
+2019-11-08T11:18:21.377+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending size to client
+2019-11-08T11:18:21.381+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: capture get frame
+2019-11-08T11:18:21.381+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending image to client [-1 bytes sent]
+2019-11-08T11:18:22.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Convert the image size to a char array --> 38131
+2019-11-08T11:18:22.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get image data
+2019-11-08T11:18:22.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get the image size --> 38131
+2019-11-08T11:18:22.373+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending size to client
+2019-11-08T11:18:22.378+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending image to client [-1 bytes sent]
+2019-11-08T11:18:22.382+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: capture get frame
+2019-11-08T11:18:23.370+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get image data
+2019-11-08T11:18:23.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get the image size --> 38165
+2019-11-08T11:18:23.374+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Convert the image size to a char array --> 38165
+2019-11-08T11:18:23.377+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending size to client
+2019-11-08T11:18:23.379+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending image to client [-1 bytes sent]
+2019-11-08T11:18:23.381+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: capture get frame
+2019-11-08T11:18:24.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Convert the image size to a char array --> 38155
+2019-11-08T11:18:24.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get image data
+2019-11-08T11:18:24.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get the image size --> 38155
+2019-11-08T11:18:24.373+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending size to client
+2019-11-08T11:18:24.378+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending image to client [-1 bytes sent]
+2019-11-08T11:18:24.380+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: capture get frame
+2019-11-08T11:18:25.370+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get image data
+2019-11-08T11:18:25.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get the image size --> 38074
+2019-11-08T11:18:25.374+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Convert the image size to a char array --> 38074
+2019-11-08T11:18:25.377+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending size to client
+2019-11-08T11:18:25.381+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: capture get frame
+2019-11-08T11:18:25.381+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending image to client [-1 bytes sent]
+2019-11-08T11:18:26.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Convert the image size to a char array --> 38088
+2019-11-08T11:18:26.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get image data
+2019-11-08T11:18:26.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get the image size --> 38088
+2019-11-08T11:18:26.376+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending size to client
+2019-11-08T11:18:26.377+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: capture get frame
+2019-11-08T11:18:26.377+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending image to client [-1 bytes sent]
+2019-11-08T11:18:27.376+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get image data
+2019-11-08T11:18:27.378+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get the image size --> 38102
+2019-11-08T11:18:27.379+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Convert the image size to a char array --> 38102
+2019-11-08T11:18:27.380+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending size to client
+2019-11-08T11:18:27.381+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending image to client [-1 bytes sent]
+2019-11-08T11:18:27.382+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: capture get frame
+2019-11-08T11:18:28.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get image data
+2019-11-08T11:18:28.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get the image size --> 38048
+2019-11-08T11:18:28.373+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Convert the image size to a char array --> 38048
+2019-11-08T11:18:28.376+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending size to client
+2019-11-08T11:18:28.377+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: capture get frame
+2019-11-08T11:18:28.377+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending image to client [-1 bytes sent]
+2019-11-08T11:18:29.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Convert the image size to a char array --> 38076
+2019-11-08T11:18:29.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get image data
+2019-11-08T11:18:29.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get the image size --> 38076
+2019-11-08T11:18:29.376+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending size to client
+2019-11-08T11:18:29.377+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: capture get frame
+2019-11-08T11:18:29.377+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending image to client [-1 bytes sent]
+2019-11-08T11:18:30.374+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Convert the image size to a char array --> 38077
+2019-11-08T11:18:30.374+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get image data
+2019-11-08T11:18:30.374+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get the image size --> 38077
+2019-11-08T11:18:30.374+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: capture get frame
+2019-11-08T11:18:30.374+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending image to client [-1 bytes sent]
+2019-11-08T11:18:30.374+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending size to client
+2019-11-08T11:18:31.373+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get image data
+2019-11-08T11:18:31.373+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get the image size --> 38162
+2019-11-08T11:18:31.374+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Convert the image size to a char array --> 38162
+2019-11-08T11:18:31.374+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: capture get frame
+2019-11-08T11:18:31.374+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending image to client [-1 bytes sent]
+2019-11-08T11:18:31.374+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending size to client
+2019-11-08T11:18:32.373+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Convert the image size to a char array --> 38097
+2019-11-08T11:18:32.373+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get image data
+2019-11-08T11:18:32.373+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get the image size --> 38097
+2019-11-08T11:18:32.374+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: capture get frame
+2019-11-08T11:18:32.374+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending image to client [-1 bytes sent]
+2019-11-08T11:18:32.374+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending size to client
+2019-11-08T11:18:33.172+00:00 axis-00408cf5b0f1 [ INFO    ] server[0]: stopping server
+2019-11-08T11:18:34.144+00:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[840]: [system] Reloaded configuration
+2019-11-08T11:18:34.468+00:00 axis-00408cf5b0f1 [ INFO    ] parhand[934]: Updated configuration file /etc/sysconfig/streamcache.conf.
+2019-11-08T11:18:34.478+00:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[840]: [system] Reloaded configuration
+2019-11-08T11:18:35.226+00:00 axis-00408cf5b0f1 [ INFO    ] upload.cgi: Uploaded '/tmp/server_1_0_mipsisa32r2el.eap' size:53935
+2019-11-08T11:18:36.818+00:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[840]: [system] Reloaded configuration
+2019-11-08T11:18:36.987+00:00 axis-00408cf5b0f1 [ INFO    ] parhand[934]: Updated configuration file /etc/sysconfig/streamcache.conf.
+2019-11-08T11:18:37.037+00:00 axis-00408cf5b0f1 [ INFO    ] upload.cgi: Package /tmp/server_1_0_mipsisa32r2el.eap installation OK
+2019-11-08T11:18:51.751+00:00 axis-00408cf5b0f1 [ INFO    ] server[0]: starting server
+2019-11-08T11:18:51.903+00:00 axis-00408cf5b0f1 [ INFO    ] server[9196]: Server running...
+2019-11-08T11:18:51.906+00:00 axis-00408cf5b0f1 [ INFO    ] server[9196]: Listening
+2019-11-08T11:19:18.322+00:00 axis-00408cf5b0f1 [ INFO    ] monolith[1017]: monolith[1017]: HTTP image/jpeg session created from 192.168.20.228
+2019-11-08T11:22:52.385+00:00 axis-00408cf5b0f1 [ INFO    ] upload.cgi: Uploaded '/tmp/server_1_0_mipsisa32r2el.eap' size:55912
+2019-11-08T11:22:53.051+00:00 axis-00408cf5b0f1 [ INFO    ] server[0]: stopping server
+2019-11-08T11:22:54.771+00:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[840]: [system] Reloaded configuration
+2019-11-08T11:22:55.651+00:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[840]: [system] Reloaded configuration
+2019-11-08T11:22:57.723+00:00 axis-00408cf5b0f1 [ INFO    ] upload.cgi: Package /tmp/server_1_0_mipsisa32r2el.eap installation OK
+2019-11-08T11:22:57.963+00:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[840]: [system] Reloaded configuration

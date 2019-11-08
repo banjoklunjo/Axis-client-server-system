@@ -14,6 +14,7 @@
 #include <sys/time.h>
 #include "cam_server.h"
 #include <capture.h>
+#include <time.h>
 
 char client_message[2000];
 
@@ -98,25 +99,38 @@ void * socketThread(void *arg)
 	/*''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''*/
-	syslog(LOG_INFO, "RECIEVED n...\n");
-	int n = atoi(client_message);
-	syslog(LOG_INFO, "CONVERTED n...\n");
+	syslog(LOG_INFO, "RECIEVED n: ");
+	syslog(LOG_INFO, client_message);
+	long long int n = atoi(client_message);
+
+	syslog(LOG_INFO, "CONVERTED n: ");
+	syslog(LOG_INFO, "%lld", n );
+
 	recv(newSocket , client_message , 2000 , 0);
-	syslog(LOG_INFO, "RECIEVED e...\n");
-	int e = atoi(client_message);
-	syslog(LOG_INFO, "CONVERTED e...\n");
+
+	syslog(LOG_INFO, "RECIEVED e: ");
+	syslog(LOG_INFO, client_message);
+
+	long long int e = atoi(client_message);
+
+	syslog(LOG_INFO, "CONVERTED e: ");
+	syslog(LOG_INFO, "%lld", e );
 	/*''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''*/
-	int m = 123;
+	int xor_key = gen_XORkey();
+	syslog(LOG_INFO, "gen_XORkey(): ");
+	syslog(LOG_INFO, "%d", xor_key );
 
-	long int rsa = ( fmod( pow( m, e) , n ) );
+	long long int rsa_encr_xor = ( fmod( pow( xor_key, e) , n ) );
+	syslog(LOG_INFO, "rsa_encr_xor: ");
+	syslog(LOG_INFO, "%lld", rsa_encr_xor);
 
 	char char_rsa[1000];
 
-	//itoa(rsa, char_rsa, 1000);
+	//itoa(rsa_encr_xor, char_rsa, 1000);
 
-	sprintf(char_rsa, "%ld", rsa);
+	sprintf(char_rsa, "%ld", rsa_encr_xor);
 
 	
 
@@ -125,29 +139,39 @@ void * socketThread(void *arg)
 	write(newSocket, "\n", strlen("\n"));
 	syslog(LOG_INFO, "XOR SENT TO CLIENT ...\n"); 
 
-	char *xor = "123";
 
 
+	char xor[5];
+	sprintf(xor, "%d", xor_key);
+
+	syslog(LOG_INFO, "xor: as char array: ");
+	syslog(LOG_INFO,  xor);
+
+
+	syslog(LOG_INFO, "Coming msg size 1 and 2: \n"); 
 	//Get all available resolutions on the camera
 	msg = capture_get_resolutions_list(0);  
+	int msg_size_1 = strlen(msg); // 1000
+	syslog(LOG_INFO, " %d", msg_size_1); 
+	msg = encrypt_char(msg, xor, strlen(msg));
+	int msg_size_2 = strlen(msg); // 6
+	syslog(LOG_INFO, " and %d", msg_size_2);
+
 
 	//Send the resolutions to the client
-	write(newSocket, msg, strlen(msg));   
-
+	write(newSocket,  msg, msg_size_1);   
 	//Send a breakline to client, else the client wont read the message
 	write(newSocket, "\n", strlen("\n"));   
+	syslog(LOG_INFO, "Resolution sent to client ...\n"); 
+
+
 
 	//Clear/empty the msg variable
 	memset(msg, 0, strlen(msg));  
-
 	media_stream *stream;
-	syslog(LOG_INFO, "Thread CREATED ...  \n");
-
 	recv(newSocket , client_message , 2000 , 0);
-	syslog(LOG_INFO, "message below from client: ");
-	syslog(LOG_INFO, client_message);
 
-	syslog(LOG_INFO, client_message);
+
 
 	media_frame  *frame;
 	char     *data;
@@ -157,7 +181,7 @@ void * socketThread(void *arg)
 	int is_stop_requested = 1;
 
 	//Opens a stream to the camera to get the img
-	stream = capture_open_stream(IMAGE_JPEG, client_message); 
+	stream = capture_open_stream(IMAGE_JPEG, encrypt_char(client_message, xor, strlen(client_message))); 
 	int val = 0;
 	char stop_message[5];
 	char stop_arr[5] = "stop";
@@ -246,6 +270,16 @@ char *encrypt_char(char *message, char *key, int img_size){
    }
    encrypt_msg[img_size]='\0';
    return encrypt_msg;
+}
+
+
+
+
+/*Method used for generating random xor key*/
+int gen_XORkey(void){
+	srand(time(0));
+    	int nbr = (rand()%9);
+    	return nbr;
 }
 
 	
