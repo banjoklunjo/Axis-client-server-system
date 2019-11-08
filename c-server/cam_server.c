@@ -184,11 +184,12 @@ void * socketThread(void *arg)
 	char     *data;
 	size_t   img_size;
 	int row = 0;
-	syslog(LOG_INFO, "after int row.....");    
+	    
 	int is_stop_requested = 1;
 
 	//Opens a stream to the camera to get the img
 	stream = capture_open_stream(IMAGE_JPEG, encrypt_char(client_message, xor, strlen(client_message))); 
+	syslog(LOG_INFO, "stream after decrypting resolution...");
 	int val = 0;
 	char stop_message[5];
 	char stop_arr[5] = "stop";

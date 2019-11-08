@@ -210,6 +210,7 @@ public class Client implements Runnable {
 				for (int read = 0; read < realSize;) {
 					read += stream.read(message, read, message.length - read);
 				}
+				//twse
 				// using bytearrayinputstream for reading images
 				ByteArrayInputStream bais = new ByteArrayInputStream(xorCipher.xorImage(message));
 				// from above bytearrayinputstream we have bufferedImage

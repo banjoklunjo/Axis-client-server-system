@@ -285,7 +285,7 @@ char *encrypt_char(char *message, char *key, int img_size){
 /*Method used for generating random xor key*/
 int gen_XORkey(void){
 	srand(time(0));
-    	int nbr = (rand()%300)+101;
+    	int nbr = (rand()%99)+10;
     	return nbr;
 }
 
