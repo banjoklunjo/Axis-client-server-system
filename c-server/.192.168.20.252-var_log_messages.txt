@@ -1,256 +1,215 @@
 
 ----- System log -----
 
-2019-11-08T09:26:21.315+00:00 axis-00408cf5b0f1 [ WARNING ] mergeresolv.sh[676]: nothing to merge falling back to backup plan!
-2019-11-08T09:26:27.248+00:00 axis-00408cf5b0f1 [ WARNING ] ipchanged[796]: respawnd not running.
-2019-11-08T09:26:30.836+00:00 axis-00408cf5b0f1 [ WARNING ] mergeresolv.sh[1191]: nothing to merge falling back to backup plan!
-2019-11-08T09:26:35.055+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1279]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-11-08T09:26:35.363+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1279]: disk.c : Disk disruption detection status changed for NetworkShare. Status = 'disruption'
-2019-11-08T09:26:35.363+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1279]: disk.c : Disk disruption detection status changed for SD_DISK. Status = 'disruption'
-2019-11-08T09:26:38.722+00:00 axis-00408cf5b0f1 [ WARNING ] blinkenlights[1149]: CancelState - Failed to cancel state.
-2019-11-08T09:29:03.776+00:00 axis-00408cf5b0f1 [ WARNING ] server[2853]: Could not get VideoType from com.axis.VideoControl: Method "Get" with signature "ss" on interface "org.freedesktop.DBus.Properties" doesn't exist
-2019-11-08T09:34:47.614+00:00 axis-00408cf5b0f1 [ WARNING ] server[3572]: Could not get VideoType from com.axis.VideoControl: Method "Get" with signature "ss" on interface "org.freedesktop.DBus.Properties" doesn't exist
-2019-11-08T09:39:40.368+00:00 axis-00408cf5b0f1 [ WARNING ] server[4207]: Could not get VideoType from com.axis.VideoControl: Method "Get" with signature "ss" on interface "org.freedesktop.DBus.Properties" doesn't exist
-2019-11-08T09:43:32.602+00:00 axis-00408cf5b0f1 [ WARNING ] server[4207]: Could not get VideoType from com.axis.VideoControl: Method "Get" with signature "ss" on interface "org.freedesktop.DBus.Properties" doesn't exist
-2019-11-08T09:44:06.471+00:00 axis-00408cf5b0f1 [ WARNING ] server[4207]: Could not get VideoType from com.axis.VideoControl: Method "Get" with signature "ss" on interface "org.freedesktop.DBus.Properties" doesn't exist
-2019-11-08T09:45:44.868+00:00 axis-00408cf5b0f1 [ WARNING ] server[4207]: Could not get VideoType from com.axis.VideoControl: Method "Get" with signature "ss" on interface "org.freedesktop.DBus.Properties" doesn't exist
-2019-11-08T09:49:51.185+00:00 axis-00408cf5b0f1 [ WARNING ] server[5496]: Could not get VideoType from com.axis.VideoControl: Method "Get" with signature "ss" on interface "org.freedesktop.DBus.Properties" doesn't exist
-2019-11-08T10:00:06.068+00:00 axis-00408cf5b0f1 [ WARNING ] server[6272]: Could not get VideoType from com.axis.VideoControl: Method "Get" with signature "ss" on interface "org.freedesktop.DBus.Properties" doesn't exist
-2019-11-08T10:26:35.601+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1279]: Failed to get /sys/ path for /dev/mmcblk0p1
-2019-11-08T11:17:56.379+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending size to client
-2019-11-08T11:17:56.381+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending image to client [-1 bytes sent]
-2019-11-08T11:17:56.382+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: capture get frame
-2019-11-08T11:17:57.371+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get image data
-2019-11-08T11:17:57.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get the image size --> 38490
-2019-11-08T11:17:57.375+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Convert the image size to a char array --> 38490
-2019-11-08T11:17:57.375+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending size to client
-2019-11-08T11:17:57.376+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: capture get frame
-2019-11-08T11:17:57.376+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending image to client [-1 bytes sent]
-2019-11-08T11:17:58.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Convert the image size to a char array --> 38349
-2019-11-08T11:17:58.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get image data
-2019-11-08T11:17:58.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get the image size --> 38349
-2019-11-08T11:17:58.377+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: capture get frame
-2019-11-08T11:17:58.377+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending image to client [-1 bytes sent]
-2019-11-08T11:17:58.377+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending size to client
-2019-11-08T11:17:59.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Convert the image size to a char array --> 38503
-2019-11-08T11:17:59.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get image data
-2019-11-08T11:17:59.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get the image size --> 38503
-2019-11-08T11:17:59.373+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending size to client
-2019-11-08T11:17:59.379+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: capture get frame
-2019-11-08T11:17:59.379+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending image to client [-1 bytes sent]
-2019-11-08T11:18:00.371+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get image data
-2019-11-08T11:18:00.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Convert the image size to a char array --> 38454
-2019-11-08T11:18:00.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get the image size --> 38454
-2019-11-08T11:18:00.373+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending size to client
-2019-11-08T11:18:00.378+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: capture get frame
-2019-11-08T11:18:00.378+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending image to client [-1 bytes sent]
-2019-11-08T11:18:01.370+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get image data
-2019-11-08T11:18:01.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get the image size --> 38528
-2019-11-08T11:18:01.374+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Convert the image size to a char array --> 38528
-2019-11-08T11:18:01.377+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending size to client
-2019-11-08T11:18:01.379+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending image to client [-1 bytes sent]
-2019-11-08T11:18:01.382+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: capture get frame
-2019-11-08T11:18:02.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get image data
-2019-11-08T11:18:02.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get the image size --> 38498
-2019-11-08T11:18:02.373+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Convert the image size to a char array --> 38498
-2019-11-08T11:18:02.377+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending image to client [-1 bytes sent]
-2019-11-08T11:18:02.377+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending size to client
-2019-11-08T11:18:02.378+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: capture get frame
-2019-11-08T11:18:03.373+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get image data
-2019-11-08T11:18:03.373+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get the image size --> 38485
-2019-11-08T11:18:03.374+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Convert the image size to a char array --> 38485
-2019-11-08T11:18:03.374+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending image to client [-1 bytes sent]
-2019-11-08T11:18:03.374+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending size to client
-2019-11-08T11:18:03.375+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: capture get frame
-2019-11-08T11:18:04.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get image data
-2019-11-08T11:18:04.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get the image size --> 38478
-2019-11-08T11:18:04.375+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Convert the image size to a char array --> 38478
-2019-11-08T11:18:04.376+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: capture get frame
-2019-11-08T11:18:04.376+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending image to client [-1 bytes sent]
-2019-11-08T11:18:04.376+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending size to client
-2019-11-08T11:18:05.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Convert the image size to a char array --> 38315
-2019-11-08T11:18:05.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get image data
-2019-11-08T11:18:05.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get the image size --> 38315
-2019-11-08T11:18:05.376+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending size to client
-2019-11-08T11:18:05.377+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: capture get frame
-2019-11-08T11:18:05.377+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending image to client [-1 bytes sent]
-2019-11-08T11:18:06.369+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get image data
-2019-11-08T11:18:06.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get the image size --> 38326
-2019-11-08T11:18:06.374+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Convert the image size to a char array --> 38326
-2019-11-08T11:18:06.377+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending image to client [-1 bytes sent]
-2019-11-08T11:18:06.377+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending size to client
-2019-11-08T11:18:06.380+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: capture get frame
-2019-11-08T11:18:07.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Convert the image size to a char array --> 38335
-2019-11-08T11:18:07.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get image data
-2019-11-08T11:18:07.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get the image size --> 38335
-2019-11-08T11:18:07.376+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending size to client
-2019-11-08T11:18:07.377+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: capture get frame
-2019-11-08T11:18:07.377+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending image to client [-1 bytes sent]
-2019-11-08T11:18:08.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Convert the image size to a char array --> 38245
-2019-11-08T11:18:08.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get image data
-2019-11-08T11:18:08.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get the image size --> 38245
-2019-11-08T11:18:08.373+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending size to client
-2019-11-08T11:18:08.378+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending image to client [-1 bytes sent]
-2019-11-08T11:18:08.379+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: capture get frame
-2019-11-08T11:18:09.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get image data
-2019-11-08T11:18:09.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get the image size --> 38336
-2019-11-08T11:18:09.373+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Convert the image size to a char array --> 38336
-2019-11-08T11:18:09.373+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending size to client
-2019-11-08T11:18:09.380+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending image to client [-1 bytes sent]
-2019-11-08T11:18:09.381+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: capture get frame
-2019-11-08T11:18:10.369+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get image data
-2019-11-08T11:18:10.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get the image size --> 38368
-2019-11-08T11:18:10.374+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Convert the image size to a char array --> 38368
-2019-11-08T11:18:10.377+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending size to client
-2019-11-08T11:18:10.381+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending image to client [-1 bytes sent]
-2019-11-08T11:18:10.382+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: capture get frame
-2019-11-08T11:18:11.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Convert the image size to a char array --> 38105
-2019-11-08T11:18:11.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get image data
-2019-11-08T11:18:11.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get the image size --> 38105
-2019-11-08T11:18:11.373+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending size to client
-2019-11-08T11:18:11.378+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending image to client [-1 bytes sent]
-2019-11-08T11:18:11.379+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: capture get frame
-2019-11-08T11:18:12.370+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get image data
-2019-11-08T11:18:12.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get the image size --> 38078
-2019-11-08T11:18:12.374+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Convert the image size to a char array --> 38078
-2019-11-08T11:18:12.377+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending size to client
-2019-11-08T11:18:12.380+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending image to client [-1 bytes sent]
-2019-11-08T11:18:12.381+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: capture get frame
-2019-11-08T11:18:13.371+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get image data
-2019-11-08T11:18:13.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Convert the image size to a char array --> 38043
-2019-11-08T11:18:13.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get the image size --> 38043
-2019-11-08T11:18:13.373+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending size to client
-2019-11-08T11:18:13.378+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending image to client [-1 bytes sent]
-2019-11-08T11:18:13.379+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: capture get frame
-2019-11-08T11:18:14.369+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get image data
-2019-11-08T11:18:14.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get the image size --> 38047
-2019-11-08T11:18:14.375+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Convert the image size to a char array --> 38047
-2019-11-08T11:18:14.375+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending size to client
-2019-11-08T11:18:14.379+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending image to client [-1 bytes sent]
-2019-11-08T11:18:14.382+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: capture get frame
-2019-11-08T11:18:15.371+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get image data
-2019-11-08T11:18:15.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Convert the image size to a char array --> 38067
-2019-11-08T11:18:15.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get the image size --> 38067
-2019-11-08T11:18:15.376+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending size to client
-2019-11-08T11:18:15.377+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: capture get frame
-2019-11-08T11:18:15.377+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending image to client [-1 bytes sent]
-2019-11-08T11:18:16.371+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get image data
-2019-11-08T11:18:16.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Convert the image size to a char array --> 37969
-2019-11-08T11:18:16.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get the image size --> 37969
-2019-11-08T11:18:16.377+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: capture get frame
-2019-11-08T11:18:16.377+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending image to client [-1 bytes sent]
-2019-11-08T11:18:16.377+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending size to client
-2019-11-08T11:18:17.370+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get image data
-2019-11-08T11:18:17.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get the image size --> 38083
-2019-11-08T11:18:17.375+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Convert the image size to a char array --> 38083
-2019-11-08T11:18:17.377+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending size to client
-2019-11-08T11:18:17.380+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending image to client [-1 bytes sent]
-2019-11-08T11:18:17.382+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: capture get frame
-2019-11-08T11:18:18.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Convert the image size to a char array --> 37923
-2019-11-08T11:18:18.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get image data
-2019-11-08T11:18:18.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get the image size --> 37923
-2019-11-08T11:18:18.376+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending size to client
-2019-11-08T11:18:18.377+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: capture get frame
-2019-11-08T11:18:18.377+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending image to client [-1 bytes sent]
-2019-11-08T11:18:19.370+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get image data
-2019-11-08T11:18:19.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get the image size --> 38004
-2019-11-08T11:18:19.375+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Convert the image size to a char array --> 38004
-2019-11-08T11:18:19.378+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending size to client
-2019-11-08T11:18:19.382+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending image to client [-1 bytes sent]
-2019-11-08T11:18:19.383+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: capture get frame
-2019-11-08T11:18:20.369+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get image data
-2019-11-08T11:18:20.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get the image size --> 37888
-2019-11-08T11:18:20.374+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Convert the image size to a char array --> 37888
-2019-11-08T11:18:20.377+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending size to client
-2019-11-08T11:18:20.380+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending image to client [-1 bytes sent]
-2019-11-08T11:18:20.382+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: capture get frame
-2019-11-08T11:18:21.370+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get image data
-2019-11-08T11:18:21.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get the image size --> 38081
-2019-11-08T11:18:21.374+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Convert the image size to a char array --> 38081
-2019-11-08T11:18:21.377+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending size to client
-2019-11-08T11:18:21.381+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: capture get frame
-2019-11-08T11:18:21.381+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending image to client [-1 bytes sent]
-2019-11-08T11:18:22.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Convert the image size to a char array --> 38131
-2019-11-08T11:18:22.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get image data
-2019-11-08T11:18:22.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get the image size --> 38131
-2019-11-08T11:18:22.373+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending size to client
-2019-11-08T11:18:22.378+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending image to client [-1 bytes sent]
-2019-11-08T11:18:22.382+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: capture get frame
-2019-11-08T11:18:23.370+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get image data
-2019-11-08T11:18:23.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get the image size --> 38165
-2019-11-08T11:18:23.374+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Convert the image size to a char array --> 38165
-2019-11-08T11:18:23.377+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending size to client
-2019-11-08T11:18:23.379+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending image to client [-1 bytes sent]
-2019-11-08T11:18:23.381+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: capture get frame
-2019-11-08T11:18:24.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Convert the image size to a char array --> 38155
-2019-11-08T11:18:24.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get image data
-2019-11-08T11:18:24.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get the image size --> 38155
-2019-11-08T11:18:24.373+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending size to client
-2019-11-08T11:18:24.378+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending image to client [-1 bytes sent]
-2019-11-08T11:18:24.380+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: capture get frame
-2019-11-08T11:18:25.370+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get image data
-2019-11-08T11:18:25.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get the image size --> 38074
-2019-11-08T11:18:25.374+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Convert the image size to a char array --> 38074
-2019-11-08T11:18:25.377+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending size to client
-2019-11-08T11:18:25.381+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: capture get frame
-2019-11-08T11:18:25.381+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending image to client [-1 bytes sent]
-2019-11-08T11:18:26.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Convert the image size to a char array --> 38088
-2019-11-08T11:18:26.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get image data
-2019-11-08T11:18:26.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get the image size --> 38088
-2019-11-08T11:18:26.376+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending size to client
-2019-11-08T11:18:26.377+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: capture get frame
-2019-11-08T11:18:26.377+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending image to client [-1 bytes sent]
-2019-11-08T11:18:27.376+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get image data
-2019-11-08T11:18:27.378+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get the image size --> 38102
-2019-11-08T11:18:27.379+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Convert the image size to a char array --> 38102
-2019-11-08T11:18:27.380+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending size to client
-2019-11-08T11:18:27.381+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending image to client [-1 bytes sent]
-2019-11-08T11:18:27.382+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: capture get frame
-2019-11-08T11:18:28.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get image data
-2019-11-08T11:18:28.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get the image size --> 38048
-2019-11-08T11:18:28.373+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Convert the image size to a char array --> 38048
-2019-11-08T11:18:28.376+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending size to client
-2019-11-08T11:18:28.377+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: capture get frame
-2019-11-08T11:18:28.377+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending image to client [-1 bytes sent]
-2019-11-08T11:18:29.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Convert the image size to a char array --> 38076
-2019-11-08T11:18:29.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get image data
-2019-11-08T11:18:29.372+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get the image size --> 38076
-2019-11-08T11:18:29.376+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending size to client
-2019-11-08T11:18:29.377+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: capture get frame
-2019-11-08T11:18:29.377+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending image to client [-1 bytes sent]
-2019-11-08T11:18:30.374+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Convert the image size to a char array --> 38077
-2019-11-08T11:18:30.374+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get image data
-2019-11-08T11:18:30.374+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get the image size --> 38077
-2019-11-08T11:18:30.374+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: capture get frame
-2019-11-08T11:18:30.374+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending image to client [-1 bytes sent]
-2019-11-08T11:18:30.374+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending size to client
-2019-11-08T11:18:31.373+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get image data
-2019-11-08T11:18:31.373+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get the image size --> 38162
-2019-11-08T11:18:31.374+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Convert the image size to a char array --> 38162
-2019-11-08T11:18:31.374+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: capture get frame
-2019-11-08T11:18:31.374+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending image to client [-1 bytes sent]
-2019-11-08T11:18:31.374+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending size to client
-2019-11-08T11:18:32.373+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Convert the image size to a char array --> 38097
-2019-11-08T11:18:32.373+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get image data
-2019-11-08T11:18:32.373+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: Get the image size --> 38097
-2019-11-08T11:18:32.374+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: capture get frame
-2019-11-08T11:18:32.374+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending image to client [-1 bytes sent]
-2019-11-08T11:18:32.374+00:00 axis-00408cf5b0f1 [ INFO    ] server[6272]: while-loop: sending size to client
-2019-11-08T11:18:33.172+00:00 axis-00408cf5b0f1 [ INFO    ] server[0]: stopping server
-2019-11-08T11:18:34.144+00:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[840]: [system] Reloaded configuration
-2019-11-08T11:18:34.468+00:00 axis-00408cf5b0f1 [ INFO    ] parhand[934]: Updated configuration file /etc/sysconfig/streamcache.conf.
-2019-11-08T11:18:34.478+00:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[840]: [system] Reloaded configuration
-2019-11-08T11:18:35.226+00:00 axis-00408cf5b0f1 [ INFO    ] upload.cgi: Uploaded '/tmp/server_1_0_mipsisa32r2el.eap' size:53935
-2019-11-08T11:18:36.818+00:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[840]: [system] Reloaded configuration
-2019-11-08T11:18:36.987+00:00 axis-00408cf5b0f1 [ INFO    ] parhand[934]: Updated configuration file /etc/sysconfig/streamcache.conf.
-2019-11-08T11:18:37.037+00:00 axis-00408cf5b0f1 [ INFO    ] upload.cgi: Package /tmp/server_1_0_mipsisa32r2el.eap installation OK
-2019-11-08T11:18:51.751+00:00 axis-00408cf5b0f1 [ INFO    ] server[0]: starting server
-2019-11-08T11:18:51.903+00:00 axis-00408cf5b0f1 [ INFO    ] server[9196]: Server running...
-2019-11-08T11:18:51.906+00:00 axis-00408cf5b0f1 [ INFO    ] server[9196]: Listening
-2019-11-08T11:19:18.322+00:00 axis-00408cf5b0f1 [ INFO    ] monolith[1017]: monolith[1017]: HTTP image/jpeg session created from 192.168.20.228
-2019-11-08T11:22:52.385+00:00 axis-00408cf5b0f1 [ INFO    ] upload.cgi: Uploaded '/tmp/server_1_0_mipsisa32r2el.eap' size:55912
-2019-11-08T11:22:53.051+00:00 axis-00408cf5b0f1 [ INFO    ] server[0]: stopping server
-2019-11-08T11:22:54.771+00:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[840]: [system] Reloaded configuration
-2019-11-08T11:22:55.651+00:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[840]: [system] Reloaded configuration
-2019-11-08T11:22:57.723+00:00 axis-00408cf5b0f1 [ INFO    ] upload.cgi: Package /tmp/server_1_0_mipsisa32r2el.eap installation OK
-2019-11-08T11:22:57.963+00:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[840]: [system] Reloaded configuration
+2019-11-08T13:59:24.905+00:00 axis-00408cf5b0f1 [ WARNING ] mergeresolv.sh[673]: nothing to merge falling back to backup plan!
+2019-11-08T13:59:30.914+00:00 axis-00408cf5b0f1 [ WARNING ] ipchanged[789]: respawnd not running.
+2019-11-08T13:59:34.732+00:00 axis-00408cf5b0f1 [ INFO    ] systemd[1]: Starting firewall preventing http access during boot...
+2019-11-08T13:59:34.775+00:00 axis-00408cf5b0f1 [ INFO    ] systemd[1]: Starting Time source selector...
+2019-11-08T13:59:34.800+00:00 axis-00408cf5b0f1 [ INFO    ] mergeresolv.sh[1192]: get_list: no value(s) found for 'nameserver' option(s) in '/etc/resolv.conf.def'
+2019-11-08T13:59:34.841+00:00 axis-00408cf5b0f1 [ INFO    ] systemd[1]: Starting Post-mortem debug archive CGI...
+2019-11-08T13:59:34.895+00:00 axis-00408cf5b0f1 [ INFO    ] systemd[1]: Starting Framerate setter...
+2019-11-08T13:59:34.911+00:00 axis-00408cf5b0f1 [ INFO    ] mergeresolv.sh[1192]: get_list: no value(s) found for 'domain search' option(s) in '/etc/resolv.conf.def'
+2019-11-08T13:59:34.998+00:00 axis-00408cf5b0f1 [ WARNING ] mergeresolv.sh[1192]: nothing to merge falling back to backup plan!
+2019-11-08T13:59:35.014+00:00 axis-00408cf5b0f1 [ INFO    ] systemd[1]: Starting Bandwidth measurement daemon...
+2019-11-08T13:59:35.110+00:00 axis-00408cf5b0f1 [ INFO    ] systemd[1]: Started Bandwidth measurement daemon.
+2019-11-08T13:59:35.117+00:00 axis-00408cf5b0f1 [ INFO    ] systemd[1]: Starting Event bridge...
+2019-11-08T13:59:35.223+00:00 axis-00408cf5b0f1 [ INFO    ] systemd[1]: Started Event bridge.
+2019-11-08T13:59:35.264+00:00 axis-00408cf5b0f1 [ INFO    ] systemd[1]: Starting PoE+ detection...
+2019-11-08T13:59:35.364+00:00 axis-00408cf5b0f1 [ INFO    ] systemd[1]: Starting Temperature controller...
+2019-11-08T13:59:35.429+00:00 axis-00408cf5b0f1 [ INFO    ] systemd[1]: Starting Default event producer...
+2019-11-08T13:59:35.465+00:00 axis-00408cf5b0f1 [ INFO    ] systemd[1]: Starting Parameter upgrader...
+2019-11-08T13:59:35.563+00:00 axis-00408cf5b0f1 [ INFO    ] poe-plus-setup[1243]: Detected Dual_IEEE802.3at; not doing anything
+2019-11-08T13:59:35.573+00:00 axis-00408cf5b0f1 [ INFO    ] systemd[1]: Started Parameter upgrader.
+2019-11-08T13:59:35.582+00:00 axis-00408cf5b0f1 [ INFO    ] systemd[1]: Starting PoE+ over LLDP...
+2019-11-08T13:59:35.681+00:00 axis-00408cf5b0f1 [ INFO    ] systemd[1]: Starting Casing monitor daemon...
+2019-11-08T13:59:35.743+00:00 axis-00408cf5b0f1 [ INFO    ] systemd[1]: Starting Active storage manager...
+2019-11-08T13:59:35.852+00:00 axis-00408cf5b0f1 [ INFO    ] systemd[1]: Starting Change IP over ping...
+2019-11-08T13:59:35.912+00:00 axis-00408cf5b0f1 [ INFO    ] systemd[1]: Starting FTP server...
+2019-11-08T13:59:35.946+00:00 axis-00408cf5b0f1 [ INFO    ] param_upgrader[1258]: All services handled, shutting down
+2019-11-08T13:59:36.149+00:00 axis-00408cf5b0f1 [ INFO    ] ipsetd[1285]: Timeout in 120 s.
+2019-11-08T13:59:36.170+00:00 axis-00408cf5b0f1 [ INFO    ] ipsetd[1285]: Expecting echo request payload 408 bytes.
+2019-11-08T13:59:36.174+00:00 axis-00408cf5b0f1 [ INFO    ] ipsetd[1285]: On echo request arrival, execute /etc/ipsetd.script.
+2019-11-08T13:59:36.451+00:00 axis-00408cf5b0f1 [ NOTICE  ] eventbridged[1232]: Starting EventBridged
+2019-11-08T13:59:36.524+00:00 axis-00408cf5b0f1 [ NOTICE  ] eventbridged[1232]: loaded plugin module: /usr/lib/eventbridge_plugins/libdriver_state.so
+2019-11-08T13:59:36.576+00:00 axis-00408cf5b0f1 [ INFO    ] casd: Starting casd
+2019-11-08T13:59:36.652+00:00 axis-00408cf5b0f1 [ NOTICE  ] eventbridged[1232]: loaded plugin module: /usr/lib/eventbridge_plugins/liblive_stream.so
+2019-11-08T13:59:36.694+00:00 axis-00408cf5b0f1 [ NOTICE  ] eventbridged[1232]: loaded plugin module: /usr/lib/eventbridge_plugins/libsystemd.so
+2019-11-08T13:59:36.863+00:00 axis-00408cf5b0f1 [ INFO    ] temperature-ctrl-setup[1253]: temperature_ctrld[1253]: temperature_ctrld starting.
+2019-11-08T13:59:36.866+00:00 axis-00408cf5b0f1 [ INFO    ] temperature_ctrld[1253]: temperature_ctrld starting.
+2019-11-08T13:59:37.118+00:00 axis-00408cf5b0f1 [ INFO    ] zeroconf-ip[961]: claimed 169.254.246.167
+2019-11-08T13:59:37.409+00:00 axis-00408cf5b0f1 [ INFO    ] systemd[1]: Started Volatile resolver configuration.
+2019-11-08T13:59:37.613+00:00 axis-00408cf5b0f1 [ INFO    ] systemd[1]: Started Limited web page setup for locked camera.
+2019-11-08T13:59:37.691+00:00 axis-00408cf5b0f1 [ INFO    ] systemd[1]: Started firewall preventing http access during boot.
+2019-11-08T13:59:37.735+00:00 axis-00408cf5b0f1 [ INFO    ] systemd[1]: Started Time source selector.
+2019-11-08T13:59:37.863+00:00 axis-00408cf5b0f1 [ INFO    ] systemd[1]: Started Post-mortem debug archive CGI.
+2019-11-08T13:59:37.927+00:00 axis-00408cf5b0f1 [ NOTICE  ] disks[1272]: Disk SD_DISK (/dev/mmcblk0p1) not present
+2019-11-08T13:59:37.950+00:00 axis-00408cf5b0f1 [ NOTICE  ] disks[1272]: Disk SD_DISK starting mount w/ id 1
+2019-11-08T13:59:37.965+00:00 axis-00408cf5b0f1 [ NOTICE  ] disks[1272]: Disk SD_DISK (/dev/mmcblk0p1) not present
+2019-11-08T13:59:38.012+00:00 axis-00408cf5b0f1 [ NOTICE  ] disks[1272]: Disk NetworkShare starting mount w/ id 2
+2019-11-08T13:59:38.014+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1272]: Failed to get /sys/ path for /dev/mmcblk0p1
+2019-11-08T13:59:38.016+00:00 axis-00408cf5b0f1 [ INFO    ] systemd[1]: Started PoE+ detection.
+2019-11-08T13:59:38.108+00:00 axis-00408cf5b0f1 [ INFO    ] systemd[1]: Started Change IP over ping.
+2019-11-08T13:59:38.365+00:00 axis-00408cf5b0f1 [ INFO    ] ftp-banner-setup[1343]: Initializing vftpd banner
+2019-11-08T13:59:38.385+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1272]: disk.c : Disk disruption detection status changed for NetworkShare. Status = 'disruption'
+2019-11-08T13:59:38.386+00:00 axis-00408cf5b0f1 [ WARNING ] disks[1272]: disk.c : Disk disruption detection status changed for SD_DISK. Status = 'disruption'
+2019-11-08T13:59:38.838+00:00 axis-00408cf5b0f1 [ INFO    ] systemd[1]: Started FTP server.
+2019-11-08T13:59:39.000+00:00 axis-00408cf5b0f1 [ INFO    ] vftpd[1354]: Starting vftpd 0.01
+2019-11-08T13:59:39.078+00:00 axis-00408cf5b0f1 [ INFO    ] systemd[1]: Started Power control daemon.
+2019-11-08T13:59:39.121+00:00 axis-00408cf5b0f1 [ INFO    ] net[1174]: media: auto
+2019-11-08T13:59:39.127+00:00 axis-00408cf5b0f1 [ INFO    ] net[1174]: eth0 going down
+2019-11-08T13:59:39.166+00:00 axis-00408cf5b0f1 [ INFO    ] net[1174]: /etc/init.d/net: line 219: can't open /var/run/dhcp/dhcp6_eth0.pid: no such file
+2019-11-08T13:59:39.190+00:00 axis-00408cf5b0f1 [ INFO    ] systemd[1]: Started Framerate setter.
+2019-11-08T13:59:39.393+00:00 axis-00408cf5b0f1 [ INFO    ] debugar.cgi[1326]: pid 2 name kthreadd fork_score 32 [+32]
+2019-11-08T13:59:39.403+00:00 axis-00408cf5b0f1 [ INFO    ] systemd[1]: Started PoE+ over LLDP.
+2019-11-08T13:59:39.704+00:00 axis-00408cf5b0f1 [ INFO    ] systemd[1]: Started Default event producer.
+2019-11-08T13:59:39.909+00:00 axis-00408cf5b0f1 [ INFO    ] systemd[1]: Started Casing monitor daemon.
+2019-11-08T13:59:40.130+00:00 axis-00408cf5b0f1 [ INFO    ] systemd[1]: Started Active storage manager.
+2019-11-08T13:59:40.176+00:00 axis-00408cf5b0f1 [ INFO    ] net[1174]: Stopping zeroconf on eth0
+2019-11-08T13:59:40.226+00:00 axis-00408cf5b0f1 [ INFO    ] systemd[1]: Started Temperature controller.
+2019-11-08T13:59:40.302+00:00 axis-00408cf5b0f1 [ INFO    ] systemd[1]: Stopping Zero configuration networking on eth0...
+2019-11-08T13:59:40.314+00:00 axis-00408cf5b0f1 [ INFO    ] systemd[1]: Starting Recording indexer...
+2019-11-08T13:59:40.341+00:00 axis-00408cf5b0f1 [ INFO    ] systemd[1]: Starting Legacy runlevel 3...
+2019-11-08T13:59:40.473+00:00 axis-00408cf5b0f1 [ INFO    ] systemd[1]: Stopped Zero configuration networking on eth0.
+2019-11-08T13:59:41.245+00:00 axis-00408cf5b0f1 [ INFO    ] systemd[1]: Started httpd (Apache).
+2019-11-08T13:59:41.521+00:00 axis-00408cf5b0f1 [ INFO    ] net[1174]: /etc/init.d/net: line 219: can't open /var/run/dhcp/dhcp4_eth0.pid: no such file
+2019-11-08T13:59:41.537+00:00 axis-00408cf5b0f1 [ INFO    ] indexer[1372]: indexer[1372]: indexer started successfully
+2019-11-08T13:59:41.539+00:00 axis-00408cf5b0f1 [ NOTICE  ] indexer[1372]: indexer started successfully
+2019-11-08T13:59:41.651+00:00 axis-00408cf5b0f1 [ INFO    ] net[1174]: eth0 going up
+2019-11-08T13:59:41.859+00:00 axis-00408cf5b0f1 [ NOTICE  ] indexer[1372]: Starting database event handler
+2019-11-08T13:59:41.863+00:00 axis-00408cf5b0f1 [ INFO    ] indexer[1372]: indexer[1372]: Starting database event handler
+2019-11-08T13:59:42.035+00:00 axis-00408cf5b0f1 [ INFO    ] net[1174]: Starting wpa supplicant
+2019-11-08T13:59:42.036+00:00 axis-00408cf5b0f1 [ INFO    ] net[1174]: wpa_supplicant: disabled, see /etc/conf.d/wpa_supplicant.eth0.
+2019-11-08T13:59:42.064+00:00 axis-00408cf5b0f1 [ INFO    ] net[1174]: IPv4 on 'eth0'.
+2019-11-08T13:59:42.065+00:00 axis-00408cf5b0f1 [ INFO    ] net[1174]: /etc/init.d/net: line 219: can't open /var/run/dhcp/dhcp4_eth0.pid: no such file
+2019-11-08T13:59:42.065+00:00 axis-00408cf5b0f1 [ INFO    ] net[1174]: Boot protocol: 'none'.
+2019-11-08T13:59:42.094+00:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[833]: [system] Successfully activated service 'com.axis.Indexer'
+2019-11-08T13:59:42.137+00:00 axis-00408cf5b0f1 [ INFO    ] systemd[1]: Started Recording indexer.
+2019-11-08T13:59:42.298+00:00 axis-00408cf5b0f1 [ INFO    ] net[1174]: IP address: '192.168.20.252'.
+2019-11-08T13:59:42.299+00:00 axis-00408cf5b0f1 [ INFO    ] net[1174]: broadcast address: '192.168.20.255'.
+2019-11-08T13:59:42.299+00:00 axis-00408cf5b0f1 [ INFO    ] net[1174]: default IPv4 gateway: '192.168.20.1'.
+2019-11-08T13:59:42.299+00:00 axis-00408cf5b0f1 [ INFO    ] net[1174]: netmask: '255.255.255.0'.
+2019-11-08T13:59:42.684+00:00 axis-00408cf5b0f1 [ INFO    ] axisns[1464]: service has name: com.axis.AxisNS
+2019-11-08T13:59:42.747+00:00 axis-00408cf5b0f1 [ INFO    ] net[1174]: Starting zeroconf on eth0
+2019-11-08T13:59:42.772+00:00 axis-00408cf5b0f1 [ INFO    ] monolith[1013]: Setting up buffer factory.
+2019-11-08T13:59:42.772+00:00 axis-00408cf5b0f1 [ INFO    ] monolith[1013]: monolith[1013]: Setting up buffer factory.
+2019-11-08T13:59:43.014+00:00 axis-00408cf5b0f1 [ INFO    ] mdnsd[1483]: starting
+2019-11-08T13:59:43.024+00:00 axis-00408cf5b0f1 [ INFO    ] systemd[1]: Starting Zero configuration networking on eth0...
+2019-11-08T13:59:43.705+00:00 axis-00408cf5b0f1 [ INFO    ] systemd[1]: Started Zero configuration networking on eth0.
+2019-11-08T13:59:43.775+00:00 axis-00408cf5b0f1 [ INFO    ] net[1174]: no IPv6 on eth0
+2019-11-08T13:59:43.778+00:00 axis-00408cf5b0f1 [ INFO    ] net[1174]: /etc/init.d/net: line 219: can't open /var/run/dhcp/dhcp6_eth0.pid: no such file
+2019-11-08T13:59:43.994+00:00 axis-00408cf5b0f1 [ INFO    ] systemd[1]: Started Complete network re-configuration on eth0.
+2019-11-08T13:59:44.017+00:00 axis-00408cf5b0f1 [ INFO    ] emotiond: emotion.c: main(): Starting Enhanced Motion Detection
+2019-11-08T13:59:44.251+00:00 axis-00408cf5b0f1 [ WARNING ] blinkenlights[1144]: CancelState - Failed to cancel state.
+2019-11-08T13:59:44.253+00:00 axis-00408cf5b0f1 [ INFO    ] blinkenlights[1144]: blinkenlights[1144]: CancelState - Failed to cancel state.
+2019-11-08T13:59:44.498+00:00 axis-00408cf5b0f1 [ INFO    ] root: /etc/ipchanged.script: New IP address for eth0 is 169.254.246.167.
+2019-11-08T13:59:45.134+00:00 axis-00408cf5b0f1 [ INFO    ] ipchanged[789]: * Restarting libupnp...
+2019-11-08T13:59:45.299+00:00 axis-00408cf5b0f1 [ INFO    ] libupnp[1051]: Exiting...
+2019-11-08T13:59:45.575+00:00 axis-00408cf5b0f1 [ INFO    ] /bin/ssid[1563]: Starting.
+2019-11-08T13:59:45.576+00:00 axis-00408cf5b0f1 [ INFO    ] /bin/ssid[1563]: /usr/html/
+2019-11-08T13:59:46.312+00:00 axis-00408cf5b0f1 [ INFO    ] libupnp[1586]: UPnP Initialized(192.168.20.252:49152)
+2019-11-08T13:59:46.421+00:00 axis-00408cf5b0f1 [ INFO    ] ipchanged[789]: [ ok ]
+2019-11-08T13:59:46.475+00:00 axis-00408cf5b0f1 [ INFO    ] ipchanged[789]: * Reloading Bonjour...
+2019-11-08T13:59:46.727+00:00 axis-00408cf5b0f1 [ INFO    ] maskd[1575]: Maskd getting video type: 4
+2019-11-08T13:59:46.776+00:00 axis-00408cf5b0f1 [ INFO    ] maskd[1610]: Maskd Starting
+2019-11-08T13:59:46.884+00:00 axis-00408cf5b0f1 [ INFO    ] ipchanged[789]: Bonjour not running
+2019-11-08T13:59:46.885+00:00 axis-00408cf5b0f1 [ INFO    ] ipchanged[789]: [ ok ]
+2019-11-08T13:59:47.043+00:00 axis-00408cf5b0f1 [ INFO    ] root: /etc/ipchanged.script: Removed IP address 169.254.246.167 from eth0.
+2019-11-08T13:59:47.180+00:00 axis-00408cf5b0f1 [ INFO    ] lang_handler[1637]: Starting.
+2019-11-08T13:59:47.196+00:00 axis-00408cf5b0f1 [ INFO    ] lang_handler[1637]: Waiting for connections.
+2019-11-08T13:59:47.326+00:00 axis-00408cf5b0f1 [ INFO    ] ipchanged[789]: * Restarting libupnp...
+2019-11-08T13:59:47.491+00:00 axis-00408cf5b0f1 [ INFO    ] libupnp[1586]: Exiting...
+2019-11-08T13:59:48.194+00:00 axis-00408cf5b0f1 [ INFO    ] libupnp[1672]: UPnP Initialized(192.168.20.252:49152)
+2019-11-08T13:59:48.310+00:00 axis-00408cf5b0f1 [ INFO    ] ipchanged[789]: [ ok ]
+2019-11-08T13:59:48.391+00:00 axis-00408cf5b0f1 [ INFO    ] ipchanged[789]: * Reloading Bonjour...
+2019-11-08T13:59:48.829+00:00 axis-00408cf5b0f1 [ INFO    ] ipchanged[789]: Bonjour not running
+2019-11-08T13:59:48.834+00:00 axis-00408cf5b0f1 [ INFO    ] ipchanged[789]: [ ok ]
+2019-11-08T13:59:48.961+00:00 axis-00408cf5b0f1 [ INFO    ] root: /etc/ipchanged.script: Removed IP address 192.168.20.252 from eth0.
+2019-11-08T13:59:49.200+00:00 axis-00408cf5b0f1 [ INFO    ] ipchanged[789]: * Restarting libupnp...
+2019-11-08T13:59:49.328+00:00 axis-00408cf5b0f1 [ INFO    ] libupnp[1672]: Exiting...
+2019-11-08T13:59:49.718+00:00 axis-00408cf5b0f1 [ INFO    ] wsd[1740]: Starting wsd 0.01
+2019-11-08T13:59:49.876+00:00 axis-00408cf5b0f1 [ INFO    ] wsd[1740]: Read configuration
+2019-11-08T13:59:50.018+00:00 axis-00408cf5b0f1 [ INFO    ] libupnp[1748]: UPnP Initialized(192.168.20.252:49152)
+2019-11-08T13:59:50.254+00:00 axis-00408cf5b0f1 [ INFO    ] ipchanged[789]: [ ok ]
+2019-11-08T13:59:50.363+00:00 axis-00408cf5b0f1 [ INFO    ] ipchanged[789]: * Reloading Bonjour...
+2019-11-08T13:59:50.453+00:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[833]: [system] Activating via systemd: service name='com.axis.PolicyKitParhand' unit='dbus-com.axis.PolicyKitParhand.service'
+2019-11-08T13:59:50.504+00:00 axis-00408cf5b0f1 [ INFO    ] systemd[1]: Starting PolicyKit parhand management...
+2019-11-08T13:59:50.843+00:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[833]: [system] Successfully activated service 'com.axis.PolicyKitParhand'
+2019-11-08T13:59:50.860+00:00 axis-00408cf5b0f1 [ NOTICE  ] policykit_parhand[1789]: Policy Server now registered with the name 'com.axis.PolicyKitParhand' and object '/com/axis/PolicyKitParhand'
+2019-11-08T13:59:50.900+00:00 axis-00408cf5b0f1 [ INFO    ] policykit_parhand: Starting PolicykitParhand
+2019-11-08T13:59:50.930+00:00 axis-00408cf5b0f1 [ INFO    ] systemd[1]: Started PolicyKit parhand management.
+2019-11-08T13:59:51.056+00:00 axis-00408cf5b0f1 [ INFO    ] ipchanged[789]: Bonjour not running
+2019-11-08T13:59:51.056+00:00 axis-00408cf5b0f1 [ INFO    ] ipchanged[789]: [ ok ]
+2019-11-08T13:59:51.289+00:00 axis-00408cf5b0f1 [ INFO    ] root: /etc/ipchanged.script: New IP address for eth0 is 192.168.20.252.
+2019-11-08T13:59:51.809+00:00 axis-00408cf5b0f1 [ INFO    ] ptzaurus[1793]: Starting driver IOPPT[1820]
+2019-11-08T13:59:51.947+00:00 axis-00408cf5b0f1 [ INFO    ] ptzaurus[1793]: Starting driver Camblock[1822]
+2019-11-08T13:59:52.233+00:00 axis-00408cf5b0f1 [ INFO    ] ipchanged[789]: * Restarting libupnp...
+2019-11-08T13:59:52.695+00:00 axis-00408cf5b0f1 [ INFO    ] libupnp[1748]: Exiting...
+2019-11-08T13:59:53.196+00:00 axis-00408cf5b0f1 [ INFO    ] zeroconf-ip[1505]: claimed 169.254.246.167
+2019-11-08T13:59:53.480+00:00 axis-00408cf5b0f1 [ INFO    ] libupnp[1864]: UPnP Initialized(192.168.20.252:49152)
+2019-11-08T13:59:53.613+00:00 axis-00408cf5b0f1 [ INFO    ] ipchanged[789]: [ ok ]
+2019-11-08T13:59:53.762+00:00 axis-00408cf5b0f1 [ INFO    ] scm_cbd[1822]: Open "/dev/ttyS1", 38400 baud, 8E1 in "RS232" mode.
+2019-11-08T13:59:53.810+00:00 axis-00408cf5b0f1 [ INFO    ] ipchanged[789]: * Reloading Bonjour...
+2019-11-08T13:59:54.619+00:00 axis-00408cf5b0f1 [ INFO    ] ipchanged[789]: Bonjour not running
+2019-11-08T13:59:54.632+00:00 axis-00408cf5b0f1 [ INFO    ] ipchanged[789]: [ ok ]
+2019-11-08T13:59:54.711+00:00 axis-00408cf5b0f1 [ INFO    ] parhand[930]: Updated configuration file /etc/dynamic/ptz_useradv.conf.
+2019-11-08T13:59:54.958+00:00 axis-00408cf5b0f1 [ INFO    ] parhand[930]: Deleted 'root.PTZ.Various.V1'.
+2019-11-08T13:59:54.986+00:00 axis-00408cf5b0f1 [ INFO    ] scm_cbd[1822]: Open "/dev/ttyS1", 38400 baud, 8E1 in "RS232" mode.
+2019-11-08T13:59:55.024+00:00 axis-00408cf5b0f1 [ INFO    ] root: /etc/ipchanged.script: New IP address for eth0 is 169.254.246.167.
+2019-11-08T13:59:55.082+00:00 axis-00408cf5b0f1 [ INFO    ] parhand[930]: Created new group 'V1' for 'root.PTZ.Various'.
+2019-11-08T13:59:55.563+00:00 axis-00408cf5b0f1 [ INFO    ] ipchanged[789]: * Restarting libupnp...
+2019-11-08T13:59:55.829+00:00 axis-00408cf5b0f1 [ INFO    ] libupnp[1864]: Exiting...
+2019-11-08T13:59:56.463+00:00 axis-00408cf5b0f1 [ INFO    ] actionengined: Registered com.axis.Event.ActionEngine.System /com/axis/Event/ActionEngine
+2019-11-08T13:59:56.558+00:00 axis-00408cf5b0f1 [ INFO    ] libupnp[1985]: UPnP Initialized(192.168.20.252:49152)
+2019-11-08T13:59:56.663+00:00 axis-00408cf5b0f1 [ NOTICE  ] actionengined: Loading "Button0 pressed" action rule
+2019-11-08T13:59:56.788+00:00 axis-00408cf5b0f1 [ NOTICE  ] actionengined: Loading "Button1 pressed" action rule
+2019-11-08T13:59:56.809+00:00 axis-00408cf5b0f1 [ NOTICE  ] actionengined: Loading "System ready" action rule
+2019-11-08T13:59:56.829+00:00 axis-00408cf5b0f1 [ NOTICE  ] actionengined: Loading "PTZ Driver on channel 1 is initializing" action rule
+2019-11-08T13:59:56.834+00:00 axis-00408cf5b0f1 [ INFO    ] ipchanged[789]: [ ok ]
+2019-11-08T13:59:56.879+00:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[833]: [system] Activating via systemd: service name='com.axis.PrioritizedTextOverlay' unit='dbus-com.axis.PrioritizedTextOverlay.service'
+2019-11-08T13:59:56.910+00:00 axis-00408cf5b0f1 [ INFO    ] systemd[1]: Starting Prioritized text overlay...
+2019-11-08T13:59:56.914+00:00 axis-00408cf5b0f1 [ INFO    ] ipchanged[789]: * Reloading Bonjour...
+2019-11-08T13:59:57.415+00:00 axis-00408cf5b0f1 [ INFO    ] actionengined: Registered com.axis.Event.ActionEngine.User /com/axis/Event/ActionEngine
+2019-11-08T13:59:57.575+00:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[833]: [system] Successfully activated service 'com.axis.PrioritizedTextOverlay'
+2019-11-08T13:59:57.650+00:00 axis-00408cf5b0f1 [ INFO    ] systemd[1]: Started Prioritized text overlay.
+2019-11-08T13:59:57.662+00:00 axis-00408cf5b0f1 [ NOTICE  ] actionengined: Loading "PTZ Driver on channel 1 is not functional" action rule
+2019-11-08T13:59:57.723+00:00 axis-00408cf5b0f1 [ NOTICE  ] actionengined: Loading "PTZ Driver on channel 1 is upgrading" action rule
+2019-11-08T13:59:57.732+00:00 axis-00408cf5b0f1 [ INFO    ] ipchanged[789]: Bonjour not running
+2019-11-08T13:59:57.732+00:00 axis-00408cf5b0f1 [ INFO    ] ipchanged[789]: [ ok ]
+2019-11-08T13:59:57.798+00:00 axis-00408cf5b0f1 [ NOTICE  ] actionengined: Loading "PTZ Driver on channel 1 is warming up" action rule
+2019-11-08T13:59:57.833+00:00 axis-00408cf5b0f1 [ NOTICE  ] actionengined: Loading "PTZ Driver on channel 1 is cooling down" action rule
+2019-11-08T13:59:58.362+00:00 axis-00408cf5b0f1 [ NOTICE  ] actionengined: Action rule "PTZ Driver on channel 1 is initializing" is starting action "Prioritized Text Overlay"
+2019-11-08T13:59:58.597+00:00 axis-00408cf5b0f1 [ INFO    ] actionengined: Registered com.axis.Event.ActionEngine.Legacy /com/axis/Event/ActionEngine
+2019-11-08T13:59:59.276+00:00 axis-00408cf5b0f1 [ INFO    ] presettourd: Starting up...
+2019-11-08T13:59:59.688+00:00 axis-00408cf5b0f1 [ INFO    ] tourrecd: Starting up...
+2019-11-08T14:00:00.027+00:00 axis-00408cf5b0f1 [ INFO    ] tourplayerd: Starting up...
+2019-11-08T14:00:00.384+00:00 axis-00408cf5b0f1 [ INFO    ] tourd: Starting up...
+2019-11-08T14:00:02.358+00:00 axis-00408cf5b0f1 [ NOTICE  ] wsdd[2139]: Starting
+2019-11-08T14:00:03.244+00:00 axis-00408cf5b0f1 [ INFO    ] stclient: Starting /usr/bin/stclient
+2019-11-08T14:00:03.388+00:00 axis-00408cf5b0f1 [ INFO    ] stclient: [avhs-dbus.c:99] avhs service has name 'com.axis.AVHS'
+2019-11-08T14:00:03.400+00:00 axis-00408cf5b0f1 [ INFO    ] stclient: [avhs-dbus.c:111] object path '/com/axis/AVHS' already registered
+2019-11-08T14:00:10.826+00:00 axis-00408cf5b0f1 [ INFO    ] parhand[930]: Updated configuration file /etc/dynamic/ptz_useradv.conf.
+2019-11-08T14:00:11.402+00:00 axis-00408cf5b0f1 [ INFO    ] scm_cbd[1822]: Current firmware version is: V1.11.131119
+2019-11-08T14:00:12.552+00:00 axis-00408cf5b0f1 [ INFO    ] parhand[930]: Updated configuration file /etc/dynamic/ptz_useradv.conf.
+2019-11-08T14:00:12.709+00:00 axis-00408cf5b0f1 [ NOTICE  ] actionengined: Action rule "PTZ Driver on channel 1 is initializing" is stopping action "Prioritized Text Overlay"
+2019-11-08T14:00:12.738+00:00 axis-00408cf5b0f1 [ INFO    ] parhand[930]: Updated configuration file /etc/ptz/ptz.conf.
+2019-11-08T14:00:12.767+00:00 axis-00408cf5b0f1 [ INFO    ] parhand[930]: Updated configuration file /etc/ptz/ptz.conf.
+2019-11-08T14:00:13.098+00:00 axis-00408cf5b0f1 [ INFO    ] systemd[1]: Started Legacy runlevel 3.
+2019-11-08T14:00:13.104+00:00 axis-00408cf5b0f1 [ INFO    ] systemd[1]: Starting Legacy runlevel 6...
+2019-11-08T14:00:13.109+00:00 axis-00408cf5b0f1 [ INFO    ] systemd[1]: Starting remove firewall preventing http access during boot...
+2019-11-08T14:00:13.305+00:00 axis-00408cf5b0f1 [ INFO    ] systemd[1]: Started Legacy runlevel 6.
+2019-11-08T14:00:13.323+00:00 axis-00408cf5b0f1 [ INFO    ] systemd[1]: Started remove firewall preventing http access during boot.
+2019-11-08T14:00:13.415+00:00 axis-00408cf5b0f1 [ INFO    ] systemd[1]: Starting Multi-User System.
+2019-11-08T14:00:13.418+00:00 axis-00408cf5b0f1 [ INFO    ] systemd[1]: Reached target Multi-User System.
+2019-11-08T14:00:13.430+00:00 axis-00408cf5b0f1 [ INFO    ] systemd[1]: Startup finished in 11.356s (kernel) + 59.476s (userspace) = 1min 10.833s.
+2019-11-08T14:00:13.443+00:00 axis-00408cf5b0f1 [ NOTICE  ] actionengined: Action rule "System ready" is starting action "System ready LED"
+2019-11-08T14:01:00.357+00:00 axis-00408cf5b0f1 [ INFO    ] monolith[1013]: monolith[1013]: HTTP image/jpeg session created from 192.168.20.238
+2019-11-08T14:01:05.406+00:00 axis-00408cf5b0f1 [ INFO    ] server[0]: starting server
+2019-11-08T14:01:05.781+00:00 axis-00408cf5b0f1 [ INFO    ] monolith[1013]: monolith[1013]: HTTP image/jpeg session terminated from 192.168.20.238
+2019-11-08T14:01:36.179+00:00 axis-00408cf5b0f1 [ INFO    ] ipsetd[1285]: Timed out after 120s.
+2019-11-08T14:01:53.295+00:00 axis-00408cf5b0f1 [ INFO    ] server[0]: stopping server
+2019-11-08T14:01:54.437+00:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[833]: [system] Reloaded configuration
+2019-11-08T14:01:54.460+00:00 axis-00408cf5b0f1 [ INFO    ] parhand[930]: Updated configuration file /etc/sysconfig/streamcache.conf.
+2019-11-08T14:02:10.183+00:00 axis-00408cf5b0f1 [ INFO    ] upload.cgi: Uploaded '/tmp/server_1_0_mipsisa32r2el.eap' size:55960
+2019-11-08T14:02:11.729+00:00 axis-00408cf5b0f1 [ NOTICE  ] dbus[833]: [system] Reloaded configuration
+2019-11-08T14:02:11.767+00:00 axis-00408cf5b0f1 [ INFO    ] parhand[930]: Updated configuration file /etc/sysconfig/streamcache.conf.
+2019-11-08T14:02:11.829+00:00 axis-00408cf5b0f1 [ INFO    ] upload.cgi: Package /tmp/server_1_0_mipsisa32r2el.eap installation OK

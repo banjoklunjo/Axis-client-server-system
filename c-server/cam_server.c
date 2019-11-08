@@ -101,8 +101,14 @@ void * socketThread(void *arg)
 	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''*/
 	syslog(LOG_INFO, "RECIEVED n: ");
 	syslog(LOG_INFO, client_message);
+	
+	
 	long long int n = atoi(client_message);
 
+	//long long int n;
+	//sprintf(client_message, "%lld", n);
+
+        
 	syslog(LOG_INFO, "CONVERTED n: ");
 	syslog(LOG_INFO, "%lld", n );
 
@@ -112,6 +118,7 @@ void * socketThread(void *arg)
 	syslog(LOG_INFO, client_message);
 
 	long long int e = atoi(client_message);
+
 
 	syslog(LOG_INFO, "CONVERTED e: ");
 	syslog(LOG_INFO, "%lld", e );
@@ -130,7 +137,7 @@ void * socketThread(void *arg)
 
 	//itoa(rsa_encr_xor, char_rsa, 1000);
 
-	sprintf(char_rsa, "%ld", rsa_encr_xor);
+	sprintf(char_rsa, "%lld", rsa_encr_xor);
 
 	
 
@@ -278,7 +285,7 @@ char *encrypt_char(char *message, char *key, int img_size){
 /*Method used for generating random xor key*/
 int gen_XORkey(void){
 	srand(time(0));
-    	int nbr = (rand()%9);
+    	int nbr = (rand()%99)+10;
     	return nbr;
 }
 
