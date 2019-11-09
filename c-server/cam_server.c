@@ -1,3 +1,7 @@
+/******************************************************/
+/*********** class cam-server.c start *****************/
+/******************************************************/
+/************* libraries start **************/
 #include <syslog.h>
 #include <string.h>
 #include <stdio.h>
@@ -15,25 +19,44 @@
 #include "cam_server.h"
 #include <capture.h>
 #include <time.h>
+/************* libraries end ****************/
 
+
+
+
+
+/************* variables start **************/
+//to store received messages from client
 char client_message[2000];
 
+//used to store welcome message to client
 char buffer[1024];
 
+//mutex to be locked and unlocked
 pthread_mutex_t lock = PTHREAD_MUTEX_INITIALIZER;
+/************* variables end ****************/
 
 
 
+
+
+/******************************************************/
+/****************** functions start *******************/
+/******************************************************/
+
+//main start up fuction before starting any client thread
 int start_up_server(void)
 {
+	//intialize the log to write onto it
 	openlog ("server", LOG_CONS | LOG_PID | LOG_NDELAY, LOG_LOCAL1);
+	//message onto server log
 	syslog(LOG_INFO, "Server running...");
 
-	int serverSocket, newSocket;
-	struct sockaddr_in serverAddr;
-	struct sockaddr_storage serverStorage;
-
-	socklen_t addr_size;
+	//variables for the socket
+	int 			serverSocket, newSocket;
+	struct 			sockaddr_in serverAddr;
+	struct 			sockaddr_storage serverStorage;
+	socklen_t 		addr_size;
 
 	//Create the socket.
 	serverSocket = socket(PF_INET, SOCK_STREAM, 0);
@@ -77,129 +100,99 @@ int start_up_server(void)
         
             	i++;
 
+		//stop the shile loop when reaching 50 clients
 		if( i > 50)
             		isMore = 0;
 	}
+	
 	return 0;
 }
 
 
 
 
-
+//function called each time for new client with a new thread
 void * socketThread(void *arg)
-
 {
+	//the incoming socket-integer
 	int newSocket = *((int *)arg);
+	//to store char-messages
 	char *msg;
+	//generate XOR-key for this this thread
+	int xor_key = gen_XORkey();
+	//to stor the rsa-encrypted XOR-key
+	char char_rsa[1000];
+	//to store the real generated XOR-key-integer
+	char xor[5];
+	//media stream to get stream from the camera holding this server
+	media_stream *stream;
+	//media fram to get the frame from the stream
+	media_frame  *frame;
+	//array to store image data coming from the frame
+	char     *data;
+	//the size of the image or the image data array
+	size_t   img_size;
+	//used in a while loop to stop the loop when value is '0'
+	int is_stop_requested = 1;
 
+	int val = 0;
+	//used to be compared to from a message from client
+	char stop_arr[5] = "stop";
 
+	//following 2 rec will receive the two public keys from the client upon thread start
+	//receive message from client and stor it in client_message
 	recv(newSocket , client_message , 2000 , 0);
-
-	/*''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''*/
-	syslog(LOG_INFO, "RECIEVED n: ");
-	syslog(LOG_INFO, client_message);
-	
-	
 	long long int n = atoi(client_message);
-
-	//long long int n;
-	//sprintf(client_message, "%lld", n);
-
-        
-	syslog(LOG_INFO, "CONVERTED n: ");
-	syslog(LOG_INFO, "%lld", n );
-
 	recv(newSocket , client_message , 2000 , 0);
-
-	syslog(LOG_INFO, "RECIEVED e: ");
-	syslog(LOG_INFO, client_message);
-
 	long long int e = atoi(client_message);
 
-
-	syslog(LOG_INFO, "CONVERTED e: ");
-	syslog(LOG_INFO, "%lld", e );
-	/*''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-	''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''*/
-	int xor_key = gen_XORkey();
-	syslog(LOG_INFO, "gen_XORkey(): ");
-	syslog(LOG_INFO, "%d", xor_key );
-
+	//with 'n' och 'e' the generated XOR-key will be rsa-encrypted
+	//fmod and pow are used for the rsa-encryption
 	long long int rsa_encr_xor = ( fmod( pow( xor_key, e) , n ) );
-	syslog(LOG_INFO, "rsa_encr_xor: ");
-	syslog(LOG_INFO, "%lld", rsa_encr_xor);
 
-	char char_rsa[1000];
-
-	//itoa(rsa_encr_xor, char_rsa, 1000);
-
+	//converting the encrypted integer to char array
 	sprintf(char_rsa, "%lld", rsa_encr_xor);
 
-	
-
-	//snprintf(msg, sizeof( rsa ) , "%d", rsa);
+	//Sending the encrypted xor-key-char-array to client
 	write(newSocket, char_rsa, strlen(char_rsa));   
+	//needed to signal end of sending procedure
 	write(newSocket, "\n", strlen("\n"));
-	syslog(LOG_INFO, "XOR SENT TO CLIENT ...\n"); 
 
-
-
-	char xor[5];
+	//converting the XOR-key-integer to char array
 	sprintf(xor, "%d", xor_key);
 
-	syslog(LOG_INFO, "xor: as char array: ");
-	syslog(LOG_INFO,  xor);
 
-
-	syslog(LOG_INFO, "Coming msg size 1 and 2: \n"); 
 	//Get all available resolutions on the camera
+	//and stor it in msg char array
 	msg = capture_get_resolutions_list(0);  
-	int msg_size_1 = strlen(msg); // 1000
-	syslog(LOG_INFO, " %d", msg_size_1); 
+
+	//the length of the message
+	int msg_size_1 = strlen(msg); 
+
+ 	//encrypting the resolutions and restoring in same variable 'msg'
 	msg = encrypt_char(msg, xor, strlen(msg));
-	int msg_size_2 = strlen(msg); // 6
-	syslog(LOG_INFO, " and %d", msg_size_2);
 
-
-	//Send the resolutions to the client
+	//Send the encrypted resolutions to the client
 	write(newSocket,  msg, msg_size_1);   
-	//Send a breakline to client, else the client wont read the message
 	write(newSocket, "\n", strlen("\n"));   
-	syslog(LOG_INFO, "Resolution sent to client ...\n"); 
-
 
 
 	//Clear/empty the msg variable
 	memset(msg, 0, strlen(msg));  
-	media_stream *stream;
+	
+	//receiving the encrypted chosen resolution and frequency
+	//storing in the char array of client_message
 	recv(newSocket , client_message , 2000 , 0);
 
-
-
-	media_frame  *frame;
-	char     *data;
-	size_t   img_size;
-	int row = 0;
-	    
-	int is_stop_requested = 1;
-
+	
 	//Opens a stream to the camera to get the img
+	//puting in as parameter the decrypted version of the client message
 	stream = capture_open_stream(IMAGE_JPEG, encrypt_char(client_message, xor, strlen(client_message))); 
-	syslog(LOG_INFO, "stream after decrypting resolution...");
-	int val = 0;
-	char stop_message[5];
-	char stop_arr[5] = "stop";
 
-	while(1) {
-		//Receive message
-		//recv(newSocket , stop_message , 5 , 0);
-		//if(stop_arr == stop_message)
-		//	is_stop_requested = 0;
-		//Get the frame
+
+
+	//looping to send images to client in a loop
+	while(is_stop_requested) {
 		frame = capture_get_frame(stream);    
 
 		//Get image data
@@ -212,44 +205,30 @@ void * socketThread(void *arg)
 		sprintf(msg,"%zu\n",img_size); 
 
 		//Send the size to the client   
-		write(newSocket, msg, strlen(msg));    
+		write(newSocket, msg, strlen(msg));      
 
-		sprintf(msg,"%zu\n", strlen(msg)); 
-		syslog(LOG_INFO, "Storlek på storlek-stringen"); 
-		syslog(LOG_INFO, msg); 
-		sprintf(msg,"%zu\n",img_size);   
-
-		syslog(LOG_INFO, msg);    
-		unsigned char row_data[img_size]; 
-
-		for(row = 0; row < img_size; row++){
-			row_data[row] = ((unsigned char*)data)[row];
-		}
-
-                int size_image = strlen(data);
 		data = encrypt_char(data, xor, img_size);
 
-		//decrypting
-		//data = encrypt_char(data, "ABC", img_size);
-
 		//Send the image data to the client
-		int error = write(newSocket, data, sizeof(row_data));
+		int error = write(newSocket, data, img_size);
 
 		//Checking if the write failed
 		//Might then be that the client is disconnected, so we break out of the loop
 		if (error < 0)
 			syslog(LOG_INFO, "Client is disconnected");
 
-		val++;
-
-
 		//Emptying the variables to be sure nothing is stored 
 		memset(data, 0, sizeof(data));
-		memset(row_data, 0, sizeof(row_data));
 		capture_frame_free(frame);
-
 	}
-	// Send message to the client socket
+
+	//Send message to the client socket
+	//pthread_mutex_lock  locks the given mutex. If the mutex is
+        //currently unlocked, it becomes locked  and  owned  by  the
+        //calling  thread,  and  pthread_mutex_lock  returns immedi-
+        //ately. If the mutex is already locked by  another  thread,
+        //pthread_mutex_lock  suspends  the calling thread until the
+        //mutex is unlocked.
 	pthread_mutex_lock(&lock);
 	char *message = malloc(sizeof(client_message)+20);
 	strcpy(message,"Hello Client : ");
@@ -268,31 +247,40 @@ void * socketThread(void *arg)
 }
 
 
+
+//function to encrypt and decrypt with an XOR-key
 char *encrypt_char(char *message, char *key, int img_size){
-   // int message_length = strlen(message);
-   int key_length = strlen(key);
-   char* encrypt_msg = malloc(img_size+1);
-   int i;
-   for ( i = 0; i< img_size; i++){
-       encrypt_msg[i] = message[i] ^( key[i%key_length]-48); 
-   }
-   encrypt_msg[img_size]='\0';
-   return encrypt_msg;
+
+   	int key_length = strlen(key);
+   	char* encrypt_msg = malloc(img_size+1);
+   	int i;
+   	//the 48 is used for the ASCI-table values	
+   	for ( i = 0; i< img_size; i++){
+       		encrypt_msg[i] = message[i] ^( key[i%key_length]-48); 
+   	}
+   	encrypt_msg[img_size]='\0';
+   	return encrypt_msg;
 }
 
 
 
 
-/*Method used for generating random xor key*/
+//function to randomly generate and XOR-key
 int gen_XORkey(void){
+	//setting up the 'rand()'-function
 	srand(time(0));
+	//getting a random integer between 10 and max 99
     	int nbr = (rand()%99)+10;
     	return nbr;
 }
-
-	
-
-
+/******************************************************/
+/****************** functions end *********************/
+/******************************************************/
+/******************************************************/
+/******************************************************/
+/******************************************************/
+/*********** class cam-server.c end *******************/
+/******************************************************/
 
 
 

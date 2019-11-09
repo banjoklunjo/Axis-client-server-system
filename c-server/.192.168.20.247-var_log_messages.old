@@ -325,3 +325,9 @@
 2019-11-08T13:08:49.808+00:00 axis-00408ce8dd13 [ INFO    ] kernel: potentially unexpected fatal signal 11.
 2019-11-08T13:08:50.111+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
 2019-11-08T13:26:15.630+00:00 axis-00408ce8dd13 [ INFO    ] kernel: potentially unexpected fatal signal 11.
+2019-11-08T13:28:16.230+00:00 axis-00408ce8dd13 [ INFO    ] kernel: potentially unexpected fatal signal 11.
+2019-11-08T13:40:52.098+00:00 axis-00408ce8dd13 [ INFO    ] kernel: potentially unexpected fatal signal 11.
+2019-11-08T13:40:52.538+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
+2019-11-08T14:34:26.189+00:00 axis-00408ce8dd13 [ INFO    ] kernel: potentially unexpected fatal signal 11.
+2019-11-09T12:28:26.819+00:00 axis-00408ce8dd13 [ INFO    ] kernel: potentially unexpected fatal signal 11.
+2019-11-09T12:28:27.249+00:00 axis-00408ce8dd13 [ WARNING ] systemd[1]: monolith.service: Failed with result 'signal'.
